@@ -3,13 +3,11 @@ import { Link } from "react-router-dom"
 import BrandSection from "../../components/brandSection"
 import ContactSection from "../../components/contactSection"
 import Footer from "../../components/footer"
-// import NavBar from "../../components/navbar"
 import ServiceCards from "../../components/serviceCards"
 import TestimonialCards from "../../components/testimonialCards"
 import './style.scss'
 import { Accordion } from 'react-bootstrap'
-
-import NavBar2 from "../../components/navbar2"
+import NavBar from "../../components/navbar"
 
 const HomePage = () => {
     return (
@@ -17,8 +15,7 @@ const HomePage = () => {
             <Helmet>
                 <title>Branding Pioneers</title>
             </Helmet>
-            {/* <NavBar /> */}
-            <NavBar2 />
+            <NavBar />
             <div className="consulting">
                 <Hero />
                 <Services />

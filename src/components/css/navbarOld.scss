@@ -1,86 +1,19 @@
-.navbar {
-  padding: 0;
-  transition: 0.3s;
-  background: transparent;
-  background: #ffffff;
-  border-bottom: 1px solid var(--border-brutal);
-  .container-fluid {
-    padding: 0;
-  }
-  .navbar-brand {
-    padding: 0 16px;
-    border-right: 1px solid var(--border-brutal);
-    align-self: stretch;
-    display: flex;
-    align-items: center;
-  }
-}
-.megamenu {
-  position: static;
-}
-.megamenu .dropdown-menu {
-  background: none;
-  border: none;
-  width: 100%;
-}
-
-/*
-*
-* ==========================================
-* FOR DEMO PURPOSES
-* ==========================================
-*
-*/
-
-code {
-  color: #745eb1;
-  background: #fff;
-  padding: 0.1rem 0.2rem;
-  border-radius: 0.2rem;
-}
-.text-uppercase {
-  letter-spacing: 0.08em;
-}
-.megaimaga {
-  border-radius: 10px;
-  background: center center
-    url("https://therichpost.com/wp-content/uploads/2021/11/mega.png") no-repeat;
-  background-size: cover;
-}
-.navbar-cta {
-  background: var(--color-primary);
-  color: #ffffff;
-  text-decoration: none;
-  font-weight: 500;
-  align-self: stretch;
-  padding: 0 16px;
-  display: flex;
-  align-items: center;
-  border-left: 1px solid var(--border-brutal);
-  transition: 0.3s;
-  &:hover {
-    filter: brightness(0.85);
-  }
-  &:active {
-    filter: brightness(0.75);
-  }
-  @media (max-width: 991.98px) {
-    margin-left: auto;
-    margin-right: 16px;
-    padding: 16px;
-    margin-right: 0;
-  }
-}
-
-
-
-
-
-
-
-
-
-
+// .navbar {
+//   transition: 0.3s;
+//   background: transparent;
+//   background: #ffffff;
+//   padding: 0;
+//   border-bottom: 1px solid var(--border-brutal);
+//   .container-fluid {
+//     padding: 0;
+//   }
+//   .navbar-brand {
+//     padding: 0 16px;
+//     border-right: 1px solid var(--border-brutal);
+//     align-self: stretch;
+//     display: flex;
+//     align-items: center;
+//   }
 //   .navbar-nav {
 //     padding: 20px 0;
 //     .nav-link {
@@ -224,8 +157,7 @@ code {
 //       }
 //     }
 //   }
-
-// .navbar-cta {
+//   .navbar-cta {
 //     background: var(--color-primary);
 //     color: #ffffff;
 //     text-decoration: none;
@@ -251,24 +183,24 @@ code {
 //       margin-right: 0;
 //     }
 //   }
+//   .navbar-toggler {
+//     padding: 8px;
+//     border: 0;
+//     box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.05);
+//     border-radius: 50%;
+//     line-height: 0;
+//     background-color: rgba(255, 255, 255, 0.05);
+//     color: var(--color-1);
 
-  .navbar-toggler {
-    padding: 8px;
-    border: 0;
-    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.05);
-    border-radius: 50%;
-    line-height: 0;
-    background-color: rgba(255, 255, 255, 0.05);
-    color: var(--color-1);
+//     @media (max-width: 991.98px) {
+//       order: 2;
+//       margin: 0 8px;
+//     }
+//   }
 
-    @media (max-width: 991.98px) {
-      order: 2;
-      margin: 0 8px;
-    }
-  }
-  .navbar-collapse {
-    @media (max-width: 991.98px) {
-      order: 3;
-    }
-  }
+//   .navbar-collapse {
+//     @media (max-width: 991.98px) {
+//       order: 3;
+//     }
+//   }
 // }
