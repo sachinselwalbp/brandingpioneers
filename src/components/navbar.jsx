@@ -1,11 +1,10 @@
 import { Navbar } from "react-bootstrap"
 import { NavLink } from "react-router-dom"
 import Logo from '../logo.svg'
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/js/bootstrap.min.js';
-import './css/navbar.scss';
+import 'bootstrap/dist/css/bootstrap.min.css'
+import 'bootstrap/dist/js/bootstrap.min.js'
+import './css/navbar.scss'
 import { Link } from "react-router-dom"
-import { NavDropdown } from "react-bootstrap";
 
 const internalpages = [
   { title: 'SEO Agency for Doctors', href: '/seo-agency-for-doctors' },
@@ -60,7 +59,7 @@ function NavBar() {
             <div id="navbarSupportedContent" className="collapse navbar-collapse">
               <ul className="navbar-nav mx-auto">
                 <li className="nav-item">
-                  <a href="/" className="nav-link font-weight-bold">Home</a>
+                  <Link to="/" className="nav-link font-weight-bold">Home</Link>
                 </li>
                 <li className="nav-item dropdown megamenu"><a href="/" id="dropdownMenuButton1 megamneu" data-bs-toggle="dropdown" aria-expanded="false" className="nav-link dropdown-toggle font-weight-bold dropdown-toggle">About</a>
                   <div aria-labelledby="dropdownMenuButton1" className="dropdown-menu border-0 p-0 m-0">
@@ -91,7 +90,7 @@ function NavBar() {
                                 </h6>
                                 <ul className="list-unstyled">
                                   <li className="nav-item">
-                                    <Link to="/our-work/" className="nav-link text-small pb-0">Websites</Link>
+                                    <Link to="/our-work/websites" className="nav-link text-small pb-0">Websites</Link>
                                   </li>
                                   <li className="nav-item">
                                     <Link to="/our-work/case-studies" className="nav-link text-small pb-0">Case Studies</Link>
@@ -104,56 +103,56 @@ function NavBar() {
                               <div className="col-lg-4 mb-4">
                                 {/* Our Speciality */}
                                 <h6 className="font-weight-bold text-uppercase">
-                                  <Link to="/" className="nav-link text-small pb-0">Our Speciality</Link>
+                                  <Link to="/our-speciality" className="nav-link text-small pb-0">Our Speciality</Link>
                                 </h6>
                                 <h6>
-                                  <Link to="/" className="nav-link text-small pb-0">Healthcare</Link>
+                                  <Link to="/our-speciality/healthcare" className="nav-link text-small pb-0">Healthcare</Link>
                                 </h6>
                                 <ul className="list-unstyled">
                                   <li className="nav-item">
-                                    <Link to="/our-work/" className="nav-link text-small pb-0">Hospitals</Link>
+                                    <Link to="/our-speciality/healthcare/hospitals" className="nav-link text-small pb-0">Hospitals</Link>
                                   </li>
                                   <li className="nav-item">
-                                    <Link to="/our-work/case-studies" className="nav-link text-small pb-0">Dentists</Link>
+                                    <Link to="/our-speciality/healthcare/dentists" className="nav-link text-small pb-0">Dentists</Link>
                                   </li>
                                   <li className="nav-item">
-                                    <Link to="/projects" className="nav-link text-small pb-0">Plastic Surgeons</Link>
+                                    <Link to="/our-speciality/healthcare/plastic-surgeons" className="nav-link text-small pb-0">Plastic Surgeons</Link>
                                   </li>
                                   <li className="nav-item">
-                                    <Link to="/" className="nav-link text-small pb-0">Orthopedics</Link>
+                                    <Link to="/our-speciality/healthcare/orthopedics" className="nav-link text-small pb-0">Orthopedics</Link>
                                   </li>
                                   <li className="nav-item">
-                                    <Link to="/" className="nav-link text-small pb-0">Chiropractors</Link>
+                                    <Link to="/our-speciality/healthcare/chiropractors" className="nav-link text-small pb-0">Chiropractors</Link>
                                   </li>
                                   <li className="nav-item">
-                                    <Link to="/" className="nav-link text-small pb-0">Infertility and IVF</Link>
+                                    <Link to="/our-speciality/healthcare/infertility-and-ivf" className="nav-link text-small pb-0">Infertility and IVF</Link>
                                   </li>
                                   <li className="nav-item">
-                                    <Link to="/" className="nav-link text-small pb-0">Aesthetic /Dermatologist</Link>
+                                    <Link to="/our-speciality/healthcare/aesthetic-dermatologist" className="nav-link text-small pb-0">Aesthetic /Dermatologist</Link>
                                   </li>
                                 </ul>
                               </div>
                               <div className="col-lg-4 mb-4">
                                 <ul className="list-unstyled">
                                   <li className="nav-item">
-                                    <Link to="/" className="nav-link text-small pb-0">Surgeons</Link>
+                                    <Link to="/our-speciality/healthcare/surgeons" className="nav-link text-small pb-0">Surgeons</Link>
                                   </li>
                                   <li className="nav-item">
-                                    <Link to="/" className="nav-link text-small pb-0">Medical tourism</Link>
+                                    <Link to="/our-speciality/healthcare/medical-tourism" className="nav-link text-small pb-0">Medical tourism</Link>
                                   </li>
                                   <li className="nav-item">
-                                    <Link to="/" className="nav-link text-small pb-0">Healthcare startups</Link>
+                                    <Link to="/our-speciality/healthcare/healthcare-startups" className="nav-link text-small pb-0">Healthcare startups</Link>
                                   </li>
                                 </ul>
                                 <br />
                                 <h6>
-                                  <Link to="/" className="nav-link text-small pb-0">Education</Link>
+                                  <Link to="/our-speciality/education" className="nav-link text-small pb-0">Education</Link>
                                 </h6>
                                 <h6>
-                                  <Link to="/" className="nav-link text-small pb-0">Fitness</Link>
+                                  <Link to="/our-speciality/fitness" className="nav-link text-small pb-0">Fitness</Link>
                                 </h6>
                                 <h6>
-                                  <Link to="/" className="nav-link text-small pb-0">B2B</Link>
+                                  <Link to="/our-speciality/b2b" className="nav-link text-small pb-0">B2B</Link>
                                 </h6>
                               </div>
                             </div>
@@ -172,23 +171,23 @@ function NavBar() {
                           <div className="row">
                             <div className="col-lg-4 mb-4">
                               <h6 className="font-weight-bold text-uppercase">
-                                <Link className="nav-link text-small pb-0">Medical Digital Marketing</Link>
+                                <Link to="/medical-digital-marketing" className="nav-link text-small pb-0">Medical Digital Marketing</Link>
                               </h6>
                               <ul className="list-unstyled">
-                                <li className="nav-item"><Link href="/" className="nav-link text-small pb-0">Healthcare SEO</Link>
+                                <li className="nav-item"><Link to="/medical-digital-marketing/healthcare-seo" className="nav-link text-small pb-0">Healthcare SEO</Link>
                                   <ul className="list-unstyled px-2">
-                                    <li className="nav-item"><Link href="/" className="nav-link text-small pb-0">Healthcare SEO</Link></li>
-                                    <li className="nav-item"><Link href="/" className="nav-link text-small pb-0">Technical SEO</Link></li>
-                                    <li className="nav-item"><Link href="/" className="nav-link text-small pb-0">Website Ranking</Link></li>
+                                    <li><Link to="/medical-digital-marketing/healthcare-seo/local-seo" className="nav-link text-small pb-0">Local SEO</Link></li>
+                                    <li className="nav-item"><Link to="/medical-digital-marketing/healthcare-seo/technical-seo" className="nav-link text-small pb-0">Technical SEO</Link></li>
+                                    <li className="nav-item"><Link to="/medical-digital-marketing/healthcare-seo/website-ranking" className="nav-link text-small pb-0">Website Ranking</Link></li>
                                   </ul>
                                 </li>
-                                <li className="nav-item"><Link href="/" className="nav-link text-small pb-0">Healthcare SMO</Link></li>
-                                <li className="nav-item"><Link href="/" className="nav-link text-small pb-0">Healthcare SMM</Link></li>
-                                <li className="nav-item"><Link href="/" className="nav-link text-small pb-0">Reputation Management for Doctors</Link></li>
-                                <li className="nav-item"><Link href="/" className="nav-link text-small pb-0">Healthcare Social Media Management</Link></li>
-                                <li className="nav-item"><Link href="/" className="nav-link text-small pb-0">Email Marketing for Healthcare</Link></li>
-                                <li className="nav-item"><Link href="/" className="nav-link text-small pb-0">Guest Posting Services for Healthcare</Link></li>
-                                <li className="nav-item"><Link href="/" className="nav-link text-small pb-0">Page Load Speed Optimiation</Link></li>
+                                <li className="nav-item"><Link to="/medical-digital-marketing/healthcare-smo" className="nav-link text-small pb-0">Healthcare SMO</Link></li>
+                                <li className="nav-item"><Link to="/medical-digital-marketing/healthcare-smm" className="nav-link text-small pb-0">Healthcare SMM</Link></li>
+                                <li className="nav-item"><Link to="/medical-digital-marketing/reputation-management-for-doctors" className="nav-link text-small pb-0">Reputation Management for Doctors</Link></li>
+                                <li className="nav-item"><Link to="/medical-digital-marketing/healthcare-hocial-media-management" className="nav-link text-small pb-0">Healthcare Social Media Management</Link></li>
+                                <li className="nav-item"><Link to="/medical-digital-marketing/email-marketing-for-healthcare" className="nav-link text-small pb-0">Email Marketing for Healthcare</Link></li>
+                                <li className="nav-item"><Link to="/medical-digital-marketing/guest-posting-gervices-for-healthcare" className="nav-link text-small pb-0">Guest Posting Services for Healthcare</Link></li>
+                                <li className="nav-item"><Link to="/medical-digital-marketing/page-load-speed-optimiation" className="nav-link text-small pb-0">Page Load Speed Optimiation</Link></li>
                               </ul>
                             </div>
                             <div className="col-lg-4 mb-4">
@@ -196,14 +195,14 @@ function NavBar() {
                                 <Link className="nav-link text-small pb-0">Marketing Strategies</Link>
                               </h6>
                               <ul className="list-unstyled">
-                                <li className="nav-item"><Link href="/" className="nav-link text-small pb-0">PPC Advertising for Healthcare</Link></li>
-                                <li className="nav-item"><Link href="/" className="nav-link text-small pb-0">Facebook Ads for Healthcare</Link></li>
-                                <li className="nav-item"><Link href="/" className="nav-link text-small pb-0">Healthcare Video Marketing</Link></li>
-                                <li className="nav-item"><Link href="/" className="nav-link text-small pb-0">Branding Services</Link></li>
-                                <li className="nav-item"><Link href="/" className="nav-link text-small pb-0">Analytics and Reporting</Link></li>
-                                <li className="nav-item"><Link href="/" className="nav-link text-small pb-0">Marketing Strategies for Doctors</Link></li>
-                                <li className="nav-item"><Link href="/" className="nav-link text-small pb-0">Lead Generations for Doctors</Link></li>
-                                <li className="nav-item"><Link href="/" className="nav-link text-small pb-0">Content Marketing for Healthcare</Link></li>
+                                <li className="nav-item"><Link to="" className="nav-link text-small pb-0">PPC Advertising for Healthcare</Link></li>
+                                <li className="nav-item"><Link to="" className="nav-link text-small pb-0">Facebook Ads for Healthcare</Link></li>
+                                <li className="nav-item"><Link to="" className="nav-link text-small pb-0">Healthcare Video Marketing</Link></li>
+                                <li className="nav-item"><Link to="" className="nav-link text-small pb-0">Branding Services</Link></li>
+                                <li className="nav-item"><Link to="" className="nav-link text-small pb-0">Analytics and Reporting</Link></li>
+                                <li className="nav-item"><Link to="" className="nav-link text-small pb-0">Marketing Strategies for Doctors</Link></li>
+                                <li className="nav-item"><Link to="" className="nav-link text-small pb-0">Lead Generations for Doctors</Link></li>
+                                <li className="nav-item"><Link to="" className="nav-link text-small pb-0">Content Marketing for Healthcare</Link></li>
                               </ul>
                             </div>
                             <div className="col-lg-4 mb-4">
@@ -211,19 +210,19 @@ function NavBar() {
                                 <Link className="nav-link text-small pb-0">Website Services</Link>
                               </h6>
                               <ul className="list-unstyled">
-                                <li className="nav-item"><Link href="/" className="nav-link text-small pb-0">Medical Web Designing</Link></li>
-                                <li className="nav-item"><Link href="/" className="nav-link text-small pb-0">Medical Web Development </Link></li>
-                                <li className="nav-item"><Link href="/" className="nav-link text-small pb-0">E-Commerce Development for Healthcare</Link></li>
-                                <li className="nav-item"><Link href="/" className="nav-link text-small pb-0">Medical Website Revamps</Link></li>
-                                <li className="nav-item"><Link href="/" className="nav-link text-small pb-0">Medical Website Maintenance</Link></li>
+                                <li className="nav-item"><Link to="" className="nav-link text-small pb-0">Medical Web Designing</Link></li>
+                                <li className="nav-item"><Link to="" className="nav-link text-small pb-0">Medical Web Development </Link></li>
+                                <li className="nav-item"><Link to="" className="nav-link text-small pb-0">E-Commerce Development for Healthcare</Link></li>
+                                <li className="nav-item"><Link to="" className="nav-link text-small pb-0">Medical Website Revamps</Link></li>
+                                <li className="nav-item"><Link to="" className="nav-link text-small pb-0">Medical Website Maintenance</Link></li>
                               </ul>
                               <br />
                               <h6 className="font-weight-bold text-uppercase">
                                 <Link className="nav-link text-small pb-0">Content</Link>
                               </h6>
                               <ul className="list-unstyled">
-                                <li className="nav-item"><Link href="/" className="nav-link text-small pb-0">Healthcare Content Creation</Link></li>
-                                <li className="nav-item"><Link href="/" className="nav-link text-small pb-0">Medical Graphics Design</Link></li>
+                                <li className="nav-item"><Link to="" className="nav-link text-small pb-0">Healthcare Content Creation</Link></li>
+                                <li className="nav-item"><Link to="" className="nav-link text-small pb-0">Medical Graphics Design</Link></li>
                               </ul>
                             </div>
                           </div>
