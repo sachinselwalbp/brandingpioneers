@@ -245,7 +245,7 @@ function NavBar() {
                             <div className="row">
                               <ul className="list-unstyled internal-page">
                                 {internalpages.map(e =>
-                                  <NavDropdown.Item><Link to={e.href} className="nav-link text-small pb-0">{e.title}</Link></NavDropdown.Item>
+                                  <li><Link to={e.href} className="nav-link text-small pb-0">{e.title}</Link></li>
                                 )}
                               </ul>
                             </div>
@@ -258,17 +258,6 @@ function NavBar() {
               </ul>
             </div>
           </div>
-          <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                Another action
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
-                Separated link
-              </NavDropdown.Item>
-            </NavDropdown>
         </Navbar.Collapse>
         <Link to="/contact" className="navbar-cta">Write Query</Link>
       </div>
