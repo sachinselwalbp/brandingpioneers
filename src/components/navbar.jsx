@@ -158,7 +158,7 @@ function NavBar() {
                             </div>
                           </div>
                         </div>
-                        <div class="col-lg-5 col-xl-4 px-0 d-none d-lg-block megaimaga"></div>
+                        <div className="col-lg-5 col-xl-4 px-0 d-none d-lg-block megaimaga"></div>
                       </div>
                     </div>
                   </div>
@@ -243,8 +243,8 @@ function NavBar() {
                           <div className="p-4">
                             <div className="row">
                               <ul className="list-unstyled internal-page">
-                                {internalpages.map(e =>
-                                  <li><Link to={e.href} className="nav-link text-small pb-0">{e.title}</Link></li>
+                                {internalpages.map((e, i) =>
+                                  <li><Link to={e.href} key={i} className="nav-link text-small pb-0">{e.title}</Link></li>
                                 )}
                               </ul>
                             </div>

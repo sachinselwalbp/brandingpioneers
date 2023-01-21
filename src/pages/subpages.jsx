@@ -1,14 +1,14 @@
 import Helmet from 'react-helmet'
 import Footer from '../components/footer'
-import NavBar from "../components/navbar"
+import NavBar from '../components/navbar'
 import './css/post.scss'
 import { useParams } from 'react-router-dom'
 import Hero from '../components/hero'
 import CaseStudy from '../components/casestudy'
 import Contact from '../components/contact'
-import { useQuery } from "@apollo/react-hooks"
+import { useQuery } from '@apollo/react-hooks'
 import GQLData from '../components/GQLData'
-// import NotFound from '../components/errorComp'
+import NotFound from '../components/errorComp'
 
 const SubPages = () => {
     const { parentPage, mainPage, slug } = useParams()
@@ -24,26 +24,48 @@ const SubPages = () => {
         let arr = mainpage[0].attributes.subpages.data.filter(e => e.attributes.slug === slug)
         article = arr[0]
     } else {
-        article = {}
+        article = undefined
     }
-    const post = article.attributes
 
-    return (
-        <>
-            <Helmet>
-                <title>{post.title}</title>
-            </Helmet>
-            <NavBar />
-            <div className="project-detail-container">
-                <div className="loaded">
-                    <Hero data={post} />
-                    <CaseStudy data={post} />
+    let post
+    if (article !== undefined) {
+        post = article.attributes
+        return (
+            <>
+                <Helmet>
+                    <title>{post.title}</title>
+                </Helmet>
+                <NavBar />
+                <div className="project-detail-container">
+                    <section>
+                        <Hero data={post} />
+                        <CaseStudy data={post} />
+                    </section>
+                    <Contact />
+                    <Footer />
                 </div>
-                <Contact />
-                <Footer />
-            </div>
-        </>
-    )
+            </>
+        )
+    }
+    else {
+        return (
+            <>
+                <Helmet>
+                    <title>Not Found</title>
+                </Helmet>
+                <NavBar />
+                <div className="project-detail-container">
+                    <section>
+                        <NotFound />
+                    </section>
+                    <Contact />
+                    <Footer />
+                </div>
+            </>
+        )
+    }
+
+
 }
 
 export default SubPages

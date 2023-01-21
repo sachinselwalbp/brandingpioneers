@@ -8,8 +8,8 @@ import Hero from '../components/hero'
 import Contact from '../components/contact'
 import { useQuery } from "@apollo/react-hooks"
 import GQLData from '../components/GQLData'
+import NotFound from '../components/errorComp'
 // import PostSkeleton from '../components/PostSkeleton'
-// import NotFound from '../components/errorComp'
 
 const Pages = () => {
   const { mainPage, slug } = useParams()
@@ -24,26 +24,46 @@ const Pages = () => {
     let mainpage = parentpage[0].attributes.pages.data.filter(e => e.attributes.slug === slug)
     article = mainpage[0]
   } else {
-    article = {}
+    article = undefined
   }
-  const post = article.attributes
+  
+  let post
+  if (article !== undefined) {
+    post = article.attributes
 
-  return (
-    <>
-      <Helmet>
-        <title>{post.title}</title>
-      </Helmet>
-      <NavBar />
-      <div className="project-detail-container">
-        <div className="loaded">
-          <Hero data={post} />
-          <CaseStudy data={post} />
+    return (
+      <>
+        <Helmet>
+          <title>{post.title}</title>
+        </Helmet>
+        <NavBar />
+        <div className="project-detail-container">
+          <section>
+            <Hero data={post} />
+            <CaseStudy data={post} />
+          </section>
+          <Contact />
+          <Footer />
         </div>
-        <Contact />
-        <Footer />
-      </div>
-    </>
-  )
+      </>
+    )
+  } else {
+    return (
+      <>
+        <Helmet>
+          <title>Not Found</title>
+        </Helmet>
+        <NavBar />
+        <div className="project-detail-container">
+          <section>
+            <NotFound />
+          </section>
+          <Contact />
+          <Footer />
+        </div>
+      </>
+    )
+  }
 }
 
 export default Pages

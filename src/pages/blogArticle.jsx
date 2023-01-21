@@ -6,7 +6,7 @@ import { useParams } from 'react-router-dom'
 import Contact from '../components/contact'
 import { ReactMarkdown } from 'react-markdown/lib/react-markdown'
 import { gql, useQuery } from "@apollo/react-hooks"
-// import NotFound from '../components/errorComp'
+import NotFound from '../components/errorComp'
 
 const blogGQL = gql`
 query {
@@ -51,26 +51,47 @@ const BlogArticle = () => {
         let arr = blog_data.filter(e => e.attributes.slug === slug)
         article = arr[0]
     } else {
-        article = {}
+        article = undefined
     }
-    const post = article.attributes;
 
-    return (
-        <>
-            <Helmet>
-                <title>{post.title}</title>
-            </Helmet>
-            <NavBar />
-            <div className='blog-article-container'>
-                <div className="loadedData">
-                    <Hero data={post} />
-                    <BlogArticleSection data={post} />
+    let post
+    if (article !== undefined) {
+        post = article.attributes
+
+        return (
+            <>
+                <Helmet>
+                    <title>{post.title}</title>
+                </Helmet>
+                <NavBar />
+                <div className='blog-article-container'>
+                    <div className="loadedData">
+                        <Hero data={post} />
+                        <BlogArticleSection data={post} />
+                    </div>
+                    <Contact />
+                    <Footer />
                 </div>
-                <Contact />
-                <Footer />
-            </div>
-        </>
-    )
+            </>
+        )
+    }
+    else {
+        return (
+            <>
+                <Helmet>
+                    <title>Not Found</title>
+                </Helmet>
+                <NavBar />
+                <div className='blog-article-container'>
+                    <section>
+                        <NotFound />
+                    </section>
+                    <Contact />
+                    <Footer />
+                </div>
+            </>
+        )
+    }
 }
 
 const Hero = ({ data }) => {
