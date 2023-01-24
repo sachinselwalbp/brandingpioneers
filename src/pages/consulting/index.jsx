@@ -8,10 +8,14 @@ import TestimonialCards from "../../components/testimonialCards"
 import './style.scss'
 import { Accordion } from 'react-bootstrap'
 import NavBar from "../../components/navbar"
+import { motion } from "framer-motion"
+import AnimatedCharacters from "../../components/AnimeChar"
 
 const HomePage = () => {
     return (
-        <>
+        <motion.div
+        
+        >
             <Helmet>
                 <title>Branding Pioneers</title>
             </Helmet>
@@ -26,7 +30,7 @@ const HomePage = () => {
                 <Contact />
                 <Footer />
             </div>
-        </>
+        </motion.div>
     )
 }
 
@@ -55,14 +59,51 @@ const brands = [
 
 
 const Hero = () => {
+    // Placeholder text data, as if from API
+    const placeholderText = [
+        {
+            type: "heading1",
+            text: "Attract more patients and boost your revenue with our healthcare digital marketing solutions."
+        },
+        {
+            type: "heading3",
+            text: "Experience exceptional results with us."
+        }
+    ];
+
+    const container = {
+        visible: {
+            transition: {
+                staggerChildren: 0.025
+            }
+        }
+    };
+
     return (
         <>
             <section className="section-global no-border">
                 <div className="container">
                     <div className="row gy-5">
                         <div className="col-lg-6 align-self-center">
-                            <h1>Attract more patients and boost your revenue with our healthcare digital marketing solutions.</h1>
-                            <p className='txt-1 mt-16 me-lg-5'>Experience exceptional results with us.</p>
+                            <motion.div
+                                initial="hidden"
+                                animate="visible"
+                                variants={container}>
+                                <div>
+                                    {placeholderText.map((item, index) => <AnimatedCharacters {...item} key={index} />)}
+                                </div>
+                            </motion.div>
+
+                            {/* <h1
+                                animate={{ y: 0, opacity: 1 }}
+                                initial={{ y: -1000, opacity: 0 }}
+                            >Attract more patients and boost your revenue with our healthcare digital marketing solutions.</h1>
+                            <p
+                                animate={{ y: 0 }}
+                                initial={{ y: -1000 }}
+                                className='txt-1 mt-16 me-lg-5'
+                            >Experience exceptional results with us.</p> */}
+
                             {/* <form className='mt-20 me-lg-5'>
                                 <div className="cta-form d-flex align-items-center justify-content-between">
                                     <div className="cta-input">
@@ -75,8 +116,7 @@ const Hero = () => {
                             </form> */}
                         </div>
                         <div className="col-lg-6 align-self-center">
-                            {/* <img src={require('./assets/hero_image.png')} className="img-fluid" alt="hero" /> */}
-                            <img src='https://dummyimage.com/974x746/ccc/fff.jpg' className="img-fluid" alt="hero" />
+                            <motion.img src='https://dummyimage.com/974x746/ccc/fff.jpg' className="img-fluid" alt="hero" animate={{ y: 0 }} initial={{ y: 1000 }} />
                         </div>
                     </div>
                 </div>
