@@ -8,7 +8,6 @@ import CaseStudy from '../components/casestudy'
 import Contact from '../components/contact'
 import { useQuery } from "@apollo/react-hooks"
 import GQLData from '../components/GQLData'
-// import PostSkeleton from '../components/PostSkeleton'
 import NotFound from '../components/errorComp'
 
 const SubSubPages = () => {
@@ -19,7 +18,7 @@ const SubSubPages = () => {
     const blog_data = data.mainpages.data
 
     let article = {}
-    if (article) {
+    if (article && blog_data.some(a => a.attributes.slug === rootPage) && blog_data.filter(a => a.attributes.slug === rootPage)[0].attributes.pages.data.some(b => b.attributes.slug === parentPage) && blog_data.filter(a => a.attributes.slug === rootPage)[0].attributes.pages.data.filter(b => b.attributes.slug === parentPage)[0].attributes.subpages.data.some(c => c.attributes.slug === mainPage) && blog_data.filter(a => a.attributes.slug === rootPage)[0].attributes.pages.data.filter(b => b.attributes.slug === parentPage)[0].attributes.subpages.data.filter(c => c.attributes.slug === mainPage)[0].attributes.subsubpages.data.some(d => d.attributes.slug === slug)) {
         let rootpage = blog_data.filter(e => e.attributes.slug === rootPage)
         let parentpage = rootpage[0].attributes.pages.data.filter(e => e.attributes.slug === parentPage)
         let mainpage = parentpage[0].attributes.subpages.data.filter(e => e.attributes.slug === mainPage)
@@ -32,8 +31,6 @@ const SubSubPages = () => {
 
     if (article !== undefined) {
         post = article.attributes
-
-
         return (
             <>
                 <Helmet>
@@ -69,6 +66,5 @@ const SubSubPages = () => {
         )
     }
 }
-
 
 export default SubSubPages

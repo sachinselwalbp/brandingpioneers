@@ -18,7 +18,7 @@ const SubPages = () => {
     const blog_data = data.mainpages.data
 
     let article = {}
-    if (article) {
+    if (article && blog_data.some(a => a.attributes.slug === parentPage) && blog_data.filter(a => a.attributes.slug === parentPage)[0].attributes.pages.data.some(b => b.attributes.slug === mainPage) && blog_data.filter(a => a.attributes.slug === parentPage)[0].attributes.pages.data.filter(b => b.attributes.slug === mainPage)[0].attributes.subpages.data.some(c => c.attributes.slug === slug)) {
         let parentpage = blog_data.filter(e => e.attributes.slug === parentPage)
         let mainpage = parentpage[0].attributes.pages.data.filter(e => e.attributes.slug === mainPage)
         let arr = mainpage[0].attributes.subpages.data.filter(e => e.attributes.slug === slug)
@@ -64,8 +64,6 @@ const SubPages = () => {
             </>
         )
     }
-
-
 }
 
 export default SubPages

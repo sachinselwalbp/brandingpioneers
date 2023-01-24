@@ -1,15 +1,14 @@
 import Helmet from 'react-helmet'
 import Footer from '../components/footer'
 import NavBar from "../components/navbar"
-import './css/post.scss'
-import { useParams } from 'react-router-dom'
-import CaseStudy from '../components/casestudy'
 import Hero from '../components/hero'
+import CaseStudy from '../components/casestudy'
 import Contact from '../components/contact'
+import NotFound from '../components/errorComp'
+import { useParams } from 'react-router-dom'
 import { useQuery } from "@apollo/react-hooks"
 import GQLData from '../components/GQLData'
-import NotFound from '../components/errorComp'
-// import PostSkeleton from '../components/PostSkeleton'
+import './css/post.scss'
 
 const Pages = () => {
   const { mainPage, slug } = useParams()
@@ -19,18 +18,17 @@ const Pages = () => {
   const blog_data = data.mainpages.data
 
   let article = {}
-  if (article) {
+  if (article && blog_data.some(a => a.attributes.slug === mainPage) && blog_data.filter(a => a.attributes.slug === mainPage)[0].attributes.pages.data.some(e => e.attributes.slug === slug)) {
     let parentpage = blog_data.filter(e => e.attributes.slug === mainPage)
     let mainpage = parentpage[0].attributes.pages.data.filter(e => e.attributes.slug === slug)
     article = mainpage[0]
   } else {
     article = undefined
   }
-  
+
   let post
   if (article !== undefined) {
     post = article.attributes
-
     return (
       <>
         <Helmet>

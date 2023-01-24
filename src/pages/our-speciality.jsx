@@ -91,8 +91,7 @@ const Speciality = () => {
                                                     <div className="txt-3">{e.text}</div>
                                                 </div>
                                             </div>
-                                        </div>
-                                    )}
+                                        </div>)}
                                 </div>
                             </div>
                         </div>

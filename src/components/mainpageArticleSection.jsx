@@ -7,11 +7,9 @@ import { ReactMarkdown } from 'react-markdown/lib/react-markdown';
 const MainpageArticleSection = ({ pagename }) => {
 
   const { slug } = useParams()
-
   const { loading, data, error } = Strapi('http://localhost:1337/api/articles?populate=*')
   if (loading) return console.log('loading');
   if (error) return console.log('error');
-
   const blog_data = data.data;  
 
   let article = {}
@@ -21,7 +19,6 @@ const MainpageArticleSection = ({ pagename }) => {
   } else {
       article = {}
   }
-
   const post = article.attributes;
   
   return (
