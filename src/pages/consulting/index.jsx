@@ -13,9 +13,7 @@ import AnimatedCharacters from "../../components/AnimeChar"
 
 const HomePage = () => {
     return (
-        <motion.div
-        
-        >
+        <motion.div>
             <Helmet>
                 <title>Branding Pioneers</title>
             </Helmet>
@@ -57,7 +55,6 @@ const brands = [
     }
 ]
 
-
 const Hero = () => {
     // Placeholder text data, as if from API
     const placeholderText = [
@@ -77,7 +74,7 @@ const Hero = () => {
                 staggerChildren: 0.025
             }
         }
-    };
+    }
 
     return (
         <>
