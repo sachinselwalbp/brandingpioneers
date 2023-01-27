@@ -34,31 +34,19 @@ const SubSubPages = () => {
         return (
             <>
                 <Helmet>
-                    <title>{post.title}</title>
+                    <title>{article !== undefined ? post.title : 'Not Found'}</title>
                 </Helmet>
                 <NavBar />
                 <div className="project-detail-container">
-                    <section>
-                        <Hero data={post} />
-                        <CaseStudy data={post} />
-                    </section>
-                    <Contact />
-                    <Footer />
-                </div>
-            </>
-        )
-    }
-    else {
-        return (
-            <>
-                <Helmet>
-                    <title>Not Found</title>
-                </Helmet>
-                <NavBar />
-                <div className="project-detail-container">
-                    <section>
-                        <NotFound />
-                    </section>
+                    {article !== undefined ?
+                        <section>
+                            <Hero data={post} />
+                            <CaseStudy data={post} />
+                        </section>
+                        :
+                        <section>
+                            <NotFound />
+                        </section>}
                     <Contact />
                     <Footer />
                 </div>

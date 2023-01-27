@@ -57,41 +57,29 @@ const BlogArticle = () => {
     let post
     if (article !== undefined) {
         post = article.attributes
+    }
 
-        return (
-            <>
-                <Helmet>
-                    <title>{post.title}</title>
-                </Helmet>
-                <NavBar />
-                <div className='blog-article-container'>
+    return (
+        <>
+            <Helmet>
+                <title>{article !== undefined ? post.title : 'Not Found'}</title>
+            </Helmet>
+            <NavBar />
+            <div className='blog-article-container'>
+                {article !== undefined ?
                     <div className="loadedData">
                         <Hero data={post} />
                         <BlogArticleSection data={post} />
                     </div>
-                    <Contact />
-                    <Footer />
-                </div>
-            </>
-        )
-    }
-    else {
-        return (
-            <>
-                <Helmet>
-                    <title>Not Found</title>
-                </Helmet>
-                <NavBar />
-                <div className='blog-article-container'>
+                    :
                     <section>
                         <NotFound />
-                    </section>
-                    <Contact />
-                    <Footer />
-                </div>
-            </>
-        )
-    }
+                    </section>}
+                <Contact />
+                <Footer />
+            </div>
+        </>
+    )
 }
 
 const Hero = ({ data }) => {

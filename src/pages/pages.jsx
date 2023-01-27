@@ -29,39 +29,28 @@ const Pages = () => {
   let post
   if (article !== undefined) {
     post = article.attributes
-    return (
-      <>
-        <Helmet>
-          <title>{post.title}</title>
-        </Helmet>
-        <NavBar />
-        <div className="project-detail-container">
-          <section>
-            <Hero data={post} />
-            <CaseStudy data={post} />
-          </section>
-          <Contact />
-          <Footer />
-        </div>
-      </>
-    )
-  } else {
-    return (
-      <>
-        <Helmet>
-          <title>Not Found</title>
-        </Helmet>
-        <NavBar />
-        <div className="project-detail-container">
+  }
+  return (
+    <>
+      <Helmet>
+        <title>{article !== undefined ? post.title : 'Not Found'}</title>
+      </Helmet>
+      <NavBar />
+      <div className="project-detail-container">
+        {article !== undefined ? <section>
+          <Hero data={post} />
+          <CaseStudy data={post} />
+        </section>
+          :
           <section>
             <NotFound />
           </section>
-          <Contact />
-          <Footer />
-        </div>
-      </>
-    )
-  }
+        }
+        <Contact />
+        <Footer />
+      </div>
+    </>
+  )
 }
 
 export default Pages
