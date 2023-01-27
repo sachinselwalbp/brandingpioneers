@@ -45,7 +45,7 @@ const CaseStudy = () => {
                 <div className="container container-2">
                     <div className="row">
                         <div className="col-12 text-center mb-20">
-                            <img src={require('./assets/case_study_cover.png')} className="img-fluid mb-20" alt="CaseStudy" />
+                            <img loading='lazy' src={require('./assets/case_study_cover.png')} className="img-fluid mb-20" alt="CaseStudy" />
                         </div>
                         <div className="col-12">
                             <div className="case-study-section">                            
@@ -57,7 +57,7 @@ const CaseStudy = () => {
                                 <p className="txt-1">Our team of strategists, creatives and technologists are passionate about helping brands succeed. We work with customers to develop their unique approach to digital communications, defining the objectives and how to achieve them through the delivery of high impact digital campaigns.
                                 <br/><br/>We've crafted Stack so that you can easily stand out with digital brand experiences. Whether it's ecommerce, content marketing or digital strategy services, our team at Stack will help you grow your brand, your way.</p>
                                 <br/>
-                                <img src={require('./assets/img1.jpg')} alt="case-study" className='img-fluid' />
+                                <img loading='lazy' src={require('./assets/img1.jpg')} alt="case-study" className='img-fluid' />
                             </div>
                         </div>
                     </div>

@@ -66,7 +66,7 @@ const AboutSection = () => {
                         <div className="col-lg-6 align-self-center d-flex justify-content-center">
                             <div className='video-thumb'>
                                 <a href='/'>
-                                    <img src='https://dummyimage.com/446x304/ccc/fff.jpg' className="img-fluid" alt="stact" />
+                                    <img loading='lazy' src='https://dummyimage.com/446x304/ccc/fff.jpg' className="img-fluid" alt="stact" />
                                     <svg width="77" height="77" viewBox="0 0 77 77" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <circle cx="39.5" cy="39.5" r="37.5" fill="black" />
                                         <circle cx="37.5" cy="37.5" r="37" fill="#FFFB9E" stroke="black" />
@@ -143,7 +143,6 @@ const Counters = () => {
 }
 
 const Features = () => {
-
     const featurs_data = [
         {
             title: 'Research',

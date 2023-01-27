@@ -7,7 +7,7 @@ const CaseStudy = ({ data }) => {
                 <div className="container container-2">
                     <div className="row">
                         <div className="col-12 text-center mb-20">
-                            <img src={`https://s012.ba.hostcafe.cc/${data.FeaturedImage.data.attributes.url}`} alt='' />
+                            <img loading="lazy" src={`https://s012.ba.hostcafe.cc/${data.FeaturedImage.data.attributes.url}`} alt='' />
                         </div>
                         <div className="col-12">
                             <div className="case-study-section">

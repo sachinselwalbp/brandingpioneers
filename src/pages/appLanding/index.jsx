@@ -36,16 +36,16 @@ const Hero = () => {
                             <h1 className='mb-16'>A mobile gaming workspace</h1>
                             <p className='txt-1 mb-20'>It's where players can go to review live stats, or watch a live stream. It's where the community is.</p>
                             <a href='/'>
-                                <img src={require('./assets/playstore_badge.svg').default} alt="playstore" />
+                                <img loading='lazy' src={require('./assets/playstore_badge.svg').default} alt="playstore" />
                             </a>
                             &nbsp;&nbsp;&nbsp;&nbsp;
                             <a href='/'>
-                                <img src={require('./assets/appstore_badge.svg').default} alt="playstore" />
+                                <img loading='lazy' src={require('./assets/appstore_badge.svg').default} alt="playstore" />
                             </a>
                         </div>
                         <div className="col-lg-6 d-flex justify-content-center">
                             <div style={{maxWidth: '485px'}}>
-                                <img src={require('./assets/hero_image.png')} className="img-fluid" alt="hero" />
+                                <img loading='lazy' src={require('./assets/hero_image.png')} className="img-fluid" alt="hero" />
                             </div>
                         </div>
                     </div>
@@ -62,7 +62,7 @@ const Showcase = () => {
                 <div className="container container-2">
                     <div className="row gy-4 gx-0 gx-lg-5">
                         <div className="col-lg-6">
-                            <img src={require('./assets/showcase1.png')} className="img-fluid" alt="feature1" />
+                            <img loading='lazy' src={require('./assets/showcase1.png')} className="img-fluid" alt="feature1" />
                         </div>
                         <div className="col-lg-6 align-self-center">
                             <div className="section-tag mb-8">Communicate</div>
@@ -77,7 +77,7 @@ const Showcase = () => {
                             <p className='txt-1'>Stact is a free gaming workspace app powered by the cloud - no matter on which platform you are playing or chatting with your friends, you will always have your own gaming space. </p>
                         </div>
                         <div className="col-lg-6">
-                            <img src={require('./assets/showcase2.png')} className="img-fluid" alt="feature1" />
+                            <img loading='lazy' src={require('./assets/showcase2.png')} className="img-fluid" alt="feature1" />
                         </div>
                     </div>
                 </div>
@@ -116,7 +116,7 @@ const Stats = () => {
                         </div>
                         {stats_data.map((e,i)=> 
                             <div className="col-lg-3 col-md-4 col-sm-6 text-center" key={i}>
-                                <img src={require(`./${e.icoUrl}`)} className="mb-8" height="30" alt="stats" />
+                                <img loading='lazy' src={require(`./${e.icoUrl}`)} className="mb-8" height="30" alt="stats" />
                                 <h4 className='mb-0'>{e.head}</h4>
                                 <div className="txt-4">{e.text}</div>
                             </div>
@@ -230,15 +230,15 @@ const EndCTA = () => {
                             <h2 className='mb-16'><span className='txt-highlight'>10 million</span> people all around the world love it</h2>
                             <p className='txt-1 mb-20'>Stact is designed with e-sports in mind because that's where we come from.</p>
                             <a href='/'>
-                                <img src={require('./assets/playstore_badge.svg').default} alt="playstore" />
+                                <img loading='lazy' src={require('./assets/playstore_badge.svg').default} alt="playstore" />
                             </a>
                             &nbsp;&nbsp;&nbsp;&nbsp;
                             <a href='/'>
-                                <img src={require('./assets/appstore_badge.svg').default} alt="playstore" />
+                                <img loading='lazy' src={require('./assets/appstore_badge.svg').default} alt="playstore" />
                             </a>
                         </div>
                         <div className="col-lg-6 text-center">
-                            <img src={require('./assets/end_banner.png')} className="img-fluid" alt="download" />
+                            <img loading='lazy' src={require('./assets/end_banner.png')} className="img-fluid" alt="download" />
                         </div>
                     </div>
                 </div>

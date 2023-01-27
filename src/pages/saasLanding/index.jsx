@@ -10,19 +10,19 @@ import Footer from '../../components/footer'
 import ContactSection from '../../components/contactSection'
 
 const SaasLanding = () => {
-    return(
+    return (
         <>
             <Helmet>
                 <title>Stact - Saas Landing</title>
             </Helmet>
-            <NavBar/>
+            <NavBar />
             <div className="saas-landing">
-                <Hero/>
+                <Hero />
                 <Features />
                 <Showcase />
                 <Testimonials />
                 <Contact />
-                <Footer/>
+                <Footer />
             </div>
         </>
     )
@@ -53,14 +53,14 @@ const Hero = () => {
         }
     ]
 
-    return(
+    return (
         <>
             <section className='section-global bg-shade-1 no-border hero'>
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-8 offset-lg-2 text-center">
                             <h1 className='mb-16 px-xl-5'>Remote workspace for everyone</h1>
-                            <div className="txt-2 mb-20 mx-auto" style={{maxWidth: '450px'}}>Become a part of this digital revolution today with the best in class solutions of stact.</div>
+                            <div className="txt-2 mb-20 mx-auto" style={{ maxWidth: '450px' }}>Become a part of this digital revolution today with the best in class solutions of stact.</div>
                             <Link to='/' className='btn btn-primary btn-lg'>Get a demo</Link>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                             <Link to='/' className='btn btn-outline-primary btn-lg'>Contact sales</Link>
                         </div>
@@ -72,7 +72,7 @@ const Hero = () => {
                     <div className="row">
                         <div className="col-12 d-flex justify-content-center">
                             <div className="hero-image-banner text-center">
-                                <img src={HeroImage} className="img-fluid" alt="saas_app" />
+                                <img loading='lazy' src={HeroImage} className="img-fluid" alt="saas_app" />
                             </div>
                         </div>
                     </div>
@@ -103,7 +103,7 @@ const Features = () => {
         }
     ]
 
-    return(
+    return (
         <>
             <section className='section-global bg-shade-blue'>
                 <div className="container">
@@ -114,7 +114,7 @@ const Features = () => {
                         </div>
                     </div>
                     <div className="row gy-4 gx-0 gx-lg-5">
-                        <FeatureCards data={featurs_data} src='saasLanding' center/>
+                        <FeatureCards data={featurs_data} src='saasLanding' center />
                     </div>
                 </div>
             </section>
@@ -123,13 +123,13 @@ const Features = () => {
 }
 
 const Showcase = () => {
-    return(
+    return (
         <>
             <section className='section-global'>
                 <div className="container container-2">
                     <div className="row gy-4 gx-0 gx-lg-5">
                         <div className="col-lg-6">
-                            <img src={require('./assets/showcase1.png')} className="img-fluid" alt="feature1" />
+                            <img loading='lazy' src={require('./assets/showcase1.png')} className="img-fluid" alt="feature1" />
                         </div>
                         <div className="col-lg-6 align-self-center">
                             <div className="section-tag mb-8">Collaborations</div>
@@ -144,7 +144,7 @@ const Showcase = () => {
                             <p className='txt-1'>Innovate anywhere with Stace. We make it easy for you to live and work remotely, with a private office away from your home and real-time collaboration tools.</p>
                         </div>
                         <div className="col-lg-6">
-                            <img src={require('./assets/showcase2.png')} className="img-fluid" alt="feature2" />
+                            <img loading='lazy' src={require('./assets/showcase2.png')} className="img-fluid" alt="feature2" />
                         </div>
                     </div>
                 </div>
@@ -179,7 +179,7 @@ const Testimonials = () => {
         }
     ]
 
-    return(
+    return (
         <>
             <section className='section-global bg-shade-green'>
                 <div className="container">
@@ -192,7 +192,7 @@ const Testimonials = () => {
                             <Link to='/' className='btn btn-outline btn-arrow ms-lg-auto'>
                                 See all reviews
                                 <svg width="20" height="20" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path fillRule="evenodd" clipRule="evenodd" d="M3 7.5C3 7.32953 3.06584 7.16605 3.18304 7.04551C3.30024 6.92498 3.45919 6.85726 3.62493 6.85726H10.8654L8.18192 4.09861C8.06458 3.97792 7.99865 3.81423 7.99865 3.64355C7.99865 3.47287 8.06458 3.30918 8.18192 3.18849C8.29927 3.0678 8.45842 3 8.62437 3C8.79032 3 8.94948 3.0678 9.06682 3.18849L12.8164 7.04494C12.8746 7.10464 12.9208 7.17557 12.9523 7.25366C12.9838 7.33175 13 7.41546 13 7.5C13 7.58454 12.9838 7.66825 12.9523 7.74634C12.9208 7.82443 12.8746 7.89536 12.8164 7.95506L9.06682 11.8115C8.94948 11.9322 8.79032 12 8.62437 12C8.45842 12 8.29927 11.9322 8.18192 11.8115C8.06458 11.6908 7.99865 11.5271 7.99865 11.3564C7.99865 11.1858 8.06458 11.0221 8.18192 10.9014L10.8654 8.14274H3.62493C3.45919 8.14274 3.30024 8.07502 3.18304 7.95449C3.06584 7.83395 3 7.67047 3 7.5Z" fill="black"/>
+                                    <path fillRule="evenodd" clipRule="evenodd" d="M3 7.5C3 7.32953 3.06584 7.16605 3.18304 7.04551C3.30024 6.92498 3.45919 6.85726 3.62493 6.85726H10.8654L8.18192 4.09861C8.06458 3.97792 7.99865 3.81423 7.99865 3.64355C7.99865 3.47287 8.06458 3.30918 8.18192 3.18849C8.29927 3.0678 8.45842 3 8.62437 3C8.79032 3 8.94948 3.0678 9.06682 3.18849L12.8164 7.04494C12.8746 7.10464 12.9208 7.17557 12.9523 7.25366C12.9838 7.33175 13 7.41546 13 7.5C13 7.58454 12.9838 7.66825 12.9523 7.74634C12.9208 7.82443 12.8746 7.89536 12.8164 7.95506L9.06682 11.8115C8.94948 11.9322 8.79032 12 8.62437 12C8.45842 12 8.29927 11.9322 8.18192 11.8115C8.06458 11.6908 7.99865 11.5271 7.99865 11.3564C7.99865 11.1858 8.06458 11.0221 8.18192 10.9014L10.8654 8.14274H3.62493C3.45919 8.14274 3.30024 8.07502 3.18304 7.95449C3.06584 7.83395 3 7.67047 3 7.5Z" fill="black" />
                                 </svg>
                             </Link>
                         </div>
@@ -238,15 +238,15 @@ const Testimonials = () => {
 const Contact = () => {
 
     const contact_data = {
-            title_before: 'Get started with',
-            title_highlight: "Stact",
-            title_after: 'today!',
-            text: "One of the best industry service providers with top tier talented individuals.",
-            cta_1_link: '/pricing',
-            cta_2_link: '/contact'
-        }
+        title_before: 'Get started with',
+        title_highlight: "Stact",
+        title_after: 'today!',
+        text: "One of the best industry service providers with top tier talented individuals.",
+        cta_1_link: '/pricing',
+        cta_2_link: '/contact'
+    }
 
-    return(
+    return (
         <>
             <ContactSection contact_data={contact_data} saasVarient />
         </>

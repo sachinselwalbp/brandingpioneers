@@ -88,7 +88,7 @@ const Hero = () => {
                         </div>
                         <div className="col-lg-6 align-self-center d-flex justify-content-center">
                             <div style={{maxWidth: '500px'}}>
-                                <img src={require('./assets/hero_image.png')} className="img-fluid mt-5 mt-lg-0" alt='hero' />
+                                <img loading='lazy' src={require('./assets/hero_image.png')} className="img-fluid mt-5 mt-lg-0" alt='hero' />
                             </div>
                         </div>
                     </div>
@@ -308,7 +308,7 @@ const InfoSection = () => {
                             )}
                         </div>
                         <div className="col-lg-6 text-center align-self-center">
-                            <img src={require('./assets/info.png')} className="img-fluid info-banner-image" alt="Why stact" />                            
+                            <img loading='lazy' src={require('./assets/info.png')} className="img-fluid info-banner-image" alt="Why stact" />                            
                         </div>
                     </div>
                 </div>

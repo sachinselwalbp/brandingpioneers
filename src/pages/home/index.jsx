@@ -84,13 +84,13 @@ const Hero = () => {
                         </div>
                         {/* <div className="col-lg-6 text-center align-self-center">
                             <div className="hero-img-container">
-                                <img src={HeroImg} alt='Stact' className="img-fluid" />
+                                <img loading="lazy" src={HeroImg} alt='Stact' className="img-fluid" />
                             </div>
                         </div> */}
                     </div>
                 </div>
-                <img src={BGP1} alt="bg_1" className='bg_1' />
-                <img src={BGP2} alt="bg_1" className='bg_2' />
+                <img loading="lazy" src={BGP1} alt="bg_1" className='bg_1' />
+                <img loading="lazy" src={BGP2} alt="bg_1" className='bg_2' />
             </section>
         </>
     )
@@ -157,7 +157,7 @@ const LandingShowcase = () => {
                                         <div className="col-xl-4 col-lg-4 col-md-6" key={i}>
                                             <Link to={e.link} className="showcase-card-link">
                                                 <div className="showcase-card">
-                                                    <div className="showcase-card-thumb mb-16 bg-2"><img src={require(`${e.imgUrl}`)} alt="landing1" className="img-fluid" /></div>
+                                                    <div className="showcase-card-thumb mb-16 bg-2"><img loading="lazy" src={require(`${e.imgUrl}`)} alt="landing1" className="img-fluid" /></div>
                                                     <h4 className="mb-0 text-center">{e.title}</h4>
                                                 </div>
                                                 {e.new && <div className="new-tag">New</div>}
@@ -168,7 +168,7 @@ const LandingShowcase = () => {
                                     return(
                                         <div className="col-xl-4 col-lg-4 col-md-6" key={i}>
                                             <div className="showcase-card not-link">
-                                                <div className="showcase-card-thumb mb-16 bg-2"><img src={require(`${e.imgUrl}`)} alt="landing1" className="img-fluid" /></div>
+                                                <div className="showcase-card-thumb mb-16 bg-2"><img loading="lazy" src={require(`${e.imgUrl}`)} alt="landing1" className="img-fluid" /></div>
                                                 <h4 className="mb-0 text-center">{e.title}</h4>
                                             </div>
                                         </div>
@@ -260,7 +260,7 @@ const InnerShowcase = () => {
                                         <div className="col-xl-4 col-lg-4 col-md-6" key={i}>
                                             <Link to={e.link} className="showcase-card-link">
                                                 <div className="showcase-card">
-                                                    <div className="showcase-card-thumb mb-16 bg-2"><img src={require(`${e.imgUrl}`)} alt="landing1" className="img-fluid" /></div>
+                                                    <div className="showcase-card-thumb mb-16 bg-2"><img loading="lazy" src={require(`${e.imgUrl}`)} alt="landing1" className="img-fluid" /></div>
                                                     <h4 className="mb-0 text-center">{e.title}</h4>
                                                 </div>
                                             </Link>
@@ -270,7 +270,7 @@ const InnerShowcase = () => {
                                     return(
                                         <div className="col-xl-4 col-lg-4 col-md-6" key={i}>
                                             <div className="showcase-card not-link">
-                                                <div className="showcase-card-thumb mb-16 bg-2"><img src={require(`${e.imgUrl}`)} alt="landing1" className="img-fluid" /></div>
+                                                <div className="showcase-card-thumb mb-16 bg-2"><img loading="lazy" src={require(`${e.imgUrl}`)} alt="landing1" className="img-fluid" /></div>
                                                 <h4 className="mb-0 text-center">{e.title}</h4>
                                             </div>
                                         </div>
@@ -335,7 +335,7 @@ const Features = () => {
                             <div className="col-xl-4 col-lg-6 col-md-6" key={i}>
                                 <div className="feature d-flex">
                                     <div className="feature-ico me-3">
-                                        <img src={require(`/${e.icon}`)} height="70" alt={i} />
+                                        <img loading="lazy" src={require(`/${e.icon}`)} height="70" alt={i} />
                                     </div>
                                     <div className="feature-body">
                                         <h4>{e.title}</h4>

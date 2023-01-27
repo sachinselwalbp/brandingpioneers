@@ -12,7 +12,7 @@ const BrandSection = ({ brands, src, light, bordered, bg, pt, customTitle }) => 
                                 {
                                     brands.map((brand, index) =>
                                         <div className="brand" key={index}>
-                                            <img src={require(`../pages/${src}/${brand.imgUrl}`)} alt={brand.name} className="img-fluid" />
+                                            <img loading='lazy' src={require(`../pages/${src}/${brand.imgUrl}`)} alt={brand.name} className="img-fluid" />
                                         </div>
                                     )
                                 }

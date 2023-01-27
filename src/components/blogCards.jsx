@@ -12,7 +12,7 @@ const BlogCards = ({ data }) => {
                     <Link to={e.attributes.slug} className="blog_link">
                         <div className="blog-card">
                             <div className="thumb">
-                                <img src={`https://s012.ba.hostcafe.cc/${e.attributes.FeaturedImage.data.attributes.formats.thumbnail.url}`} className="img-fluid" alt={e.attributes.title} />
+                                <img loading='lazy' src={`https://s012.ba.hostcafe.cc/${e.attributes.FeaturedImage.data.attributes.formats.thumbnail.url}`} className="img-fluid" alt={e.attributes.title} />
                             </div>
                             <div className="body">
                                 <div className='mb-8'>

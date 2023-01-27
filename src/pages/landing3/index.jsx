@@ -70,7 +70,7 @@ const Hero = () => {
                     <div className="row">
                         <div className="col-12">
                             <div className="hero-image-container">                            
-                                <img src={require('./assets/hero_image.jpg')} className="img-fluid" alt="Stact" />
+                                <img loading='lazy' src={require('./assets/hero_image.jpg')} className="img-fluid" alt="Stact" />
                             </div>
                         </div>
                     </div>
@@ -114,7 +114,7 @@ const About = () => {
                         <div className="col-lg-6 align-self-center d-flex justify-content-center">
                             <div className="about-img-container">
                                 <a href='/'>
-                                    <img src={require(`./assets/about.jpg`)} className="img-fluid" alt='about'/>
+                                    <img loading='lazy' src={require(`./assets/about.jpg`)} className="img-fluid" alt='about'/>
                                     <svg width="77" height="77" viewBox="0 0 77 77" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <circle cx="39.5" cy="39.5" r="37.5" fill="black"/>
                                         <circle cx="37.5" cy="37.5" r="37" fill="#FFFB9E" stroke="black"/>
@@ -312,7 +312,7 @@ const InfoSection = () => {
                             )}
                         </div>
                         <div className="col-lg-6 text-center align-self-center">
-                            <img src={require('./assets/info.png')} className="img-fluid info-banner-image" alt="Why stact" />                            
+                            <img loading='lazy' src={require('./assets/info.png')} className="img-fluid info-banner-image" alt="Why stact" />                            
                         </div>
                     </div>
                 </div>

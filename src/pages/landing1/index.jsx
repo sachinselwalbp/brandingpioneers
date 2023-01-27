@@ -77,7 +77,7 @@ const Hero = () => {
                         </div>
                         <div className="col-lg-6 align-self-center d-flex justify-content-center text-center">
                             <div style={{maxWidth: '450px'}}>
-                                <img src={require('./assets/hero_image.png')} className="img-fluid mt-5 mt-lg-0" alt='hero' />
+                                <img loading='lazy' src={require('./assets/hero_image.png')} className="img-fluid mt-5 mt-lg-0" alt='hero' />
                             </div>
                         </div>
                     </div>
@@ -161,7 +161,7 @@ const About = () => {
                 <div className="container">
                     <div className="row gy-5">
                         <div className="col-lg-6 text-center align-self-center">
-                            <img src={require('./assets/about.png')} className="img-fluid about-banner-image" alt="how we work" />
+                            <img loading='lazy' src={require('./assets/about.png')} className="img-fluid about-banner-image" alt="how we work" />
                         </div>
                         <div className="col-lg-6">
                             <div className="section-tag mb-8">How we work</div>

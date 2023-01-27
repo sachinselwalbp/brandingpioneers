@@ -37,7 +37,7 @@ const Hero = () => {
                         </div>
                         <div className="col-xl-8 col-lg-7 align-self-center d-flex justify-content-center text-center">
                             <div style={{maxWidth: '650px'}}>
-                                <img src={require('./assets/hero_image.png')} className="img-fluid" alt='hero' />
+                                <img loading='lazy' src={require('./assets/hero_image.png')} className="img-fluid" alt='hero' />
                             </div>
                         </div>
                     </div>
@@ -292,7 +292,7 @@ const PortfolioFooter = () => {
                                     contactLinkData.map((e,i) =>
                                             <a href={e.link} className="contact-link" key={i}>
                                                 <div className="contact-link-container d-flex align-items-center">
-                                                    <img src={require(`./${e.icoUrl}`)} height="50" alt={e.title} />
+                                                    <img loading='lazy' src={require(`./${e.icoUrl}`)} height="50" alt={e.title} />
                                                     <div className='ms-3'>
                                                         <div className="txt-2 fw-500 color-1">{e.title}</div>
                                                         <div className="txt-3">{e.text}</div>

@@ -19,8 +19,8 @@ const ContactSection = ({contact_data, saasVarient, bg}) => {
                             </div>
                         </div>
                     </div>
-                    <img src={BGP1} alt="bg_1" className='bg_1' />
-                    <img src={BGP2} alt="bg_1" className='bg_2' />
+                    <img loading='lazy' src={BGP1} alt="bg_1" className='bg_1' />
+                    <img loading='lazy' src={BGP2} alt="bg_1" className='bg_2' />
                 </section>
             </>
         )
@@ -39,8 +39,8 @@ const ContactSection = ({contact_data, saasVarient, bg}) => {
                             </div>
                         </div>
                     </div>
-                    <img src={BGP1} alt="bg_1" className='bg_1' />
-                    <img src={BGP2} alt="bg_1" className='bg_2' />
+                    <img loading='lazy' src={BGP1} alt="bg_1" className='bg_1' />
+                    <img loading='lazy' src={BGP2} alt="bg_1" className='bg_2' />
                 </section>
             </>
         )

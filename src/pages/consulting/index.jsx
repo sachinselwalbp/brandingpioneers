@@ -66,7 +66,7 @@ const Hero = () => {
             type: "heading3",
             text: "Experience exceptional results with us."
         }
-    ];
+    ]
 
     const container = {
         visible: {
@@ -78,7 +78,7 @@ const Hero = () => {
 
     return (
         <>
-            <section className="section-global no-border">
+            <section className="section-global no-border home-hero">
                 <div className="container">
                     <div className="row gy-5">
                         <div className="col-lg-6 align-self-center">
@@ -90,7 +90,6 @@ const Hero = () => {
                                     {placeholderText.map((item, index) => <AnimatedCharacters {...item} key={index} />)}
                                 </div>
                             </motion.div>
-
                             {/* <h1
                                 animate={{ y: 0, opacity: 1 }}
                                 initial={{ y: -1000, opacity: 0 }}
@@ -238,7 +237,7 @@ const About = () => {
                     <div className="row mb-40 gy-4">
                         <div className="col-lg-6 align-self-center d-flex justify-content-center align-items-center">
                             <div style={{ maxWidth: '600px', boxShadow: '6px 6px #000' }}>
-                                <img src='https://dummyimage.com/927x622/ccc/fff.jpg' className="img-fluid" alt="About" />
+                                <img loading="lazy" src='https://dummyimage.com/927x622/ccc/fff.jpg' className="img-fluid" alt="About" />
                             </div>
                         </div>
                         <div className="col-lg-6 align-self-center">
@@ -257,14 +256,14 @@ const About = () => {
                         </div>
                         <div className="col-lg-6 align-self-center d-flex justify-content-center align-items-center">
                             <div style={{ maxWidth: '600px', boxShadow: '6px 6px #000' }}>
-                                <img src='https://dummyimage.com/927x622/ccc/fff.jpg' className="img-fluid" alt="About" />
+                                <img loading="lazy" src='https://dummyimage.com/927x622/ccc/fff.jpg' className="img-fluid" alt="About" />
                             </div>
                         </div>
                     </div>
                     <div className="row mt-40 gy-4">
                         <div className="col-lg-6 align-self-center d-flex justify-content-center align-items-center">
                             <div style={{ maxWidth: '600px', boxShadow: '6px 6px #000' }}>
-                                <img src='https://dummyimage.com/927x622/ccc/fff.jpg' className="img-fluid" alt="About" />
+                                <img loading="lazy" src='https://dummyimage.com/927x622/ccc/fff.jpg' className="img-fluid" alt="About" />
                             </div>
                         </div>
                         <div className="col-lg-6 align-self-center">
@@ -313,7 +312,7 @@ const Culture = () => {
                         {
                             culture_data.map((e, i) =>
                                 <div className="col-lg-4 col-md-6 col-sm-6 text-center" key={i}>
-                                    <img src={require(`${e.imgUrl}`)} className="img-fluid" alt={e.title} />
+                                    <img loading="lazy" src={require(`${e.imgUrl}`)} className="img-fluid" alt={e.title} />
                                     <h3>{e.title}</h3>
                                     <p className="txt-2">{e.text}</p>
                                 </div>

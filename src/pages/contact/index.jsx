@@ -131,7 +131,7 @@ const ContactLinks = () => {
                                 <div className="col-lg-4 col-md-6" key={i}>
                                     <a href={e.link} className="contact-link">
                                         <div className="contact-link-container d-flex align-items-center">
-                                            <img src={require(`./${e.icoUrl}`)} height="50" alt={e.title} />
+                                            <img loading='lazy' src={require(`./${e.icoUrl}`)} height="50" alt={e.title} />
                                             <div className='ms-3'>
                                                 <div className="txt-2 fw-500 color-1">{e.title}</div>
                                                 <div className="txt-3">{e.text}</div>
