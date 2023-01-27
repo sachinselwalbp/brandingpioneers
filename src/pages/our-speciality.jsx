@@ -3,6 +3,8 @@ import Footer from '../components/footer'
 import NavBar from "../components/navbar"
 import ContactSection from '../components/contactSection'
 import MainpageArticleSection from '../components/mainpageArticleSection'
+import AnimatedCharacters from '../components/AnimeChar'
+import { motion } from 'framer-motion'
 
 const OurSpeciality = () => {
     return (
@@ -23,6 +25,21 @@ const OurSpeciality = () => {
 }
 
 const Hero = () => {
+    // Placeholder text data, as if from API
+    const placeholderText = [
+        {
+            type: "heading1",
+            text: "We provide digital solutions for your business"
+        }
+    ]
+
+    const container = {
+        visible: {
+            transition: {
+                staggerChildren: 0.025
+            }
+        }
+    }
     return (
         <>
             <section className='section-global bg-shade-1 hero'>
@@ -30,7 +47,13 @@ const Hero = () => {
                     <div className="row">
                         <div className="col-lg-7">
                             <div className="section-tag mb-8">Our Speciality</div>
-                            <h1 className='display-1'>We provide digital solutions for your business</h1>
+                            {/* <h1 className='display-1'>We provide digital solutions for your business</h1> */}
+                            <motion.div
+                                initial="hidden"
+                                animate="visible"
+                                variants={container} className="heroHeading">
+                                {placeholderText.map((item, index) => <AnimatedCharacters {...item} key={index} />)}
+                            </motion.div>
                         </div>
                     </div>
                 </div>

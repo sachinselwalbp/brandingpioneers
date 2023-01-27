@@ -238,6 +238,14 @@ h2,
     line-height: 1.1;
   }
 }
+.heroHeading > h1 {
+  line-height: 1.2 !important;
+  font: 500 calc(1.425rem + 2.1vw) "DM Serif Display", sans-serif !important;
+  @media (min-width: 1200px) {
+    font-size: 48px !important;
+    line-height: 1.1 !important;
+  }
+}
 .display-2 {
   font-family: "DM Serif Display", sans-serif;
   font-size: calc(1.325rem + 0.9vw);

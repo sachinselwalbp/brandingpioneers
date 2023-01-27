@@ -7,6 +7,8 @@ import Contact from '../components/contact'
 import { ReactMarkdown } from 'react-markdown/lib/react-markdown'
 import { gql, useQuery } from "@apollo/react-hooks"
 import NotFound from '../components/errorComp'
+import AnimatedCharacters from '../components/AnimeChar'
+import { motion } from 'framer-motion'
 
 const blogGQL = gql`
 query {
@@ -83,6 +85,22 @@ const BlogArticle = () => {
 }
 
 const Hero = ({ data }) => {
+    // Placeholder text data, as if from API
+    const placeholderText = [
+        {
+            type: "heading1",
+            text: data.title
+        }
+    ]
+
+    const container = {
+        visible: {
+            transition: {
+                staggerChildren: 0.025
+            }
+        }
+    }
+
     const month = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 
     return (
@@ -94,7 +112,14 @@ const Hero = ({ data }) => {
                             <div className="section-tag mb-8">
                                 {data.category.data.attributes.title}
                             </div>
-                            <h1 className='display-1'>{data.title}</h1>
+                            {/* <h1 className='display-1'>{data.title}</h1> */}
+                            <motion.div
+                                initial="hidden"
+                                animate="visible"
+                                variants={container}
+                                className="heroHeading">
+                                {placeholderText.map((item, index) => <AnimatedCharacters {...item} key={index} />)}
+                            </motion.div>
                             <div className='txt-3'>Published by <span className='fw-500 color-1'>Branding Pioneers</span> on <span className='fw-500 color-1'>
                                 {`${month[new Date(data.datetime).getMonth()]} ${new Date(data.datetime).getDate()}, ${new Date(data.datetime).getFullYear()}`}
                             </span></div>

@@ -1,11 +1,10 @@
-import React from "react";
-import { motion } from "framer-motion";
+import { motion } from "framer-motion"
 
 // Word wrapper
 const Wrapper = (props) => {
   // We'll do this to prevent wrapping of words using CSS
-  return <span className="word-wrapper">{props.children}</span>;
-};
+  return <span className="word-wrapper">{props.children}</span>
+}
 
 // Map API "type" vaules to JSX tag names
 const tagMap = {
@@ -13,7 +12,7 @@ const tagMap = {
   heading1: "h1",
   heading2: "h2",
   heading3: "h3"
-};
+}
 
 // AnimatedCharacters
 // Handles the deconstruction of each word and character to setup for the
@@ -31,26 +30,26 @@ const AnimatedCharacters = (props) => {
       // color: "#FF0088",
       transition: { ease: [0.455, 0.03, 0.515, 0.955], duration: 0.75 }
     }
-  };
+  }
 
   //  Split each word of props.text into an array
-  const splitWords = props.text.split(" ");
+  const splitWords = props.text.split(" ")
 
   // Create storage array
-  const words = [];
+  const words = []
 
   // Push each word into words array
   for (const [, item] of splitWords.entries()) {
-    words.push(item.split(" "));
+    words.push(item.split(" "))
   }
 
   // Add a space ("\u00A0") to the end of each word
   words.map((word) => {
-    return word.push("\u00A0");
-  });
+    return word.push("\u00A0")
+  })
 
   // Get the tag name from tagMap
-  const Tag = tagMap[props.type];
+  const Tag = tagMap[props.type]
 
   return (
     <Tag>
@@ -65,12 +64,10 @@ const AnimatedCharacters = (props) => {
                     overflow: "hidden",
                     display: "inline-block"
                   }}
-                  key={index}
-                >
+                  key={index}>
                   <motion.span
                     style={{ display: "inline-block" }}
-                    variants={item}
-                  >
+                    variants={item}>
                     {element}
                   </motion.span>
                 </span>
@@ -81,7 +78,7 @@ const AnimatedCharacters = (props) => {
       })}
       {/* {} */}
     </Tag>
-  );
-};
+  )
+}
 
-export default AnimatedCharacters;
+export default AnimatedCharacters

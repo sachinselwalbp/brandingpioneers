@@ -2,6 +2,8 @@ import Helmet from 'react-helmet'
 import Footer from '../../components/footer'
 import './style.scss'
 import NavBar from "../../components/navbar"
+import { motion } from 'framer-motion'
+import AnimatedCharacters from '../../components/AnimeChar'
 
 const Contact = () => {
     return (
@@ -9,18 +11,34 @@ const Contact = () => {
             <Helmet>
                 <title>Stact - Contact</title>
             </Helmet>
-            <NavBar/>
+            <NavBar />
             <div className="contact-container">
                 <Hero />
                 <ContactSection />
                 <ContactLinks />
-                <Footer/>
+                <Footer />
             </div>
         </>
     )
 }
 
 const Hero = () => {
+    // Placeholder text data, as if from API
+    const placeholderText = [
+        {
+            type: "heading1",
+            text: "We are always here to ensure customer satisfaction"
+        }
+    ]
+
+    const container = {
+        visible: {
+            transition: {
+                staggerChildren: 0.025
+            }
+        }
+    }
+
     return (
         <>
             <section className='section-global bg-shade-1 hero'>
@@ -28,7 +46,14 @@ const Hero = () => {
                     <div className="row">
                         <div className="col-lg-7">
                             <div className="section-tag mb-8">Contact</div>
-                            <h1 className='display-1'>We are always here to ensure customer satisfaction</h1>
+                            {/* <h1 className='display-1'>We are always here to ensure customer satisfaction</h1> */}
+                            <motion.div
+                                initial="hidden"
+                                animate="visible"
+                                variants={container}
+                                className="heroHeading">
+                                {placeholderText.map((item, index) => <AnimatedCharacters {...item} key={index} />)}
+                            </motion.div>
                         </div>
                     </div>
                 </div>
@@ -55,8 +80,8 @@ const ContactSection = () => {
                             <p className="txt-1">We cut through the clutter to uncover new opportunities, and always ensure customer satisfaction</p>
                             {features_data.map((e, i) => <div key={i} className="txt-2 color-1 fw-500 mb-8 d-flex align-items-center">
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className='me-2'>
-                                    <rect width="24" height="24" rx="12" fill="#0FA958"/>
-                                    <path d="M6.66675 12L10.6667 16L17.3334 8" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                                    <rect width="24" height="24" rx="12" fill="#0FA958" />
+                                    <path d="M6.66675 12L10.6667 16L17.3334 8" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                                 </svg>
 
 
@@ -80,7 +105,7 @@ const ContactSection = () => {
                                 </div>
                                 <div className="col-12">
                                     <label className="form-label">Subject</label>
-                                    <input type="text" className="form-control" placeholder="Enter subject" required/>
+                                    <input type="text" className="form-control" placeholder="Enter subject" required />
                                 </div>
                                 <div className="col-md-12">
                                     <label className="form-label">Example textarea</label>
@@ -121,13 +146,13 @@ const ContactLinks = () => {
         }
     ]
 
-    return(
+    return (
         <>
             <section className='section-global bg-shade-blue'>
                 <div className="container container-2">
                     <div className="row gy-4">
                         {
-                            contactLinkData.map((e,i) => 
+                            contactLinkData.map((e, i) =>
                                 <div className="col-lg-4 col-md-6" key={i}>
                                     <a href={e.link} className="contact-link">
                                         <div className="contact-link-container d-flex align-items-center">
@@ -135,7 +160,7 @@ const ContactLinks = () => {
                                             <div className='ms-3'>
                                                 <div className="txt-2 fw-500 color-1">{e.title}</div>
                                                 <div className="txt-3">{e.text}</div>
-                                            </div>                                        
+                                            </div>
                                         </div>
                                     </a>
                                 </div>
