@@ -36,10 +36,8 @@ function Stact() {
           content="Multipurpose agency and potfolio react template"
         />
       </Helmet>
-
       <div className="stact-container">
         <Router>
-          {/* <Router basename={'/reactapp'}> */}
           <ScrollToTop />
           <Routes>
             <Route path='/' element={<HomePage />} />

@@ -30,7 +30,6 @@ const Hero = () => {
             text: "We are always here to ensure customer satisfaction"
         }
     ]
-
     const container = {
         visible: {
             transition: {
@@ -63,7 +62,6 @@ const Hero = () => {
 }
 
 const ContactSection = () => {
-
     const features_data = [
         "Seamless, comprehensive, and cost-effective",
         "Connect with your customers",
@@ -84,31 +82,25 @@ const ContactSection = () => {
                                     <path d="M6.66675 12L10.6667 16L17.3334 8" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                                 </svg>
 
-
                                 {e}
                             </div>)}
                         </div>
                         <div className="col-lg-6">
                             <form className="row g-3">
-                                <div className="col-md-6">
-                                    <label className="form-label">First name</label>
-                                    <input type="text" className="form-control" placeholder="Margaret" required />
-                                </div>
-                                <div className="col-md-6">
-                                    <label className="form-label">Last name</label>
-                                    <input type="text" className="form-control" placeholder="Brent" />
+                                <div className="col-md-12">
+                                    <label className="form-label">Name*</label>
+                                    <input type="text" className="form-control" placeholder="Jhon Doe" required />
                                 </div>
                                 <div className="col-12">
-
-                                    <label className="form-label">Email</label>
-                                    <input type="email" className="form-control" placeholder="margaret@email.com" required />
+                                    <label className="form-label">Email*</label>
+                                    <input type="email" className="form-control" placeholder="jhondoe@email.com" required />
                                 </div>
                                 <div className="col-12">
-                                    <label className="form-label">Subject</label>
+                                    <label className="form-label">Subject*</label>
                                     <input type="text" className="form-control" placeholder="Enter subject" required />
                                 </div>
                                 <div className="col-md-12">
-                                    <label className="form-label">Example textarea</label>
+                                    <label className="form-label">Message*</label>
                                     <textarea className="form-control" rows="4" placeholder="How can we help you?" required></textarea>
                                 </div>
                                 <div className="col-12">

@@ -10,6 +10,7 @@ import { Accordion } from 'react-bootstrap'
 import NavBar from "../../components/navbar"
 import { motion } from "framer-motion"
 import AnimatedCharacters from "../../components/AnimeChar"
+import MatterScene from "../../components/matter"
 
 const HomePage = () => {
     return (
@@ -112,7 +113,11 @@ const Hero = () => {
                             </form> */}
                         </div>
                         <div className="col-lg-6 align-self-center">
-                            <motion.img src='https://dummyimage.com/974x746/ccc/fff.jpg' className="img-fluid" alt="hero" animate={{ y: 0 }} initial={{ y: 1000 }} />
+                            {/* <motion.img src='https://dummyimage.com/974x746/ccc/fff.jpg' className="img-fluid" alt="hero" animate={{ y: 0 }} initial={{ y: 1000 }} /> */}
+
+                            <div id="matterJS">
+                                <MatterScene />
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -215,11 +220,8 @@ const FAQSection = () => {
                                 {FAQ_data.map((e, i) =>
                                     <Accordion.Item eventKey={i} key={i}>
                                         <Accordion.Header>{e.title}</Accordion.Header>
-                                        <Accordion.Body>
-                                            {e.text}
-                                        </Accordion.Body>
-                                    </Accordion.Item>
-                                )}
+                                        <Accordion.Body>{e.text}</Accordion.Body>
+                                    </Accordion.Item>)}
                             </Accordion>
                         </div>
                     </div>

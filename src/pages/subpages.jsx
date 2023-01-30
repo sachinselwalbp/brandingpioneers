@@ -38,10 +38,11 @@ const SubPages = () => {
             </Helmet>
             <NavBar />
             <div className="project-detail-container">
-                {article !== undefined ? <section>
-                    <Hero data={post} />
-                    <CaseStudy data={post} />
-                </section>
+                {article !== undefined ?
+                    <section>
+                        <Hero data={post} />
+                        <CaseStudy data={post} />
+                    </section>
                     :
                     <section>
                         <NotFound />

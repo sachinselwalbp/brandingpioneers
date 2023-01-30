@@ -8,7 +8,6 @@ import Contact from '../components/contact'
 import { useParams } from 'react-router-dom'
 import { useQuery, gql } from "@apollo/react-hooks"
 import NotFound from '../components/errorComp'
-// import PostSkeleton from '../components/PostSkeleton'
 
 const InternalPageGQLData = gql`
 query {
