@@ -10,7 +10,7 @@ import { Accordion } from 'react-bootstrap'
 import NavBar from "../../components/navbar"
 import { motion } from "framer-motion"
 import AnimatedCharacters from "../../components/AnimeChar"
-import MatterScene from "../../components/matter"
+import Spline from "@splinetool/react-spline"
 
 const HomePage = () => {
     return (
@@ -91,6 +91,7 @@ const Hero = () => {
                                     {placeholderText.map((item, index) => <AnimatedCharacters {...item} key={index} />)}
                                 </div>
                             </motion.div>
+
                             {/* <h1
                                 animate={{ y: 0, opacity: 1 }}
                                 initial={{ y: -1000, opacity: 0 }}
@@ -115,9 +116,9 @@ const Hero = () => {
                         <div className="col-lg-6 align-self-center">
                             {/* <motion.img src='https://dummyimage.com/974x746/ccc/fff.jpg' className="img-fluid" alt="hero" animate={{ y: 0 }} initial={{ y: 1000 }} /> */}
 
-                            <div id="matterJS">
-                                <MatterScene />
-                            </div>
+                            {/* <iframe className="spline3D" title="spline" src='https://my.spline.design/untitled-2616cee4276c61b82332d489e05c2a6e/' frameborder='0' width='100%' height='100%'></iframe> */}
+
+                            <Spline className="spline3D" scene="https://prod.spline.design/Q1oQbd2yBmSZX1V6/scene.splinecode" />
                         </div>
                     </div>
                 </div>
