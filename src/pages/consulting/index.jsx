@@ -116,8 +116,6 @@ const Hero = () => {
                         <div className="col-lg-6 align-self-center">
                             {/* <motion.img src='https://dummyimage.com/974x746/ccc/fff.jpg' className="img-fluid" alt="hero" animate={{ y: 0 }} initial={{ y: 1000 }} /> */}
 
-                            {/* <iframe className="spline3D" title="spline" src='https://my.spline.design/untitled-2616cee4276c61b82332d489e05c2a6e/' frameborder='0' width='100%' height='100%'></iframe> */}
-
                             <Spline className="spline3D" scene="https://prod.spline.design/Q1oQbd2yBmSZX1V6/scene.splinecode" />
                         </div>
                     </div>
@@ -396,6 +394,5 @@ const Contact = () => {
         </>
     )
 }
-
 
 export default HomePage

@@ -54,8 +54,8 @@
 }
 .spline3D {
   width: 100%;
-  min-height: 500px;
-  @media (max-width: 575.98px) {
-
+  min-height: 350px;
+  @media (min-width: 575.98px) {
+    min-height: 500px;
   }
 }
