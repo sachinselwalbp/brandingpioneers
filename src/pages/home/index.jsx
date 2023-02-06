@@ -12,7 +12,7 @@ import { motion } from "framer-motion"
 import AnimatedCharacters from "../../components/AnimeChar"
 import Spline from "@splinetool/react-spline"
 
-const HomePage = () => {
+export default function HomePage() {
     return (
         <motion.div>
             <Helmet>
@@ -121,7 +121,7 @@ const Hero = () => {
                     </div>
                 </div>
             </section>
-            <BrandSection brands={brands} src={'consulting'} bordered />
+            <BrandSection brands={brands} src={'home'} bordered />
         </>
     )
 }
@@ -167,7 +167,7 @@ const Services = () => {
                         {
                             services.map((service, i) =>
                                 <div className="col-lg-4 col-xl-3 col-md-6 col-sm-6 gx-5 gy-4" key={i}>
-                                    <ServiceCards data={service} src="consulting" />
+                                    <ServiceCards data={service} src="home" />
                                 </div>)
                         }
                     </div>
@@ -371,7 +371,7 @@ const Testimonials = () => {
                         </div>
                     </div>
                     <div className="row">
-                        <TestimonialCards data={testimonial_data} src="consulting" />
+                        <TestimonialCards data={testimonial_data} src="home" />
                     </div>
                 </div>
             </div>
@@ -394,5 +394,3 @@ const Contact = () => {
         </>
     )
 }
-
-export default HomePage

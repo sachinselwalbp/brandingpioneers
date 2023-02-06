@@ -10,7 +10,7 @@ const AppLanding = () => {
     return(
         <>
             <Helmet>
-                <title>Stact - App Landing</title>
+                <title>Branding Pioneers - App Landing</title>
             </Helmet>
             <NavBar/>
             <div className="app-landing">
@@ -74,7 +74,7 @@ const Showcase = () => {
                         <div className="col-lg-6 order-1 order-lg-0 align-self-center">
                             <div className="section-tag mb-8">Spaces</div>
                             <h2 className='mb-16 display-2'>Create space and share it with your community and friends</h2>
-                            <p className='txt-1'>Stact is a free gaming workspace app powered by the cloud - no matter on which platform you are playing or chatting with your friends, you will always have your own gaming space. </p>
+                            <p className='txt-1'>Branding is a free gaming workspace app powered by the cloud - no matter on which platform you are playing or chatting with your friends, you will always have your own gaming space. </p>
                         </div>
                         <div className="col-lg-6">
                             <img loading='lazy' src={require('./assets/showcase2.png')} className="img-fluid" alt="feature1" />

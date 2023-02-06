@@ -5,12 +5,12 @@ import './css/about.scss'
 import NavBar from "../components/navbar"
 import { Link } from 'react-router-dom'
 import TestimonialCards from "../components/testimonialCards"
-import ContactSection from '../components/contactSection'
+import Contact from '../components/contact'
 import MainpageArticleSection from '../components/mainpageArticleSection'
 import AnimatedCharacters from '../components/AnimeChar'
 import { motion } from 'framer-motion'
 
-const About = () => {
+export default function About() {
     return (
         <>
             <Helmet>
@@ -304,21 +304,3 @@ const Testimonials = () => {
         </>
     )
 }
-
-const Contact = () => {
-
-    const contact_data = {
-        title: 'Have an idea?',
-        title_highlight: "Let's talk",
-        text: "One of the best industry service providers with top tier talented individuals.",
-        link: '/contact'
-    }
-
-    return (
-        <>
-            <ContactSection contact_data={contact_data} />
-        </>
-    )
-}
-
-export default About

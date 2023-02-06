@@ -67,7 +67,7 @@ const InternalPage = () => {
             <NotFound />
           </section>
         }
-        <Contact />
+        <Contact bg='bg-shade-blue' />
         <Footer />
       </div>
     </>

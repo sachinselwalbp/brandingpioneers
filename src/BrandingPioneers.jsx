@@ -14,11 +14,14 @@ import Pages from './pages/pages';
 import SubPages from './pages/subpages';
 import SubSubPages from './pages/subsubpages';
 import OurSpeciality from './pages/our-speciality';
-import OurWork from './pages/our-work';
-import HomePage from './pages/consulting';
+import Content from './pages/content';
+import WebServices from './pages/web-services';
+import MarketingStrategies from './pages/marketing-strategies';
+import MedicalDigitalMarketing from './pages/medical-digital-marketing';
+import HomePage from './pages/home';
 // import Pricing from './notrender/pricing';
 // import FAQs from './notrender/FAQs';
-// import Home from './notrender/home';
+// import Consulting from './notrender/consulting';
 // import AppLanding from './notrender/appLanding';
 // import Landing1 from './notrender/landing1';
 // import Landing2 from './notrender/landing2';
@@ -26,17 +29,17 @@ import HomePage from './pages/consulting';
 // import SaasLanding from './notrender/saasLanding';
 // import PersonalPortfolio from './notrender/personalPortfolio';
 
-function Stact() {
+export default function BrandingPioneers() {
   return (
     <>
       <Helmet>
-        <title>Branding Pioneers</title>
+        <title>Digital Marketing Company in Gurgaon | Branding Pioneers</title>
         <meta
           name="description"
-          content="Multipurpose agency and potfolio react template"
+          content="Branding Pioneers is a digital Marketing Agency, offer wide range of digital marketing services such as SEO, SMM, website development, Email Marketing and PPC."
         />
       </Helmet>
-      <div className="stact-container">
+      <div className="branding-container">
         <Router>
           <ScrollToTop />
           <Routes>
@@ -47,12 +50,15 @@ function Stact() {
             <Route path='/app-landing' element={<AppLanding />} />
             <Route path='/saas-landing' element={<SaasLanding />} />
             <Route path='/personal-portfolio' element={<PersonalPortfolio />} />
-            <Route path='/consulting' element={<Home />} />
+            <Route path='/consulting' element={<Consulting />} />
             <Route path='/faqs' element={<FAQs />} /> */}
             {/* <Route path='/pricing' element={<Pricing />} /> */}
             <Route path='/about' element={<About />} />
             <Route path='/our-speciality' element={<OurSpeciality />} />
-            <Route path='/our-work' element={<OurWork />} />
+            <Route path='/medical-digital-marketing' element={<MedicalDigitalMarketing />} />
+            <Route path='/marketing-strategies' element={<MarketingStrategies />} />
+            <Route path='/web-services' element={<WebServices />} />
+            <Route path='/content' element={<Content />} />
             <Route path='/projects' element={<Projects />} />
             <Route path='/project-detail' element={<ProjectDetails />} />
             <Route path='/services' element={<Services />} />
@@ -78,5 +84,3 @@ const ScrollToTop = () => {
   }, [pathname]);
   return null
 }
-
-export default Stact;

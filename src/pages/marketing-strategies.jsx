@@ -2,14 +2,14 @@ import Helmet from 'react-helmet'
 import Footer from '../components/footer'
 import './css/our-work.scss'
 import NavBar from "../components/navbar"
-import ContactSection from '../components/contactSection'
+import Contact from '../components/contact'
 import AnimatedCharacters from '../components/AnimeChar'
 import { motion } from 'framer-motion'
 
-const OurWork = () => {
+export default function MarketingStrategies() {
     return (
         <>
-            <Helmet><title>Our Work</title></Helmet>
+            <Helmet><title>Marketing Strategies</title></Helmet>
             <NavBar />
             <div className="about-container">
                 <Hero />
@@ -58,15 +58,3 @@ const Hero = () => {
         </>
     )
 }
-
-const Contact = () => {
-    const contact_data = {
-        title: 'Have an idea?',
-        title_highlight: "Let's talk",
-        text: "One of the best industry service providers with top tier talented individuals.",
-        link: '/contact'
-    }
-    return <ContactSection contact_data={contact_data} />
-}
-
-export default OurWork

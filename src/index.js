@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.scss';
-import Stact from './Stact';
+import BrandingPioneers from './BrandingPioneers';
 import { ApolloProvider, InMemoryCache, ApolloClient } from '@apollo/client';
 
 // Apollo client
@@ -16,7 +16,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
   <React.StrictMode>
     <ApolloProvider client={client}>
-      <Stact />
+      <BrandingPioneers />
     </ApolloProvider>
   </React.StrictMode>
 );

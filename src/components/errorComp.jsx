@@ -9,7 +9,7 @@ const ErrorComponent = () => {
     return(
         <>
             <Helmet>
-                <title>Stact - Not Found</title>
+                <title>Page Not Found</title>
             </Helmet>
             {/* <NavBar /> */}
             <section className="section-global bg-shade-1 hero nf-section">

@@ -5,7 +5,7 @@ import NavBar from "../../components/navbar"
 import BGP1 from './assets/bg_1.svg'
 import BGP2 from './assets/bg_2.svg'
 
-const Home = () => {
+export default function Consulting() {
     const navBarData = [
         {
             dropDown: false,
@@ -506,6 +506,3 @@ const Footer = () => {
         </>
     )
 }
-
-
-export default Home
