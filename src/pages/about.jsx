@@ -23,7 +23,7 @@ export default function About() {
                 <Counters />
                 <MainpageArticleSection pagename='about' />
                 <Features />
-                {/* <Team /> */}
+                <Team />
                 <Testimonials />
                 <Contact />
                 <Footer />
@@ -202,79 +202,98 @@ const Features = () => {
     )
 }
 
-// const Team = () => {
-//     const team_data = [
-//         {
-//             name: 'Sarah Winnemucca',
-//             position: 'Founder & CEO',
-//             imgUrl: 'assets/team1.jpg'
-//         },
-//         {
-//             name: 'Alice Paul',
-//             position: 'Founder & CTO',
-//             imgUrl: 'assets/team2.jpg'
-//         },
-//         {
-//             name: 'Margaret Sanger',
-//             position: 'Chief Revenue Officer',
-//             imgUrl: 'assets/team3.jpg'
-//         },
-//         {
-//             name: 'Katharine Lee',
-//             position: 'Chief Marketing Officer',
-//             imgUrl: 'assets/team4.jpg'
-//         }
-//     ]
-//     return(
-//         <>
-//             <section className='section-global bg-shade-blue'>
-//                 <div className="container container-2">
-//                     <div className="row mb-40">
-//                         <div className="col-lg-8">
-//                             <div className="section-tag mb-8">Team</div>
-//                             <h2 className='mb-16'>A team of skilled idividuals that helps you to grow</h2>
-//                         </div>
-//                     </div>
-//                     <div className="row gy-4">
-//                         {team_data.map((e,i)=>
-//                             <div className="col-lg-3 col-md-4 col-sm-6" key={i}>
-//                                 <div className="team-member text-center">
-//                                     <img src={require(`./${e.imgUrl}`)} className="img-fluid mb-16" alt={e.name} />
-//                                     <div className="txt-2 color-1 fw-500">{e.name}</div>
-//                                     <div className="txt-3">{e.position}</div>
-//                                 </div>
-//                             </div>
-//                         )}
-//                     </div>
-//                 </div>
-//             </section>
-//         </>
-//     )
-// }
+const Team = () => {
+    const team_data = [
+        {
+            name: 'Sarah Winnemucca',
+            position: 'Founder & CEO',
+            imgUrl: 'assets/about/team1.jpg'
+        },
+        {
+            name: 'Alice Paul',
+            position: 'Founder & CTO',
+            imgUrl: 'assets/about/team2.jpg'
+        },
+        {
+            name: 'Margaret Sanger',
+            position: 'Chief Revenue Officer',
+            imgUrl: 'assets/about/team3.jpg'
+        },
+        {
+            name: 'Katharine Lee',
+            position: 'Chief Marketing Officer',
+            imgUrl: 'assets/about/team4.jpg'
+        },
+        {
+            name: 'Katharine Lee',
+            position: 'Chief Marketing Officer',
+            imgUrl: 'assets/about/team4.jpg'
+        },
+        {
+            name: 'Katharine Lee',
+            position: 'Chief Marketing Officer',
+            imgUrl: 'assets/about/team4.jpg'
+        },
+        {
+            name: 'Katharine Lee',
+            position: 'Chief Marketing Officer',
+            imgUrl: 'assets/about/team4.jpg'
+        },
+        {
+            name: 'Katharine Lee',
+            position: 'Chief Marketing Officer',
+            imgUrl: 'assets/about/team4.jpg'
+        }
+    ]
+    return (
+        <>
+            <section className='section-global bg-shade-blue'>
+                <div className="container container-2">
+                    <div className="row mb-40">
+                        <div className="col-lg-8">
+                            <div className="section-tag mb-8">Team</div>
+                            <h2 className='mb-16'>A team of skilled idividuals that helps you to grow</h2>
+                        </div>
+                    </div>
+                    <div className="row gy-4">
+                        {team_data.map((e, i) =>
+                            <div className="col-lg-3 col-md-4 col-sm-6" key={i}>
+                                <div className="team-member text-center">
+                                    <img src={require(`./${e.imgUrl}`)} className="img-fluid mb-16" alt={e.name} />
+                                    <div className="txt-2 color-1 fw-500">{e.name}</div>
+                                    <div className="txt-3">{e.position}</div>
+                                </div>
+                            </div>
+                        )}
+                    </div>
+                </div>
+            </section>
+        </>
+    )
+}
 
 const Testimonials = () => {
-
     const testimonial_data = [
         {
-            brandImgUrl: 'assets/review_brand1.svg',
+            brandImgUrl: 'review_brand1.svg',
             text: 'Love the product and the service, and the customer care team is awesome. The features are great, too--everything that you need.',
             userName: 'Mary Edwards',
             position: 'Product director',
-            userImgUrl: 'assets/review_user1.svg'
+            userImgUrl: 'review_user1.svg'
         },
         {
-            brandImgUrl: 'assets/review_brand2.svg',
+            brandImgUrl: 'review_brand2.svg',
             text: 'I recommend this product because it benefits everyone. You will be able to stay connected with your team and clients from all over the world.',
             userName: 'Felisa Rincon',
             position: 'Head of Product',
-            userImgUrl: 'assets/review_user2.svg'
+            userImgUrl: 'review_user2.svg'
         },
         {
-            brandImgUrl: 'assets/review_brand3.svg',
+            brandImgUrl: 'review_brand3.svg',
             text: 'I was able to get a fully functional online office space that included all the software we needed and it was super cheap!',
             userName: 'Eunice Kennedy',
             position: 'Product director',
-            userImgUrl: 'assets/review_user3.svg'
+            userImgUrl: 'review_user3.svg'
         }
     ]
 
@@ -297,7 +316,7 @@ const Testimonials = () => {
                         </div>
                     </div>
                     <div className="row">
-                        <TestimonialCards data={testimonial_data} src="consulting" />
+                        <TestimonialCards data={testimonial_data} src="home" />
                     </div>
                 </div>
             </div>

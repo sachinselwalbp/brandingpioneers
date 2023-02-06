@@ -1,11 +1,11 @@
 import Helmet from 'react-helmet'
-import Footer from '../../components/footer'
-import './style.scss'
-import NavBar from "../../components/navbar"
+import Footer from '../components/footer'
+import './css/contact.scss'
+import NavBar from "../components/navbar"
 import { motion } from 'framer-motion'
-import AnimatedCharacters from '../../components/AnimeChar'
+import AnimatedCharacters from '../components/AnimeChar'
 
-const Contact = () => {
+export default function Contact() {
     return (
         <>
             <Helmet>
@@ -23,7 +23,6 @@ const Contact = () => {
 }
 
 const Hero = () => {
-    // Placeholder text data, as if from API
     const placeholderText = [
         {
             type: "heading1",
@@ -121,19 +120,19 @@ const ContactLinks = () => {
         {
             title: "Email",
             text: "brandingpioneers@gmail.com",
-            icoUrl: "assets/contact_ico1.svg",
+            icoUrl: "assets/contact/contact_ico1.svg",
             link: "mailto:stact.team@email.com"
         },
         {
             title: "Phone",
             text: "+91 8377009395",
-            icoUrl: "assets/contact_ico2.svg",
+            icoUrl: "assets/contact/contact_ico2.svg",
             link: "tel:+911234567890"
         },
         {
             title: "Headquarters",
             text: "Branding Pioneers 836, 8th floor, B3 Tower, Spaze I-Tech Park, Sector 49 Gurugram",
-            icoUrl: "assets/contact_ico3.svg",
+            icoUrl: "assets/contact/contact_ico3.svg",
             link: "/"
         }
     ]
@@ -164,5 +163,3 @@ const ContactLinks = () => {
         </>
     )
 }
-
-export default Contact

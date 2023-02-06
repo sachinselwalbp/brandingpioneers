@@ -1,15 +1,15 @@
 import Helmet from "react-helmet"
 import { Link } from "react-router-dom"
-import BrandSection from "../../components/brandSection"
-import ContactSection from "../../components/contactSection"
-import Footer from "../../components/footer"
-import ServiceCards from "../../components/serviceCards"
-import TestimonialCards from "../../components/testimonialCards"
-import './style.scss'
+import BrandSection from "../components/brandSection"
+import Contact from "../components/contact"
+import Footer from "../components/footer"
+import ServiceCards from "../components/serviceCards"
+import TestimonialCards from "../components/testimonialCards"
+import './css/home.scss'
 import { Accordion } from 'react-bootstrap'
-import NavBar from "../../components/navbar"
+import NavBar from "../components/navbar"
 import { motion } from "framer-motion"
-import AnimatedCharacters from "../../components/AnimeChar"
+import AnimatedCharacters from "../components/AnimeChar"
 import Spline from "@splinetool/react-spline"
 
 export default function HomePage() {
@@ -36,23 +36,23 @@ export default function HomePage() {
 const brands = [
     {
         name: "brand1",
-        imgUrl: "assets/brand1.svg"
+        imgUrl: "brand1.svg"
     },
     {
         name: "brand2",
-        imgUrl: "assets/brand2.svg"
+        imgUrl: "brand2.svg"
     },
     {
         name: "brand3",
-        imgUrl: "assets/brand3.svg"
+        imgUrl: "brand3.svg"
     },
     {
         name: "brand4",
-        imgUrl: "assets/brand4.svg"
+        imgUrl: "brand4.svg"
     },
     {
         name: "brand5",
-        imgUrl: "assets/brand5.svg"
+        imgUrl: "brand5.svg"
     }
 ]
 
@@ -132,25 +132,25 @@ const Services = () => {
             name: 'Digital Patient Acquisition',
             info: ['Search Engine Optimization', 'Performance Ads & Lead Generation', 'Local SEO'],
             link: '/services',
-            icoUrl: 'assets/service_ico1.svg'
+            icoUrl: 'service_ico1.svg'
         },
         {
             name: 'Reputation Management',
             info: ['Google Review Management', 'Quora Review', 'Testimonials Video Creation'],
             link: '/services',
-            icoUrl: 'assets/service_ico2.svg'
+            icoUrl: 'service_ico2.svg'
         },
         {
             name: 'Brand Building',
             info: ['Social Media Marketing', 'Video Marketing', 'Influencer & PR'],
             link: '/services',
-            icoUrl: 'assets/service_ico3.svg'
+            icoUrl: 'service_ico3.svg'
         },
         {
             name: 'Sales Automation',
             info: ['CRM', 'Leadmade', 'IVM & Call Tracking'],
             link: '/services',
-            icoUrl: 'assets/service_ico4.svg'
+            icoUrl: 'service_ico4.svg'
         }
     ]
     return (
@@ -280,20 +280,19 @@ const About = () => {
 }
 
 const Culture = () => {
-
     const culture_data = [
         {
-            imgUrl: './assets/culture_1.png',
+            imgUrl: 'culture_1.png',
             title: 'Industry Experts',
             text: 'Our simple process helps us stay nimble, evolve rapidly and ultimately grow brands.'
         },
         {
-            imgUrl: './assets/culture_2.png',
+            imgUrl: 'culture_2.png',
             title: 'Growth oriented',
             text: 'We empower digital brands to grow faster by providing services in growth marketing and operations.'
         },
         {
-            imgUrl: './assets/culture_3.png',
+            imgUrl: 'culture_3.png',
             title: 'Team spirit',
             text: 'We cut through the clutter to uncover new opportunities, and always ensure customer satisfaction.'
         }
@@ -313,7 +312,7 @@ const Culture = () => {
                         {
                             culture_data.map((e, i) =>
                                 <div className="col-lg-4 col-md-6 col-sm-6 text-center" key={i}>
-                                    <img loading="lazy" src={require(`${e.imgUrl}`)} className="img-fluid" alt={e.title} />
+                                    <img loading="lazy" src={require(`../pages/assets/home/${e.imgUrl}`)} className="img-fluid" alt={e.title} />
                                     <h3>{e.title}</h3>
                                     <p className="txt-2">{e.text}</p>
                                 </div>
@@ -327,28 +326,27 @@ const Culture = () => {
 }
 
 const Testimonials = () => {
-
     const testimonial_data = [
         {
-            brandImgUrl: 'assets/review_brand1.svg',
+            brandImgUrl: 'review_brand1.svg',
             text: 'Love the product and the service, and the customer care team is awesome. The features are great, too--everything that you need.',
             userName: 'Mary Edwards',
             position: 'Product director',
-            userImgUrl: 'assets/review_user1.svg'
+            userImgUrl: 'review_user1.svg'
         },
         {
-            brandImgUrl: 'assets/review_brand2.svg',
+            brandImgUrl: 'review_brand2.svg',
             text: 'I recommend this product because it benefits everyone. You will be able to stay connected with your team and clients from all over the world.',
             userName: 'Felisa Rincon',
             position: 'Head of Product',
-            userImgUrl: 'assets/review_user2.svg'
+            userImgUrl: 'review_user2.svg'
         },
         {
-            brandImgUrl: 'assets/review_brand3.svg',
+            brandImgUrl: 'review_brand3.svg',
             text: 'I was able to get a fully functional online office space that included all the software we needed and it was super cheap!',
             userName: 'Eunice Kennedy',
             position: 'Product director',
-            userImgUrl: 'assets/review_user3.svg'
+            userImgUrl: 'review_user3.svg'
         }
     ]
 
@@ -375,22 +373,6 @@ const Testimonials = () => {
                     </div>
                 </div>
             </div>
-        </>
-    )
-}
-
-const Contact = () => {
-
-    const contact_data = {
-        title: 'Have an idea?',
-        title_highlight: "Let's talk",
-        text: "One of the best industry service providers with top tier talented individuals.",
-        link: '/contact'
-    }
-
-    return (
-        <>
-            <ContactSection contact_data={contact_data} />
         </>
     )
 }

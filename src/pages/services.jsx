@@ -1,17 +1,17 @@
 import Helmet from "react-helmet"
-import ContactSection from "../../components/contactSection"
-import FeatureCards from '../../components/featureCards'
-import Footer from "../../components/footer"
-import NavBar from "../../components/navbar"
-import ServiceCards from '../../components/serviceCards'
+import ContactSection from "../components/contactSection"
+import FeatureCards from '../components/featureCards'
+import Footer from "../components/footer"
+import NavBar from "../components/navbar"
+import ServiceCards from '../components/serviceCards'
 import { motion } from "framer-motion"
-import AnimatedCharacters from "../../components/AnimeChar"
+import AnimatedCharacters from "../components/AnimeChar"
 
 const Services = () => {
     return (
         <>
             <Helmet>
-                <title>Stact - Services</title>
+                <title>Services</title>
             </Helmet>
             <NavBar />
             <div className="services-container">
@@ -68,42 +68,42 @@ const ServicesSection = () => {
         {
             name: 'Digital Patient Acquisition',
             info: ['Search Engine Optimization', 'Performance Ads & Lead Generation', 'Local SEO'],
-            icoUrl: 'assets/service_ico1.svg'
+            icoUrl: 'service_ico1.svg'
         },
         {
             name: 'Reputation Management',
             info: ['Google Review Management', 'Quora Review', 'Testimonials Video Creation'],
-            icoUrl: 'assets/service_ico2.svg'
+            icoUrl: 'service_ico2.svg'
         },
         {
             name: 'Brand Building',
             info: ['Social Media Marketing', 'Video Marketing', 'Influencer & PR'],
-            icoUrl: 'assets/service_ico3.svg'
+            icoUrl: 'service_ico3.svg'
         },
         {
             name: 'Sales Automation',
             info: ['CRM', 'Leadmade', 'IVM & Call Tracking'],
-            icoUrl: 'assets/service_ico4.svg'
+            icoUrl: 'service_ico4.svg'
         },
         {
             name: 'Digital Patient Acquisition',
             info: ['Search Engine Optimization', 'Performance Ads & Lead Generation', 'Local SEO'],
-            icoUrl: 'assets/service_ico5.svg'
+            icoUrl: 'service_ico5.svg'
         },
         {
             name: 'Reputation Management',
             info: ['Google Review Management', 'Quora Review', 'Testimonials Video Creation'],
-            icoUrl: 'assets/service_ico6.svg'
+            icoUrl: 'service_ico6.svg'
         },
         {
             name: 'Brand Building',
             info: ['Social Media Marketing', 'Video Marketing', 'Influencer & PR'],
-            icoUrl: 'assets/service_ico7.svg'
+            icoUrl: 'service_ico7.svg'
         },
         {
             name: 'Sales Automation',
             info: ['CRM', 'Leadmade', 'IVM & Call Tracking'],
-            icoUrl: 'assets/service_ico8.svg'
+            icoUrl: 'service_ico8.svg'
         }
     ]
 

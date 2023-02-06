@@ -1,12 +1,12 @@
 import { Link } from 'react-router-dom'
 import './css/serviceCards.scss'
 
-const ServiceCards = ({data,src}) => {
+export default function ServiceCards({data,src}) {
     return(
         <>
             <div className="service">
                 <div className="service-icon mb-8">
-                    <img src={require(`../pages/${src}/${data.icoUrl}`)} className="mb-8" alt={data.name}/>
+                    <img src={require(`../pages/assets/${src}/${data.icoUrl}`)} className="mb-8" alt={data.name}/>
                 </div>
                 <h3>{data.name}</h3>
                 <p className="txt-4 mb-8">
@@ -26,5 +26,3 @@ const ServiceCards = ({data,src}) => {
         </>
     )
 }
-
-export default ServiceCards
