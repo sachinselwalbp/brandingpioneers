@@ -10,7 +10,6 @@ import { Accordion } from 'react-bootstrap'
 import NavBar from "../components/navbar"
 import { motion } from "framer-motion"
 import AnimatedCharacters from "../components/AnimeChar"
-import Spline from "@splinetool/react-spline"
 
 export default function HomePage() {
     return (
@@ -114,9 +113,7 @@ const Hero = () => {
                             </form> */}
                         </div>
                         <div className="col-lg-6 align-self-center">
-                            {/* <motion.img src='https://dummyimage.com/974x746/ccc/fff.jpg' className="img-fluid" alt="hero" animate={{ y: 0 }} initial={{ y: 1000 }} /> */}
-
-                            <Spline className="spline3D" scene="https://prod.spline.design/Q1oQbd2yBmSZX1V6/scene.splinecode" />
+                            <motion.img src={require('./assets/home/hero_image.png')} className="img-fluid" alt="hero" animate={{ y: 0 }} initial={{ y: 1000 }} />
                         </div>
                     </div>
                 </div>
@@ -238,7 +235,7 @@ const About = () => {
                     <div className="row mb-40 gy-4">
                         <div className="col-lg-6 align-self-center d-flex justify-content-center align-items-center">
                             <div style={{ maxWidth: '600px', boxShadow: '6px 6px #000' }}>
-                                <img loading="lazy" src='https://dummyimage.com/927x622/ccc/fff.jpg' className="img-fluid" alt="About" />
+                                <img loading="lazy" src={require('./assets/home/about1.png')} className="img-fluid" alt="About" />
                             </div>
                         </div>
                         <div className="col-lg-6 align-self-center">
@@ -257,20 +254,8 @@ const About = () => {
                         </div>
                         <div className="col-lg-6 align-self-center d-flex justify-content-center align-items-center">
                             <div style={{ maxWidth: '600px', boxShadow: '6px 6px #000' }}>
-                                <img loading="lazy" src='https://dummyimage.com/927x622/ccc/fff.jpg' className="img-fluid" alt="About" />
+                                <img loading="lazy" src={require('./assets/home/about2.png')} className="img-fluid" alt="About" />
                             </div>
-                        </div>
-                    </div>
-                    <div className="row mt-40 gy-4">
-                        <div className="col-lg-6 align-self-center d-flex justify-content-center align-items-center">
-                            <div style={{ maxWidth: '600px', boxShadow: '6px 6px #000' }}>
-                                <img loading="lazy" src='https://dummyimage.com/927x622/ccc/fff.jpg' className="img-fluid" alt="About" />
-                            </div>
-                        </div>
-                        <div className="col-lg-6 align-self-center">
-                            <div className="section-tag mb-8">Growth</div>
-                            <h2 className='mb-16'>Medical Digital Marketing</h2>
-                            <p className='txt-1'>Marketing for the healthcare industry is often very different than other industries. While there are undoubtedly many similarities, the needs and behaviors of healthcare customers and practitioners are often radically different. In today's competitive world, every healthcare professional needs a comprehensive digital marketing strategy to stay relevant. With almost half of all searches in India being conducted on mobile devices, it's critical that your healthcare Businesses is easy to find. Branding Pioneers is one of the best healthcare digital marketing agency. We help our clients grow their online presence and reach their target audiences.</p>
                         </div>
                     </div>
                 </div>

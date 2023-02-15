@@ -49,13 +49,6 @@
   background-image: radial-gradient(
     ellipse at bottom left,
     rgba(15, 169, 88, 0.4),
-    transparent 50%
+    transparent 30%
   );
-}
-.spline3D {
-  width: 100%;
-  min-height: 350px;
-  @media (min-width: 575.98px) {
-    min-height: 500px;
-  }
 }

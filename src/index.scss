@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=DM+Serif+Display&family=Inter:wght@300;400;500;600;700;800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 :root {
   --background-1: #0f1410;
   --background-2: #f7f4ed;
@@ -15,6 +16,8 @@
   --bg-shade-pink: #fde4ff;
   --color-red: #e94057;
   --color-blue: #2c6fee;
+  // --heading-font: "DM Serif Display", sans-serif;
+  --heading-font: "Poppins", sans-serif;
 }
 .dark {
   --color-1: #fefefe;
@@ -212,8 +215,8 @@ code {
 // TYPOGRAPHY
 h1 {
   font-size: calc(1.575rem + 3.9vw);
-  line-height: 1.15;
-  font-family: "DM Serif Display", sans-serif;
+  line-height: 1.17;
+  font-family: var(--heading-font);
   @media (min-width: 1200px) {
     font-size: 74px;
     line-height: 1;
@@ -222,15 +225,15 @@ h1 {
 h2,
 .h2 {
   font-size: calc(1.375rem + 1.5vw);
-  line-height: 1.15;
-  font-family: "DM Serif Display", sans-serif;
+  line-height: 1.17;
+  font-family: var(--heading-font);
   @media (min-width: 1200px) {
     font-size: 40px;
-    line-height: 1.15;
+    line-height: 1.17;
   }
 }
 .display-1 {
-  font-family: "DM Serif Display", sans-serif;
+  font-family: var(--heading-font);
   font-size: calc(1.425rem + 2.1vw);
   line-height: 1.2;
   @media (min-width: 1200px) {
@@ -240,14 +243,14 @@ h2,
 }
 .heroHeading > h1 {
   line-height: 1.2 !important;
-  font: 500 calc(1.425rem + 2.1vw) "DM Serif Display", sans-serif !important;
+  font: 500 calc(1.425rem + 2.1vw) var(--heading-font) !important;
   @media (min-width: 1200px) {
     font-size: 48px !important;
     line-height: 1.1 !important;
   }
 }
 .display-2 {
-  font-family: "DM Serif Display", sans-serif;
+  font-family: var(--heading-font);
   font-size: calc(1.325rem + 0.9vw);
   line-height: 1.2;
   @media (min-width: 1200px) {
@@ -342,5 +345,42 @@ h4 {
   &:focus {
     box-shadow: 0 0 0 1px var(--border-brutal),
       0 0 0 3px rgba($color: #00aa45, $alpha: 0.35);
+  }
+}
+
+#root
+  > div
+  > div
+  > div
+  > section.section-global.no-border.home-hero
+  > div
+  > div
+  > div:nth-child(1)
+  > div
+  > div
+  > h1 {
+  font-size: 4rem;
+  line-height: 1.17;
+  @media (max-width: 991.98px) {
+    font-size: 2.4rem;
+  }
+}
+#root
+  > div
+  > div
+  > div
+  > section.section-global.no-border.home-hero
+  > div
+  > div
+  > div:nth-child(1)
+  > div
+  > div
+  > h3 {
+    font-size: 1.6rem;
+  line-height: normal;
+  letter-spacing: 3px;
+  font-weight: normal;
+  @media (max-width: 991.98px) {
+    letter-spacing: normal;
   }
 }
