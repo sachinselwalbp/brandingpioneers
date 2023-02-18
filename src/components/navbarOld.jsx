@@ -4,7 +4,7 @@ import './css/navbarOld.scss'
 import Logo from '../logo.svg'
 import { useEffect } from "react"
 
-const NavBarOld = ({ data }) => {
+const NavBar = ({ data }) => {
 
     useEffect(() => {
 
@@ -273,4 +273,4 @@ const NavBarOld = ({ data }) => {
     )
 }
 
-export default NavBarOld
+export default NavBar

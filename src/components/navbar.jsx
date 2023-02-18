@@ -1,50 +1,17 @@
-import { Navbar } from "react-bootstrap"
+import { Navbar, Container, Row } from "react-bootstrap"
 import { NavLink } from "react-router-dom"
 import Logo from '../logo.svg'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap/dist/js/bootstrap.min.js'
 import './css/navbar.scss'
 import { Link } from "react-router-dom"
-
-const internalpages = [
-  { title: 'SEO Agency for Doctors', href: '/seo-agency-for-doctors' },
-  { title: 'Digital Marketing Agency for Hospital', href: '/digital-marketing-agency-for-hospital' },
-  { title: 'SEO Company for Clinic/Centres', href: '/seo-company-for-clinic-centres' },
-  { title: 'Digital Marketing for Dental', href: '/digital-marketing-for-dental' },
-  { title: 'Why SEO is important for Healthcare', href: '/why-seo-is-important-for-healthcare' },
-  { title: 'Dynamic Website Design for Healthcare', href: '/dynamic-website-design-for-healthcare' },
-  { title: 'Responsive Website Design for Healthcare', href: '/responsive-website-design-for-healthcare' },
-  { title: 'Responsive Website Design for Medical', href: '/responsive-website-design-for-medical' },
-  { title: 'SEO Agency in India', href: '/seo-agency-in-india' },
-  { title: 'Medical Digital Marketing in India', href: '/medical-digital-marketing-in-india' },
-  { title: 'Orthopedic Marketing', href: '/orthopedic-marketing' },
-  { title: 'Dental Marketing', href: '/dental-marketing' },
-  { title: 'Chiropractor Marketing', href: '/chiropractor-marketing' },
-  { title: 'Video Marketing for Healthcare Practice', href: '/video-marketing-for-healthcare-practice' },
-  { title: 'Startup Website for Healthcare', href: '/startup-website-for-healthcare' },
-  { title: 'E-Commerce Development for Medical', href: '/e-commerce-development-for-medical' },
-  { title: 'Digital Marketing Agency for Medical', href: '/digital-marketing-agency-for-medical' },
-  { title: 'Social Media Marketing for Hospital', href: '/social-media-marketing-for-hospital' },
-  { title: 'Social Media Marketing for Dental', href: '/social-media-marketing-for-dental' },
-  { title: 'Video Marketing for Healthcare', href: '/video-marketing-for-healthcare' },
-  { title: 'Video Content Creation for Healthcare', href: '/video-content-creation-for-healthcare' },
-  { title: 'Mobile Website Design', href: '/mobile-website-design' },
-  { title: 'Website Revamps for Healthcare', href: '/website-revamps-for-healthcare' },
-  { title: 'Redesign Medical Website', href: '/redesign-medical-website' },
-  { title: 'Physicians Digital Marketing Services', href: '/physicians-digital-marketing-services' },
-  { title: 'Pharma Digital Marketing Company', href: '/pharma-digital-marketing-company' },
-  { title: 'Healthcare Logo', href: '/healthcare-logo' },
-  { title: 'Local SEO Marketing for Hospital', href: '/local-seo-marketing-for-hospital' },
-  { title: 'Local SEO Marketing for Clinic', href: '/local-seo-marketing-for-clinic' },
-  { title: 'Hospital Marketing', href: '/hospital-marketing' },
-  { title: 'Paid Advertising for Healthcare', href: '/paid-advertising-for-healthcare' },
-]
+import { about, internalpages } from "./navbarLinks"
 
 function NavBar() {
   return (
     <>
       <Navbar variant="light" expand="lg" fixed="top">
-        <div className="container-fluid">
+        <Container fluid>
           <Navbar.Brand>
             <NavLink to="/">
               <img loading="lazy" src={Logo} height="32" alt="Branding Pioneers" />
@@ -68,40 +35,30 @@ function NavBar() {
                         <div className="row bg-white rounded-3 m-0">
                           <div className="col-lg-7 col-xl-8">
                             <div className="p-4">
-                              <div className="row">
+                              <Row>
                                 <div className="col-lg-4 mb-4">
                                   <h6 className="font-weight-bold text-uppercase">
                                     <Link to="/about" className="nav-link text-small pb-0">About</Link>
                                   </h6>
                                   <ul className="list-unstyled">
-                                    <li className="nav-item">
-                                      <Link to="/about/who-we-are" className="nav-link text-small pb-0">Who we are</Link>
-                                    </li>
-                                    <li className="nav-item">
-                                      <Link to="/about/why-choose-us" className="nav-link text-small pb-0">Why choose us</Link>
-                                    </li>
-                                    <li className="nav-item">
-                                      <Link to="/about/testimonials" className="nav-link text-small pb-0">Testimonials</Link>
-                                    </li>
-                                    <li className="nav-item">
-                                      <Link to="/projects" className="nav-link text-small pb-0">Projects</Link>
-                                    </li>
-                                    <li className="nav-item">
-                                      <Link to="/our-work/case-studies" className="nav-link text-small pb-0">Case Studies</Link>
-                                    </li>
-                                    <li className="nav-item">
-                                      <Link to="/our-work/websites" className="nav-link text-small pb-0">Websites</Link>
-                                    </li>
+                                    {
+                                      about.map(e => (
+                                        <li className="nav-item">
+                                          <Link to={e.href} className="nav-link text-small pb-0">{e.title}</Link>
+                                        </li>
+                                      ))
+                                    }
                                   </ul>
                                 </div>
                                 <div className="col-lg-6 mb-4">
                                   <h6 className="font-weight-bold text-uppercase">Description Heading</h6>
                                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, perspiciatis, provident aliquid dicta ullam dolore magni repudiandae voluptatem alias animi exercitationem at quod reprehenderit dignissimos ratione error amet sunt delectus?</p>
                                 </div>
-                              </div>
+                              </Row>
                             </div>
                           </div>
-                          <div className="col-lg-5 col-xl-4 px-0 d-none d-lg-block megaimaga"></div>
+                          <div className="col-lg-5 col-xl-4 px-0 d-none d-lg-block megaimaga">
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -477,7 +434,7 @@ function NavBar() {
             </div>
           </Navbar.Collapse>
           <Link to="/contact" className="navbar-cta">Write Query</Link>
-        </div>
+        </Container>
       </Navbar>
     </>
   );
