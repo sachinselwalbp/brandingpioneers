@@ -4,11 +4,11 @@ import BGP1 from './assets/bg_1.svg'
 import BGP2 from './assets/bg_2.svg'
 import scribble from './assets/scribble.svg'
 
-const ContactSection = ({contact_data, saasVarient, bg}) => {
-    if(saasVarient){
-        return(
+export default function ContactSection({ contact_data, saasVarient, bg }) {
+    if (saasVarient) {
+        return (
             <>
-                <section className={'section-global contact-section '+(bg?bg:'')}>
+                <section className={'section-global contact-section ' + (bg ? bg : '')}>
                     <div className="container">
                         <div className="row">
                             <div className="col-xl-6 offset-xl-3 col-lg-8 offset-lg-2 py-5 px-lg-5 col-cont text-center">
@@ -25,11 +25,10 @@ const ContactSection = ({contact_data, saasVarient, bg}) => {
             </>
         )
     }
-    else
-    {
-        return(
-            <>  
-                <section className={'section-global contact-section '+(bg?bg:'')}>
+    else {
+        return (
+            <>
+                <section className={'section-global contact-section ' + (bg ? bg : '')}>
                     <div className="container">
                         <div className="row">
                             <div className="col-xl-6 offset-xl-3 col-lg-8 offset-lg-2 py-5 px-lg-5 text-center col-cont">
@@ -46,5 +45,3 @@ const ContactSection = ({contact_data, saasVarient, bg}) => {
         )
     }
 }
-
-export default ContactSection

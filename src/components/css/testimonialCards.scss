@@ -1,7 +1,21 @@
-.testimonial-card{
-    background: #FFFFFF;
-    padding: 24px 20px;
-    border-radius: 15px;
-    height: 100%;
-    box-shadow: 0 0 0 1px var(--border-brutal), 4px 4px 0 var(--border-brutal);
+.testimonial-card {
+  background: #ffffff;
+  padding: 24px 20px;
+  border-radius: 15px;
+  height: 100%;
+  text-decoration: none;
+  box-shadow: 0 0 0 1px var(--border-brutal), 4px 4px 0 var(--border-brutal);
+
+  &:hover {
+    background: white url(../assets/youtube.png)
+      no-repeat right/cover;
+    box-shadow: 0 0 0 1px red, 4px 4px 0 red;
+  }
+}
+.testimonial-user {
+  .img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
 }

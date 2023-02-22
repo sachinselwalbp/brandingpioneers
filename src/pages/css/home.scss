@@ -52,3 +52,64 @@
     transparent 30%
   );
 }
+.home_hero_subheading {
+  font-size: 1.3rem;
+}
+.ourParnersSection {
+  padding: 50px 0;
+  // border-top: 1px solid;
+  border-bottom: 1px solid;
+  .ourParners {
+    display: flex;
+    div {
+      p {
+        color: gray;
+        font-size: 17px;
+        font-weight: 600;
+        margin-top: 10px;
+      }
+      .google {
+        fill: gray;
+        &:hover {
+          fill: #4285f4;
+        }
+      }
+      .meta {
+        color: gray;
+        &:hover {
+          color: #0467df;
+        }
+      }
+      .instagram {
+        fill: gray;
+        &:hover {
+          fill: #e4405f;
+        }
+      }
+      .bing {
+        fill: gray;
+        &:hover {
+          fill: #258ffa;
+        }
+      }
+      .youtube {
+        fill: gray;
+        &:hover {
+          fill: #f00;
+        }
+      }
+      .facebook {
+        fill: gray;
+        &:hover {
+          fill: #0467df;
+        }
+      }
+      .twitter {
+        fill: gray;
+        &:hover {
+          fill: #1da1f2;
+        }
+      }
+    }
+  }
+}

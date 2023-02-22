@@ -5,12 +5,14 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap/dist/js/bootstrap.min.js'
 import './css/navbar.scss'
 import { Link } from "react-router-dom"
-import { about, internalpages } from "./navbarLinks"
+import { about } from "./navbarLinks"
+import TopHeader from "./topHeader"
 
 function NavBar() {
   return (
     <>
-      <Navbar variant="light" expand="lg" fixed="top">
+      <TopHeader />
+      <Navbar variant="light" expand="lg" sticky="top">
         <Container fluid>
           <Navbar.Brand>
             <NavLink to="/">
@@ -51,8 +53,8 @@ function NavBar() {
                                   </ul>
                                 </div>
                                 <div className="col-lg-6 mb-4">
-                                  <h6 className="font-weight-bold text-uppercase">Description Heading</h6>
-                                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, perspiciatis, provident aliquid dicta ullam dolore magni repudiandae voluptatem alias animi exercitationem at quod reprehenderit dignissimos ratione error amet sunt delectus?</p>
+                                  <h6 className="font-weight-bold text-uppercase">Description</h6>
+                                  <p>Revolutionizing healthcare marketing through cutting-edge technology and expertise" - that's our motto at Branding Pioneers, where we help healthcare businesses reach their fullest potential with our unique approach to marketing.</p>
                                 </div>
                               </Row>
                             </div>
@@ -142,6 +144,9 @@ function NavBar() {
                                 </ul>
                               </div>
                               <div className="col-lg-3 mb-4">
+                                <h6 className="font-weight-bold">
+                                  <Link to="#" className="nav-link text-small pb-0">Healthcare Specialties</Link>
+                                </h6>
                                 <ul className="list-unstyled">
                                   <li className="nav-item">
                                     <Link to="/our-speciality/healthcare/dentists" className="nav-link text-small pb-0">Dentists</Link>
@@ -167,9 +172,9 @@ function NavBar() {
                                   <li className="nav-item">
                                     <Link to="/our-speciality/healthcare/medical-tourism" className="nav-link text-small pb-0">Medical Tourism</Link>
                                   </li>
-                                  <li className="nav-item">
+                                  {/* <li className="nav-item">
                                     <Link to="/our-speciality/healthcare/healthcare-startup" className="nav-link text-small pb-0">Healthcare Startup</Link>
-                                  </li>
+                                  </li> */}
                                 </ul>
                               </div>
                             </div>
@@ -406,28 +411,6 @@ function NavBar() {
                   </li>
                   <li className="nav-item">
                     <Link to="/blog" className="nav-link font-weight-bold">Blog</Link>
-                  </li>
-                  <li className="nav-item dropdown megamenu">
-                    <a href="/" id="dropdownMenuButton3 megamneu" data-bs-toggle="dropdown" aria-expanded="false" className="nav-link font-weight-bold dropdown-toggle">Pages</a>
-                    <div aria-labelledby="dropdownMenuButton3" className="dropdown-menu border-0 p-0 m-0">
-                      <div className="container mega-shadow">
-                        <div className="row bg-white rounded-3 m-0">
-                          <div >
-                            <div className="p-4">
-                              <div className="row">
-                                <ul className="list-unstyled internal-page">
-                                  {internalpages.map((e, i) =>
-                                    <li>
-                                      <Link to={e.href} key={i} className="nav-link text-small pb-0">{e.title}</Link>
-                                    </li>
-                                  )}
-                                </ul>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
                   </li>
                 </ul>
               </div>

@@ -6,7 +6,6 @@ import NavBar from "../components/navbar"
 import { Link } from 'react-router-dom'
 import TestimonialCards from "../components/testimonialCards"
 import Contact from '../components/contact'
-import MainpageArticleSection from '../components/mainpageArticleSection'
 import AnimatedCharacters from '../components/AnimeChar'
 import { motion } from 'framer-motion'
 
@@ -21,7 +20,7 @@ export default function About() {
                 <Hero />
                 <AboutSection />
                 <Counters />
-                <MainpageArticleSection pagename='about' />
+                <Content />
                 <Features />
                 <Team />
                 <Testimonials />
@@ -70,15 +69,47 @@ const Hero = () => {
     )
 }
 
+const Content = () => {
+    return (
+        <section className='section-global blog-article'>
+            <div className="container container-2">
+                <div className="row">
+                    <div className="col-12 mb-20">
+                        <img loading='lazy' className="img-fluid mb-20 mainPageArticleImage" src='https://via.placeholder.com/150'  alt='' />
+                    </div>
+                    <div className="col-12 px-md-5 px-3">
+                        <div className="blog-article-section">
+                            <p className='txt-1'>Welcome to Branding Pioneers, the leading healthcare marketing agency in India. We are a team of highly skilled professionals, including medical experts, software engineers, and marketing gurus. With over 12 years of experience in the healthcare industry, our founders, Arush Thapar and Nishu Sharma, have worked with some of the top hospitals and healthcare brands in the country.</p>
+                            <p className='txt-1'>At Branding Pioneers, we are proud of our team of medical professionals who work closely with our marketing experts to develop creative and effective marketing solutions for our clients. Our deep understanding of the healthcare industry, combined with our expertise in digital marketing and technology, enables us to provide our clients with cutting-edge solutions that deliver tangible results.</p>
+                            <p className='txt-1'>Our founders, Arush and Nishu, bring a unique set of skills and experiences to the table. Arush is a software engineer and an entrepreneur with 12 years of experience in developing and scaling technology-based businesses. Nishu, on the other hand, is a branding expert with a wealth of experience in the healthcare industry, having worked with some of the top hospitals and healthcare brands in India.</p>
+                            <p className='txt-1'>Our focus on technology is what sets us apart from other healthcare marketing agencies. We leverage the latest tools and techniques to deliver targeted and effective marketing campaigns that help our clients reach more patients and grow their businesses. We are proud to be a tech marketing agency, and we believe that our approach is what makes us one of the best healthcare marketing agencies in India.</p>
+                            <p className='txt-1'>Our clients come from all corners of India and the UAE, and we are proud to have a growing presence in Canada, the UK, and the USA. Our sales offices in these locations enable us to better serve our clients and provide them with a personalized and efficient service.</p>
+                            <p className='txt-1'>In summary, at Branding Pioneers, we are passionate about healthcare marketing and delivering outstanding results for our clients. We bring together a unique blend of medical expertise, marketing acumen, and technological know-how to develop innovative solutions that help our clients achieve their business goals. So, whether you are a hospital, clinic, or healthcare brand looking to grow your business, we are the healthcare marketing agency that can help you get there.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    )
+}
+
 const AboutSection = () => {
     const capabilities = [
         {
-            title: 'Enterprise solutions',
+            title: 'Healthcare Experts',
             text: 'Top-notch solutions provider in the industry'
         },
         {
-            title: 'Technology services',
+            title: 'Tech-Enabled Services',
             text: 'Top-notch solutions provider in the industry'
+        },
+        {
+            title: 'Personalized Approach',
+            text: ''
+        },
+        {
+            title: 'Results-Oriented Focus',
+            text: ''
         }
     ]
     return (
@@ -88,7 +119,7 @@ const AboutSection = () => {
                     <div className="row gy-4">
                         <div className="col-lg-6 align-self-center d-flex justify-content-center">
                             <div className='video-thumb'>
-                                <a href='/'>
+                                <a href='https://www.youtube.com/watch?v=NBmpiXAzPxY'>
                                     <img loading='lazy' src='https://dummyimage.com/446x304/ccc/fff.jpg' className="img-fluid" alt="stact" />
                                     <svg width="77" height="77" viewBox="0 0 77 77" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <circle cx="39.5" cy="39.5" r="37.5" fill="black" />
@@ -101,7 +132,7 @@ const AboutSection = () => {
                         <div className="col-lg-6 align-self-center">
                             <div className="section-tag mb-8">Who we are</div>
                             <h2 className='mb-16'>Best in class innovative tech solutions</h2>
-                            <p className='txt-1 mb-20'>We craft digital experiences that resonate with your audience and grow your business. If you have a vision for the next big thing, we can help you make it happen. </p>
+                            <p className='txt-1 mb-20'>At Branding Pioneers, we are a healthcare-focused marketing and branding agency based in India, dedicated to providing our clients with high-quality, customized solutions to meet their unique needs. Our team of 70+ professionals is made up of experts in the fields of marketing, branding, technology, and healthcare, allowing us to offer a range of specialized services that cover everything from digital marketing and SEO to event management and influencer collaborations.</p>
                             <h3 className='mb-16'>Our core capabilities</h3>
                             <div>
                                 <div className="row gy-4">
@@ -129,20 +160,20 @@ const AboutSection = () => {
 const Counters = () => {
     const counter_data = [
         {
-            count: '5K+',
-            text: 'Delivered projects'
+            count: '8+',
+            text: 'Years'
         },
         {
-            count: '43%',
-            text: 'Market share'
+            count: '200+',
+            text: 'Hospitals/Clinics'
         },
         {
-            count: '75',
-            text: 'Awards won'
+            count: '70+',
+            text: 'Members Team'
         },
         {
-            count: '3m+',
-            text: 'Users worldwide'
+            count: '200%',
+            text: 'AvG ROI'
         }
     ]
     return (
@@ -197,7 +228,12 @@ const Features = () => {
                         <FeatureCards data={featurs_data} src='about' />
                     </div>
                 </div>
+
+
+
+                {/* <iframe title='random' className="airtable-embed" src="https://airtable.com/embed/shrZzT4nTIESugsrH?backgroundColor=cyan&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="533" style={{background: "transparent", border: "1px solid #ccc;"}}></iframe> */}
             </section>
+
         </>
     )
 }

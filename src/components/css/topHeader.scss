@@ -1,0 +1,17 @@
+.top_header {
+  padding: 5px 0;
+  .stats {
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    .text {
+      span {
+        font-size: 12px;
+      }
+      h6 {
+        font-size: 17px;
+        font-weight: 700;
+      }
+    }
+  }
+}
