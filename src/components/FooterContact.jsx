@@ -9,7 +9,7 @@ export default function FooterContact() {
               <p className="txt-1">We cut through the clutter to uncover new opportunities, and always ensure customer satisfaction</p>
             </div>
             <div className="col-lg-6">
-              <form className="row g-3">
+              <form className="row g-3" action="https://app.headlessforms.cloud/api/v1/form-submission/VFEVuhdpaR" method="POST" enctype="multipart/form-data">
                 <div className="col-md-12">
                   <label className="form-label">Name*</label>
                   <input type="text" className="form-control" placeholder="Jhon Doe" required />
