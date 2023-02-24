@@ -30,7 +30,7 @@ import WhoWeAre from './pages/about/who-we-are';
 import WhyChooseUs from './pages/about/why-choose-us';
 import Testimonilas from './pages/about/testimonials';
 
-import OurSpeciality from './pages/OurSpeciality/our-speciality';
+import OurSpeciality from './pages/OurSpeciality';
 
 
 export default function BrandingPioneers() {
@@ -65,7 +65,8 @@ export default function BrandingPioneers() {
                 <Route path='testimonials' element={<Testimonilas />} />
               </Route>
 
-              <Route path='/our-speciality' element={<OurSpeciality />}>
+              <Route path='/our-speciality' element={<Pages />}>
+                <Route index element={<OurSpeciality />}></Route>
                 <Route path='hospitals'>
                   <Route path='corporate-hospitals'>Corporate Hospitals</Route>
                   <Route path='100plus-bed-hospitals'>100+ Bed Hospitals</Route>
