@@ -1,6 +1,6 @@
 import Helmet from 'react-helmet'
-import './css/our-work.scss'
-import Hero from '../components/Hero'
+import '../css/our-work.scss'
+import Hero from '../../components/Hero'
 
 export default function WebServices() {
     return (
