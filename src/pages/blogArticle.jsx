@@ -77,7 +77,7 @@ const BlogArticleSection = ({ data }) => {
                         </div>
                         <div className="col-12">
                             <div className="blog-article-section">
-                                <ReactMarkdown>{data.content}</ReactMarkdown>
+                                {data.content}
                             </div>
                         </div>
                     </div>
