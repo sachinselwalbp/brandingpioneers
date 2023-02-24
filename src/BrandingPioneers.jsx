@@ -31,6 +31,24 @@ import WhyChooseUs from './pages/about/why-choose-us';
 import Testimonilas from './pages/about/testimonials';
 
 import OurSpeciality from './pages/OurSpeciality';
+import Hospitals from './pages/OurSpeciality/hospitals';
+import CorporateHospitals from './pages/OurSpeciality/corporate-hospitals';
+import HundredPlusBedHospitals from './pages/OurSpeciality/plus-bed-hospitals';
+import NursingHomes from './pages/OurSpeciality/nursing-homes';
+import Startups from './pages/OurSpeciality/startups';
+import DiagnosticCentres from './pages/OurSpeciality/diagnostic-centres';
+import Surgeons from './pages/OurSpeciality/surgeons';
+import NeuroSurgeons from './pages/OurSpeciality/neuro-surgeons';
+import GynaeSurgeons from './pages/OurSpeciality/gynae-surgeons';
+import PlasticSurgeons from './pages/OurSpeciality/plastic-surgeons';
+import Orthopedician from './pages/OurSpeciality/orthopedician';
+import CardiacSurgeons from './pages/OurSpeciality/cardiac-surgeons';
+import GeneralSurgeons from './pages/OurSpeciality/general-surgeons';
+import Clinic from './pages/OurSpeciality/Clinic';
+import DentalClinic from './pages/OurSpeciality/dental-clinic';
+import AestheticClinics from './pages/OurSpeciality/aesthetic-clinics';
+import PolyClinics from './pages/OurSpeciality/poly-clinics';
+import IVFClinics from './pages/OurSpeciality/ivf-clinics';
 
 
 export default function BrandingPioneers() {
@@ -57,24 +75,43 @@ export default function BrandingPioneers() {
               <Route path='/personal-portfolio' element={<PersonalPortfolio />} />
               <Route path='/consulting' element={<Consulting />} />
               <Route path='/pricing' element={<Pricing />} />
-
               <Route path='/about' element={<Pages />}>
                 <Route index element={<About />} />
                 <Route path='who-we-are' element={<WhoWeAre />} />
                 <Route path='why-choose-us' element={<WhyChooseUs />} />
                 <Route path='testimonials' element={<Testimonilas />} />
               </Route>
-
               <Route path='/our-speciality' element={<Pages />}>
-                <Route index element={<OurSpeciality />}></Route>
-                <Route path='hospitals'>
-                  <Route path='corporate-hospitals'>Corporate Hospitals</Route>
-                  <Route path='100plus-bed-hospitals'>100+ Bed Hospitals</Route>
-                  <Route path='nursing-homes'>Nursing Homes</Route>
+                <Route index element={<OurSpeciality />} />
+                <Route path='hospitals' element={<Pages />}>
+                  <Route index element={<Hospitals />} />
+                  <Route path='corporate-hospitals' element={<CorporateHospitals />} />
+                  <Route path='100plus-bed-hospital' element={<HundredPlusBedHospitals />} />
+                  <Route path='nursing-homes' element={<NursingHomes />} />
                 </Route>
-                <Route path='startups'>
-                  <Route path='diagnostic-centres'>Diagnostic Centres</Route>
+                <Route path='startups' element={<Pages />}>
+                  <Route index element={<Startups />} />
+                  <Route path='diagnostic-centres' element={<DiagnosticCentres />} />
                 </Route>
+                <Route path='surgeons' element={<Pages />}>
+                  <Route index element={<Surgeons />} />
+                  <Route path='neuro-surgeons' element={<NeuroSurgeons />} />
+                  <Route path='gynae-surgeons' element={<GynaeSurgeons />} />
+                  <Route path='general-surgeons' element={<GeneralSurgeons />} />
+                  <Route path='cardiac-surgeons' element={<CardiacSurgeons />} />
+                  <Route path='orthopedician' element={<Orthopedician />} />
+                  <Route path='plastic-surgeons' element={<PlasticSurgeons />} />
+                </Route>
+                <Route path='clinic' element={<Pages />}>
+                  <Route index element={<Clinic />} />
+                  <Route path='dental-clinic' element={<DentalClinic />} />
+                  <Route path='aesthetic-clinics' element={<AestheticClinics />} />
+                  <Route path='poly-clinics' element={<PolyClinics />} />
+                  <Route path='ivf-clinics' element={<IVFClinics />} />
+                </Route>
+                {/* <Route path='/healthcare'>
+
+                </Route> */}
               </Route>
 
               <Route path='/faqs' element={<FAQs />} />

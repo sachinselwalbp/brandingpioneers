@@ -145,7 +145,7 @@ function NavBar() {
                               </div>
                               <div className="col-lg-3 mb-4">
                                 <h6 className="font-weight-bold">
-                                  <Link to="#" className="nav-link text-small pb-0">Healthcare Specialties</Link>
+                                  <span className="nav-link text-small pb-0">Healthcare Specialties</span>
                                 </h6>
                                 <ul className="list-unstyled">
                                   <li className="nav-item">

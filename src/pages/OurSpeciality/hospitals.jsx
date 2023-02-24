@@ -1,5 +1,9 @@
+import Hero from "../../components/Hero";
+
 export default function Hospitals() {
-  <>
-    Hospitals
-  </>
+  return (
+    <>
+      <Hero title="Hospitals" parent="Hospitals" />
+    </>
+  )
 }
