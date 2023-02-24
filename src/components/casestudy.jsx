@@ -1,17 +1,15 @@
-import { ReactMarkdown } from "react-markdown/lib/react-markdown"
-
-const CaseStudy = ({ data }) => {
+export default function CaseStudy({ data }) {
     return (
         <>
             <section className='section-global case-study'>
                 <div className="container container-2">
                     <div className="row">
                         <div className="col-12 text-center mb-20">
-                            <img loading="lazy" src={`https://s012.ba.hostcafe.cc/${data.FeaturedImage.data.attributes.url}`} alt='' />
+                            <img loading="lazy" src={data.img} alt={data.alt} />
                         </div>
                         <div className="col-12">
                             <div className="case-study-section">
-                                <ReactMarkdown>{data.content}</ReactMarkdown>
+                                {data.content}
                             </div>
                         </div>
                     </div>
@@ -20,5 +18,3 @@ const CaseStudy = ({ data }) => {
         </>
     )
 }
-
-export default CaseStudy

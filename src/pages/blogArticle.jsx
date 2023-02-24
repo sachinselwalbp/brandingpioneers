@@ -1,6 +1,5 @@
 import Helmet from 'react-helmet'
 import './css/post.scss'
-import { ReactMarkdown } from 'react-markdown/lib/react-markdown'
 import AnimatedCharacters from '../components/AnimeChar'
 import { motion } from 'framer-motion'
 
