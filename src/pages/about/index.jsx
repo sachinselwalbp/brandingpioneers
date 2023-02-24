@@ -3,7 +3,7 @@ import FeatureCards from '../../components/featureCards'
 import './style.scss'
 import { Link } from 'react-router-dom'
 import TestimonialCards from "../../components/testimonialCards"
-import Hero from '../../components/Hero'
+import Hero from '../../components/hero'
 
 export default function AboutPage() {
   return (

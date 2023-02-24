@@ -1,6 +1,6 @@
 import Helmet from 'react-helmet'
 import BlogCards from '../../components/blogCards'
-import Hero from '../../components/Hero'
+import Hero from '../../components/hero'
 
 export default function Blog() {
   return (

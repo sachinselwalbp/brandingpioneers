@@ -1,4 +1,4 @@
-import Hero from "../../components/Hero";
+import Hero from "../../components/hero";
 import { Helmet } from "react-helmet";
 
 export default function HundredPlusBedHospitals() {
