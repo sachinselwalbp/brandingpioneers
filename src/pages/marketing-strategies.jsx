@@ -1,8 +1,5 @@
 import Helmet from 'react-helmet'
-import Footer from '../components/footer'
 import './css/our-work.scss'
-import NavBar from "../components/navbar"
-import Contact from '../components/contact'
 import AnimatedCharacters from '../components/AnimeChar'
 import { motion } from 'framer-motion'
 
@@ -10,11 +7,8 @@ export default function MarketingStrategies() {
     return (
         <>
             <Helmet><title>Marketing Strategies</title></Helmet>
-            <NavBar />
             <div className="about-container">
                 <Hero />
-                <Contact />
-                <Footer />
             </div>
         </>
     )

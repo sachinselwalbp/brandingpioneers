@@ -5,7 +5,7 @@ export default function ServiceCards({ data, src }) {
         <>
             <div className="service text-center">
                 <div className="service-icon mb-8">
-                    <img src={require(`../pages/assets/${src}/${data.icoUrl}`)} className="mb-8" alt={data.name} />
+                    <img src={require(`../pages/${src}/${data.icoUrl}`)} className="mb-8" alt={data.name} />
                 </div>
                 <h3>{data.name}</h3>
                 <p className="txt-3 mb-8 list-unstyled">

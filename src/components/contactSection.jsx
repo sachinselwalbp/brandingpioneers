@@ -4,7 +4,14 @@ import BGP1 from './assets/bg_1.svg'
 import BGP2 from './assets/bg_2.svg'
 import scribble from './assets/scribble.svg'
 
-export default function ContactSection({ contact_data, saasVarient, bg }) {
+export default function ContactSection({ saasVarient, bg }) {
+    const contact_data = {
+        title: 'Have an idea?',
+        title_highlight: "Let's talk",
+        text: "One of the best industry service providers with top tier talented individuals.",
+        link: '/contact'
+    }
+
     if (saasVarient) {
         return (
             <>

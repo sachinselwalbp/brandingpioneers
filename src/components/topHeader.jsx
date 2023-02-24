@@ -17,14 +17,14 @@ export default function TopHeader() {
     <>
       <div className="top_header">
         <div className="stats">
-          <FaChartLine color='#0FA958' fontSize={32} />
+          <FaChartLine className='graphIcon' color='#0FA958' />
           <div className='text'>
             <span>Patient Lead generated Till now</span>
             <h6>{num.toLocaleString()}</h6>
           </div>
         </div>
         <div className="call">
-          <IoCall fontSize={32} color="#0fa958" />
+          <IoCall className='callIcon' color="#0fa958" />
           <span className='tel'><a href={`tel:${tel}`}>{
             String(tel).slice(0, 3) + "-" + String(tel).slice(3, 6) + "-" + String(tel).slice(6)
           }</a></span>

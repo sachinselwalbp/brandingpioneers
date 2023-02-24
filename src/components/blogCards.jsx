@@ -1,24 +1,21 @@
 import { Link } from 'react-router-dom'
 import './css/blogCards.scss'
-import React from 'react'
 
-const BlogCards = ({ data }) => {
-    const month = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-
+export default function BlogCards({ data }) {
     return (
         <>
             {data.map((e, i) =>
                 <div className="col-lg-4 col-md-6 gy-4" key={i}>
-                    <Link to={e.attributes.slug} className="blog_link">
+                    <Link to={data.slug} className="blog_link">
                         <div className="blog-card">
                             <div className="thumb">
-                                <img loading='lazy' src={`https://s012.ba.hostcafe.cc/${e.attributes.FeaturedImage.data.attributes.formats.thumbnail.url}`} className="img-fluid" alt={e.attributes.title} />
+                                <img loading='lazy' src={data.imgURL} className="img-fluid" alt={data.alt} />
                             </div>
                             <div className="body">
                                 <div className='mb-8'>
-                                    <span className='text-uppercase txt-4 fw-500 color-primary'>{e.attributes.category.data.attributes.title}</span>&nbsp;•&nbsp;<span className='txt-4'>{`${month[new Date(e.attributes.datetime).getMonth()]} ${new Date(e.attributes.datetime).getDate()}, ${new Date(e.attributes.datetime).getFullYear()}`}</span>
+                                    <span className='text-uppercase txt-4 fw-500 color-primary'>{data.categoty}</span>&nbsp;•&nbsp;<span className='txt-4'>{data.date}</span>
                                 </div>
-                                <h4 className="title">{e.attributes.title}</h4>
+                                <h4 className="title">{data.title}</h4>
                             </div>
                         </div>
                     </Link>
@@ -27,5 +24,3 @@ const BlogCards = ({ data }) => {
         </>
     )
 }
-
-export default BlogCards

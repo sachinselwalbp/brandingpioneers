@@ -1,84 +1,20 @@
 import Helmet from 'react-helmet'
-import Footer from '../components/footer'
-import './css/blog.scss'
-import NavBar from "../components/navbar"
-import { useParams } from 'react-router-dom'
-import Contact from '../components/contact'
+import './css/post.scss'
 import { ReactMarkdown } from 'react-markdown/lib/react-markdown'
-import { gql, useQuery } from "@apollo/react-hooks"
-import NotFound from '../components/errorComp'
 import AnimatedCharacters from '../components/AnimeChar'
 import { motion } from 'framer-motion'
 
-const blogGQL = gql`
-query {
-    blogs {
-      data {
-        id
-        attributes {
-          title
-          slug
-          datetime
-          content
-          category {
-            data {
-              attributes {
-                title
-                slug
-              }
-            }
-          }
-          FeaturedImage {
-            data {
-              attributes {
-                url
-                formats
-              }
-            }
-          }
-        }
-      }
-    }
-  }`
-
-const BlogArticle = () => {
-    const { slug } = useParams()
-    const { loading, data, error } = useQuery(blogGQL)
-    if (loading) return console.log('loading');
-    if (error) return console.log('error');
-    const blog_data = data.blogs.data;
-
-    let article = {}
-    if (article) {
-        let arr = blog_data.filter(e => e.attributes.slug === slug)
-        article = arr[0]
-    } else {
-        article = undefined
-    }
-
-    let post
-    if (article !== undefined) {
-        post = article.attributes
-    }
-
+export default function BlogArticle() {
     return (
         <>
             <Helmet>
-                <title>{article !== undefined ? post.title : 'Not Found'}</title>
+                <title>Blog Article</title>
             </Helmet>
-            <NavBar />
             <div className='blog-article-container'>
-                {article !== undefined ?
-                    <div className="loadedData">
-                        <Hero data={post} />
-                        <BlogArticleSection data={post} />
-                    </div>
-                    :
-                    <section>
-                        <NotFound />
-                    </section>}
-                <Contact />
-                <Footer />
+                <div className="loadedData">
+                    {/* <Hero data={post} />
+                    <BlogArticleSection data={post} /> */}
+                </div>
             </div>
         </>
     )
@@ -151,5 +87,3 @@ const BlogArticleSection = ({ data }) => {
         </>
     )
 }
-
-export default BlogArticle

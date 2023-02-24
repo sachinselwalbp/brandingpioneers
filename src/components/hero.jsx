@@ -1,12 +1,11 @@
 import { motion } from "framer-motion"
 import AnimatedCharacters from "./AnimeChar"
 
-const Hero = ({ data }) => {
-    // Placeholder text data, as if from API
+export default function Hero({ parent, title }) {
     const placeholderText = [
         {
             type: "heading1",
-            text: data.title
+            text: title
         }
     ]
 
@@ -23,8 +22,7 @@ const Hero = ({ data }) => {
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-7">
-                            <div className="section-tag mb-8">{'Parent'}</div>
-                            {/* <h1 className='display-1'>{data.title}</h1> */}
+                            <div className="section-tag mb-8">{parent}</div>
                             <motion.div
                                 initial="hidden"
                                 animate="visible"
@@ -39,5 +37,3 @@ const Hero = ({ data }) => {
         </>
     )
 }
-
-export default Hero
