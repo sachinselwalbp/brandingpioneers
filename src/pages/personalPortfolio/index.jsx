@@ -3,7 +3,6 @@ import Helmet from 'react-helmet'
 import { Link } from 'react-router-dom'
 import BrandSection from '../../components/brandSection'
 import ProjectCards from '../../components/projectCards'
-import NavBar from "../../components/navbar"
 
 const PersonalPortfolio = () => {
     return(
@@ -11,7 +10,6 @@ const PersonalPortfolio = () => {
             <Helmet>
                 <title>Stact - Personal Portfolio</title>
             </Helmet>
-            <NavBar/>
             <div className="portfolio-container">
                 <Hero/>
                 <About/>

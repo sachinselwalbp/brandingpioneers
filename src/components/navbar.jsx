@@ -6,12 +6,10 @@ import 'bootstrap/dist/js/bootstrap.min.js'
 import './css/navbar.scss'
 import { Link } from "react-router-dom"
 import { about } from "./navbarLinks"
-import TopHeader from "./topHeader"
 
 function NavBar() {
   return (
     <>
-      <TopHeader />
       <Navbar variant="light" expand="lg" sticky="top">
         <Container fluid>
           <Navbar.Brand>
@@ -32,7 +30,7 @@ function NavBar() {
                     <Link to="/" className="nav-link font-weight-bold">Home</Link>
                   </li>
                   <li className="nav-item dropdown megamenu">
-                  <span id="dropdownMenuButton1 megamneu" data-bs-toggle="dropdown" aria-expanded="false" className="cursor-pointer nav-link dropdown-toggle font-weight-bold dropdown-toggle">About</span>
+                    <span id="dropdownMenuButton1 megamneu" data-bs-toggle="dropdown" aria-expanded="false" className="cursor-pointer nav-link dropdown-toggle font-weight-bold dropdown-toggle">About</span>
                     <div aria-labelledby="dropdownMenuButton1" className="dropdown-menu border-0 p-0 m-0">
                       <div className="container mega-shadow">
                         <div className="row bg-white rounded-3 m-0">
@@ -67,7 +65,7 @@ function NavBar() {
                     </div>
                   </li>
                   <li className="nav-item dropdown megamenu">
-                  <span id="dropdownMenuButton1 megamneu" data-bs-toggle="dropdown" aria-expanded="false" className="cursor-pointer nav-link dropdown-toggle font-weight-bold dropdown-toggle">Our Speciality</span>
+                    <span id="dropdownMenuButton1 megamneu" data-bs-toggle="dropdown" aria-expanded="false" className="cursor-pointer nav-link dropdown-toggle font-weight-bold dropdown-toggle">Our Speciality</span>
                     <div aria-labelledby="dropdownMenuButton1" className="dropdown-menu border-0 p-0 m-0">
                       <div className="container mega-shadow">
                         <div className="row bg-white rounded-3 m-0">
@@ -186,7 +184,7 @@ function NavBar() {
                     </div>
                   </li>
                   <li className="nav-item dropdown megamenu">
-                  <span id="dropdownMenuButton2 megamneu" data-bs-toggle="dropdown" aria-expanded="false" className="cursor-pointer nav-link dropdown-toggle font-weight-bold dropdown-toggle">Services</span>
+                    <span id="dropdownMenuButton2 megamneu" data-bs-toggle="dropdown" aria-expanded="false" className="cursor-pointer nav-link dropdown-toggle font-weight-bold dropdown-toggle">Services</span>
                     <div aria-labelledby="dropdownMenuButton2" className="dropdown-menu border-0 p-0 m-0">
                       <div className="container mega-shadow">
                         <div className="row bg-white rounded-3 m-0">
@@ -300,7 +298,7 @@ function NavBar() {
                     </div>
                   </li>
                   <li className="nav-item dropdown megamenu">
-                  <span id="dropdownMenuButton2 megamneu" data-bs-toggle="dropdown" aria-expanded="false" className="cursor-pointer nav-link dropdown-toggle font-weight-bold dropdown-toggle">Our Work</span>
+                    <span id="dropdownMenuButton2 megamneu" data-bs-toggle="dropdown" aria-expanded="false" className="cursor-pointer nav-link dropdown-toggle font-weight-bold dropdown-toggle">Our Work</span>
                     <div aria-labelledby="dropdownMenuButton2" className="dropdown-menu border-0 p-0 m-0">
                       <div className="container mega-shadow">
                         <div className="row bg-white rounded-3 m-0">
