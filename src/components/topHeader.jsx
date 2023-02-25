@@ -1,6 +1,6 @@
 import './css/topHeader.scss'
-import { FaChartLine } from 'react-icons/fa'
-import { IoCall } from 'react-icons/io5'
+import { AiOutlineLineChart } from 'react-icons/ai'
+import { ImPhone } from 'react-icons/im'
 import { useEffect, useState } from 'react'
 
 export default function TopHeader() {
@@ -17,14 +17,14 @@ export default function TopHeader() {
     <>
       <div className="top_header">
         <div className="stats">
-          <FaChartLine className='graphIcon' color='#0FA958' />
+          <AiOutlineLineChart className='graphIcon' color='#0FA958' />
           <div className='text'>
             <span>Patient Lead generated Till now</span>
             <h6>{num.toLocaleString()}</h6>
           </div>
         </div>
         <div className="call">
-          <IoCall className='callIcon' color="#0fa958" />
+          <ImPhone className='callIcon' color="#0fa958" />
           <span className='tel'><a href={`tel:${tel}`}>{
             String(tel).slice(0, 3) + "-" + String(tel).slice(3, 6) + "-" + String(tel).slice(6)
           }</a></span>

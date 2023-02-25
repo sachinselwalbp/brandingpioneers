@@ -304,7 +304,7 @@ function NavBar() {
                             <div className="row">
                               <div className="col-lg-4 mb-4">
                                 <h6 className="font-weight-bold text-uppercase">
-                                  <Link to="/medical-digital-marketing" className="nav-link text-small pb-0">Medical Digital Marketing</Link>
+                                  <Link to="/marketing-services" className="nav-link text-small pb-0">Medical Digital Marketing</Link>
                                 </h6>
                                 <ul className="list-unstyled">
                                   <li className="nav-item"><Link to="/marketing-services/healthcare-seo" className="nav-link text-small pb-0">Healthcare SEO</Link>
