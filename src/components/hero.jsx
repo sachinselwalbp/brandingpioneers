@@ -1,5 +1,5 @@
 import { motion } from "framer-motion"
-import AnimatedCharacters from "./animeChar"
+import AnimatedCharacters from "./animatedCharacters"
 
 export default function Hero({ parent, title }) {
     const placeholderText = [

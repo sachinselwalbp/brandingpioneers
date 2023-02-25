@@ -10,9 +10,9 @@ import { TbBrandMeta } from "react-icons/tb"
 import { FaInstagram, FaGoogle } from "react-icons/fa"
 import { SiMicrosoftbing } from "react-icons/si"
 import { BsFacebook, BsTwitter, BsYoutube } from "react-icons/bs"
-import FooterContact from "../../components/FooterContact"
+import FooterContact from "../../components/footerContact"
 import Typewriter from 'typewriter-effect';
-import AnimatedCharacters from "../../components/animeChar"
+import AnimatedCharacters from "../../components/animatedCharacters"
 
 export default function HomePage() {
     return (
