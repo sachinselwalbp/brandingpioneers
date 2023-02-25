@@ -16,7 +16,7 @@ import AnimatedCharacters from "../../components/animatedCharacters"
 
 export default function HomePage() {
     return (
-        <motion.div>
+        <>
             <Helmet>
                 <title>Branding Pioneers</title>
             </Helmet>
@@ -30,7 +30,7 @@ export default function HomePage() {
                 <FAQSection />
                 <FooterContact />
             </div>
-        </motion.div>
+        </>
     )
 }
 
