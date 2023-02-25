@@ -31,7 +31,8 @@ function NavBar() {
                   <li className="nav-item">
                     <Link to="/" className="nav-link font-weight-bold">Home</Link>
                   </li>
-                  <li className="nav-item dropdown megamenu"><a href="/" id="dropdownMenuButton1 megamneu" data-bs-toggle="dropdown" aria-expanded="false" className="nav-link dropdown-toggle font-weight-bold dropdown-toggle">About</a>
+                  <li className="nav-item dropdown megamenu">
+                  <span id="dropdownMenuButton1 megamneu" data-bs-toggle="dropdown" aria-expanded="false" className="cursor-pointer nav-link dropdown-toggle font-weight-bold dropdown-toggle">About</span>
                     <div aria-labelledby="dropdownMenuButton1" className="dropdown-menu border-0 p-0 m-0">
                       <div className="container mega-shadow">
                         <div className="row bg-white rounded-3 m-0">
@@ -65,7 +66,8 @@ function NavBar() {
                       </div>
                     </div>
                   </li>
-                  <li className="nav-item dropdown megamenu"><a href="/" id="dropdownMenuButton1 megamneu" data-bs-toggle="dropdown" aria-expanded="false" className="nav-link dropdown-toggle font-weight-bold dropdown-toggle">Our Speciality</a>
+                  <li className="nav-item dropdown megamenu">
+                  <span id="dropdownMenuButton1 megamneu" data-bs-toggle="dropdown" aria-expanded="false" className="cursor-pointer nav-link dropdown-toggle font-weight-bold dropdown-toggle">Our Speciality</span>
                     <div aria-labelledby="dropdownMenuButton1" className="dropdown-menu border-0 p-0 m-0">
                       <div className="container mega-shadow">
                         <div className="row bg-white rounded-3 m-0">
@@ -183,7 +185,8 @@ function NavBar() {
                       </div>
                     </div>
                   </li>
-                  <li className="nav-item dropdown megamenu"><a href="/" id="dropdownMenuButton2 megamneu" data-bs-toggle="dropdown" aria-expanded="false" className="nav-link dropdown-toggle font-weight-bold dropdown-toggle">Services</a>
+                  <li className="nav-item dropdown megamenu">
+                  <span id="dropdownMenuButton2 megamneu" data-bs-toggle="dropdown" aria-expanded="false" className="cursor-pointer nav-link dropdown-toggle font-weight-bold dropdown-toggle">Services</span>
                     <div aria-labelledby="dropdownMenuButton2" className="dropdown-menu border-0 p-0 m-0">
                       <div className="container mega-shadow">
                         <div className="row bg-white rounded-3 m-0">
@@ -296,7 +299,8 @@ function NavBar() {
                       </div>
                     </div>
                   </li>
-                  <li className="nav-item dropdown megamenu"><a href="/" id="dropdownMenuButton2 megamneu" data-bs-toggle="dropdown" aria-expanded="false" className="nav-link dropdown-toggle font-weight-bold dropdown-toggle">Our Work</a>
+                  <li className="nav-item dropdown megamenu">
+                  <span id="dropdownMenuButton2 megamneu" data-bs-toggle="dropdown" aria-expanded="false" className="cursor-pointer nav-link dropdown-toggle font-weight-bold dropdown-toggle">Our Work</span>
                     <div aria-labelledby="dropdownMenuButton2" className="dropdown-menu border-0 p-0 m-0">
                       <div className="container mega-shadow">
                         <div className="row bg-white rounded-3 m-0">
@@ -322,7 +326,7 @@ function NavBar() {
                                     <Link to="/marketing-services/healthcare-smm" className="nav-link text-small pb-0">Healthcare SMM</Link>
                                   </li>
                                   <li className="nav-item">
-                                    <Link to="" className="nav-link text-small pb-0">Content Marketing for Healthcare</Link>
+                                    <Link to="/marketing-services/content-marketing-for-healthcare" className="nav-link text-small pb-0">Content Marketing for Healthcare</Link>
                                   </li>
                                   <li className="nav-item">
                                     <Link to="/marketing-services/reputation-management-for-doctors" className="nav-link text-small pb-0">Reputation Management for Doctors</Link>

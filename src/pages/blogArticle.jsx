@@ -1,6 +1,6 @@
 import Helmet from 'react-helmet'
 import './css/post.scss'
-import AnimatedCharacters from '../components/AnimeChar'
+import AnimatedCharacters from '../components/animeChar'
 import { motion } from 'framer-motion'
 
 export default function BlogArticle() {

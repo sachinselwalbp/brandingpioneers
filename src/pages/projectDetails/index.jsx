@@ -1,5 +1,6 @@
 import Helmet from 'react-helmet'
 import './style.scss'
+import Hero from '../../components/hero'
 
 const ProjectDetails = () => {
     return (
@@ -8,26 +9,9 @@ const ProjectDetails = () => {
                 <title>Case Study</title>
             </Helmet>
             <div className="project-detail-container">
-                <Hero />
+                <Hero title="How Deko manages to scale using Stact platforms" parent="Case study" />
                 <CaseStudy />
             </div>
-        </>
-    )
-}
-
-const Hero = () => {
-    return (
-        <>
-            <section className='section-global bg-shade-1 hero'>
-                <div className="container">
-                    <div className="row">
-                        <div className="col-lg-7">
-                            <div className="section-tag mb-8">Case study</div>
-                            <h1 className='display-1'>How Deko manages to scale using Stact platforms</h1>
-                        </div>
-                    </div>
-                </div>
-            </section>
         </>
     )
 }

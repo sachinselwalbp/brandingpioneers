@@ -144,7 +144,9 @@ code {
       margin: 0 8px;
     }
   }
-
+  .cursor-pointer {
+    cursor: pointer;
+  }
   .navbar-collapse {
     @media (max-width: 991.98px) {
       order: 3;

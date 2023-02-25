@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import ProjectCards from '../../components/projectCards'
 import TestimonialCards from '../../components/testimonialCards'
 import './style.scss'
+import Hero from '../../components/hero'
 
 const Projects = () => {
     return (
@@ -11,27 +12,10 @@ const Projects = () => {
                 <title>Projects</title>
             </Helmet>
             <div className="projects-container">
-                <Hero />
+                <Hero title="Our experts and proprietary technology fuel our work" parent="Case studies" />
                 <ProjectsSection />
                 <Testimonials />
             </div>
-        </>
-    )
-}
-
-const Hero = () => {
-    return (
-        <>
-            <section className='section-global bg-shade-1 hero'>
-                <div className="container">
-                    <div className="row">
-                        <div className="col-lg-7">
-                            <div className="section-tag mb-8">Case studies</div>
-                            <h1 className='display-1'>Our experts and proprietary technology fuel our work</h1>
-                        </div>
-                    </div>
-                </div>
-            </section>
         </>
     )
 }

@@ -185,22 +185,22 @@ const Team = () => {
     {
       name: 'Sarah Winnemucca',
       position: 'Founder & CEO',
-      imgUrl: 'assets/team1.jpg'
+      imgUrl: 'assets/team.jpg'
     },
     {
       name: 'Alice Paul',
       position: 'Founder & CTO',
-      imgUrl: 'assets/team2.jpg'
+      imgUrl: 'assets/team.jpg'
     },
     {
       name: 'Margaret Sanger',
       position: 'Chief Revenue Officer',
-      imgUrl: 'assets/team3.jpg'
+      imgUrl: 'assets/team.jpg'
     },
     {
       name: 'Katharine Lee',
       position: 'Chief Marketing Officer',
-      imgUrl: 'assets/team4.jpg'
+      imgUrl: 'assets/team.jpg'
     },
   ]
   return (
@@ -236,19 +236,19 @@ const Testimonials = () => {
       text: 'Love the product and the service, and the customer care team is awesome. The features are great, too--everything that you need.',
       userName: 'Mary Edwards',
       position: 'Product director',
-      userImgUrl: 'assets/review_user1.svg'
+      userImgUrl: 'assets/hari.jpg'
     },
     {
       text: 'I recommend this product because it benefits everyone. You will be able to stay connected with your team and clients from all over the world.',
       userName: 'Felisa Rincon',
       position: 'Head of Product',
-      userImgUrl: 'assets/review_user2.svg'
+      userImgUrl: 'assets/hari.jpg'
     },
     {
       text: 'I was able to get a fully functional online office space that included all the software we needed and it was super cheap!',
       userName: 'Eunice Kennedy',
       position: 'Product director',
-      userImgUrl: 'assets/review_user3.svg'
+      userImgUrl: 'assets/hari.jpg'
     }
   ]
 

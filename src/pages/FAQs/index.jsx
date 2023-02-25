@@ -1,6 +1,7 @@
 import { Accordion } from 'react-bootstrap'
 import Helmet from 'react-helmet'
 import './style.scss'
+import Hero from '../../components/hero'
 
 const FAQs = () => {
     return (
@@ -9,26 +10,9 @@ const FAQs = () => {
                 <title>Stact - FAQs</title>
             </Helmet>
             <div className="faqs-container">
-                <Hero />
+                <Hero title="Get answers of all your questions here" parent="FAQs" />
                 <FAQSection />
             </div>
-        </>
-    )
-}
-
-const Hero = () => {
-    return (
-        <>
-            <section className='section-global bg-shade-1 hero'>
-                <div className="container">
-                    <div className="row">
-                        <div className="col-lg-7">
-                            <div className="section-tag mb-8">FAQs</div>
-                            <h1 className='display-1'>Get answers of all your questions here</h1>
-                        </div>
-                    </div>
-                </div>
-            </section>
         </>
     )
 }

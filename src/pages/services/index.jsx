@@ -1,8 +1,7 @@
 import Helmet from "react-helmet"
 import FeatureCards from '../../components/featureCards'
 import ServiceCards from '../../components/serviceCards'
-import { motion } from "framer-motion"
-import AnimatedCharacters from "../../components/AnimeChar"
+import Hero from "../../components/hero"
 
 const Services = () => {
     return (
@@ -11,48 +10,10 @@ const Services = () => {
                 <title>Services</title>
             </Helmet>
             <div className="services-container">
-                <Hero />
+                <Hero title="We help transform your business from top to bottom" parent="Services" />
                 <ServicesSection />
                 <Features />
             </div>
-        </>
-    )
-}
-
-const Hero = () => {
-    // Placeholder text data, as if from API
-    const placeholderText = [
-        {
-            type: "heading1",
-            text: "We help transform your business from top to bottom."
-        }
-    ]
-
-    const container = {
-        visible: {
-            transition: {
-                staggerChildren: 0.025
-            }
-        }
-    }
-    return (
-        <>
-            <section className='section-global bg-shade-1 hero'>
-                <div className="container">
-                    <div className="row">
-                        <div className="col-lg-7">
-                            <div className="section-tag mb-8">Services</div>
-                            {/* <h1 className='display-1'>We help transform your business from top to bottom.</h1> */}
-                            <motion.div
-                                initial="hidden"
-                                animate="visible"
-                                variants={container} className="heroHeading">
-                                {placeholderText.map((item, index) => <AnimatedCharacters {...item} key={index} />)}
-                            </motion.div>
-                        </div>
-                    </div>
-                </div>
-            </section>
         </>
     )
 }

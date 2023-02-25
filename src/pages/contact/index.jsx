@@ -1,7 +1,6 @@
 import Helmet from 'react-helmet'
 import './style.scss'
-import { motion } from 'framer-motion'
-import AnimatedCharacters from '../../components/AnimeChar'
+import Hero from '../../components/hero'
 
 export default function Contact() {
     return (
@@ -10,48 +9,10 @@ export default function Contact() {
                 <title>Stact - Contact</title>
             </Helmet>
             <div className="contact-container">
-                <Hero />
+                <Hero parent="Contact" title="We are always here to ensure customer satisfaction" />
                 <ContactSection />
                 <ContactLinks />
             </div>
-        </>
-    )
-}
-
-const Hero = () => {
-    const placeholderText = [
-        {
-            type: "heading1",
-            text: "We are always here to ensure customer satisfaction"
-        }
-    ]
-    const container = {
-        visible: {
-            transition: {
-                staggerChildren: 0.025
-            }
-        }
-    }
-
-    return (
-        <>
-            <section className='section-global bg-shade-1 hero'>
-                <div className="container">
-                    <div className="row">
-                        <div className="col-lg-7">
-                            <div className="section-tag mb-8">Contact</div>
-                            {/* <h1 className='display-1'>We are always here to ensure customer satisfaction</h1> */}
-                            <motion.div
-                                initial="hidden"
-                                animate="visible"
-                                variants={container}
-                                className="heroHeading">
-                                {placeholderText.map((item, index) => <AnimatedCharacters {...item} key={index} />)}
-                            </motion.div>
-                        </div>
-                    </div>
-                </div>
-            </section>
         </>
     )
 }
@@ -151,8 +112,7 @@ const ContactLinks = () => {
                                         </div>
                                     </a>
                                 </div>
-                            )
-                        }
+                            )}
                     </div>
                 </div>
             </section>

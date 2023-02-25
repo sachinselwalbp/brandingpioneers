@@ -6,13 +6,13 @@ import TestimonialCards from "../../components/testimonialCards"
 import './style.scss'
 import { Accordion } from 'react-bootstrap'
 import { motion } from "framer-motion"
-// import AnimatedCharacters from "../components/AnimeChar"
 import { TbBrandMeta } from "react-icons/tb"
 import { FaInstagram, FaGoogle } from "react-icons/fa"
 import { SiMicrosoftbing } from "react-icons/si"
 import { BsFacebook, BsTwitter, BsYoutube } from "react-icons/bs"
 import FooterContact from "../../components/FooterContact"
 import Typewriter from 'typewriter-effect';
+import AnimatedCharacters from "../../components/animeChar"
 
 export default function HomePage() {
     return (
@@ -60,8 +60,8 @@ const brands = [
 const Hero = () => {
     const placeholderText = [
         {
-            type: "heading2",
-            text: "Transform Your Healthcare Marketing with Branding Pioneers."
+            type: "headingHome",
+            text: "Transform Your Healthcare Marketing With Branding Pioneers"
         }
     ]
 
@@ -79,19 +79,14 @@ const Hero = () => {
                 <div className="container">
                     <div className="row gy-5">
                         <div className="col-lg-6 align-self-center">
-                            {/* <motion.div
+                            <motion.div
                                 initial="hidden"
                                 animate="visible"
                                 variants={container}>
                                 <div>
                                     {placeholderText.map((item, index) => <AnimatedCharacters {...item} key={index} />)}
                                 </div>
-                            </motion.div> */}
-
-                            <h1 style={{
-                                fontSize: "3rem",
-                                lineHeight: "normal"
-                            }}>Transform Your Healthcare Marketing with Branding Pioneers</h1>
+                            </motion.div>
                             <p className="home_hero_subheading">
                                 <Typewriter
                                     options={{
@@ -155,20 +150,20 @@ const Services = () => {
             <section className="section-global">
                 <div className="container">
                     <div className="row mb-40">
-                        {/* <div className="col-xl-6 col-lg-6 offset-xl-3 offset-lg-3 text-center"> */}
-                        <div className="text-center">
-                            <div className="section-tag mb-8">Our Services</div>
-                            <h2>One-Stop Solution for Healthcare Marketing and Patient Acquisition</h2>
-                            <p className="mx-4">Unlock the Full Potential of Your Healthcare Business with Our Comprehensive Marketing Services - From Digital Patient Acquisition and SEO to Reputation Management and Sales Automation, We Help You Build Your Brand, Reach More Patients, and Drive Results.</p>
+                        <div className="mx-auto offset-xl-3 offset-lg-3 text-center">
+                            <div className="text-center">
+                                <div className="section-tag mb-8">Our Services</div>
+                                <h2>One-Stop Solution for Healthcare Marketing and Patient Acquisition</h2>
+                                <p className="mx-4">Unlock the Full Potential of Your Healthcare Business with Our Comprehensive Marketing Services - From Digital Patient Acquisition and SEO to Reputation Management and Sales Automation, We Help You Build Your Brand, Reach More Patients, and Drive Results.</p>
+                            </div>
                         </div>
                     </div>
                     <div className="row">
-                        {
-                            services.map((service, i) =>
-                                <div className="col-lg-4 col-xl-3 col-md-6 col-sm-6 gx-5 gy-4" key={i}>
-                                    <ServiceCards data={service} src="home" />
-                                </div>)
-                        }
+                        {services.map((service, i) =>
+                            <div className="col-lg-4 col-xl-3 col-md-6 col-sm-6 gx-5 gy-4" key={i}>
+                                <ServiceCards data={service} src="home" />
+                            </div>
+                        )}
                     </div>
                 </div>
             </section>
@@ -228,12 +223,12 @@ const OurPartners = () => {
         <>
             <section className="ourParnersSection">
                 <div className="container">
-                    {/* <div className="row mb-40">
+                    <div className="row mb-40">
                         <div className="col-xl-6 col-lg-6 offset-xl-3 offset-lg-3 text-center">
                             <div className="section-tag mb-8">Our Partners</div>
-                            <h2>Our Technology Partners</h2>
+                            {/* <h2>Our Technology Partners</h2> */}
                         </div>
-                    </div> */}
+                    </div>
                     <div className="d-flex gap-5 align-items-center justify-content-center ourParners text-center flex-wrap">
                         <div>
                             <FaGoogle className="google" fontSize={48} />
@@ -360,15 +355,13 @@ const Culture = () => {
                         </div>
                     </div>
                     <div className="row">
-                        {
-                            culture_data.map((e, i) =>
-                                <div className="col-lg-4 col-md-6 col-sm-6 text-center" key={i}>
-                                    <img loading="lazy" src={require(`./assets/${e.imgUrl}`)} className="img-fluid" alt={e.title} />
-                                    <h3>{e.title}</h3>
-                                    <p className="txt-3">{e.text}</p>
-                                </div>
-                            )
-                        }
+                        {culture_data.map((e, i) =>
+                            <div className="col-lg-4 col-md-6 col-sm-6 text-center" key={i}>
+                                <img loading="lazy" src={require(`./assets/${e.imgUrl}`)} className="img-fluid" alt={e.title} />
+                                <h3>{e.title}</h3>
+                                <p className="txt-3">{e.text}</p>
+                            </div>
+                        )}
                     </div>
                     <p className="txt-1 mt-4">At Branding Pioneers, we believe that our culture is a key driver of our success, and we are committed to nurturing a positive, inclusive, and results-driven work environment that enables our team to thrive and deliver exceptional healthcare marketing solutions to our clients.</p>
                 </div>
