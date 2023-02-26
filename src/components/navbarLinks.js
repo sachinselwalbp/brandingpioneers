@@ -59,4 +59,4 @@ const internalpages = [
   { title: 'Paid Advertising for Healthcare', href: '/paid-advertising-for-healthcare' },
 ]
 
-export { about,internalpages };
+export { about, internalpages };
