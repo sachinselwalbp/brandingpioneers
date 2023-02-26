@@ -17,7 +17,7 @@ export default function NavBar() {
           </Navbar.Brand>
           <Navbar.Toggle />
           <Navbar.Collapse>
-            <Nav className="mx-auto py-1 my-2">
+            <Nav className="mx-auto py-1 my-3">
               <Nav.Link as={Link} className="font-weight-bold" to="/">Home</Nav.Link>
               <NavDropdown className="megamenu" title="About">
                 <Container className="mega-shadow">
@@ -158,7 +158,7 @@ export default function NavBar() {
                   </Row>
                 </Container>
               </NavDropdown>
-              <NavDropdown className="megamenu" title="Our Speciality">
+              <NavDropdown className="megamenu" title="Services">
                 <Container className="mega-shadow">
                   <Row className="bg-white rounded-3 m-0 p-4">
                     <Col lg={4} className="mb-4">
