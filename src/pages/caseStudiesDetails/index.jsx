@@ -2,7 +2,7 @@ import Helmet from 'react-helmet'
 import './style.scss'
 import Hero from '../../components/hero'
 
-const ProjectDetails = () => {
+export default function CaseStudiesDetails() {
     return (
         <>
             <Helmet>
@@ -44,5 +44,3 @@ const CaseStudy = () => {
         </>
     )
 }
-
-export default ProjectDetails

@@ -12,16 +12,8 @@ const about = [
     href: '/about/testimonials'
   },
   {
-    title: 'Projects',
-    href: '/projects'
-  },
-  {
     title: 'Case Studies',
     href: '/case-studies'
-  },
-  {
-    title: 'Websites',
-    href: '/websites'
   }
 ]
 

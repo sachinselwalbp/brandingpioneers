@@ -1,7 +1,7 @@
 import Helmet from 'react-helmet'
 import { Link } from 'react-router-dom'
 import BrandSection from '../../components/brandSection'
-import ProjectCards from '../../components/projectCards'
+import ProjectCards from '../../components/caseStudiesCards'
 import ServiceCards from '../../components/serviceCards'
 import TestimonialCards from '../../components/testimonialCards'
 import './style.scss'

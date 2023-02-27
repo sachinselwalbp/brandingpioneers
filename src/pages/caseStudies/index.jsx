@@ -1,89 +1,89 @@
 import Helmet from 'react-helmet'
 import { Link } from 'react-router-dom'
-import ProjectCards from '../../components/projectCards'
+import ProjectCards from '../../components/caseStudiesCards'
 import TestimonialCards from '../../components/testimonialCards'
 import './style.scss'
 import Hero from '../../components/hero'
 
-const Projects = () => {
+export default function CaseStudies() {
     return (
         <>
             <Helmet>
-                <title>Projects</title>
+                <title>Case Studies</title>
             </Helmet>
             <div className="projects-container">
                 <Hero title="Our experts and proprietary technology fuel our work" parent="Case studies" />
-                <ProjectsSection />
+                <CaseStudiesSection />
                 <Testimonials />
             </div>
         </>
     )
 }
 
-const ProjectsSection = () => {
+const CaseStudiesSection = () => {
     const projects_data = [
         {
             category: 'development',
             text: 'LAPI - Single entry point API management',
             imgUrl: 'assets/project1.png',
             color: "#F97316",
-            link: '/project-detail'
+            link: '/case-studies-details'
         },
         {
             category: 'design',
             text: 'How Deko manages to scale using Stact',
             imgUrl: 'assets/project2.png',
             color: "#2D7EF8",
-            link: '/project-detail'
+            link: '/case-studies-details'
         },
         {
             category: 'branding',
             text: "Teno's journey from small to giant",
             imgUrl: 'assets/project3.png',
             color: "#00AA45",
-            link: '/project-detail'
+            link: '/case-studies-details'
         },
         {
             category: 'branding',
             text: "Teno's journey from small to giant",
             imgUrl: 'assets/project4.png',
             color: "#F15757",
-            link: '/project-detail'
+            link: '/case-studies-details'
         },
         {
             category: 'branding',
             text: "Teno's journey from small to giant",
             imgUrl: 'assets/project5.png',
             color: "#7F57F1",
-            link: '/project-detail'
+            link: '/case-studies-details'
         },
         {
             category: 'branding',
             text: "Teno's journey from small to giant",
             imgUrl: 'assets/project6.png',
             color: "#007AFF",
-            link: '/project-detail'
+            link: '/case-studies-details'
         },
         {
             category: 'branding',
             text: "Teno's journey from small to giant",
             imgUrl: 'assets/project7.png',
             color: "#17CF97",
-            link: '/project-detail'
+            link: '/case-studies-details'
         },
         {
             category: 'branding',
             text: "Teno's journey from small to giant",
             imgUrl: 'assets/project8.png',
             color: "#FF7A00",
-            link: '/project-detail'
+            link: '/case-studies-details'
         },
         {
             category: 'branding',
             text: "Teno's journey from small to giant",
             imgUrl: 'assets/project9.png',
             color: "#25CAAC",
-            link: '/project-detail'
+            link: '/case-studies-details'
         }
     ]
 
@@ -92,7 +92,7 @@ const ProjectsSection = () => {
             <section className='section-global'>
                 <div className="container">
                     <div className="row">
-                        <ProjectCards data={projects_data} src="projects" />
+                        <ProjectCards data={projects_data} src="caseStudies" />
                     </div>
                 </div>
             </section>
@@ -141,12 +141,10 @@ const Testimonials = () => {
                         </div>
                     </div>
                     <div className="row">
-                        <TestimonialCards data={testimonial_data} src="projects" />
+                        <TestimonialCards data={testimonial_data} src="caseStudies" />
                     </div>
                 </div>
             </div>
         </>
     )
 }
-
-export default Projects

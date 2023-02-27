@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
-import './css/projectCards.scss'
+import './css/caseStudiesCard.scss'
 
-const ProjectCards = ({ data, src }) => {
+export default function CaseStudiesCard({ data, src }) {
     return (
         <>
             {
@@ -25,5 +25,3 @@ const ProjectCards = ({ data, src }) => {
         </>
     )
 }
-
-export default ProjectCards

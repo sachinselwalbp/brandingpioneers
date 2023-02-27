@@ -4,8 +4,8 @@ import IndexPage from './pages/IndexPage';
 import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom'
 import NotFound from './pages/404';
 import Blog from './pages/blog';
-import ProjectDetails from './pages/projectDetails';
-import Projects from './pages/projects';
+import CaseStudies from './pages/caseStudies';
+import CaseStudiesDetails from './pages/caseStudiesDetails';
 import Contact from './pages/contact';
 import WebServices from './pages/webServices';
 import MarketingStrategies from './pages/marketingStrategies';
@@ -244,8 +244,8 @@ export default function BrandingPioneers() {
                 <Route path='medical-graphics-design' element={<MedicalGraphicsDesign />} />
               </Route>
               <Route path='/faqs' element={<FAQs />} />
-              <Route path='/projects' element={<Projects />} />
-              <Route path='/project-detail' element={<ProjectDetails />} />
+              <Route path='/case-studies' element={<CaseStudies />} />
+              <Route path='/case-studies-details' element={<CaseStudiesDetails />} />
               <Route path='/blog' element={<Blog />} />
               <Route path='/contact' element={<Contact />} />
               <Route path='*' element={<NotFound />} />

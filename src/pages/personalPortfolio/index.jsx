@@ -2,7 +2,7 @@ import './style.scss'
 import Helmet from 'react-helmet'
 import { Link } from 'react-router-dom'
 import BrandSection from '../../components/brandSection'
-import ProjectCards from '../../components/projectCards'
+import ProjectCards from '../../components/caseStudiesCards'
 
 const PersonalPortfolio = () => {
     return(
