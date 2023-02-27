@@ -122,7 +122,7 @@ export default function NavBar() {
                         <NavDropdown.Item as={Link} to="/services/orm" className="nav-link text-small pb-0">Online Reputation Management</NavDropdown.Item>
                       </h6>
                       <NavDropdown.Item as={Link} to="/services/orm/google-review-management" className="nav-link text-small pb-0">Google Review Management</NavDropdown.Item>
-                      <NavDropdown.Item as={Link} to="/services/orm/ouora-review" className="nav-link text-small pb-0">Quora Review</NavDropdown.Item>
+                      <NavDropdown.Item as={Link} to="/services/orm/quora-review" className="nav-link text-small pb-0">Quora Review</NavDropdown.Item>
                       <NavDropdown.Item as={Link} to="/services/orm/testimonials-video-creation" className="nav-link text-small pb-0">Testimonials Video Creation</NavDropdown.Item>
                       <br />
                       <br />
@@ -168,7 +168,7 @@ export default function NavBar() {
                       <NavDropdown.Item as={Link} to="/marketing-services/reputation-management-for-doctors" className="nav-link text-small pb-0">Reputation Management for Doctors</NavDropdown.Item>
                       <NavDropdown.Item as={Link} to="/marketing-services/healthcare-hocial-media-management" className="nav-link text-small pb-0">Healthcare Social Media Management</NavDropdown.Item>
                       <NavDropdown.Item as={Link} to="/marketing-services/email-marketing-for-healthcare" className="nav-link text-small pb-0">Email Marketing for Healthcare</NavDropdown.Item>
-                      <NavDropdown.Item as={Link} to="/marketing-services/guest-posting-gervices-for-healthcare" className="nav-link text-small pb-0">Guest Posting Services for Healthcare</NavDropdown.Item>
+                      <NavDropdown.Item as={Link} to="/marketing-services/guest-posting-services-for-healthcare" className="nav-link text-small pb-0">Guest Posting Services for Healthcare</NavDropdown.Item>
                       <NavDropdown.Item as={Link} to="/marketing-services/page-load-speed-optimiation" className="nav-link text-small pb-0">Page Load Speed Optimiation</NavDropdown.Item>
                     </Col>
                     <Col lg={4} className="mb-4 col_bg2">

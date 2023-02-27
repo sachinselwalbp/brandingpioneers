@@ -49,7 +49,6 @@ import AestheticClinics from './pages/OurSpeciality/aesthetic-clinics';
 import PolyClinics from './pages/OurSpeciality/poly-clinics';
 import IVFClinics from './pages/OurSpeciality/ivf-clinics';
 import Healthcare from './pages/OurSpeciality/healthcare';
-import Dentists from './pages/OurSpeciality/dentists';
 import Chiropractors from './pages/OurSpeciality/Chiropractors';
 import InfertilityandIVF from './pages/OurSpeciality/infertility-and-ivf';
 import AestheticDermatologist from './pages/OurSpeciality/aesthetic-dermatologist';
@@ -161,7 +160,7 @@ export default function BrandingPioneers() {
                 </Route>
                 <Route path='healthcare' element={<Pages />}>
                   <Route index element={<Healthcare />} />
-                  <Route path='dentists' element={<Dentists />} />
+                  <Route path='dentists' element={<DentalClinic />} />
                   <Route path='plastic-surgeons' element={<PlasticSurgeons />} />
                   <Route path='orthopedics' element={<Orthopedician />} />
                   <Route path='chiropractors' element={<Chiropractors />} />
