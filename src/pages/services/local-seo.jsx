@@ -35,7 +35,7 @@ const CaseStudy = () => {
                 </ol>
                 <p className="txt-1">In conclusion, at Branding Pioneers, we offer a wide range of digital marketing services, including SEO, performance ads, and lead generation, and local SEO, to help your business achieve its online goals. Contact us today to learn more about our services and how we can help your business grow.</p>
                 <br />
-                {/* <img loading='lazy' src="" alt="case-study" className='img-fluid' /> */}
+                
               </div>
             </div>
           </div>

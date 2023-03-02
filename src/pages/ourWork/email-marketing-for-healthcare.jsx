@@ -29,7 +29,7 @@ const CaseStudy = () => {
                 <p className="txt-1">Email marketing is an essential component of any effective patient engagement strategy. By sending targeted and personalized messages to your patients, you can build trust, loyalty, and brand awareness. At Branding Pioneers, we specialize in creating and executing email marketing campaigns that drive results.</p>
                 <p className="txt-1">Our team of experts can help you craft engaging and informative emails that keep your patients informed and engaged. We use advanced segmentation and personalization techniques to ensure that your emails are highly relevant and tailored to the individual needs and interests of your patients.</p>
                 <br />
-                {/* <img loading='lazy' src="" alt="case-study" className='img-fluid' /> */}
+                
               </div>
             </div>
           </div>

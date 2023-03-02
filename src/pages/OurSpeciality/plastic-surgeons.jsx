@@ -41,7 +41,7 @@ const CaseStudy = () => {
                   At Branding Pioneers, we are dedicated to helping orthopedicians and plastic surgeons achieve their marketing goals. Contact us today to learn more about how we can help you stand out in the competitive healthcare market.</p>
 
                 <br />
-                {/* <img loading='lazy' src="" alt="case-study" className='img-fluid' /> */}
+                
               </div>
             </div>
           </div>

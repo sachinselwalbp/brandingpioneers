@@ -33,7 +33,7 @@ const CaseStudy = () => {
                 <p className="txt-1">Finally, our call tracking platform is designed to help you monitor and analyze your phone-based sales and marketing efforts. With call tracking, you can easily track phone calls, identify key trends, and make data-driven decisions that can help you improve your overall sales and marketing performance.</p>
                 <p className="txt-1">At Branding Pioneers, we're committed to helping healthcare providers achieve greater success through sales and automation. Contact us today to learn more about our suite of powerful tools and strategies, and how they can help you take your healthcare digital marketing to the next level.</p>
                 <br />
-                {/* <img loading='lazy' src="" alt="case-study" className='img-fluid' /> */}
+                
               </div>
             </div>
           </div>

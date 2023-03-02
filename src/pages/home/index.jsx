@@ -6,7 +6,7 @@ import TestimonialCards from "../../components/testimonialCards"
 import './style.scss'
 import { Accordion } from 'react-bootstrap'
 import { motion } from "framer-motion"
-import { TbBrandMeta } from "react-icons/tb"
+import { TbBrandMeta, TbArrowNarrowRight } from "react-icons/tb"
 import { FaInstagram, FaGoogle } from "react-icons/fa"
 import { SiMicrosoftbing } from "react-icons/si"
 import { BsFacebook, BsTwitter, BsYoutube } from "react-icons/bs"
@@ -96,10 +96,10 @@ const Hero = () => {
                                     }}
                                 />
                             </p>
-                            <form className='mt-40 me-lg-5'>
+                            <form className="mt-40 me-lg-5" action="https://app.headlessforms.cloud/api/v1/form-submission/J5AwbzdSw9" method="POST" enctype="multipart/form-data">
                                 <div className="cta-form d-flex align-items-center justify-content-between">
                                     <div className="cta-input">
-                                        <input type="tel" className="form-control" id="exampleFormControlInput1" placeholder="Enter Your Phone Number" />
+                                        <input type="tel" name="number" className="form-control" id="exampleFormControlInput1" placeholder="Enter Your Phone Number" required />
                                     </div>
                                     <div className="cta-btn">
                                         <button type="submit" className="btn btn-primary btn-lg">Request A Callback</button>
@@ -407,9 +407,7 @@ const Testimonials = () => {
                         <div className="col d-flex align-self-center">
                             <Link to='about/testimonials' className='btn btn-outline btn-arrow ms-lg-auto'>
                                 See all reviews
-                                <svg width="20" height="20" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path fillRule="evenodd" clipRule="evenodd" d="M3 7.5C3 7.32953 3.06584 7.16605 3.18304 7.04551C3.30024 6.92498 3.45919 6.85726 3.62493 6.85726H10.8654L8.18192 4.09861C8.06458 3.97792 7.99865 3.81423 7.99865 3.64355C7.99865 3.47287 8.06458 3.30918 8.18192 3.18849C8.29927 3.0678 8.45842 3 8.62437 3C8.79032 3 8.94948 3.0678 9.06682 3.18849L12.8164 7.04494C12.8746 7.10464 12.9208 7.17557 12.9523 7.25366C12.9838 7.33175 13 7.41546 13 7.5C13 7.58454 12.9838 7.66825 12.9523 7.74634C12.9208 7.82443 12.8746 7.89536 12.8164 7.95506L9.06682 11.8115C8.94948 11.9322 8.79032 12 8.62437 12C8.45842 12 8.29927 11.9322 8.18192 11.8115C8.06458 11.6908 7.99865 11.5271 7.99865 11.3564C7.99865 11.1858 8.06458 11.0221 8.18192 10.9014L10.8654 8.14274H3.62493C3.45919 8.14274 3.30024 8.07502 3.18304 7.95449C3.06584 7.83395 3 7.67047 3 7.5Z" fill="black" />
-                                </svg>
+                                <TbArrowNarrowRight fontSize={24} />
                             </Link>
                         </div>
                     </div>

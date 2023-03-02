@@ -30,7 +30,7 @@ const CaseStudy = () => {
                 <p className="txt-1">Our social media experts will help you develop a social media strategy that aligns with your business goals and target audience. We will create compelling content, manage your social media accounts, and run targeted ad campaigns to reach your audience and drive engagement.</p>
                 <p className="txt-1">We leverage the latest social media trends and technologies to ensure your brand stays ahead of the curve. From Facebook and Twitter to LinkedIn and Instagram, we can help you make the most of your social media presence and drive business results.</p>
                 <br />
-                {/* <img loading='lazy' src="" alt="case-study" className='img-fluid' /> */}
+                
               </div>
             </div>
           </div>

@@ -34,7 +34,7 @@ const CaseStudy = () => {
                 <p className="txt-1">With our testimonial video creation services, you can expect professional-quality videos that showcase your brand's unique value proposition and customer satisfaction. Whether you want to feature your testimonials on your website, social media channels, or other marketing platforms, we can help you achieve your goals.</p>
                 <p className="txt-1">Contact us today to learn more about our testimonial video creation services and how we can help you boost your brand's credibility and reputation.</p>
                 <br />
-                {/* <img loading='lazy' src="" alt="case-study" className='img-fluid' /> */}
+                
               </div>
             </div>
           </div>

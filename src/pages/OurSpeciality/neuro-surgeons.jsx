@@ -44,7 +44,7 @@ const CaseStudy = () => {
                   At Branding Pioneers, we are dedicated to helping neurosurgeons achieve their marketing goals. Contact us today to learn more about how we can help your practice stand out in the crowded healthcare market.</p>
                 <p className="txt-1">Welcome to Branding Pioneers, the healthcare digital marketing company that specializes in creating customized digital marketing solutions for healthcare providers. We understand that every healthcare provider is unique, and we work with you to develop a comprehensive digital marketing strategy that aligns with your goals and objectives.</p>
                 <br />
-                {/* <img loading='lazy' src="" alt="case-study" className='img-fluid' /> */}
+                
               </div>
             </div>
           </div>

@@ -39,7 +39,7 @@ const CaseStudy = () => {
                   At Branding Pioneers, we are dedicated to helping aesthetic clinics achieve their marketing goals. Contact us today to learn more about how we can help your clinic stand out in the crowded aesthetic market.</p>
 
                 <br />
-                {/* <img loading='lazy' src="" alt="case-study" className='img-fluid' /> */}
+                
               </div>
             </div>
           </div>

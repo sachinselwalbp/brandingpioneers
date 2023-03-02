@@ -37,7 +37,7 @@ const CaseStudy = () => {
                 <p className="txt-1">We monitor and manage online reviews to ensure that cardiac surgeons maintain a positive reputation online. Our team works to resolve any negative feedback and improve overall patient satisfaction.</p>
                 <p className="txt-1">At Branding Pioneers, we are committed to helping healthcare providers achieve their marketing goals. Contact us today to learn more about how we can help you increase your online presence and attract new patients.</p>
                 <br />
-                {/* <img loading='lazy' src="" alt="case-study" className='img-fluid' /> */}
+                
               </div>
             </div>
           </div>

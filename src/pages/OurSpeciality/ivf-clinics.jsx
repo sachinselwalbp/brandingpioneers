@@ -39,7 +39,7 @@ const CaseStudy = () => {
                 <p className="txt-1">We monitor and manage online reviews to ensure that IVF clinics maintain a positive reputation online. Our team works to resolve any negative feedback and improve overall patient satisfaction. Our online reputation management services help to establish IVF clinics as trustworthy and reliable providers of infertility treatments.</p>
                 <p className="txt-1">At Branding Pioneers, we are dedicated to helping IVF clinics achieve their marketing goals. Contact us today to learn more about how we can help your clinic stand out in the competitive IVF industry.</p>
                 <br />
-                {/* <img loading='lazy' src="" alt="case-study" className='img-fluid' /> */}
+                
               </div>
             </div>
           </div>

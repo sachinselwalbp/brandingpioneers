@@ -31,7 +31,7 @@ const CaseStudy = () => {
                 <p className="txt-1">Our LEADMATE platform is a powerful lead generation tool that can help you identify new sales opportunities and connect with potential customers. With LEADMATE, you can automatically generate new leads, score and prioritize them based on their likelihood to convert, and seamlessly integrate them into your existing sales and marketing processes.</p>
                 <p className="txt-1">Contact us today to learn more about how LEADMATE can help you grow your healthcare practice or organization.</p>
                 <br />
-                {/* <img loading='lazy' src="" alt="case-study" className='img-fluid' /> */}
+                
               </div>
             </div>
           </div>

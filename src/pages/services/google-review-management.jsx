@@ -30,7 +30,7 @@ const CaseStudy = () => {
                 <p className="txt-1">At Branding Pioneers, we help businesses improve their Google Reviews by providing a range of services. Our team can help you optimize your Google My Business listing, respond to reviews, and even solicit new reviews from happy customers.</p>
                 <p className="txt-1">With our Google Review management services, you can be confident that your business is getting the positive attention it deserves.</p>
                 <br />
-                {/* <img loading='lazy' src="" alt="case-study" className='img-fluid' /> */}
+                
               </div>
             </div>
           </div>

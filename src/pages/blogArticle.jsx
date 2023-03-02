@@ -47,7 +47,7 @@ const Hero = ({ data }) => {
                             <div className="section-tag mb-8">
                                 {data.category.data.attributes.title}
                             </div>
-                            {/* <h1 className='display-1'>{data.title}</h1> */}
+                            <h1 className='display-1'>{data.title}</h1>
                             <motion.div
                                 initial="hidden"
                                 animate="visible"

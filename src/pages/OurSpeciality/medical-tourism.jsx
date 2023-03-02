@@ -39,7 +39,7 @@ const CaseStudy = () => {
                 <p className="txt-1">We monitor and manage online reviews to ensure that medical tourism providers maintain a positive reputation online. Our team works to resolve any negative feedback and improve overall patient satisfaction.
                   At Branding Pioneers, we are dedicated to helping medical tourism providers achieve their marketing goals. Contact us today to learn more about how we can help your organization stand out in the competitive medical tourism industry.</p>
                 <br />
-                {/* <img loading='lazy' src="" alt="case-study" className='img-fluid' /> */}
+                
               </div>
             </div>
           </div>

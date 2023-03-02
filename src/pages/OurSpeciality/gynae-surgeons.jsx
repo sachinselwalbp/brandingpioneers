@@ -36,7 +36,7 @@ const CaseStudy = () => {
                 <h2 className="display-2">Online Reputation Management</h2>
                 <p className="txt-1">We monitor and manage online reviews to ensure that gynae surgeons maintain a positive reputation online. Our team works to resolve any negative feedback and improve overall patient satisfaction.</p>
                 <br />
-                {/* <img loading='lazy' src="" alt="case-study" className='img-fluid' /> */}
+                
               </div>
             </div>
           </div>

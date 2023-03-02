@@ -30,7 +30,7 @@ const CaseStudy = () => {
                 <p className="txt-1">Our PR experts will help you craft compelling messages and stories that resonate with your target audience and showcase your expertise. We will leverage our extensive media relationships and industry insights to secure media placements, interviews, and other opportunities to increase your visibility and credibility.</p>
                 <p className="txt-1">In addition, we can help you identify and engage with key influencers in your industry to amplify your message and reach a wider audience. Our team will help you develop effective influencer marketing campaigns that drive engagement, increase brand awareness, and generate leads.</p>
                 <br />
-                {/* <img loading='lazy' src="" alt="case-study" className='img-fluid' /> */}
+                
               </div>
             </div>
           </div>

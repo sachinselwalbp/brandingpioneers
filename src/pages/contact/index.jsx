@@ -6,7 +6,7 @@ export default function Contact() {
     return (
         <>
             <Helmet>
-                <title>Stact - Contact</title>
+                <title>Contact</title>
             </Helmet>
             <div className="contact-container">
                 <Hero parent="Contact" title="We are always here to ensure customer satisfaction" />
@@ -42,22 +42,22 @@ const ContactSection = () => {
                             </div>)}
                         </div>
                         <div className="col-lg-6">
-                            <form className="row g-3">
+                            <form className="row g-3" action="https://app.headlessforms.cloud/api/v1/form-submission/VFEVuhdpaR" method="POST" enctype="multipart/form-data">
                                 <div className="col-md-12">
                                     <label className="form-label">Name*</label>
-                                    <input type="text" className="form-control" placeholder="Jhon Doe" required />
+                                    <input type="text" name='name' className="form-control" placeholder="Jhon Doe" required />
                                 </div>
                                 <div className="col-12">
                                     <label className="form-label">Email*</label>
-                                    <input type="email" className="form-control" placeholder="jhondoe@email.com" required />
+                                    <input type="email" name='email' className="form-control" placeholder="jhondoe@email.com" required />
                                 </div>
                                 <div className="col-12">
-                                    <label className="form-label">Subject*</label>
-                                    <input type="text" className="form-control" placeholder="Enter subject" required />
+                                    <label className="form-label">Phone*</label>
+                                    <input type="tel" name='phone' className="form-control" placeholder="Enter Phone Number" required />
                                 </div>
                                 <div className="col-md-12">
                                     <label className="form-label">Message*</label>
-                                    <textarea className="form-control" rows="4" placeholder="How can we help you?" required></textarea>
+                                    <textarea className="form-control" name='message' rows="4" placeholder="How can we help you?" required></textarea>
                                 </div>
                                 <div className="col-12">
                                     <button type="submit" className="btn btn-primary btn-lg">Submit</button>
@@ -72,7 +72,6 @@ const ContactSection = () => {
 }
 
 const ContactLinks = () => {
-
     const contactLinkData = [
         {
             title: "Email",

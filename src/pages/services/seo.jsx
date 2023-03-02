@@ -34,7 +34,7 @@ const CaseStudy = () => {
                   <li className="txt-1">Reporting and analysis: We'll provide you with regular reports on your website's performance and use data analytics to refine our SEO strategy and maximize your ROI.</li>
                 </ol>
                 <br />
-                {/* <img loading='lazy' src="" alt="case-study" className='img-fluid' /> */}
+                
               </div>
             </div>
           </div>

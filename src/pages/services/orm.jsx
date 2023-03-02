@@ -30,7 +30,7 @@ const CaseStudy = () => {
                 <p className="txt-1">Our team of experts can help you monitor your brand's online reputation and take corrective action when necessary. From monitoring social media platforms and search engines to addressing negative reviews and comments, we work to ensure that your online reputation is always in top shape.<br />
                   With our online reputation management services, you can trust that your business's reputation is in good hands.</p>
                 <br />
-                {/* <img loading='lazy' src="" alt="case-study" className='img-fluid' /> */}
+                
               </div>
             </div>
           </div>

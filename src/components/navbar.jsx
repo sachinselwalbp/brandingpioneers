@@ -166,7 +166,7 @@ export default function NavBar() {
                       <NavDropdown.Item as={Link} to="/marketing-services/healthcare-smm" className="nav-link text-small pb-0">Healthcare SMM</NavDropdown.Item>
                       <NavDropdown.Item as={Link} to="/marketing-services/content-marketing-for-healthcare" className="nav-link text-small pb-0">Content Marketing for Healthcare</NavDropdown.Item>
                       <NavDropdown.Item as={Link} to="/marketing-services/reputation-management-for-doctors" className="nav-link text-small pb-0">Reputation Management for Doctors</NavDropdown.Item>
-                      <NavDropdown.Item as={Link} to="/marketing-services/healthcare-hocial-media-management" className="nav-link text-small pb-0">Healthcare Social Media Management</NavDropdown.Item>
+                      <NavDropdown.Item as={Link} to="/marketing-services/healthcare-social-media-management" className="nav-link text-small pb-0">Healthcare Social Media Management</NavDropdown.Item>
                       <NavDropdown.Item as={Link} to="/marketing-services/email-marketing-for-healthcare" className="nav-link text-small pb-0">Email Marketing for Healthcare</NavDropdown.Item>
                       <NavDropdown.Item as={Link} to="/marketing-services/guest-posting-services-for-healthcare" className="nav-link text-small pb-0">Guest Posting Services for Healthcare</NavDropdown.Item>
                       <NavDropdown.Item as={Link} to="/marketing-services/page-load-speed-optimiation" className="nav-link text-small pb-0">Page Load Speed Optimiation</NavDropdown.Item>

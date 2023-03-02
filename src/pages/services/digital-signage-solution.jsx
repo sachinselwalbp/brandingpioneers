@@ -29,7 +29,6 @@ const CaseStudy = () => {
                 <p className="txt-1">Digital signage is a powerful tool for engaging patients and promoting your brand. At Branding Pioneers, we offer a range of digital signage solutions that can help you communicate with patients more effectively.</p>
                 <p className="txt-1">From informative and educational content to promotional materials and special offers, we can help you create compelling digital signage displays that capture the attention of your patients and drive engagement. Our team of experts can help you design, install, and manage digital signage solutions that are tailored to your specific needs and goals.</p>
                 <br />
-                {/* <img loading='lazy' src="" alt="case-study" className='img-fluid' /> */}
               </div>
             </div>
           </div>

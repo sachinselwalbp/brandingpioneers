@@ -40,7 +40,7 @@ const CaseStudy = () => {
                 <p className="txt-1">We monitor and manage online reviews to ensure that nursing homes maintain a positive reputation online. Our team works to resolve any negative feedback and improve overall resident satisfaction.</p>
                 <p className="txt-1">At Branding Pioneers, we are dedicated to helping nursing homes achieve their marketing goals. Contact us today to learn more about how we can help your nursing home stand out in the crowded healthcare market and attract new residents.</p>
                 <br />
-                {/* <img loading='lazy' src="" alt="case-study" className='img-fluid' /> */}
+                
               </div>
             </div>
           </div>

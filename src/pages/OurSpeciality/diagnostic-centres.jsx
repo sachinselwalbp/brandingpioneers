@@ -57,7 +57,7 @@ const CaseStudy = () => {
                 <p className="txt-1">We monitor and manage online reviews to ensure that diagnostic centers maintain a positive reputation online. Our team works to resolve any negative feedback and improve overall patient satisfaction.</p>
                 <p className="txt-1">At Branding Pioneers, we are dedicated to helping diagnostic centers achieve their marketing goals. Contact us today to learn more about how we can help your center stand out in the crowded healthcare market.</p>
                 <br />
-                {/* <img loading='lazy' src="" alt="case-study" className='img-fluid' /> */}
+                
               </div>
             </div>
           </div>

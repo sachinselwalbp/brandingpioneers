@@ -32,7 +32,7 @@ const CaseStudy = () => {
                 <p className="txt-1">With our Quora marketing services, we can help you create and optimize your Quora profile, write compelling answers to questions relevant to your industry, and engage with users to build your authority on the platform. Our team of experts will work closely with you to understand your business and develop a customized Quora marketing strategy that aligns with your goals and budget.</p>
                 <p className="txt-1">Don't miss out on the opportunity to reach millions of potential customers on Quora. Contact us today to learn more about our Quora marketing services.</p>
                 <br />
-                {/* <img loading='lazy' src="" alt="case-study" className='img-fluid' /> */}
+                
               </div>
             </div>
           </div>

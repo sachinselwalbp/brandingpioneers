@@ -5,7 +5,6 @@ import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-route
 import NotFound from './pages/404';
 import Blog from './pages/blog';
 import CaseStudies from './pages/caseStudies';
-import CaseStudiesDetails from './pages/caseStudiesDetails';
 import Contact from './pages/contact';
 import WebServices from './pages/webServices';
 import MarketingStrategies from './pages/marketingStrategies';
@@ -99,6 +98,23 @@ import MedicalWebsiteRevamps from './pages/ourWork/medical-website-revamps';
 import ECommerceDevelopmentforHealthcare from './pages/ourWork/e-commerce-development-for-healthcare';
 import HealthcareContentCreation from './pages/ourWork/healthcare-content-creation';
 import MedicalGraphicsDesign from './pages/ourWork/medical-graphics-design';
+import ApolloHospitalsCaseStudy from './pages/caseStudiesDetails/apollo';
+import MaxHospitalCaseStudy from './pages/caseStudiesDetails/max';
+import DrAnjaliSharmaCaseStudy from './pages/caseStudiesDetails/drAnjali';
+import IVFGangaramCaseStudy from './pages/caseStudiesDetails/ivfGangaram';
+import MedmonksCaseStudy from './pages/caseStudiesDetails/medmonks';
+import LamidasHospitalsCaseStudy from './pages/caseStudiesDetails/lamidas';
+import OVUMHospitalCaseStudy from './pages/caseStudiesDetails/ovum';
+import AsterClinicsUAECaseStudy from './pages/caseStudiesDetails/Aster';
+import NeelkanthHospitalCaseStudy from './pages/caseStudiesDetails/neelkanth';
+import PushpanjaliHospitalCaseStudy from './pages/caseStudiesDetails/pushpanjali';
+import CloudNineFertilityCaseStudy from './pages/caseStudiesDetails/cloud-nine-fertility';
+import NemaElderCareCaseStudy from './pages/caseStudiesDetails/nema-elder-care';
+import AarvyHospitalCaseStudy from './pages/caseStudiesDetails/aarvy';
+import RajHospitalsCaseStudy from './pages/caseStudiesDetails/raj';
+import SarveshHospitalCaseStudy from './pages/caseStudiesDetails/sarvesh';
+import SSKidneyCaseStudy from './pages/caseStudiesDetails/SSKidney';
+import CDASHospitalCaseStudy from './pages/caseStudiesDetails/CDAS';
 
 export default function BrandingPioneers() {
   return (
@@ -242,9 +258,27 @@ export default function BrandingPioneers() {
                 <Route path='healthcare-content-creation' element={<HealthcareContentCreation />} />
                 <Route path='medical-graphics-design' element={<MedicalGraphicsDesign />} />
               </Route>
+              <Route path='/case-studies' element={<Pages />}>
+                <Route index element={<CaseStudies />} />
+                <Route path='apollo-hospitals' element={<ApolloHospitalsCaseStudy />} />
+                <Route path="max-hospital" element={<MaxHospitalCaseStudy />} />
+                <Route path='dr-anjali-sharma' element={<DrAnjaliSharmaCaseStudy />} />
+                <Route path='ivf-gangaram' element={<IVFGangaramCaseStudy />} />
+                <Route path='medmonks' element={<MedmonksCaseStudy />} />
+                <Route path='lamidas-hospitals' element={<LamidasHospitalsCaseStudy />} />
+                <Route path='ovum-hospital' element={<OVUMHospitalCaseStudy />} />
+                <Route path='aster-clinic-uae' element={<AsterClinicsUAECaseStudy />} />
+                <Route path='neelkanth-hospital' element={<NeelkanthHospitalCaseStudy />} />
+                <Route path='pushpanjali-hospital' element={<PushpanjaliHospitalCaseStudy />} />
+                <Route path='cloud-nine-fertility' element={<CloudNineFertilityCaseStudy />} />
+                <Route path='nema-elder-care' element={<NemaElderCareCaseStudy />} />
+                <Route path='aarvy-hospital' element={<AarvyHospitalCaseStudy />} />
+                <Route path='raj-hospitals' element={<RajHospitalsCaseStudy />} />
+                <Route path='sarvesh-hospital' element={<SarveshHospitalCaseStudy />} />
+                <Route path='sskidney' element={<SSKidneyCaseStudy />} />
+                <Route path='cdas-hospitals' element={<CDASHospitalCaseStudy />} />
+              </Route>
               <Route path='/faqs' element={<FAQs />} />
-              <Route path='/case-studies' element={<CaseStudies />} />
-              <Route path='/case-studies-details' element={<CaseStudiesDetails />} />
               <Route path='/blog' element={<Blog />} />
               <Route path='/contact' element={<Contact />} />
               <Route path='*' element={<NotFound />} />

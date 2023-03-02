@@ -30,7 +30,7 @@ const CaseStudy = () => {
                 <p className="txt-1">Our team of video marketing experts will help you develop a video marketing strategy that aligns with your business goals and target audience. We can create a variety of video content, including explainer videos, product demos, customer testimonials, and more.</p>
                 <p className="txt-1">We will also help you distribute your video content on the right channels, including your website, social media, and email marketing campaigns, to reach your target audience and drive engagement. With our video marketing services, you can create compelling video content that connects with your audience and drives business results.</p>
                 <br />
-                {/* <img loading='lazy' src="" alt="case-study" className='img-fluid' /> */}
+                
               </div>
             </div>
           </div>

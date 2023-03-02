@@ -24,7 +24,7 @@ const CaseStudy = () => {
               <div className="case-study-section">
 
                 <br />
-                {/* <img loading='lazy' src="" alt="case-study" className='img-fluid' /> */}
+                
               </div>
             </div>
           </div>

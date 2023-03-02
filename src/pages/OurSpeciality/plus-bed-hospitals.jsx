@@ -42,7 +42,7 @@ function CaseStudy() {
                 <p className="txt-1">We monitor and manage online reviews to ensure that 100 plus bed hospitals maintain a positive reputation online. Our team works to resolve any negative feedback and improve overall patient satisfaction.</p>
                 <p className="txt-1">At Branding Pioneers, we are dedicated to helping 100 plus bed hospitals achieve their marketing goals. Contact us today to learn more about how we can help your hospital stand out in the crowded healthcare market.</p>
                 <br />
-                {/* <img loading='lazy' src="" alt="case-study" className='img-fluid' /> */}
+                
               </div>
             </div>
           </div>
