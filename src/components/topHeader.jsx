@@ -1,5 +1,5 @@
 import './css/topHeader.scss'
-import { AiOutlineLineChart } from 'react-icons/ai'
+import { IoIosRocket } from 'react-icons/io'
 import { ImPhone } from 'react-icons/im'
 import { useEffect, useState } from 'react'
 
@@ -17,7 +17,7 @@ export default function TopHeader() {
     <>
       <div className="top_header">
         <div className="stats">
-          <AiOutlineLineChart className='graphIcon' color='#0FA958' />
+          <IoIosRocket className='graphIcon' color='#0FA958' />
           <div className='text'>
             <span>Patient Lead generated Till now</span>
             <h6>{num.toLocaleString()}</h6>

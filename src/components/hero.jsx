@@ -22,7 +22,7 @@ export default function Hero({ parent, title }) {
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-7">
-                            <div className="section-tag mb-8">{parent}</div>
+                            <div className="section-tag mb-8 ">{parent}</div>
                             <motion.div
                                 initial="hidden"
                                 animate="visible"

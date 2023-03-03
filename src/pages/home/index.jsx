@@ -10,7 +10,6 @@ import { TbBrandMeta, TbArrowNarrowRight } from "react-icons/tb"
 import { FaInstagram, FaGoogle } from "react-icons/fa"
 import { SiMicrosoftbing } from "react-icons/si"
 import { BsFacebook, BsTwitter, BsYoutube } from "react-icons/bs"
-import FooterContact from "../../components/FooterContact"
 import Typewriter from 'typewriter-effect';
 import AnimatedCharacters from "../../components/animatedCharacters"
 
@@ -28,9 +27,8 @@ export default function HomePage() {
                 <Testimonials />
                 <OurPartners />
                 <FAQSection />
-                <FooterContact />
-                {/* <BrandSection brands={brands} src={'home'} bordered /> */}
-                <BrandSection brands={brands} src={'home'} customTitle="Brands I’ve worked with" light bg="bg-shade-1" pt />
+                <BrandSection brands={brands} src={'home'} customTitle="Brand we've worked with" light pt />
+                <Stats />
             </div>
         </>
     )
@@ -196,21 +194,30 @@ const FAQSection = () => {
 
     return (
         <>
-            <section className='section-global'>
-                <div className="container container-2">
+            <section className="section-global bg-shade-green" id="FAQs">
+                <div className="container">
                     <div className="row">
-                        <div className="col-xl-6 col-lg-6 offset-xl-3 offset-lg-3 text-center">
-                            <div className="section-tag mb-8">FAQ's</div>
-                            <h2>Do You Have Questions?</h2>
+                        <div className="row mb-40">
+                            <div className="col-xl-6 col-lg-6 offset-xl-3 offset-lg-3 text-center">
+                                <div className="section-tag mb-8">FAQs</div>
+                                <h2>Do You Have Questions?</h2>
+                            </div>
                         </div>
-                        <div className="col-12">
-                            <Accordion alwaysOpen flush>
-                                {FAQ_data.map((e, i) =>
-                                    <Accordion.Item eventKey={i} key={i}>
-                                        <Accordion.Header>{e.title}</Accordion.Header>
-                                        <Accordion.Body>{e.text}</Accordion.Body>
-                                    </Accordion.Item>)}
-                            </Accordion>
+                    </div>
+                    <div className="container container-2">
+                        <div className="row">
+                            <div className="col-12">
+                                <Accordion alwaysOpen flush>
+                                    {FAQ_data.map((e, i) =>
+                                        <Accordion.Item eventKey={i} key={i}>
+                                            <Accordion.Header>{e.title}</Accordion.Header>
+                                            <Accordion.Body>
+                                                {e.text}
+                                            </Accordion.Body>
+                                        </Accordion.Item>
+                                    )}
+                                </Accordion>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -420,3 +427,44 @@ const Testimonials = () => {
         </>
     )
 }
+
+const Stats = () => {
+    const stats_data = [
+      {
+        head: '4.5 Stars',
+        text: 'Overall ratings',
+        icoUrl: 'assets/stats_icon1.svg'
+      },
+      {
+        head: '554.5k Ratings',
+        text: 'On all the platforms',
+        icoUrl: 'assets/stats_icon2.svg'
+      },
+      {
+        head: '5M+ Downloads',
+        text: 'Across all platform',
+        icoUrl: 'assets/stats_icon3.svg'
+      }
+    ]
+  
+    return (
+      <>
+        <section className="section-global dark">
+          <div className="container container-2">
+            <div className="row gy-5">
+              <div className="col-lg-3 col-md-12">
+                <h4>We want to change the way you are gaming!</h4>
+              </div>
+              {stats_data.map((e, i) =>
+                <div className="col-lg-3 col-md-4 col-sm-6 text-center" key={i}>
+                  <img loading='lazy' src={require(`./${e.icoUrl}`)} className="mb-8" height="30" alt="stats" />
+                  <h4 className='mb-0'>{e.head}</h4>
+                  <div className="txt-4">{e.text}</div>
+                </div>
+              )}
+            </div>
+          </div>
+        </section>
+      </>
+    )
+  }

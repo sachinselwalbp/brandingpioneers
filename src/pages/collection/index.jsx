@@ -1,7 +1,6 @@
 import "./style.scss"
 import Helmet from 'react-helmet'
 import FeatureCards from '../../components/featureCards'
-import { Accordion } from 'react-bootstrap'
 
 export default function Collection() {
   return (
@@ -11,14 +10,11 @@ export default function Collection() {
       </Helmet>
       <div className="collection">
         <Showcase />
-        <Stats />
         <EndCTA />
         <Features />
         <Features2 />
-        <FAQs />
         <About />
         <PersonalDetails />
-        <PortfolioFooter />
       </div>
     </>
   )
@@ -128,46 +124,6 @@ const Features2 = () => {
   )
 }
 
-const FAQs = () => {
-  const FAQ_data = [
-    {
-      title: 'How do I setup and run stact locally?',
-      text: "Running Stact on your local machine is easy. You must first install NodeJS and npm on your computer. Second, use the terminal to install node modules using the command 'npm install' in the stact directory. Finally, launch Stact using the 'npm start' command."
-    }
-  ]
-
-  return (
-    <section className="section-global bg-shade-green" id="FAQs">
-      <div className="container">
-        <div className="row">
-          <div className="row mb-40">
-            <div className="col-xl-6 col-lg-6 offset-xl-3 offset-lg-3 text-center">
-              <div className="section-tag mb-8">FAQs</div>
-              <h2>Feel free to contact us with any queries you may have.</h2>
-            </div>
-          </div>
-        </div>
-        <div className="container container-2">
-          <div className="row">
-            <div className="col-12">
-              <Accordion alwaysOpen flush>
-                {FAQ_data.map((e, i) =>
-                  <Accordion.Item eventKey={i} key={i}>
-                    <Accordion.Header>{e.title}</Accordion.Header>
-                    <Accordion.Body>
-                      {e.text}
-                    </Accordion.Body>
-                  </Accordion.Item>
-                )}
-              </Accordion>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  )
-}
-
 const Showcase = () => {
   return (
     <>
@@ -192,48 +148,6 @@ const Showcase = () => {
             <div className="col-lg-6">
               <img loading='lazy' src={require('./assets/showcase2.png')} className="img-fluid" alt="feature1" />
             </div>
-          </div>
-        </div>
-      </section>
-    </>
-  )
-}
-
-const Stats = () => {
-
-  const stats_data = [
-    {
-      head: '4.5 Stars',
-      text: 'Overall ratings',
-      icoUrl: 'assets/stats_icon1.svg'
-    },
-    {
-      head: '554.5k Ratings',
-      text: 'On all the platforms',
-      icoUrl: 'assets/stats_icon2.svg'
-    },
-    {
-      head: '5M+ Downloads',
-      text: 'Across all platform',
-      icoUrl: 'assets/stats_icon3.svg'
-    }
-  ]
-
-  return (
-    <>
-      <section className="section-global dark">
-        <div className="container container-2">
-          <div className="row gy-5">
-            <div className="col-lg-3 col-md-12">
-              <h4>We want to change the way you are gaming!</h4>
-            </div>
-            {stats_data.map((e, i) =>
-              <div className="col-lg-3 col-md-4 col-sm-6 text-center" key={i}>
-                <img loading='lazy' src={require(`./${e.icoUrl}`)} className="mb-8" height="30" alt="stats" />
-                <h4 className='mb-0'>{e.head}</h4>
-                <div className="txt-4">{e.text}</div>
-              </div>
-            )}
           </div>
         </div>
       </section>
@@ -339,54 +253,6 @@ const PersonalDetails = () => {
                 )}
               </div>
             )}
-          </div>
-        </div>
-      </section>
-    </>
-  )
-}
-
-const PortfolioFooter = () => {
-  const contactLinkData = [
-    {
-      title: "Email",
-      text: "nellie@email.com",
-      icoUrl: "assets/contact_ico1.svg",
-      link: "mailto:nellie@email.com"
-    },
-    {
-      title: "Phone",
-      text: "+91 123 4567 890",
-      icoUrl: "assets/contact_ico2.svg",
-      link: "tel:+911234567890"
-    }
-  ]
-
-  return (
-    <>
-      <section className='section-global dark'>
-        <div className="container container-2">
-          <div className="row gy-4">
-            <div className="col-lg-6 col-md-6">
-              <h2 className='mb-16'>Let’s collab...</h2>
-              <p className='txt-2'>You've come to the right spot at the right moment if you're beginning a business or stuck in the middle and need a creative Digital Marketer to help you grow your business or enhance your user engagements.</p>
-            </div>
-            <div className="col-lg-4 offset-lg-2 col-md-6">
-              <div className="contact-link-container">
-                {
-                  contactLinkData.map((e, i) =>
-                    <a href={e.link} className="contact-link" key={i}>
-                      <div className="contact-link-container d-flex align-items-center">
-                        <img loading='lazy' src={require(`./${e.icoUrl}`)} height="50" alt={e.title} />
-                        <div className='ms-3'>
-                          <div className="txt-2 fw-500 color-1">{e.title}</div>
-                          <div className="txt-3">{e.text}</div>
-                        </div>
-                      </div>
-                    </a>
-                  )}
-              </div>
-            </div>
           </div>
         </div>
       </section>

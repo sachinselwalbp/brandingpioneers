@@ -15,6 +15,7 @@ export default function AboutPage() {
       <Content />
       <Features />
       <Team />
+      <PortfolioFooter />
     </>
   )
 }
@@ -210,6 +211,55 @@ const Team = () => {
                 </div>
               </div>
             )}
+          </div>
+        </div>
+      </section>
+    </>
+  )
+}
+
+
+const PortfolioFooter = () => {
+  const contactLinkData = [
+    {
+      title: "Email",
+      text: "nellie@email.com",
+      icoUrl: "assets/contact_ico1.svg",
+      link: "mailto:nellie@email.com"
+    },
+    {
+      title: "Phone",
+      text: "+91 123 4567 890",
+      icoUrl: "assets/contact_ico2.svg",
+      link: "tel:+911234567890"
+    }
+  ]
+
+  return (
+    <>
+      <section className='section-global dark'>
+        <div className="container container-2">
+          <div className="row gy-4">
+            <div className="col-lg-6 col-md-6">
+              <h2 className='mb-16'>Let’s collab...</h2>
+              <p className='txt-2'>You've come to the right spot at the right moment if you're beginning a business or stuck in the middle and need a creative Digital Marketer to help you grow your business or enhance your user engagements.</p>
+            </div>
+            <div className="col-lg-4 offset-lg-2 col-md-6">
+              <div className="contact-link-container">
+                {
+                  contactLinkData.map((e, i) =>
+                    <a href={e.link} className="contact-link text-decoration-none" key={i}>
+                      <div className="contact-link-container mb-3 d-flex align-items-center">
+                        <img loading='lazy' src={require(`./${e.icoUrl}`)} height="50" alt={e.title} />
+                        <div className='ms-3'>
+                          <div className="txt-2 fw-500 color-1">{e.title}</div>
+                          <div className="txt-3">{e.text}</div>
+                        </div>
+                      </div>
+                    </a>
+                  )}
+              </div>
+            </div>
           </div>
         </div>
       </section>

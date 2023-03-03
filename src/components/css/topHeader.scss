@@ -29,14 +29,14 @@
     display: flex;
     align-items: center;
     .callIcon {
-      font-size: 28px;
+      font-size: 24px;
       @media (max-width: 991.98px) {
         font-size: 16px;
       }
     }
     .tel {
       font-size: 18px;
-      font-weight: 700;
+      font-weight: 500;
       @media (max-width: 991.98px) {
         font-size: 13px;
       }
