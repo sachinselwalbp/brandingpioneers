@@ -12,22 +12,11 @@ import MedicalDigitalMarketing from './pages/medicalDigitalMarketing';
 import HomePage from './pages/home';
 import FAQs from './pages/FAQs';
 import Content from './pages/content';
-import Pricing from './pages/pricing';
-import Consulting from './pages/consulting';
-import AppLanding from './pages/appLanding';
-import Landing1 from './pages/landing1';
-import Landing2 from './pages/landing2';
-import Landing3 from './pages/landing3';
-import SaasLanding from './pages/saasLanding';
-import PersonalPortfolio from './pages/personalPortfolio';
-
 import Pages from './pages/pages';
-
 import About from './pages/about';
 import WhoWeAre from './pages/about/who-we-are';
 import WhyChooseUs from './pages/about/why-choose-us';
 import Testimonilas from './pages/about/testimonials';
-
 import OurSpeciality from './pages/OurSpeciality';
 import Hospitals from './pages/OurSpeciality/hospitals';
 import CorporateHospitals from './pages/OurSpeciality/corporate-hospitals';
@@ -52,7 +41,6 @@ import Chiropractors from './pages/OurSpeciality/Chiropractors';
 import InfertilityandIVF from './pages/OurSpeciality/infertility-and-ivf';
 import AestheticDermatologist from './pages/OurSpeciality/aesthetic-dermatologist';
 import MedicalTourism from './pages/OurSpeciality/medical-tourism';
-
 import Services from './pages/services';
 import AdsAndLeadGeneration from './pages/services/ads-and-lead-generation';
 import DigitalPatientAcquistion from './pages/services/digital-patient-acquistion';
@@ -115,6 +103,7 @@ import RajHospitalsCaseStudy from './pages/caseStudiesDetails/raj';
 import SarveshHospitalCaseStudy from './pages/caseStudiesDetails/sarvesh';
 import SSKidneyCaseStudy from './pages/caseStudiesDetails/SSKidney';
 import CDASHospitalCaseStudy from './pages/caseStudiesDetails/CDAS';
+import Collection from './pages/collection';
 
 export default function BrandingPioneers() {
   return (
@@ -132,14 +121,6 @@ export default function BrandingPioneers() {
           <Routes>
             <Route path='/' element={<IndexPage />}>
               <Route index element={<HomePage />} />
-              <Route path='/landing-1' element={<Landing1 />} />
-              <Route path='/landing-2' element={<Landing2 />} />
-              <Route path='/landing-3' element={<Landing3 />} />
-              <Route path='/app-landing' element={<AppLanding />} />
-              <Route path='/saas-landing' element={<SaasLanding />} />
-              <Route path='/personal-portfolio' element={<PersonalPortfolio />} />
-              <Route path='/consulting' element={<Consulting />} />
-              <Route path='/pricing' element={<Pricing />} />
               <Route path='/about' element={<Pages />}>
                 <Route index element={<About />} />
                 <Route path='who-we-are' element={<WhoWeAre />} />
@@ -281,6 +262,7 @@ export default function BrandingPioneers() {
               <Route path='/faqs' element={<FAQs />} />
               <Route path='/blog' element={<Blog />} />
               <Route path='/contact' element={<Contact />} />
+              <Route path='/collection' element={<Collection />} />
               <Route path='*' element={<NotFound />} />
             </Route>
           </Routes>

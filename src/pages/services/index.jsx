@@ -3,7 +3,7 @@ import FeatureCards from '../../components/featureCards'
 import ServiceCards from '../../components/serviceCards'
 import Hero from "../../components/hero"
 
-const Services = () => {
+export default function Services() {
     return (
         <>
             <Helmet>
@@ -114,5 +114,3 @@ const Features = () => {
         </>
     )
 }
-
-export default Services

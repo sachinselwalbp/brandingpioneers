@@ -29,6 +29,8 @@ export default function HomePage() {
                 <OurPartners />
                 <FAQSection />
                 <FooterContact />
+                {/* <BrandSection brands={brands} src={'home'} bordered /> */}
+                <BrandSection brands={brands} src={'home'} customTitle="Brands I’ve worked with" light bg="bg-shade-1" pt />
             </div>
         </>
     )
@@ -75,7 +77,7 @@ const Hero = () => {
 
     return (
         <>
-            <section className="section-global no-border home-hero">
+            <section className="section-global no-border bg-shade-green home-hero">
                 <div className="container">
                     <div className="row gy-5">
                         <div className="col-lg-6 align-self-center">
@@ -113,7 +115,6 @@ const Hero = () => {
                     </div>
                 </div>
             </section>
-            <BrandSection brands={brands} src={'home'} bordered />
         </>
     )
 }

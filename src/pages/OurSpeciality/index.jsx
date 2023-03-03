@@ -10,6 +10,7 @@ export default function OurSpeciality() {
             <div className="about-container">
                 <Hero title="Top-notch solutions provider in the industry" parent="Our Speciality" />
                 <Speciality />
+                <About />
             </div>
         </>
     )
@@ -69,6 +70,50 @@ const Speciality = () => {
                                             </div>
                                         </div>)}
                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </>
+    )
+}
+
+const About = () => {
+    const timeline = [
+        {
+            title: 'Research',
+            text: 'We mine data, uncover insights and identify opportunities'
+        },
+        {
+            title: 'Build',
+            text: 'We architect websites and apps to solve user problems'
+        },
+        {
+            title: 'Scale',
+            text: 'Continuous Delivery pipelines to ensure fast iteration'
+        }
+    ]
+    return (
+        <>
+            <section className='section-global bg-shade-1'>
+                <div className="container">
+                    <div className="row gy-5">
+                        <div className="col-lg-6 text-center align-self-center">
+                            <img loading='lazy' src={require('./assets/about.png')} className="img-fluid about-banner-image" alt="how we work" />
+                        </div>
+                        <div className="col-lg-6">
+                            <div className="section-tag mb-8">How we work</div>
+                            <h2 className='mb-16'>Manage your business effortlessly with Stact</h2>
+                            <p className='txt-1 mb-16'>We empower digital brands to grow faster by providing services in growth marketing + operations and venture capital.</p>
+                            <div className="time-line">
+                                {timeline.map((e, i) =>
+                                    <div className="content" key={i}>
+                                        <div className="index">{i + 1}</div>
+                                        <h3 className='mb-8 mb-0'>{e.title}</h3>
+                                        <p className='txt-2 mb-0'>{e.text}</p>
+                                    </div>
+                                )}
                             </div>
                         </div>
                     </div>
