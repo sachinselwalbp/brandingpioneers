@@ -25,7 +25,7 @@ export default function NavBar() {
                 <Container className="mega-shadow">
                   <Row className="bg-white rounded-3 m-0">
                     <Col lg={7} xl={8} className="p-4">
-                      <Row >
+                      <Row>
                         <Col lg={6} className="mb-4 col_bg1">
                           <h6 className="font-weight-bold text-uppercase">
                             <NavDropdown.Item as={Link} to="/about">ABOUT</NavDropdown.Item>
@@ -42,7 +42,8 @@ export default function NavBar() {
                         </Col>
                       </Row>
                     </Col>
-                    <Col lg={5} xl={4} className="px-0 d-none d-lg-block megaimaga">
+                    <Col lg={5} xl={4} className="mb-4 p-4">
+                      <Link className="text-uppercase nav-link text-small pb-0" to="/career">Career</Link>
                     </Col>
                   </Row>
                 </Container>
@@ -52,10 +53,10 @@ export default function NavBar() {
                   <Row className="bg-white rounded-3 m-0 p-4">
                     <Col lg={3} className="mb-4 col_bg1">
                       <h6 className="font-weight-bold text-uppercase">
-                        <NavDropdown.Item as={Link} to="/our-speciality" className="nav-link text-small pb-0">Our Speciality</NavDropdown.Item>
+                        <NavDropdown.Item as={Link} to="/our-speciality" className="nav-link text-small pb-0 font-weight-bold">Our Speciality</NavDropdown.Item>
                       </h6>
                       <h6 className="font-weight-bold">
-                        <NavDropdown.Item as={Link} to="/our-speciality/hospitals" className="nav-link text-small pb-0">Hospitals</NavDropdown.Item>
+                        <NavDropdown.Item as={Link} to="/our-speciality/hospitals" className="nav-link text-uppercase text-small pb-0">Hospitals</NavDropdown.Item>
                       </h6>
                       <NavDropdown.Item as={Link} to="/our-speciality/hospitals/corporate-hospitals" className="nav-link text-small pb-0">Corporate Hospitals</NavDropdown.Item>
                       <NavDropdown.Item as={Link} to="/our-speciality/hospitals/100plus-bed-hospital" className="nav-link text-small pb-0">100+ Bed Hospitals</NavDropdown.Item>
@@ -63,13 +64,13 @@ export default function NavBar() {
                       <br />
                       <br />
                       <h6 className="font-weight-bold">
-                        <NavDropdown.Item as={Link} to="/our-speciality/startups" className="nav-link text-small pb-0">Startups</NavDropdown.Item>
+                        <NavDropdown.Item as={Link} to="/our-speciality/startups" className="nav-link text-small pb-0 text-uppercase">Startups</NavDropdown.Item>
                       </h6>
                       <NavDropdown.Item as={Link} to="/our-speciality/startups/diagnostic-centres" className="nav-link text-small pb-0">Diagnostic Centres</NavDropdown.Item>
                     </Col>
                     <Col lg={3} className="mb-4 col_bg2">
                       <h6 className="font-weight-bold">
-                        <NavDropdown.Item as={Link} to="/our-speciality/surgeons" className="nav-link text-small pb-0">Surgeons</NavDropdown.Item>
+                        <NavDropdown.Item as={Link} to="/our-speciality/surgeons" className="nav-link text-small pb-0 text-uppercase">Surgeons</NavDropdown.Item>
                       </h6>
                       <NavDropdown.Item as={Link} to="/our-speciality/surgeons/neuro-surgeons" className="nav-link text-small pb-0">Neuro Surgeons</NavDropdown.Item>
                       <NavDropdown.Item as={Link} to="/our-speciality/surgeons/gynae-surgeons" className="nav-link text-small pb-0">Gynae Surgeons</NavDropdown.Item>
@@ -80,7 +81,7 @@ export default function NavBar() {
                     </Col>
                     <Col lg={3} className="mb-4 col_bg3">
                       <h6 className="font-weight-bold">
-                        <NavDropdown.Item as={Link} to="/our-speciality/clinic" className="nav-link text-small pb-0">Clinic</NavDropdown.Item>
+                        <NavDropdown.Item as={Link} to="/our-speciality/clinic" className="nav-link text-small pb-0 text-uppercase">Clinic</NavDropdown.Item>
                       </h6>
                       <NavDropdown.Item as={Link} to="/our-speciality/clinic/dental-clinic" className="nav-link text-small pb-0">Dental Clinic</NavDropdown.Item>
                       <NavDropdown.Item as={Link} to="/our-speciality/clinic/aesthetic-clinics" className="nav-link text-small pb-0">Aesthetic Clinics</NavDropdown.Item>
@@ -89,7 +90,7 @@ export default function NavBar() {
                     </Col>
                     <Col lg={3} className="mb-4 col_bg4">
                       <h6 className="font-weight-bold">
-                        <span className="nav-link text-small pb-0">Healthcare Specialties</span>
+                        <span className="nav-link text-small pb-0 text-uppercase">Healthcare Specialties</span>
                       </h6>
                       <NavDropdown.Item as={Link} to="/our-speciality/healthcare/dentists" className="nav-link text-small pb-0">Dentists</NavDropdown.Item>
                       <NavDropdown.Item as={Link} to="/our-speciality/healthcare/plastic-surgeons" className="nav-link text-small pb-0">Plastic Surgeons</NavDropdown.Item>
@@ -111,7 +112,7 @@ export default function NavBar() {
                         <NavDropdown.Item as={Link} to="/services" className="nav-link text-small pb-0">Services</NavDropdown.Item>
                       </h6>
                       <h6 className="font-weight-bold">
-                        <NavDropdown.Item as={Link} to="/services/digital-patient-acquistion" className="nav-link text-small pb-0">Digital Patient Acquistion</NavDropdown.Item>
+                        <NavDropdown.Item as={Link} to="/services/digital-patient-acquistion" className="nav-link text-small pb-0 text-uppercase">Digital Patient Acquistion</NavDropdown.Item>
                       </h6>
                       <NavDropdown.Item as={Link} className="nav-link text-small pb-0" to="/services/digital-patient-acquistion/seo">Search Engine Optimization</NavDropdown.Item>
                       <NavDropdown.Item as={Link} to="/services/digital-patient-acquistion/ads-and-lead-generation" className="nav-link text-small pb-0">Performance Ads & Lead Generation</NavDropdown.Item>
@@ -119,7 +120,7 @@ export default function NavBar() {
                     </Col>
                     <Col lg={4} className="mb-4 col_bg2">
                       <h6 className="font-weight-bold">
-                        <NavDropdown.Item as={Link} to="/services/orm" className="nav-link text-small pb-0">Online Reputation Management</NavDropdown.Item>
+                        <NavDropdown.Item as={Link} to="/services/orm" className="nav-link text-small pb-0 text-uppercase">Online Reputation Management</NavDropdown.Item>
                       </h6>
                       <NavDropdown.Item as={Link} to="/services/orm/google-review-management" className="nav-link text-small pb-0">Google Review Management</NavDropdown.Item>
                       <NavDropdown.Item as={Link} to="/services/orm/quora-review" className="nav-link text-small pb-0">Quora Review</NavDropdown.Item>
@@ -127,7 +128,7 @@ export default function NavBar() {
                       <br />
                       <br />
                       <h6 className="font-weight-bold">
-                        <NavDropdown.Item as={Link} to="/services/patient-engagement" className="nav-link text-small pb-0">Patient Engagement</NavDropdown.Item>
+                        <NavDropdown.Item as={Link} to="/services/patient-engagement" className="nav-link text-small pb-0 text-uppercase">Patient Engagement</NavDropdown.Item>
                       </h6>
                       <NavDropdown.Item as={Link} className="nav-link text-small pb-0" to="/services/patient-engagement/marketing">Whatsapp/Email/SMS Marketing</NavDropdown.Item>
                       <NavDropdown.Item as={Link} to="/services/patient-engagement/newsletter-designing-and-printing" className="nav-link text-small pb-0">Newsletter Designing/Printing</NavDropdown.Item>
@@ -135,7 +136,7 @@ export default function NavBar() {
                     </Col>
                     <Col lg={4} className="mb-4 col_bg3">
                       <h6 className="font-weight-bold">
-                        <NavDropdown.Item as={Link} to="/services/brand-building" className="nav-link text-small pb-0">Brand Building</NavDropdown.Item>
+                        <NavDropdown.Item as={Link} to="/services/brand-building" className="nav-link text-small pb-0 text-uppercase">Brand Building</NavDropdown.Item>
                       </h6>
                       <NavDropdown.Item as={Link} to="/services/brand-building/social-media-marketing" className="nav-link text-small pb-0">Social Media Marketing</NavDropdown.Item>
                       <NavDropdown.Item as={Link} to="/services/brand-building/video-marketing" className="nav-link text-small pb-0">Video Marketing</NavDropdown.Item>
@@ -143,7 +144,7 @@ export default function NavBar() {
                       <br />
                       <br />
                       <h6 className="font-weight-bold">
-                        <NavDropdown.Item as={Link} to="/services/sales-automation" className="nav-link text-small pb-0">Sales Automation</NavDropdown.Item>
+                        <NavDropdown.Item as={Link} to="/services/sales-automation" className="nav-link text-small pb-0 text-uppercase">Sales Automation</NavDropdown.Item>
                       </h6>
                       <NavDropdown.Item as={Link} className="nav-link text-small pb-0" to="/services/sales-automation/crm">CRM</NavDropdown.Item>
                       <NavDropdown.Item as={Link} to="/services/sales-automation/leadmate" className="nav-link text-small pb-0">Leadmate</NavDropdown.Item>

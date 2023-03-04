@@ -296,6 +296,24 @@ h4 {
   font-weight: 700;
   color: var(--color-red);
 }
+.breadcrumbs {
+  margin-bottom: 16px;
+  font: 400 1rem Verdana;
+  color: var(--color-red);
+  text-transform: capitalize;
+}
+.breadcrumbs > * {
+  display: inline-block;
+  margin-right: 5px;
+}
+.breadcrumbs .crumb {
+  color: var(--color-red);
+  text-decoration: none;
+}
+.breadcrumbs .crumb::after {
+  content: "/";
+  margin-left: 5px;
+}
 // SPACING
 .mb-0 {
   margin-bottom: 0;

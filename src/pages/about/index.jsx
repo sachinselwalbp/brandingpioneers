@@ -223,15 +223,15 @@ const PortfolioFooter = () => {
   const contactLinkData = [
     {
       title: "Email",
-      text: "nellie@email.com",
+      text: "brandingpioneers@gmail.com",
       icoUrl: "assets/contact_ico1.svg",
-      link: "mailto:nellie@email.com"
+      link: "mailto:brandingpioneers@gmail.com"
     },
     {
       title: "Phone",
-      text: "+91 123 4567 890",
+      text: "+91 8377009395",
       icoUrl: "assets/contact_ico2.svg",
-      link: "tel:+911234567890"
+      link: "tel:+91 8377009395"
     }
   ]
 

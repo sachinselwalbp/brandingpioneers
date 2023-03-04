@@ -436,13 +436,13 @@ const Stats = () => {
         icoUrl: 'assets/stats_icon1.svg'
       },
       {
-        head: '554.5k Ratings',
+        head: '1.5k Ratings',
         text: 'On all the platforms',
         icoUrl: 'assets/stats_icon2.svg'
       },
       {
-        head: '5M+ Downloads',
-        text: 'Across all platform',
+        head: '180+ Happy',
+        text: 'Medical Clints',
         icoUrl: 'assets/stats_icon3.svg'
       }
     ]
@@ -453,7 +453,7 @@ const Stats = () => {
           <div className="container container-2">
             <div className="row gy-5">
               <div className="col-lg-3 col-md-12">
-                <h4>We want to change the way you are gaming!</h4>
+                <h4>Transform Your Healthcare Marketing With Branding Pioneers</h4>
               </div>
               {stats_data.map((e, i) =>
                 <div className="col-lg-3 col-md-4 col-sm-6 text-center" key={i}>
