@@ -2,8 +2,6 @@ import { Navbar, Container, Row, Col, NavDropdown, Nav } from "react-bootstrap"
 import { NavLink } from "react-router-dom"
 import Logo from '../logo.svg'
 import './css/navbar.scss'
-import 'bootstrap/dist/css/bootstrap.min.css'
-import 'bootstrap/dist/js/bootstrap.min.js'
 import { Link } from "react-router-dom"
 import { about } from "./navbarLinks"
 
@@ -211,5 +209,5 @@ export default function NavBar() {
         </Container>
       </Navbar >
     </>
-  );
+  )
 }
