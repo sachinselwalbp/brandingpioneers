@@ -24,7 +24,7 @@ export default function NavBar() {
               <NavDropdown className="megamenu" title="About">
                 <Container className="mega-shadow">
                   <Row className="bg-white rounded-3 m-0">
-                    <Col lg={7} xl={8} className="p-4">
+                    <Col lg={7} xl={8} className="p-lg-4">
                       <Row>
                         <Col lg={6} className="mb-4 col_bg1">
                           <h6 className="font-weight-bold text-uppercase">
@@ -42,7 +42,7 @@ export default function NavBar() {
                         </Col>
                       </Row>
                     </Col>
-                    <Col lg={5} xl={4} className="mb-4 p-4">
+                    <Col lg={5} xl={4} className="mb-4 p-lg-4">
                       <Link className="text-uppercase nav-link text-small pb-0" to="/career">Career</Link>
                     </Col>
                   </Row>
@@ -50,7 +50,7 @@ export default function NavBar() {
               </NavDropdown>
               <NavDropdown className="megamenu" title="Our Speciality">
                 <Container className="mega-shadow">
-                  <Row className="bg-white rounded-3 m-0 p-4">
+                  <Row className="bg-white rounded-3 m-0 p-lg-4">
                     <Col lg={3} className="mb-4 col_bg1">
                       <h6 className="font-weight-bold text-uppercase">
                         <NavDropdown.Item as={Link} to="/our-speciality" className="nav-link text-small pb-0 font-weight-bold">Our Speciality</NavDropdown.Item>
@@ -106,7 +106,7 @@ export default function NavBar() {
               </NavDropdown>
               <NavDropdown className="megamenu" title="Services">
                 <Container className="mega-shadow">
-                  <Row className="bg-white rounded-3 m-0 p-4">
+                  <Row className="bg-white rounded-3 m-0 p-lg-4">
                     <Col lg={4} className="mb-4 col_bg1">
                       <h6 className="font-weight-bold text-uppercase">
                         <NavDropdown.Item as={Link} to="/services" className="nav-link text-small pb-0">Services</NavDropdown.Item>
@@ -155,7 +155,7 @@ export default function NavBar() {
               </NavDropdown>
               <NavDropdown className="megamenu" title="Our Work">
                 <Container className="mega-shadow">
-                  <Row className="bg-white rounded-3 m-0 p-4">
+                  <Row className="bg-white rounded-3 m-0 p-lg-4">
                     <Col lg={4} className="mb-4 col_bg1">
                       <h6 className="font-weight-bold text-uppercase">
                         <NavDropdown.Item as={Link} to="/marketing-services" className="nav-link text-small pb-0">Medical Digital Marketing</NavDropdown.Item>

@@ -13,14 +13,13 @@ export default function Collection() {
         <EndCTA />
         <Features />
         <Features2 />
-        <About />
         <PersonalDetails />
       </div>
     </>
   )
 }
 
-const Features = () => {
+function Features() {
   const featurs_data = [
     {
       title: 'Live Collaborations',
@@ -59,7 +58,7 @@ const Features = () => {
 }
 
 
-const Features2 = () => {
+function Features2() {
   const Features_data = [
     {
       title: 'Built with React V18.00',
@@ -124,7 +123,7 @@ const Features2 = () => {
   )
 }
 
-const Showcase = () => {
+function Showcase() {
   return (
     <>
       <section className='section-global'>
@@ -155,7 +154,7 @@ const Showcase = () => {
   )
 }
 
-const EndCTA = () => {
+function EndCTA() {
   return (
     <>
       <section className='section-global end_cta'>
@@ -173,7 +172,7 @@ const EndCTA = () => {
               </a>
             </div>
             <div className="col-lg-6 text-center">
-              <img loading='lazy' src={require('./assets/end_banner.png')} className="img-fluid" alt="download" />
+              <img loading='lazy' src={require('./assets/video_thumb.jpg')} className="img-fluid" alt="download" />
             </div>
           </div>
         </div>
@@ -182,33 +181,7 @@ const EndCTA = () => {
   )
 }
 
-
-
-const About = () => {
-  return (
-    <>
-      <section className='section-global'>
-        <div className="container container-2">
-          <div className="row gy-4">
-            <div className="col-lg-4">
-              <h2>More about me...</h2>
-            </div>
-            <div className="col-lg-8">
-              <p className='txt-1'>
-                Let me give you a little introduction to myself. I'm an Canadian developer with a lot of experience. I learnt Digital Marketing through various online courses and through attending events. I'm also a Google certified Digital Marketing Consultant.
-                <br /><br />
-                I've worked for a couple firms in my marketing career and am presently freelancing. My whole professional life hinges on three words, which you will discover further down. My primary goal is to make money for both the business owner and the client.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-    </>
-  )
-}
-
-const PersonalDetails = () => {
-
+function PersonalDetails() {
   const details = [
     {
       title: 'Skills',

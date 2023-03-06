@@ -57,7 +57,7 @@ const brands = [
     }
 ]
 
-const Hero = () => {
+function Hero() {
     const placeholderText = [
         {
             type: "headingHome",
@@ -117,7 +117,7 @@ const Hero = () => {
     )
 }
 
-const Services = () => {
+function Services() {
     const services = [
         {
             name: 'Digital Patient Acquisition',
@@ -170,7 +170,7 @@ const Services = () => {
     )
 }
 
-const FAQSection = () => {
+function FAQSection() {
     const FAQ_data = [
         {
             title: 'What sets your healthcare marketing agency apart from others?',
@@ -226,7 +226,7 @@ const FAQSection = () => {
     )
 }
 
-const OurPartners = () => {
+function OurPartners() {
     return (
         <>
             <section className="ourParnersSection">
@@ -273,7 +273,7 @@ const OurPartners = () => {
     )
 }
 
-const About = () => {
+function About() {
     return (
         <>
             <section className="section-global bg-shade-1">
@@ -317,8 +317,7 @@ const About = () => {
     )
 }
 
-const Culture = () => {
-
+function Culture() {
     const culture_data = [
         {
             imgUrl: 'aspiration.gif',
@@ -378,7 +377,7 @@ const Culture = () => {
     )
 }
 
-const Testimonials = () => {
+function Testimonials() {
     const testimonial_data = [
         {
             text: 'Branding Pioneers has their hands right on the pulse as far as health marketing is concerned.',
@@ -428,43 +427,43 @@ const Testimonials = () => {
     )
 }
 
-const Stats = () => {
+function Stats() {
     const stats_data = [
-      {
-        head: '4.5 Stars',
-        text: 'Overall ratings',
-        icoUrl: 'assets/stats_icon1.svg'
-      },
-      {
-        head: '1.5k Ratings',
-        text: 'On all the platforms',
-        icoUrl: 'assets/stats_icon2.svg'
-      },
-      {
-        head: '180+ Happy',
-        text: 'Medical Clints',
-        icoUrl: 'assets/stats_icon3.svg'
-      }
+        {
+            head: '4.5 Stars',
+            text: 'Overall ratings',
+            icoUrl: 'assets/stats_icon1.svg'
+        },
+        {
+            head: '1.5k Ratings',
+            text: 'On all the platforms',
+            icoUrl: 'assets/stats_icon2.svg'
+        },
+        {
+            head: '180+ Happy',
+            text: 'Medical Clints',
+            icoUrl: 'assets/stats_icon3.svg'
+        }
     ]
-  
+
     return (
-      <>
-        <section className="section-global dark">
-          <div className="container container-2">
-            <div className="row gy-5">
-              <div className="col-lg-3 col-md-12">
-                <h4>Transform Your Healthcare Marketing With Branding Pioneers</h4>
-              </div>
-              {stats_data.map((e, i) =>
-                <div className="col-lg-3 col-md-4 col-sm-6 text-center" key={i}>
-                  <img loading='lazy' src={require(`./${e.icoUrl}`)} className="mb-8" height="30" alt="stats" />
-                  <h4 className='mb-0'>{e.head}</h4>
-                  <div className="txt-4">{e.text}</div>
+        <>
+            <section className="section-global dark">
+                <div className="container container-2">
+                    <div className="row gy-5">
+                        <div className="col-lg-3 col-md-12">
+                            <h4>Transform Your Healthcare Marketing With Branding Pioneers</h4>
+                        </div>
+                        {stats_data.map((e, i) =>
+                            <div className="col-lg-3 col-md-4 col-sm-6 text-center" key={i}>
+                                <img loading='lazy' src={require(`./${e.icoUrl}`)} className="mb-8" height="30" alt="stats" />
+                                <h4 className='mb-0'>{e.head}</h4>
+                                <div className="txt-4">{e.text}</div>
+                            </div>
+                        )}
+                    </div>
                 </div>
-              )}
-            </div>
-          </div>
-        </section>
-      </>
+            </section>
+        </>
     )
-  }
+}

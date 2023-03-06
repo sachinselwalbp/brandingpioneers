@@ -13,12 +13,13 @@ export default function Services() {
                 <Hero title="We help transform your business from top to bottom" parent="Services" />
                 <ServicesSection />
                 <Features />
+                <About />
             </div>
         </>
     )
 }
 
-const ServicesSection = () => {
+function ServicesSection() {
     const services = [
         {
             name: 'Digital Patient Acquisition',
@@ -39,26 +40,6 @@ const ServicesSection = () => {
             name: 'Sales Automation',
             info: ['CRM', 'Leadmade', 'IVM & Call Tracking'],
             icoUrl: 'assets/service_ico4.svg'
-        },
-        {
-            name: 'Digital Patient Acquisition',
-            info: ['Search Engine Optimization', 'Performance Ads & Lead Generation', 'Local SEO'],
-            icoUrl: 'assets/service_ico5.svg'
-        },
-        {
-            name: 'Reputation Management',
-            info: ['Google Review Management', 'Quora Review', 'Testimonials Video Creation'],
-            icoUrl: 'assets/service_ico6.svg'
-        },
-        {
-            name: 'Brand Building',
-            info: ['Social Media Marketing', 'Video Marketing', 'Influencer & PR'],
-            icoUrl: 'assets/service_ico7.svg'
-        },
-        {
-            name: 'Sales Automation',
-            info: ['CRM', 'Leadmade', 'IVM & Call Tracking'],
-            icoUrl: 'assets/service_ico8.svg'
         }
     ]
 
@@ -78,7 +59,7 @@ const ServicesSection = () => {
     )
 }
 
-const Features = () => {
+function Features() {
     const featurs_data = [
         {
             title: 'Research',
@@ -108,6 +89,29 @@ const Features = () => {
                 <div className="container container-2">
                     <div className="row gy-4 gx-0 gx-md-5">
                         <FeatureCards data={featurs_data} src='service' />
+                    </div>
+                </div>
+            </section>
+        </>
+    )
+}
+
+function About() {
+    return (
+        <>
+            <section className='section-global'>
+                <div className="container container-2">
+                    <div className="row gy-4">
+                        <div className="col-lg-4">
+                            <h2>More about our services...</h2>
+                        </div>
+                        <div className="col-lg-8">
+                            <p className='txt-1'>
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae deleniti eos vero, vel reprehenderit, quae accusantium fugit repudiandae modi expedita quo nam hic officia aliquam esse, dolore illum amet cumque!
+                                <br /><br />
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi in animi recusandae! Illo voluptates modi omnis eius, nulla alias ea iste qui, odio magni aliquam, cum fugit? Odio nam maiores architecto nihil. Porro, atque laborum obcaecati quisquam fuga ex, reprehenderit molestias nulla modi illum earum?
+                            </p>
+                        </div>
                     </div>
                 </div>
             </section>

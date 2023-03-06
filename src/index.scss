@@ -309,11 +309,16 @@ h4 {
 .breadcrumbs .crumb {
   color: var(--color-red);
   text-decoration: none;
+  line-height: 2rem;
 }
 .breadcrumbs .crumb::after {
   content: "/";
   margin-left: 5px;
 }
+// .herobackground {
+//   background: url(https://images.unsplash.com/photo-1677780441269-23948754f365?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80)
+//       no-repeat center/cover;
+// }
 // SPACING
 .mb-0 {
   margin-bottom: 0;
