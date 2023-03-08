@@ -17,7 +17,7 @@ export default function Hero({ parent, title }) {
         }
     }
     return (
-        <section className='section-global herobackground bg-shade-1 hero'>
+        <section className='section-global bg-hero bg-shade-1 hero'>
             <div className="container">
                 <div className="row">
                     <div className="col-lg-7">
