@@ -6,16 +6,16 @@ export default function BlogCards({ data }) {
         <>
             {data.map((e, i) =>
                 <div className="col-lg-4 col-md-6 gy-4" key={i}>
-                    <Link to={data.slug} className="blog_link">
+                    <Link to={e.slug} className="blog_link">
                         <div className="blog-card">
                             <div className="thumb">
-                                <img loading='lazy' src={data.imgURL} className="img-fluid" alt={data.alt} />
+                                <img loading='lazy' src={e.imgURL} className="img-fluid" alt={e.alt} />
                             </div>
                             <div className="body">
                                 <div className='mb-8'>
-                                    <span className='text-uppercase txt-4 fw-500 color-primary'>{data.categoty}</span>&nbsp;•&nbsp;<span className='txt-4'>{data.date}</span>
+                                    <span className='text-uppercase txt-4 fw-500 color-primary'>{e.category}</span>&nbsp;•&nbsp;<span className='txt-4'>{e.date}</span>
                                 </div>
-                                <h4 className="title">{data.title}</h4>
+                                <h4 className="title">{e.title}</h4>
                             </div>
                         </div>
                     </Link>

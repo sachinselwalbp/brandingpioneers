@@ -22,7 +22,7 @@ function CaseStudy() {
         <div className="container container-2">
           <div className="row">
             <div className="col-12 text-center mb-20">
-              {/* <img loading='lazy' src="" className="img-fluid mb-20" alt="CaseStudy" /> */}
+              <img loading='lazy' src={require('./assets/about.png')} className="img-fluid mb-20" alt="CaseStudy" />
             </div>
             <div className="col-12">
               <div className="case-study-section">

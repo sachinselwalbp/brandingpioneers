@@ -19,16 +19,8 @@ export default function Blog() {
 const BlogSection = () => {
   const blogPosts = [
     {
-      title: "First Post",
-      slug: "/first-post",
-      date: "22 Jan 2023",
-      imgURL: "https://images.unsplash.com/photo-1677187315979-4a4be967000e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
-      alt: "First Post",
-      category: "Test"
-    },
-    {
-      title: "First Post",
-      slug: "/first-post",
+      title: "First test Post",
+      slug: "/first-test-post",
       date: "22 Jan 2023",
       imgURL: "https://images.unsplash.com/photo-1677187315979-4a4be967000e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
       alt: "First Post",
