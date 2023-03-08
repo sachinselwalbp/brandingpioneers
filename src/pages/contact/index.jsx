@@ -9,7 +9,7 @@ export default function Contact() {
                 <title>Contact</title>
             </Helmet>
             <div className="contact-container">
-                <Hero parent="Contact" title="We are always here to ensure customer satisfaction" />
+                <Hero title="We are always here to ensure customer satisfaction" />
                 <ContactSection />
                 <ContactLinks />
             </div>

@@ -8,7 +8,7 @@ export default function AdsAndLeadGeneration() {
         <title>Ads And Lead Generation</title>
       </Helmet>
       <div className="project-detail-container">
-        <Hero title="Ads And Lead Generation" parent="Services" />
+        <Hero title="Ads And Lead Generation" />
         <CaseStudy />
       </div>
     </>

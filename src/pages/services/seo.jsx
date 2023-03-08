@@ -8,7 +8,7 @@ export default function SEO() {
         <title>SEO</title>
       </Helmet>
       <div className="project-detail-container">
-        <Hero title="SEO" parent="Services" />
+        <Hero title="SEO" />
         <CaseStudy />
       </div>
     </>

@@ -8,7 +8,7 @@ export default function BrandBuilding() {
         <title>Brand Building</title>
       </Helmet>
       <div className="project-detail-container">
-        <Hero title="Brand Building" parent="Services" />
+        <Hero title="Brand Building" />
         <CaseStudy />
       </div>
     </>

@@ -8,7 +8,7 @@ export default function Marketing() {
         <title>Whatsapp/Email/SMS Marketing</title>
       </Helmet>
       <div className="project-detail-container">
-        <Hero title="Whatsapp/Email/SMS Marketing" parent="Services" />
+        <Hero title="Whatsapp/Email/SMS Marketing" />
         <CaseStudy />
       </div>
     </>

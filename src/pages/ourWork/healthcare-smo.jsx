@@ -8,7 +8,7 @@ export default function HealthcareSMO() {
         <title>Healthcare SMO</title>
       </Helmet>
       <div className="project-detail-container">
-        <Hero title="Healthcare SMO" parent="Our Work" />
+        <Hero title="Healthcare SMO" />
         <CaseStudy />
       </div>
     </>

@@ -10,7 +10,7 @@ export default function Services() {
                 <title>Services</title>
             </Helmet>
             <div className="services-container">
-                <Hero title="We help transform your business from top to bottom" parent="Services" />
+                <Hero title="We help transform your business from top to bottom" />
                 <ServicesSection />
                 <Features />
                 <About />

@@ -7,7 +7,7 @@ export default function Content() {
         <>
             <Helmet><title>Web Services</title></Helmet>
             <div className="about-container">
-                <Hero title="Content" parent="Content" />
+                <Hero title="Content" />
             </div>
         </>
     )

@@ -8,7 +8,7 @@ export default function IVRAndCallTracking() {
         <title>IVR And Call Tracking</title>
       </Helmet>
       <div className="project-detail-container">
-        <Hero title="IVR And Call Tracking" parent="Services" />
+        <Hero title="IVR And Call Tracking" />
         <CaseStudy />
       </div>
     </>

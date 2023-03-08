@@ -8,7 +8,7 @@ export default function CONTENT() {
         <title>CONTENT</title>
       </Helmet>
       <div className="project-detail-container">
-        <Hero title="CONTENT" parent="Our Work" />
+        <Hero title="CONTENT" />
         <CaseStudy />
       </div>
     </>

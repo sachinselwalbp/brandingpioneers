@@ -8,7 +8,7 @@ export default function PPCAdvertisingforHealthcare() {
         <title>PPC Advertising for Healthcare</title>
       </Helmet>
       <div className="project-detail-container">
-        <Hero title="PPC Advertising for Healthcare" parent="Our Work" />
+        <Hero title="PPC Advertising for Healthcare" />
         <CaseStudy />
       </div>
     </>

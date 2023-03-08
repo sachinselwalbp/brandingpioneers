@@ -8,7 +8,7 @@ export default function PageLoadSpeedOptimiation() {
         <title>Page Load Speed Optimiation</title>
       </Helmet>
       <div className="project-detail-container">
-        <Hero title="Page Load Speed Optimiation" parent="Our Work" />
+        <Hero title="Page Load Speed Optimiation" />
         <CaseStudy />
       </div>
     </>

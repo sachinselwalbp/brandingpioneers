@@ -4,7 +4,7 @@ export default function Hospitals() {
   return (
     <>
       <div className="project-detail-container">
-        <Hero title="Hospitals" parent="Hospitals" />
+        <Hero title="Hospitals" />
         <CaseStudy/>
       </div>
     </>

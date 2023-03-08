@@ -8,7 +8,7 @@ export default function GynaeSurgeons() {
         <title>Gynae Surgeons</title>
       </Helmet>
       <div className="project-detail-container">
-        <Hero title="Gynae Surgeons" parent="Our Services" />
+        <Hero title="Gynae Surgeons" />
         <CaseStudy />
       </div>
     </>

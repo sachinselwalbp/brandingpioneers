@@ -8,7 +8,7 @@ export default function ORM() {
         <title>Online Reputation Management</title>
       </Helmet>
       <div className="project-detail-container">
-        <Hero title="Online Reputation Management" parent="Services" />
+        <Hero title="Online Reputation Management" />
         <CaseStudy />
       </div>
     </>

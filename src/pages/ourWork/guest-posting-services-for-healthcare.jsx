@@ -8,7 +8,7 @@ export default function GuestPostingServicesforHealthcare() {
         <title>Guest Posting Services for Healthcare</title>
       </Helmet>
       <div className="project-detail-container">
-        <Hero title="Guest Posting Services for Healthcare" parent="Our Work" />
+        <Hero title="Guest Posting Services for Healthcare" />
         <CaseStudy />
       </div>
     </>

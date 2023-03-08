@@ -10,7 +10,7 @@ export default function FAQs() {
                 <title>FAQs</title>
             </Helmet>
             <div className="faqs-container">
-                <Hero title="Get answers of all your questions here" parent="FAQs" />
+                <Hero title="Get answers of all your questions here" />
                 <FAQSection />
             </div>
         </>

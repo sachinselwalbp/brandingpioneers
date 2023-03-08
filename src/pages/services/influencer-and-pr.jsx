@@ -8,7 +8,7 @@ export default function InfluencerAndPR() {
         <title>Influencer And PR</title>
       </Helmet>
       <div className="project-detail-container">
-        <Hero title="Influencer And PR" parent="Services" />
+        <Hero title="Influencer And PR" />
         <CaseStudy />
       </div>
     </>

@@ -7,7 +7,7 @@ export default function WebServices() {
         <>
             <Helmet><title>Web Services</title></Helmet>
             <div className="about-container">
-                <Hero title="We provide digital solutions for your business" parent="Website Services" />
+                <Hero title="We provide digital solutions for your business" />
             </div>
         </>
     )

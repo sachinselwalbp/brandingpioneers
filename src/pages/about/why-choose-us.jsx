@@ -12,7 +12,7 @@ export default function WhyChooseUs() {
         <title>Why Choose Us</title>
       </Helmet>
       <div className="project-detail-container">
-        <Hero title="Why Choose Us" parent="About" />
+        <Hero title="Why Choose Us" />
         <InfoSection />
         <CaseStudy />
         <Projects />

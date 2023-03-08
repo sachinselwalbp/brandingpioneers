@@ -8,7 +8,7 @@ export default function ReputationManagementforDoctors() {
         <title>Reputation Management for Doctors</title>
       </Helmet>
       <div className="project-detail-container">
-        <Hero title="Reputation Management for Doctors" parent="Our Work" />
+        <Hero title="Reputation Management for Doctors" />
         <CaseStudy />
       </div>
     </>

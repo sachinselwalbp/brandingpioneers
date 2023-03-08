@@ -8,7 +8,7 @@ export default function MARKETINGSTRATEGIES() {
         <title>MARKETING STRATEGIES</title>
       </Helmet>
       <div className="project-detail-container">
-        <Hero title="MARKETING STRATEGIES" parent="Our Work" />
+        <Hero title="MARKETING STRATEGIES" />
         <CaseStudy />
       </div>
     </>

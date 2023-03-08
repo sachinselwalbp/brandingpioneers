@@ -8,7 +8,7 @@ export default function HealthcareSEO() {
         <title>Healthcare SEO</title>
       </Helmet>
       <div className="project-detail-container">
-        <Hero title="Healthcare SEO" parent="Our Work" />
+        <Hero title="Healthcare SEO" />
         <CaseStudy />
       </div>
     </>

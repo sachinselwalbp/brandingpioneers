@@ -8,7 +8,7 @@ export default function AnalyticsandReporting() {
         <title>Analytics and Reporting</title>
       </Helmet>
       <div className="project-detail-container">
-        <Hero title="Analytics and Reporting" parent="Our Work" />
+        <Hero title="Analytics and Reporting" />
         <CaseStudy />
       </div>
     </>

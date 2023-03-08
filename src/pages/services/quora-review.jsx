@@ -8,7 +8,7 @@ export default function QuoraReview() {
         <title>Quora Review</title>
       </Helmet>
       <div className="project-detail-container">
-        <Hero title="Quora Review" parent="Services" />
+        <Hero title="Quora Review" />
         <CaseStudy />
       </div>
     </>

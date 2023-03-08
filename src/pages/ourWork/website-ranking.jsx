@@ -8,7 +8,7 @@ export default function WebsiteRanking() {
         <title>Website Ranking</title>
       </Helmet>
       <div className="project-detail-container">
-        <Hero title="Website Ranking" parent="Our Work" />
+        <Hero title="Website Ranking" />
         <CaseStudy />
       </div>
     </>

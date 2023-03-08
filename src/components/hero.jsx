@@ -2,7 +2,7 @@ import { motion } from "framer-motion"
 import { Link, useLocation } from "react-router-dom"
 import AnimatedCharacters from "./animatedCharacters"
 
-export default function Hero({ parent, title }) {
+export default function Hero({ title }) {
     const placeholderText = [
         {
             type: "heading1",
@@ -17,12 +17,11 @@ export default function Hero({ parent, title }) {
         }
     }
     return (
-        <section className='section-global bg-hero bg-shade-1 hero'>
+        <section className='section-global bg-shade-1 hero'>
             <div className="container">
                 <div className="row">
                     <div className="col-lg-7">
                         <Breadcrumb />
-                        {/* <div className="section-tag mb-8">{parent}</div> */}
                         <motion.div
                             initial="hidden"
                             animate="visible"

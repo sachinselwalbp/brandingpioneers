@@ -8,7 +8,7 @@ export default function MedicalTourism() {
         <title>Medical Tourism</title>
       </Helmet>
       <div className="project-detail-container">
-        <Hero title="Medical Tourism" parent="Our Speciality" />
+        <Hero title="Medical Tourism" />
         <CaseStudy />
       </div>
     </>

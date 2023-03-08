@@ -9,7 +9,7 @@ export default function AboutPage() {
       <Helmet>
         <title>About</title>
       </Helmet>
-      <Hero title="We provide digital solutions for your business" parent="About" />
+      <Hero title="We provide digital solutions for your business" />
       <AboutSection />
       <Counters />
       <Content />

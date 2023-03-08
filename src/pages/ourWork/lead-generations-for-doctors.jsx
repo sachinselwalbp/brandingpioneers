@@ -8,7 +8,7 @@ export default function LeadGenerationsforDoctors() {
         <title>Lead Generations for Doctors</title>
       </Helmet>
       <div className="project-detail-container">
-        <Hero title="Lead Generations for Doctors" parent="Our Work" />
+        <Hero title="Lead Generations for Doctors" />
         <CaseStudy />
       </div>
     </>

@@ -8,7 +8,7 @@ export default function GoogleReviewManagement() {
         <title>Google Review Management</title>
       </Helmet>
       <div className="project-detail-container">
-        <Hero title="Google Review Management" parent="Services" />
+        <Hero title="Google Review Management" />
         <CaseStudy />
       </div>
     </>

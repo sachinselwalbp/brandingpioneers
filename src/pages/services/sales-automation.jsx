@@ -8,7 +8,7 @@ export default function SalesAutomation() {
         <title>Sales Automation</title>
       </Helmet>
       <div className="project-detail-container">
-        <Hero title="Sales Automation" parent="Services" />
+        <Hero title="Sales Automation" />
         <CaseStudy />
       </div>
     </>

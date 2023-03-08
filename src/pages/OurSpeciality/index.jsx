@@ -8,7 +8,7 @@ export default function OurSpeciality() {
                 <title>Our Speciality</title>
             </Helmet>
             <div className="about-container">
-                <Hero title="Top-notch solutions provider in the industry" parent="Our Speciality" />
+                <Hero title="Top-notch solutions provider in the industry" />
                 <Speciality />
                 <About />
             </div>

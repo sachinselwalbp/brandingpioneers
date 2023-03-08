@@ -8,7 +8,7 @@ export default function ContentMarketingforHealthcare() {
         <title>Content Marketing for Healthcare</title>
       </Helmet>
       <div className="project-detail-container">
-        <Hero title="Content Marketing for Healthcare" parent="Our Work" />
+        <Hero title="Content Marketing for Healthcare" />
         <CaseStudy />
       </div>
     </>

@@ -9,7 +9,7 @@ export default function WhoWeAre() {
         <title>Who We Are</title>
       </Helmet>
       <div className="project-detail-container">
-        <Hero parent="About" title="Who We Are" />
+        <Hero title="Who We Are" />
         <About />
         <CaseStudy />
       </div>

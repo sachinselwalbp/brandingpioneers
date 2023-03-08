@@ -8,7 +8,7 @@ export default function HealthcareSocialMediaManagement() {
         <title>Healthcare Social Media Management</title>
       </Helmet>
       <div className="project-detail-container">
-        <Hero title="Healthcare Social Media Management" parent="Our Work" />
+        <Hero title="Healthcare Social Media Management" />
         <CaseStudy />
       </div>
     </>

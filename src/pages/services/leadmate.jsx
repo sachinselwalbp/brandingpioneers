@@ -8,7 +8,7 @@ export default function Leadmate() {
         <title>Leadmate</title>
       </Helmet>
       <div className="project-detail-container">
-        <Hero title="Leadmate" parent="Services" />
+        <Hero title="Leadmate" />
         <CaseStudy />
       </div>
     </>

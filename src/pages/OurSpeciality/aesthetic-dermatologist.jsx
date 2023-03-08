@@ -8,7 +8,7 @@ export default function AestheticDermatologist() {
         <title>Aesthetic/Dermatologist</title>
       </Helmet>
       <div className="project-detail-container">
-        <Hero title="Aesthetic/Dermatologist" parent="Our Speciality" />
+        <Hero title="Aesthetic/Dermatologist" />
         <CaseStudy />
       </div>
     </>

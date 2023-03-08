@@ -8,7 +8,7 @@ export default function MEDICALDIGITALMARKETING() {
         <title>MEDICAL DIGITAL MARKETING</title>
       </Helmet>
       <div className="project-detail-container">
-        <Hero title="MEDICAL DIGITAL MARKETING" parent="Our Work" />
+        <Hero title="MEDICAL DIGITAL MARKETING" />
         <CaseStudy />
       </div>
     </>

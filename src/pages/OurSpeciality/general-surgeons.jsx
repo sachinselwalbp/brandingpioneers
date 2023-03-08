@@ -8,7 +8,7 @@ export default function GeneralSurgeons() {
         <title>General Surgeons</title>
       </Helmet>
       <div className="project-detail-container">
-        <Hero title="General Surgeons" parent="Our Speciality" />
+        <Hero title="General Surgeons" />
         <CaseStudy />
       </div>
     </>

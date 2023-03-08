@@ -8,7 +8,7 @@ export default function InfertilityandIVF() {
         <title>Infertility and IVF</title>
       </Helmet>
       <div className="project-detail-container">
-        <Hero title="Infertility and IVF" parent="Our Speciality" />
+        <Hero title="Infertility and IVF" />
         <CaseStudy />
       </div>
     </>

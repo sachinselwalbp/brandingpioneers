@@ -10,7 +10,7 @@ export default function CaseStudies() {
                 <title>Case Studies</title>
             </Helmet>
             <div className="projects-container">
-                <Hero title="Our experts and proprietary technology fuel our work" parent="Case studies" />
+                <Hero title="Our experts and proprietary technology fuel our work" />
                 <CaseStudiesSection />
             </div>
         </>

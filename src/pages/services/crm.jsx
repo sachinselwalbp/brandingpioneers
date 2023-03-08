@@ -8,7 +8,7 @@ export default function CRM() {
         <title>CRM</title>
       </Helmet>
       <div className="project-detail-container">
-        <Hero title="CRM" parent="Services" />
+        <Hero title="CRM" />
         <CaseStudy />
       </div>
     </>

@@ -8,7 +8,7 @@ export default function EmailMarketingforHealthcare() {
         <title>Email Marketing for Healthcare</title>
       </Helmet>
       <div className="project-detail-container">
-        <Hero title="Email Marketing for Healthcare" parent="Our Work" />
+        <Hero title="Email Marketing for Healthcare" />
         <CaseStudy />
       </div>
     </>

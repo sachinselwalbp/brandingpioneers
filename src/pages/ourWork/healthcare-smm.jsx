@@ -8,7 +8,7 @@ export default function HealthcareSMM() {
         <title>Healthcare SMM</title>
       </Helmet>
       <div className="project-detail-container">
-        <Hero title="Healthcare SMM" parent="Our Work" />
+        <Hero title="Healthcare SMM" />
         <CaseStudy />
       </div>
     </>

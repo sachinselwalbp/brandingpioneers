@@ -8,7 +8,7 @@ export default function SocialMediaMarketing() {
         <title>Social Media Marketing</title>
       </Helmet>
       <div className="project-detail-container">
-        <Hero title="Social Media Marketing" parent="Services" />
+        <Hero title="Social Media Marketing" />
         <CaseStudy />
       </div>
     </>

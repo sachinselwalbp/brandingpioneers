@@ -8,7 +8,7 @@ export default function MedicalWebDevelopment() {
         <title>Medical Web Development</title>
       </Helmet>
       <div className="project-detail-container">
-        <Hero title="Medical Web Development" parent="Our Work" />
+        <Hero title="Medical Web Development" />
         <CaseStudy />
       </div>
     </>

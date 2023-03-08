@@ -8,7 +8,7 @@ export default function TestimonialsVideoCreation() {
         <title>Testimonials Video Creation</title>
       </Helmet>
       <div className="project-detail-container">
-        <Hero title="Testimonials Video Creation" parent="Services" />
+        <Hero title="Testimonials Video Creation" />
         <CaseStudy />
       </div>
     </>

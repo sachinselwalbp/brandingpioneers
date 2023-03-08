@@ -8,7 +8,7 @@ export default function Chiropractors() {
         <title>Chiropractors</title>
       </Helmet>
       <div className="project-detail-container">
-        <Hero title="Chiropractors" parent="Our Speciality" />
+        <Hero title="Chiropractors" />
         <CaseStudy />
       </div>
     </>

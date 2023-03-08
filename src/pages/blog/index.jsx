@@ -9,7 +9,7 @@ export default function Blog() {
         <title>Blog</title>
       </Helmet>
       <div className="blog-container">
-        <Hero title="Get updated with our internal affairs" parent="Blog" />
+        <Hero title="Get updated with our internal affairs" />
         <BlogSection />
       </div>
     </>

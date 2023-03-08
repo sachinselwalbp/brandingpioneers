@@ -8,7 +8,7 @@ export default function DiagnosticCentres() {
         <title>Diagnostic Centres</title>
       </Helmet>
       <div className="project-detail-container">
-        <Hero title="Diagnostic Centres" parent="Our Speciality" />
+        <Hero title="Diagnostic Centres" />
         <CaseStudy />
       </div>
     </>

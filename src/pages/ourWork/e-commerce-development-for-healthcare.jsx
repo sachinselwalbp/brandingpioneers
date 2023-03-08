@@ -8,7 +8,7 @@ export default function ECommerceDevelopmentforHealthcare() {
         <title>E Commerce Development for Healthcare</title>
       </Helmet>
       <div className="project-detail-container">
-        <Hero title="E Commerce Development for Healthcare" parent="Our Work" />
+        <Hero title="E Commerce Development for Healthcare" />
         <CaseStudy />
       </div>
     </>

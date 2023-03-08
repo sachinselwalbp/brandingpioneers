@@ -8,7 +8,7 @@ export default function HealthcareVideoMarketing() {
         <title>Healthcare Video Marketing</title>
       </Helmet>
       <div className="project-detail-container">
-        <Hero title="Healthcare Video Marketing" parent="Our Work" />
+        <Hero title="Healthcare Video Marketing" />
         <CaseStudy />
       </div>
     </>

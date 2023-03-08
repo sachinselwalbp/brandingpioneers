@@ -8,7 +8,7 @@ export default function PolyClinics() {
         <title>Poly Clinics</title>
       </Helmet>
       <div className="project-detail-container">
-        <Hero title="Poly Clinics" parent="Our Speciality" />
+        <Hero title="Poly Clinics" />
         <CaseStudy />
       </div>
     </>

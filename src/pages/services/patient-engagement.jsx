@@ -8,7 +8,7 @@ export default function PatientEngagement() {
         <title>Patient Engagement</title>
       </Helmet>
       <div className="project-detail-container">
-        <Hero title="Patient Engagement" parent="Services" />
+        <Hero title="Patient Engagement" />
         <CaseStudy />
       </div>
     </>

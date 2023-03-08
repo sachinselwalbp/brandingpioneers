@@ -8,7 +8,7 @@ export default function AestheticClinics() {
         <title>Aesthetic Clinics</title>
       </Helmet>
       <div className="project-detail-container">
-        <Hero title="Aesthetic Clinics" parent="Our Spaciality" />
+        <Hero title="Aesthetic Clinics" />
         <CaseStudy />
       </div>
     </>
@@ -39,7 +39,7 @@ const CaseStudy = () => {
                   At Branding Pioneers, we are dedicated to helping aesthetic clinics achieve their marketing goals. Contact us today to learn more about how we can help your clinic stand out in the crowded aesthetic market.</p>
 
                 <br />
-                
+
               </div>
             </div>
           </div>

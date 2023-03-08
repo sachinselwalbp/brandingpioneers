@@ -8,7 +8,7 @@ export default function NewsletterDesigningAndPrinting() {
         <title>Newsletter Designing/Printing</title>
       </Helmet>
       <div className="project-detail-container">
-        <Hero title="Newsletter Designing/Printing" parent="Services" />
+        <Hero title="Newsletter Designing/Printing" />
         <CaseStudy />
       </div>
     </>

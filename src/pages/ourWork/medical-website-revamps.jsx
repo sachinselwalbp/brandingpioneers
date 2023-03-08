@@ -8,7 +8,7 @@ export default function MedicalWebsiteRevamps() {
         <title>Medical Website Revamps</title>
       </Helmet>
       <div className="project-detail-container">
-        <Hero title="Medical Website Revamps" parent="Our Work" />
+        <Hero title="Medical Website Revamps" />
         <CaseStudy />
       </div>
     </>

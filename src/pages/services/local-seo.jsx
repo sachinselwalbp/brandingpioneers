@@ -8,7 +8,7 @@ export default function LocalSEO() {
         <title>Local SEO</title>
       </Helmet>
       <div className="project-detail-container">
-        <Hero title="Local SEO" parent="Services" />
+        <Hero title="Local SEO" />
         <CaseStudy />
       </div>
     </>

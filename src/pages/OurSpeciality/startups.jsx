@@ -8,7 +8,7 @@ export default function Startups() {
         <title>Startups</title>
       </Helmet>
       <div className="project-detail-container">
-        <Hero title="Startups" parent="Our Speciality" />
+        <Hero title="Startups" />
         <CaseStudy />
       </div>
     </>

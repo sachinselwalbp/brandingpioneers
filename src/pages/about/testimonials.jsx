@@ -7,7 +7,7 @@ export default function Testimonilas() {
       <Helmet>
         <title>Testimonials</title>
       </Helmet>
-      <Hero title="Adopted by the most creative individuals" parent="Customer reviews" />
+      <Hero title="Adopted by the most creative individuals" />
       <Testimonials />
     </>
   )

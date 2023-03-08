@@ -8,7 +8,7 @@ export default function FacebookAdsforHealthcare() {
         <title>Facebook Ads for Healthcare</title>
       </Helmet>
       <div className="project-detail-container">
-        <Hero title="Facebook Ads for Healthcare" parent="Our Work" />
+        <Hero title="Facebook Ads for Healthcare" />
         <CaseStudy />
       </div>
     </>

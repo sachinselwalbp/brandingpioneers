@@ -8,7 +8,7 @@ export default function WEBSITESERVICES() {
         <title>WEBSITE SERVICES</title>
       </Helmet>
       <div className="project-detail-container">
-        <Hero title="WEBSITE SERVICES" parent="Our Work" />
+        <Hero title="WEBSITE SERVICES" />
         <CaseStudy />
       </div>
     </>

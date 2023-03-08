@@ -8,7 +8,7 @@ export default function Orthopedician() {
         <title>Orthopedician</title>
       </Helmet>
       <div className="project-detail-container">
-        <Hero title="Orthopedician" parent="Our Speciality" />
+        <Hero title="Orthopedician" />
         <CaseStudy />
       </div>
     </>

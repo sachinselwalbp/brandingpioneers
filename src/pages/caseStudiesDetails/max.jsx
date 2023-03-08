@@ -19,7 +19,7 @@ export default function MaxHospitalCaseStudy() {
                 <title>{hospitalCase.title}</title>
             </Helmet>
             <div className="project-detail-container">
-                <Hero title={`${hospitalCase.title} - ${hospitalCase.service}`} parent="Case study" />
+                <Hero title={`${hospitalCase.title} - ${hospitalCase.service}`} />
                 <CaseStudyDetail data={hospitalCase} />
             </div>
         </>

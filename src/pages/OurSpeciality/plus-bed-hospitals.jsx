@@ -8,7 +8,7 @@ export default function HundredPlusBedHospitals() {
         <title>100+ Bed Hospitals</title>
       </Helmet>
       <div className="project-detail-container">
-        <Hero parent="Our Speciality" title="100+ Bed Hospitals" />
+        <Hero title="100+ Bed Hospitals" />
         <CaseStudy />
       </div>
     </>

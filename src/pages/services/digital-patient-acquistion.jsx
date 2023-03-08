@@ -8,7 +8,7 @@ export default function DigitalPatientAcquistion() {
         <title>Digital Patient Acquistion</title>
       </Helmet>
       <div className="project-detail-container">
-        <Hero title="Digital Patient Acquistion" parent="Services" />
+        <Hero title="Digital Patient Acquistion" />
         <CaseStudy />
       </div>
     </>

@@ -8,7 +8,7 @@ export default function DigitalSignageSolution() {
         <title>Digital Signage Solution</title>
       </Helmet>
       <div className="project-detail-container">
-        <Hero title="Digital Signage Solution" parent="Services" />
+        <Hero title="Digital Signage Solution" />
         <CaseStudy />
       </div>
     </>

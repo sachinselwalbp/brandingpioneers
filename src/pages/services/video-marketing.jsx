@@ -8,7 +8,7 @@ export default function VideoMarketing() {
         <title>Video Marketing</title>
       </Helmet>
       <div className="project-detail-container">
-        <Hero title="Video Marketing" parent="Services" />
+        <Hero title="Video Marketing" />
         <CaseStudy />
       </div>
     </>

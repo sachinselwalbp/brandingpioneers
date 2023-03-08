@@ -8,7 +8,7 @@ export default function Clinic() {
         <title>Clinic</title>
       </Helmet>
       <div className="project-detail-container">
-        <Hero title="Clinic" parent="Our Speciality" />
+        <Hero title="Clinic" />
         <CaseStudy />
       </div>
     </>

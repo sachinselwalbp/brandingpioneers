@@ -7,7 +7,7 @@ export default function MedicalDigitalMarketing() {
         <>
             <Helmet><title>Medical Digital Marketing</title></Helmet>
             <div className="about-container">
-                <Hero title="Medical Digital Marketing" parent="Medical Digital Marketing" />
+                <Hero title="Medical Digital Marketing" />
             </div>
         </>
     )
