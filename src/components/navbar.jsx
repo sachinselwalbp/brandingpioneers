@@ -8,16 +8,16 @@ import { about } from "./navbarLinks"
 export default function NavBar() {
   return (
     <>
-      <Navbar variant="light" expand="lg" sticky="top">
+      <Navbar collapseOnSelect variant="light" expand="lg" sticky="top">
         <Container fluid>
           <Navbar.Brand>
             <NavLink to="/">
               <img loading="lazy" src={Logo} height="32" alt="Branding Pioneers" />
             </NavLink>
           </Navbar.Brand>
-          <Navbar.Toggle />
-          <Navbar.Collapse>
-            <Nav className="mx-auto py-1 my-3">
+          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+          <Navbar.Collapse id="responsive-navbar-nav">
+            <Nav className="mx-auto py-1 my-3 me-auto">
               <Nav.Link as={Link} className="font-weight-bold" to="/">Home</Nav.Link>
               <NavDropdown className="megamenu" title="About">
                 <Container className="mega-shadow">
