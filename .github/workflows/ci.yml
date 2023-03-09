@@ -2,9 +2,8 @@ name: 🚀 Deploy on push master
 
 on:
   push:
-    branches: main
+    branches: master
 
-name: 🚀 Deploy website on push
 jobs:
   web-deploy:
     name: 🎉 Deploy
