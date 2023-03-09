@@ -12,7 +12,7 @@ jobs:
     
     strategy:
       matrix:
-        node-version: [16.x]
+        node-version: [18.15]
     
     steps:
     - name: 🚚 Get latest code
@@ -35,7 +35,7 @@ jobs:
       run: find build/ -print
 
     - name: 📂 Sync files
-      uses: SamKirkland/FTP-Deploy-Action@4.3.3
+      uses: healthpioneers/FTP-Deploy-Action@4.3.3
       with:
         server: ${{ secrets.SERVER }}
         username: ${{ secrets.FTP_USERNAME }}
