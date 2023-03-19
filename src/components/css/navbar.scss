@@ -156,6 +156,19 @@
   border-radius: 10px;
   background: hsl(118, 100%, 99%);
 }
-.bg-hero {
+.nav_career_bg {
   background: url(../assets/wave.svg) no-repeat bottom/cover;
+  &:hover {
+    a {
+      visibility: visible;
+    }
+  }
+  a {
+    height: 100%;
+    width: 100%;
+    visibility: hidden;
+  }
+}
+.nav-heading {
+  font-family: var(--heading-font);
 }
