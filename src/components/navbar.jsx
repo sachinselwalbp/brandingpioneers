@@ -41,7 +41,7 @@ export default function NavBar() {
                       </Row>
                     </Col>
                     <Col lg={5} xl={4} className="px-0 d-none d-lg-flex justify-content-center align-items-center nav_career_bg">
-                      <Link className="text-uppercase d-flex justify-content-center align-items-center nav-link text-small pb-0" to="/career">Career</Link>
+                      <Link className="text-uppercase d-flex justify-content-center align-items-center nav-link text-small pb-0 nav-heading" to="/career">Career</Link>
                     </Col>
                   </Row>
                 </Container>
