@@ -8,7 +8,7 @@ import { about } from "./navbarLinks"
 export default function NavBar() {
   return (
     <>
-      <Navbar collapseOnSelect variant="light" expand="lg" sticky="top">
+      <Navbar collapseOnSelect variant="light" expand="lg">
         <Container fluid>
           <Navbar.Brand>
             <NavLink to="/">
