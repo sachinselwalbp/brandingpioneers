@@ -5,10 +5,12 @@ export default function AdsAndLeadGeneration() {
   return (
     <>
       <Helmet>
-        <title>Ads And Lead Generation</title>
+        <title>Ads and Lead Generation Services for Healthcare by Branding Pioneers</title>
+        <meta name="title" content="Ads and Lead Generation Services for Healthcare by Branding Pioneers" />
+        <meta name="description" content=" Boost your healthcare business with our top-notch Ads and Lead Generation Services. Trust Branding Pioneers to help you reach your target audience and grow your revenue." />
       </Helmet>
       <div className="project-detail-container">
-        <Hero title="Ads And Lead Generation" />
+        <Hero title="Ads and Lead Generation Services for Healthcare by Branding Pioneers" />
         <CaseStudy />
       </div>
     </>
@@ -33,8 +35,6 @@ const CaseStudy = () => {
                   <li className="txt-1">Lead capture and nurturing: We'll set up lead capture forms, email marketing automation, and other lead nurturing tools to help you convert more leads into customers.</li>
                   <li className="txt-1">Reporting and analysis: We'll provide you with regular reports on your ad campaign's performance and use data analytics to refine our strategy and maximize your ROI.</li>
                 </ol>
-                <br />
-                
               </div>
             </div>
           </div>

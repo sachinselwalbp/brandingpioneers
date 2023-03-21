@@ -69,7 +69,7 @@ const AboutSection = () => {
         <div className="container">
           <div className="row gy-4">
             <div className="col-lg-6 align-self-center d-flex justify-content-center">
-              <div className='video-thumb'>
+              <div>
                 <img loading='lazy' src={require('./assets/about.gif')} className="img-fluid" alt="About Us" />
               </div>
             </div>

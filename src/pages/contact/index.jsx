@@ -1,6 +1,7 @@
 import Helmet from 'react-helmet'
 import './style.scss'
 import Hero from '../../components/hero'
+import { BsCheckCircleFill } from "react-icons/bs"
 
 export default function Contact() {
     return (
@@ -32,12 +33,8 @@ const ContactSection = () => {
                         <div className="col-lg-6">
                             <h2 className='mb-16'>Conatct our sales and support team</h2>
                             <p className="txt-1">We cut through the clutter to uncover new opportunities, and always ensure customer satisfaction</p>
-                            {features_data.map((e, i) => <div key={i} className="txt-2 color-1 fw-500 mb-8 d-flex align-items-center">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className='me-2'>
-                                    <rect width="24" height="24" rx="12" fill="#0FA958" />
-                                    <path d="M6.66675 12L10.6667 16L17.3334 8" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                                </svg>
-
+                            {features_data.map((e, i) => <div key={i} className="txt-2 color-1 fw-500 mb-8 gap-2 d-flex align-items-center">
+                                <BsCheckCircleFill fill='#0FA958' fontSize={24} />
                                 {e}
                             </div>)}
                         </div>

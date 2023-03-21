@@ -139,35 +139,32 @@
 .col_bg1 {
   padding: 10px;
   border-radius: 10px;
-  background: hsl(58, 100%, 99%);
+  background: url(../assets/bg1.png) hsl(58, 100%, 99%) no-repeat center/cover;
 }
 .col_bg2 {
   padding: 10px;
   border-radius: 10px;
-  background: hsl(252, 100%, 99%);
+  background: url(../assets/bg2.png) hsl(252, 100%, 99%) no-repeat center/cover;
 }
 .col_bg3 {
   padding: 10px;
   border-radius: 10px;
-  background: hsl(21, 78%, 99%);
+  background: url(../assets/bg3.png) hsl(21, 78%, 99%) no-repeat center/cover;
 }
 .col_bg4 {
   padding: 10px;
   border-radius: 10px;
-  background: hsl(118, 100%, 99%);
+  background: url(../assets/bg4.png) hsl(118, 100%, 99%) no-repeat center/cover;
+}
+.col_bg5 {
+  padding: 10px;
+  border-radius: 10px;
+  background: url(../assets/bgdescription.png) hsl(21, 78%, 99%) no-repeat
+    center/cover;
 }
 .nav_career_bg {
-  background: url(../assets/wave.svg) no-repeat bottom/cover;
-  &:hover {
-    a {
-      visibility: visible;
-    }
-  }
-  a {
-    height: 100%;
-    width: 100%;
-    visibility: hidden;
-  }
+  background: url(../assets/bgcareers.svg) no-repeat bottom/cover;
+  font-size: 1.2rem;
 }
 .nav-heading {
   font-family: var(--heading-font);

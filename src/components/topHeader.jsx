@@ -7,8 +7,8 @@ export default function TopHeader() {
   const [num, setNum] = useState(0)
 
   useEffect(() => {
-    const date = Math.floor((new Date() - new Date('2023-02-22')) / (1000 * 60 * 30))
-    setNum(date + 90000)
+    const date = Math.floor((new Date() - new Date('2023-02-22')) / (1000 * 60))
+    setNum(date + 50000)
   }, [])
 
   const tel = 9876543210

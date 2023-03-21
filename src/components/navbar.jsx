@@ -24,7 +24,7 @@ export default function NavBar() {
                   <Row className="bg-white rounded-3 m-0">
                     <Col lg={7} xl={8} className="p-lg-4">
                       <Row>
-                        <Col lg={6} className="mb-4 col_bg1">
+                        <Col lg={6} className="mb-4 py-4 col_bg1">
                           <h6>
                             <NavDropdown.Item as={Link} to="/about" className="nav-link text-small pb-0 font-weight-bold nav-heading text-uppercase">About</NavDropdown.Item>
                           </h6>
@@ -34,14 +34,14 @@ export default function NavBar() {
                             ))
                           }
                         </Col>
-                        <Col lg={6} className="mb-4">
+                        <Col lg={6} className="mb-4 col_bg5">
                           <h6 className="font-weight-bold nav-heading text-uppercase">Description</h6>
                           <p>Revolutionizing healthcare marketing through cutting-edge technology and expertise" - that's our motto at Branding Pioneers, where we help healthcare businesses reach their fullest potential with our unique approach to marketing.</p>
                         </Col>
                       </Row>
                     </Col>
                     <Col lg={5} xl={4} className="px-0 d-none d-lg-flex justify-content-center align-items-center nav_career_bg">
-                      <Link className="text-uppercase d-flex justify-content-center align-items-center nav-link text-small pb-0 nav-heading" to="/career">Career</Link>
+                      <Link className="text-uppercase h-100 w-100 d-flex justify-content-center align-items-center nav-link text-small pb-0 nav-heading" to="/career">Career</Link>
                     </Col>
                   </Row>
                 </Container>
