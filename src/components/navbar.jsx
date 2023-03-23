@@ -12,7 +12,7 @@ export default function NavBar() {
         <Container fluid>
           <Navbar.Brand>
             <NavLink to="/">
-              <img loading="lazy" src={Logo} height="32" alt="Branding Pioneers" />
+              <img loading="lazy" src={Logo} className="" height="32" alt="Branding Pioneers" />
             </NavLink>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -205,7 +205,7 @@ export default function NavBar() {
               <Nav.Link as={Link} to="/blog">Blog</Nav.Link>
             </Nav>
           </Navbar.Collapse>
-          <Link as={Link} to="/contact" className="navbar-cta">Write Query</Link>
+          <Link as={Link} to="/contact" className="navbar-cta color-1">Write Query</Link>
         </Container>
       </Navbar >
     </>

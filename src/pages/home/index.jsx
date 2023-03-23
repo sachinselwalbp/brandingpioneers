@@ -102,7 +102,7 @@ function Hero() {
                                         <input type="tel" name="number" className="form-control" id="exampleFormControlInput1" placeholder="Enter Your Phone Number" required />
                                     </div>
                                     <div className="cta-btn">
-                                        <button type="submit" className="btn btn-primary btn-lg">Request A Callback</button>
+                                        <button type="submit" className="btn btn-primary color-1 btn-lg">Request A Callback</button>
                                     </div>
                                 </div>
                             </form>
@@ -408,7 +408,7 @@ function Testimonials() {
                 <div className="container">
                     <div className="row mb-40 justify-content-between gy-4">
                         <div className="col-xl-5 col-lg-5">
-                            <div className="section-tag mb-8">Customer reviews</div>
+                            <div className="section-tag mb-8 ">Customer reviews</div>
                             <h2>Adopted by the most creative individuals</h2>
                         </div>
                         <div className="col d-flex align-self-center">
@@ -452,7 +452,7 @@ function Stats() {
                 <div className="container container-2">
                     <div className="row gy-5">
                         <div className="col-lg-3 col-md-12">
-                            <h4>Transform Your Healthcare Marketing With Branding Pioneers</h4>
+                            <h3 className="h4">Transform Your Healthcare Marketing With Branding Pioneers</h3>
                         </div>
                         {stats_data.map((e, i) =>
                             <div className="col-lg-3 col-md-4 col-sm-6 text-center" key={i}>

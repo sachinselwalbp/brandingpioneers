@@ -59,19 +59,19 @@ const Footer = () => {
                                 <div className='txt-3 mb-20'>Inquiries:&nbsp;<a href='tel:+918377009395' className='contact-link'>+91 8377009395</a></div>
                                 <div className="mb-8 txt-2 color-1 fw-600">Follow us on</div>
                                 <div className="social-link">
-                                    <a target="_b" href='https://www.instagram.com/brandingpioneers_/'>
+                                    <a title='Instagram' target="_b" href='https://www.instagram.com/brandingpioneers_/'>
                                         <FaInstagram fontSize={20} fill="white" />
                                     </a>
-                                    <a target="_b" href='https://www.facebook.com/Officialbrandingpioneers'>
+                                    <a title='Facebook' target="_b" href='https://www.facebook.com/Officialbrandingpioneers'>
                                         <FaFacebook fontSize={20} fill="white" />
                                     </a>
-                                    <a target="_b" href='https://twitter.com/brandingpio'>
+                                    <a title='twitter' target="_b" href='https://twitter.com/brandingpio'>
                                         <FaTwitter fontSize={20} fill="white" />
                                     </a>
-                                    <a target="_b" href='https://www.linkedin.com/company/branding-pioneers/'>
+                                    <a title='linkedin' target="_b" href='https://www.linkedin.com/company/branding-pioneers/'>
                                         <FaLinkedin fontSize={20} fill="white" />
                                     </a>
-                                    <a target="_b" href='https://www.youtube.com/@brandingpioneers'>
+                                    <a title='youtube' target="_b" href='https://www.youtube.com/@brandingpioneers'>
                                         <FaYoutube fontSize={20} fill="white" />
                                     </a>
                                 </div>

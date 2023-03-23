@@ -5,7 +5,8 @@
   height: 100%;
   text-decoration: none;
   box-shadow: 0 0 0 1px var(--border-brutal), 4px 4px 0 var(--border-brutal);
-
+}
+.youtube {
   &:hover {
     background: white url(../assets/youtube.png) no-repeat right/cover;
     box-shadow: 0 0 0 1px red, 4px 4px 0 red;

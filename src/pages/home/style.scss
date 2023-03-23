@@ -87,49 +87,49 @@
     display: flex;
     div {
       p {
-        color: gray;
+        color: #393939;
         font-size: 17px;
         font-weight: 600;
         margin-top: 10px;
       }
       .google {
-        fill: gray;
+        fill: #585858;
         &:hover {
           fill: #4285f4;
         }
       }
       .meta {
-        color: gray;
+        color: #585858;
         &:hover {
           color: #0467df;
         }
       }
       .instagram {
-        fill: gray;
+        fill: #585858;
         &:hover {
           fill: #e4405f;
         }
       }
       .bing {
-        fill: gray;
+        fill: #585858;
         &:hover {
           fill: #258ffa;
         }
       }
       .youtube {
-        fill: gray;
+        fill: #585858;
         &:hover {
           fill: #f00;
         }
       }
       .facebook {
-        fill: gray;
+        fill: #585858;
         &:hover {
           fill: #0467df;
         }
       }
       .twitter {
-        fill: gray;
+        fill: #585858;
         &:hover {
           fill: #1da1f2;
         }

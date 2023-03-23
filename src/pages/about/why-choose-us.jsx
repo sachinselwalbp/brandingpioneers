@@ -2,8 +2,23 @@ import { Helmet } from "react-helmet"
 import Hero from "../../components/hero"
 import { Link } from "react-router-dom"
 import { TbArrowNarrowRight } from "react-icons/tb"
-import { BsCheckCircleFill } from "react-icons/bs"
 import ProjectCards from '../../components/caseStudiesCards'
+import WhyChooseUsSection from "../../components/whyChooseUsSection"
+
+const infoData = [
+  {
+    title: 'Customer Research',
+    text: 'We mine data, uncover insights and identify opportunities'
+  },
+  {
+    title: 'User friendly Build',
+    text: 'We architect websites and apps to solve user problems'
+  },
+  {
+    title: 'Scalable models',
+    text: 'Continuous Delivery pipelines to ensure fast iteration'
+  }
+]
 
 export default function WhyChooseUs() {
   return (
@@ -13,7 +28,7 @@ export default function WhyChooseUs() {
       </Helmet>
       <div className="project-detail-container">
         <Hero title="Why Choose Us" />
-        <InfoSection />
+        <WhyChooseUsSection data={infoData} src="about" img="info.png" />
         <CaseStudy />
         <Projects />
       </div>
@@ -71,50 +86,6 @@ const Projects = () => {
   )
 }
 
-const InfoSection = () => {
-  const infoData = [
-    {
-      title: 'Customer Research',
-      text: 'We mine data, uncover insights and identify opportunities'
-    },
-    {
-      title: 'User friendly Build',
-      text: 'We architect websites and apps to solve user problems'
-    },
-    {
-      title: 'Scalable models',
-      text: 'Continuous Delivery pipelines to ensure fast iteration'
-    }
-  ]
-
-  return (
-    <>
-      <section className="section-global">
-        <div className="container">
-          <div className="row gy-5">
-            <div className="col-lg-6 align-self-center">
-              <div className="section-tag mb-8">Why choose Stact?</div>
-              <h2 className='mb-16'>We provide solutions that make our clients' lives simpler</h2>
-              {infoData.map((e, i) =>
-                <div className='d-flex gap-2 mb-16' key={i}>
-                  <BsCheckCircleFill fill="#0FA958" fontSize={24} />
-                  <div>
-                    <h4 className='mb-0'>{e.title}</h4>
-                    <div className="txt-2">{e.text}</div>
-                  </div>
-                </div>
-              )}
-            </div>
-            <div className="col-lg-6 text-center align-self-center">
-              <img loading='lazy' src={require('./assets/info.png')} className="img-fluid info-banner-image" alt="Why stact" />
-            </div>
-          </div>
-        </div>
-      </section>
-    </>
-  )
-}
-
 const CaseStudy = () => {
   return (
     <>
@@ -126,7 +97,7 @@ const CaseStudy = () => {
             </div>
             <div className="col-12">
               <div className="case-study-section">
-                
+
               </div>
             </div>
           </div>

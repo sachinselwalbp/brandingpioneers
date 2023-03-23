@@ -2,6 +2,26 @@ import Helmet from 'react-helmet'
 import FeatureCards from '../../components/featureCards'
 import './style.scss'
 import Hero from '../../components/hero'
+import Stats from '../../components/stats'
+
+const counter_data = [
+  {
+    count: '8+',
+    text: 'Years'
+  },
+  {
+    count: '200+',
+    text: 'Hospitals/Clinics'
+  },
+  {
+    count: '70+',
+    text: 'Members Team'
+  },
+  {
+    count: '200%',
+    text: 'AvG ROI'
+  }
+]
 
 export default function AboutPage() {
   return (
@@ -11,7 +31,7 @@ export default function AboutPage() {
       </Helmet>
       <Hero title="We provide digital solutions for your business" />
       <AboutSection />
-      <Counters />
+      <Stats data={counter_data} />
       <Content />
       <Features />
       <Team />
@@ -19,6 +39,7 @@ export default function AboutPage() {
     </>
   )
 }
+
 
 const Content = () => {
   return (
@@ -94,45 +115,6 @@ const AboutSection = () => {
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-    </>
-  )
-}
-
-const Counters = () => {
-  const counter_data = [
-    {
-      count: '8+',
-      text: 'Years'
-    },
-    {
-      count: '200+',
-      text: 'Hospitals/Clinics'
-    },
-    {
-      count: '70+',
-      text: 'Members Team'
-    },
-    {
-      count: '200%',
-      text: 'AvG ROI'
-    }
-  ]
-  return (
-    <>
-      <section className='counter-section dark'>
-        <div className="container">
-          <div className="row">
-            {counter_data.map((e, i) =>
-              <div className="col-lg-3 col-md-4 col-6 gy-4 text-center" key={i}>
-                <h2 className="display-1">
-                  {e.count}
-                </h2>
-                <p className='txt-1'>{e.text}</p>
-              </div>
-            )}
           </div>
         </div>
       </section>

@@ -37,7 +37,7 @@ export default function ContactSection() {
                                     <textarea className="form-control" name='message' rows="4" placeholder="How can we help you?" required></textarea>
                                 </div>
                                 <div className="col-12">
-                                    <button type="submit" className="btn btn-primary btn-lg">Submit</button>
+                                    <button type="submit" className="btn btn-primary btn-lg color-1">Submit</button>
                                 </div>
                             </form>
                         </div>
