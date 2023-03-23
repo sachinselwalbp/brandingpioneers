@@ -1,7 +1,7 @@
 import Helmet from 'react-helmet'
-import ProjectCards from '../../components/caseStudiesCards'
 import './style.scss'
 import Hero from '../../components/hero'
+import CaseStudiesCard from '../../components/caseStudiesCards'
 
 export default function CaseStudies() {
     return (
@@ -147,7 +147,7 @@ const CaseStudiesSection = () => {
             <section className='section-global'>
                 <div className="container">
                     <div className="row">
-                        <ProjectCards data={projects_data} src="caseStudies" />
+                        <CaseStudiesCard data={projects_data} src="caseStudies" />
                     </div>
                 </div>
             </section>

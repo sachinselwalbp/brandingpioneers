@@ -2,7 +2,7 @@ import { Helmet } from "react-helmet"
 import Hero from "../../components/hero"
 import { Link } from "react-router-dom"
 import { TbArrowNarrowRight } from "react-icons/tb"
-import ProjectCards from '../../components/caseStudiesCards'
+import ProjectCards from "../../components/projectCards"
 import WhyChooseUsSection from "../../components/whyChooseUsSection"
 
 const infoData = [

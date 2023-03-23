@@ -1,13 +1,12 @@
 import { BsCheckCircleFill } from "react-icons/bs"
 
-
-export default function WhyChooseUsSection({ data, text, src, img }) {
+export default function WhyChooseUsSection({ data, text, src, img, bggreen = false }) {
   return (
     <>
-      <section className="section-global">
+      <section className={`section-global ${bggreen ? "bg-shade-green" : ""}`}>
         <div className="container">
           <div className="row gy-5">
-            <div className="col-lg-6 align-self-center">
+            <div className="col-lg-6 align-self-start">
               <div className="section-tag mb-8 color-red">Why choose Us?</div>
               <h2 className='mb-16'>We provide solutions that make our clients' lives simpler</h2>
               {
@@ -25,7 +24,7 @@ export default function WhyChooseUsSection({ data, text, src, img }) {
                 </div>
               )}
             </div>
-            <div className="col-lg-6 text-center align-self-center">
+            <div className="col-lg-6 text-center align-self-start">
               <img loading='lazy' src={require(`../pages/${src}/assets/${img}`)} className="img-fluid info-banner-image" alt="Why stact" />
             </div>
           </div>

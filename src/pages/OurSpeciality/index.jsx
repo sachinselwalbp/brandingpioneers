@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import BrandSection from '../../components/brandSection'
 import BlogCards from '../../components/blogCards'
 import ServiceCards from '../../components/serviceCards'
-import ProjectCards from '../../components/projectCards'
+import CaseStudiesCard from '../../components/caseStudiesCards'
 import "./style.scss"
 import { BsPlayCircleFill, BsCheckCircleFill, BsArrowRight } from "react-icons/bs"
 
@@ -253,7 +253,7 @@ const Projects = () => {
                         </div>
                     </div>
                     <div className="row">
-                        <ProjectCards data={projects_data} src="OurSpeciality" />
+                        <CaseStudiesCard data={projects_data} src="OurSpeciality" />
                     </div>
                 </div>
             </section>

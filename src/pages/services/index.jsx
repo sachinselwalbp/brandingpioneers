@@ -1,11 +1,12 @@
 import Helmet from 'react-helmet'
 import { Link } from 'react-router-dom'
 import BrandSection from '../../components/brandSection'
-import ProjectCards from '../../components/projectCards'
+import CaseStudiesCard from '../../components/caseStudiesCards'
 import ServiceCards from '../../components/serviceCards'
 import TestimonialCards from '../../components/testimonialCards'
+import WhyChooseUsSection from '../../components/whyChooseUsSection'
 import { TbArrowNarrowRight } from "react-icons/tb"
-import { BsPlayCircleFill, BsCheckCircleFill, BsArrowRight } from "react-icons/bs"
+import { BsPlayCircleFill, BsCheckCircleFill } from "react-icons/bs"
 import './style.scss'
 
 export default function Services() {
@@ -19,48 +20,75 @@ export default function Services() {
                 <About />
                 <ServicesComp />
                 <Projects />
-                <InfoSection />
+                <WhyChooseUsSection data={whyChooseUsSectionData} src="services" img="info.png" text="Choosing us for social media marketing for healthcare can bring several benefits to healthcare providers, including:" bggreen={true} />
                 <Testimonials />
             </div>
         </>
     )
 }
 
+const whyChooseUsSectionData = [
+    {
+        title: "Healthcare-specific expertise:",
+        text: "Our team has extensive experience in social media marketing for healthcare providers and understands the unique challenges and regulations of the industry."
+    },
+    {
+        title: "Customized solutions:",
+        text: "We offer customized social media marketing solutions tailored to the specific needs and goals of each healthcare provider we work with."
+    },
+    {
+        title: "Results-driven approach:",
+        text: "Our approach to social media marketing is focused on delivering measurable results, such as increased website traffic, improved patient engagement, and higher conversion rates."
+    },
+    {
+        title: "Patient-centered focus:",
+        text: "We understand the importance of patient engagement and work to create content and strategies that put the patient at the center of the conversation."
+    },
+    {
+        title: "HIPAA compliance:",
+        text: "We are knowledgeable about HIPAA regulations and take the necessary steps to ensure that all social media marketing efforts are compliant with patient privacy laws."
+    },
+    {
+        title: "Competitive pricing:",
+        text: "We offer competitive pricing options designed to provide value and a strong return on investment for our clients."
+    }
+]
+
 const Hero = () => {
     const counters = [
         {
-            count: '5K+',
-            text: "Projects"
+            count: '50K+',
+            text: "Graphics Created"
         },
         {
-            count: '75',
-            text: "Awards"
+            count: '2M+',
+            text: "Average Reach"
         },
         {
-            count: '3m+',
-            text: "Users"
+            count: '75K+',
+            text: "Leads Generated"
         }
     ]
     const brands = [
         {
-            name: "brand1",
-            imgUrl: "assets/brand1.svg"
+            name: "Apollo",
+            imgUrl: "assets/apollo.svg"
         },
         {
-            name: "brand2",
-            imgUrl: "assets/brand2.svg"
+            name: "asterclinic",
+            imgUrl: "assets/asterclinic.png"
         },
         {
-            name: "brand3",
-            imgUrl: "assets/brand3.svg"
+            name: "HCAH",
+            imgUrl: "assets/hcah.png"
         },
         {
-            name: "brand4",
-            imgUrl: "assets/brand4.svg"
+            name: "Medanta",
+            imgUrl: "assets/medanta.png"
         },
         {
-            name: "brand5",
-            imgUrl: "assets/brand5.svg"
+            name: "Cloudnine",
+            imgUrl: "assets/cloudnine.svg"
         }
     ]
     return (
@@ -70,9 +98,8 @@ const Hero = () => {
                     <div className="row">
                         <div className="col-lg-6 align-self-center">
                             <h1 className='mb-16'>Solutions ready for the future.</h1>
-                            <p className='txt-1 mb-16'>Become a part of this digital revolution today.</p>
-                            <Link to='/' className='btn btn-primary btn-lg'>Get a demo</Link>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            <Link to='/' className='btn btn-outline-primary btn-lg'>Learn more</Link>
+                            <p className='txt-1 mb-16'>Empowering Healthcare through Innovative Social Media Marketing - Connect, Engage, and Thrive with Branding Pioneers</p>
+                            {/* <Link to='/' className='btn btn-primary btn-lg'>Learn More</Link>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; */}
                             <div className="counter mt-20 d-flex flex-wrap">
                                 {counters.map((e, i) =>
                                     <div className="count txt-center" key={i}>
@@ -90,7 +117,7 @@ const Hero = () => {
                     </div>
                 </div>
             </section>
-            <BrandSection brands={brands} src={'services'} bg="bg-shade-1" light bordered />
+            <BrandSection brands={brands} src={'home'} bg="bg-shade-1" light bordered />
         </>
     )
 }
@@ -98,9 +125,11 @@ const Hero = () => {
 const About = () => {
 
     const features_data = [
-        "Seamless, comprehensive, and cost-effective",
-        "Connect with your customers",
-        "Streamline your operations"
+        "Healthcare Marketing Specialists: Our team has extensive experience and a deep understanding of the unique challenges and opportunities within the healthcare industry, allowing us to tailor our services to your specific needs and goals.",
+        "Comprehensive Services: We offer a wide range of services, including strategy development, content creation, account management, advertising campaigns, and analytics reporting, ensuring a holistic approach to your healthcare organization's social media marketing efforts.",
+        "Data-Driven Approach: We rely on data and analytics to track performance, measure success, and optimize our strategies, ensuring continuous improvement and maximum return on investment for your healthcare organization.",
+        "Client-Centric Focus: We prioritize your healthcare organization's goals and objectives, working closely with you to develop and implement personalized social media marketing strategies that deliver measurable results.",
+        "Ongoing Support and Partnership: Our team is committed to your success, offering continuous support and guidance throughout our partnership. We're always available to answer questions, address concerns, and adjust your social media marketing strategy."
     ]
 
     return (
@@ -108,7 +137,7 @@ const About = () => {
             <section className="section-global">
                 <div className="container">
                     <div className="row gy-4">
-                        <div className="col-lg-6 align-self-center d-flex justify-content-center">
+                        <div className="col-lg-6 align-self-start d-flex justify-content-center">
                             <div className='video-thumb'>
                                 <a href='/'>
                                     <img src={require('./assets/video_thumb.jpg')} className="img-fluid" alt="stact" />
@@ -119,17 +148,14 @@ const About = () => {
                         <div className="col-lg-6 align-self-center">
                             <div className="section-tag mb-8">Who we are</div>
                             <h2 className='mb-16'>We provide digital solutions for your business</h2>
-                            <p className='txt-1'>We craft digital experiences that resonate with your audience and grow your business. If you have a vision for the next big thing, we can help you make it happen. </p>
-                            {features_data.map((e, i) => <div key={i} className="txt-2 color-1 fw-500 mb-8 gap-2 d-flex align-items-center">
-                                <BsCheckCircleFill fill='#0FA958' fontSize={24} />
-                                {e}
-                            </div>)}
-                            <div className='mt-16'>
-                                <Link to="/about" className='arrow-link'>
-                                    Learn more
-                                    <BsArrowRight />
-                                </Link>
+                            <p className='txt-1'>Branding Pioneers is a dedicated team of marketing professionals specializing in Social Media Marketing (SMM) and Social Media Optimization (SMO) services for the healthcare industry. With our expertise, passion, and commitment to excellence, we help healthcare organizations establish a strong online presence, engage with their target audience, and drive growth.</p>
+                            {features_data.map((e, i) => <div key={i} className="txt-2 color-1 fw-500 mb-8 gap-2 d-flex align-items-start">
+                                <div>
+                                    <BsCheckCircleFill fill='#0FA958' fontSize={24} />
+                                </div>
+                                <p>{e}</p>
                             </div>
+                            )}
                         </div>
                     </div>
                 </div>
@@ -139,31 +165,46 @@ const About = () => {
 }
 
 const ServicesComp = () => {
-
     const services = [
         {
-            name: 'Applied AI',
-            info: ['Search Engine Optimization', 'Performance Ads & Lead Generation', 'Local SEO'],
-            link: '/services',
+            name: 'Social Media Strategy Development',
+            info: ["Our team will create a customized social media marketing strategy that aligns with your healthcare organization's objectives and goals. We'll identify the most relevant platforms, craft a content plan, and establish key performance indicators (KPIs) to track progress and measure success."],
             icoUrl: 'assets/service_ico1.svg'
         },
         {
-            name: 'Cyber Security',
-            info: ['Search Engine Optimization', 'Performance Ads & Lead Generation', 'Local SEO'],
-            link: '/services',
+            name: 'Content Creation and Curation',
+            info: ["We produce engaging, informative, and shareable content that resonates with your target audience. Our content includes articles, infographics, videos, and images that educate, inspire, and inform while highlighting your healthcare organization's unique offerings and expertise."],
             icoUrl: 'assets/service_ico2.svg'
         },
         {
-            name: 'Internet of Things',
-            info: ['Search Engine Optimization', 'Performance Ads & Lead Generation', 'Local SEO'],
-            link: '/services',
+            name: 'Social Media Account Management',
+            info: ["Our team will manage your healthcare organization's social media accounts, ensuring consistent branding, prompt responses to comments and messages, and proactive audience engagement. We'll also implement growth strategies to increase your follower base and reach."],
             icoUrl: 'assets/service_ico3.svg'
         },
         {
-            name: 'Digital Marketing',
-            info: ['Search Engine Optimization', 'Performance Ads & Lead Generation', 'Local SEO'],
-            link: '/services',
+            name: 'Social Media Advertising',
+            info: ["We'll design and manage targeted social media advertising campaigns to boost visibility, drive website traffic, and generate leads. Our team will create compelling ad creatives, select appropriate targeting options, and optimize ad spending for maximum ROI."],
             icoUrl: 'assets/service_ico4.svg'
+        },
+        {
+            name: "Performance Analytics and Reporting",
+            info: ["We'll provide comprehensive analytics and reports on your social media marketing performance, identifying trends, tracking KPIs, and measuring the effectiveness of our strategies. This data-driven approach allows us to refine our tactics and continuously optimize your social media presence."],
+            icoUrl: "assets/service_ico5.svg"
+        },
+        {
+            name: "Online Reputation Management",
+            info: ["We'll help you monitor and manage your healthcare organization's online reputation, addressing negative reviews or comments and promoting positive feedback to showcase your commitment to patient satisfaction and quality care."],
+            icoUrl: "assets/service_ico6.svg"
+        },
+        {
+            name: "Influencer Marketing and Partnerships",
+            info: ["Our team will identify, engage, and collaborate with relevant influencers and industry partners, leveraging their reach and credibility to amplify your healthcare organization's message and drive engagement with your target audience."],
+            icoUrl: "assets/service_ico7.svg"
+        },
+        {
+            name: "Social Media Training and Consulting",
+            info: ["We offer social media training and consulting services to empower your healthcare organization's in-house team, providing them with the knowledge and tools necessary to manage and optimize your social media presence effectively."],
+            icoUrl: "assets/service_ico8.svg"
         }
     ]
 
@@ -177,7 +218,7 @@ const ServicesComp = () => {
                             <h2>Best in class innovative tech solutions</h2>
                         </div>
                     </div>
-                    <div className="row gx-md-5 gy-4">
+                    <div className="row gx-md-5 align-items-stretch gy-4">
                         {
                             services.map((service, i) =>
                                 <div className="col-lg-4 col-xl-3 col-md-6 col-sm-6" key={i}>
@@ -196,25 +237,25 @@ const Projects = () => {
 
     const projects_data = [
         {
-            category: 'development',
-            text: 'LAPI - Single entry point API management',
+            category: 'Social Media',
+            text: ' Social Media Marketing for Medanta Hospital',
             imgUrl: 'assets/project1.png',
             color: "#F97316",
-            link: '/project-detail'
+            link: '/case-studies'
         },
         {
-            category: 'design',
-            text: 'How Deko manages to scale using Stact',
-            imgUrl: 'assets/project2.png',
-            color: "#2D7EF8",
-            link: '/project-detail'
+            category: 'social media',
+            text: 'Apollo Hospitals - Social Media Management',
+            imgUrl: 'assets/project1.png',
+            color: '#2D7EF8',
+            link: '/case-studies/apollo-hospitals'
         },
         {
-            category: 'branding',
-            text: "Teno's journey from small to giant",
+            category: 'Marketing',
+            text: "Social Media Marketing for Cloudnine Hospitals",
             imgUrl: 'assets/project3.png',
             color: "#00AA45",
-            link: '/project-detail'
+            link: '/case-studies'
         }
     ]
 
@@ -235,51 +276,7 @@ const Projects = () => {
                         </div>
                     </div>
                     <div className="row">
-                        <ProjectCards data={projects_data} src="services" />
-                    </div>
-                </div>
-            </section>
-        </>
-    )
-}
-
-const InfoSection = () => {
-    const infoData = [
-        {
-            title: 'Customer Research',
-            text: 'We mine data, uncover insights and identify opportunities'
-        },
-        {
-            title: 'User friendly Build',
-            text: 'We architect websites and apps to solve user problems'
-        },
-        {
-            title: 'Scalable models',
-            text: 'Continuous Delivery pipelines to ensure fast iteration'
-        }
-    ]
-
-    return (
-        <>
-            <section className="section-global bg-shade-green">
-                <div className="container">
-                    <div className="row gy-5">
-                        <div className="col-lg-6 align-self-center">
-                            <div className="section-tag mb-8">Why choose Stact?</div>
-                            <h2 className='mb-16'>We provide solutions that make our clients' lives simpler</h2>
-                            {infoData.map((e, i) =>
-                                <div className='d-flex mb-16 gap-2' key={i}>
-                                    <BsCheckCircleFill fill='#0FA958' fontSize={24} />
-                                    <div>
-                                        <h4 className='mb-0'>{e.title}</h4>
-                                        <div className="txt-2">{e.text}</div>
-                                    </div>
-                                </div>
-                            )}
-                        </div>
-                        <div className="col-lg-6 text-center align-self-center">
-                            <img src={require('./assets/info.png')} className="img-fluid info-banner-image" alt="Why stact" />
-                        </div>
+                        <CaseStudiesCard data={projects_data} src="services" />
                     </div>
                 </div>
             </section>
@@ -291,22 +288,22 @@ const Testimonials = () => {
     const testimonial_data = [
         {
             brandImgUrl: 'assets/review_brand1.svg',
-            text: 'Love the product and the service, and the customer care team is awesome. The features are great, too--everything that you need.',
-            userName: 'Mary Edwards',
+            text: 'I am thrilled with the results of the social media marketing services provided by Branding Pioneers. They increased my online presence and engagement with my target audience, significantly boosting my business revenue. Their team is professional, knowledgeable, and always responsive to my needs. I highly recommend their services to anyone looking to grow their brand on social media.',
+            userName: 'Mehak',
             position: 'Product director',
             userImgUrl: 'assets/review_user1.svg'
         },
         {
             brandImgUrl: 'assets/review_brand2.svg',
-            text: 'I recommend this product because it benefits everyone. You will be able to stay connected with your team and clients from all over the world.',
-            userName: 'Felisa Rincon',
+            text: 'Working with Branding Pioneers has been a game-changer for my business. Their social media marketing services have helped me to reach a wider audience and increase my customer base. Their strategies are effective and customized to my specific business needs. Since working with them, I have seen a noticeable improvement in my social media engagement and overall online presence. I highly recommend their services to businesses looking to improve their social media presence.',
+            userName: 'Vinesh',
             position: 'Head of Product',
             userImgUrl: 'assets/review_user2.svg'
         },
         {
             brandImgUrl: 'assets/review_brand3.svg',
-            text: 'I was able to get a fully functional online office space that included all the software we needed and it was super cheap!',
-            userName: 'Eunice Kennedy',
+            text: 'I cannot say enough good things about the social media marketing services provided by Branding Pioneers. Their team is highly skilled and knowledgeable in all aspects of social media marketing. They took the time to understand my business needs and created a customized strategy that helped me to achieve my social media goals. Since working with them, I have seen a significant increase in engagement and followers. I highly recommend their services to any business looking to improve its social media presence.',
+            userName: 'Aashish',
             position: 'Product director',
             userImgUrl: 'assets/review_user3.svg'
         }

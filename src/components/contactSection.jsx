@@ -1,5 +1,5 @@
 import './css/contactSection.scss'
-import scribble from './assets/scribble.svg'
+import scribble from '../images/scribble.svg'
 
 export default function ContactSection() {
     return (
