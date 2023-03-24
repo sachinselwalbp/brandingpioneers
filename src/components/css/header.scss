@@ -52,9 +52,9 @@ $header_height: 80px;
   .ds_menu {
     z-index: 9999;
     button {
+      padding: 0;
       outline: none;
       border: none;
-      padding: 0;
       user-select: none;
       -webkit-user-select: none;
       -moz-user-select: none;

@@ -24,11 +24,15 @@ export const navlinks = [
         href: "/case-studies",
         sublink: [
           {
-            title: "test",
+            title: "Not Completed Yet!",
             href: "/"
           }
         ]
       }
     ]
+  },
+  {
+    title: "Contact",
+    href: "/contact"
   }
 ]

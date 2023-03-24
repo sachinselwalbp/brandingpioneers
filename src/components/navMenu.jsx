@@ -33,7 +33,7 @@ function Dimensions(ref) {
   }, [ref])
 
   const dimensions = useRef({ width: 0, height: 0 });
-  return dimensions.current;
+  return dimensions.current
 }
 
 export default function NavMenu() {
@@ -85,18 +85,59 @@ function Navigation() {
   const { toggleOpen } = useContext(Context)
 
   return (
-    <motion.ul variants={variantsNav}>
-      {navlinks.map((e, i) => (
-        <motion.li
-          key={i}
-          onClick={() => toggleOpen()}
-          variants={variants}
-        // whileHover={{ scale: 1.01 }}
-        // whileTap={{ scale: 0.99 }}
-        >
-          <Link to={e.href}>{e.title}</Link>
-        </motion.li>
-      ))}
-    </motion.ul>
+    <motion.ul variants={variantsNav} className="main_ul">
+      {
+        navlinks.map((e, i) => {
+          return (
+            <>
+              <motion.li
+                key={i}
+                onClick={() => toggleOpen()}
+                variants={variants}>
+                <Link to={e.href}>{e.title}</Link>
+                {
+                  !e.sublink ? <span></span> :
+                    <motion.ul variants={variantsNav} className="sub_ul">
+                      {
+                        e.sublink.map((e, i) => {
+                          return (
+                            <>
+                              < motion.li
+                                key={i}
+                                onClick={() => toggleOpen()}
+                                variants={variants}>
+                                <Link to={e.href}>{e.title}</Link>
+                                {
+                                  !e.sublink ? <span></span> :
+                                    <motion.ul variants={variantsNav} className="sub_sub_ul">
+                                      {
+                                        e.sublink.map((e, i) => {
+                                          return (
+                                            <>
+                                              < motion.li
+                                                key={i}
+                                                onClick={() => toggleOpen()}
+                                                variants={variants}>
+                                                <Link to={e.href}>{e.title}</Link>
+                                              </motion.li>
+                                            </>
+                                          )
+                                        })
+                                      }
+                                    </motion.ul>
+                                }
+                              </motion.li>
+                            </>
+                          )
+                        })
+                      }
+                    </motion.ul>
+                }
+              </motion.li>
+            </>
+          )
+        })
+      }
+    </motion.ul >
   )
 }
