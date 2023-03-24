@@ -4,11 +4,14 @@ import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.scss';
 import BrandingPioneers from './BrandingPioneers';
+import MyContext from './Context';
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
   <React.StrictMode>
+    <MyContext>
       <BrandingPioneers />
+    </MyContext>
   </React.StrictMode>
 );
 
