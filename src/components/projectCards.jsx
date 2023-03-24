@@ -11,7 +11,7 @@ export default function ProjectCards({ data, src }) {
                             <div className='tag fw-500' style={{ color: `${e.color}` }}>{e.category}</div>
                             <div className='text txt-2 color-1 mb-16 fw-700'>{e.text}</div>
                             <div className='project-thumb mt-auto'>
-                                {/* <img src={require(`../../pages/${src}/${e.imgUrl}`)} className="img-fluid" alt={e.category} /> */}
+                                {/* <img src={require(`../../images/${src}/${e.imgUrl}`)} className="img-fluid" alt={e.category} /> */}
                                 <div className="project-link-overlay">
                                     View case study
                                 </div>

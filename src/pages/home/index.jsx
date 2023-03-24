@@ -27,7 +27,7 @@ export default function HomePage() {
                 <Testimonials />
                 <OurPartners />
                 <FAQSection />
-                <BrandSection brands={brands} src={'home'} customTitle="Brand we've worked with" light pt />
+                <BrandSection brands={brands} customTitle="Brand we've worked with" light pt />
                 <Stats />
             </div>
         </>
@@ -37,23 +37,23 @@ export default function HomePage() {
 const brands = [
     {
         name: "Apollo",
-        imgUrl: "assets/apollo.svg"
+        imgUrl: "apollo.svg"
     },
     {
         name: "asterclinic",
-        imgUrl: "assets/asterclinic.png"
+        imgUrl: "asterclinic.png"
     },
     {
         name: "HCAH",
-        imgUrl: "assets/hcah.png"
+        imgUrl: "hcah.png"
     },
     {
         name: "Medanta",
-        imgUrl: "assets/medanta.png"
+        imgUrl: "medanta.png"
     },
     {
         name: "Cloudnine",
-        imgUrl: "assets/cloudnine.svg"
+        imgUrl: "cloudnine.svg"
     }
 ]
 
@@ -96,7 +96,7 @@ function Hero() {
                                     }}
                                 />
                             </p>
-                            <form className="mt-40 me-lg-5" action="https://app.headlessforms.cloud/api/v1/form-submission/J5AwbzdSw9" method="POST" enctype="multipart/form-data">
+                            <form className="mt-40 me-lg-5" action="https://app.headlessforms.cloud/api/v1/form-submission/J5AwbzdSw9" method="POST" encType="multipart/form-data">
                                 <div className="cta-form d-flex align-items-center justify-content-between">
                                     <div className="cta-input">
                                         <input type="tel" name="number" className="form-control" id="exampleFormControlInput1" placeholder="Enter Your Phone Number" required />
@@ -108,7 +108,7 @@ function Hero() {
                             </form>
                         </div>
                         <div className="col-lg-6 align-self-center">
-                            <motion.img width={800} src={require('./assets/hero_image.png')} className="img-fluid" alt="hero" animate={{ y: 0 }} initial={{ y: 1000 }} />
+                            <motion.img width={800} src={require('../../images/hero_image.png')} className="img-fluid" alt="hero" animate={{ y: 0 }} initial={{ y: 1000 }} />
                         </div>
                     </div>
                 </div>
@@ -123,25 +123,25 @@ function Services() {
             name: 'Digital Patient Acquisition',
             info: ['Search Engine Optimization', 'Performance Ads & Lead Generation', 'Local SEO'],
             link: '/services',
-            icoUrl: 'assets/service_ico1.svg'
+            icoUrl: 'service_ico1.svg'
         },
         {
             name: 'Reputation Management',
             info: ['Google Review Management', 'Quora Review', 'Testimonials Video Creation'],
             link: '/services',
-            icoUrl: 'assets/service_ico2.svg'
+            icoUrl: 'service_ico2.svg'
         },
         {
             name: 'Brand Building',
             info: ['Social Media Marketing', 'Video Marketing', 'Influencer & PR'],
             link: '/services',
-            icoUrl: 'assets/service_ico3.svg'
+            icoUrl: 'service_ico3.svg'
         },
         {
             name: 'Sales Automation',
             info: ['CRM', 'Leadmade', 'IVR & Call Tracking'],
             link: '/services',
-            icoUrl: 'assets/service_ico4.svg'
+            icoUrl: 'service_ico4.svg'
         }
     ]
     return (
@@ -281,7 +281,7 @@ function About() {
                     <div className="row mb-40 gy-4">
                         <div className="col-lg-6 align-self-center d-flex justify-content-center align-items-center">
                             <div>
-                                <img loading="lazy" src={require('./assets/about1.png')} className="img-fluid" alt="About" />
+                                <img loading="lazy" src={require('../../images/about1.png')} className="img-fluid" alt="About" />
                             </div>
                         </div>
                         <div className="col-lg-6 align-self-center">
@@ -307,7 +307,7 @@ function About() {
                         </div>
                         <div className="col-lg-6 align-self-center d-flex justify-content-center align-items-center">
                             <div>
-                                <img loading="lazy" src={require('./assets/about2.png')} className="img-fluid" alt="About" />
+                                <img loading="lazy" src={require('../../images/about2.png')} className="img-fluid" alt="About" />
                             </div>
                         </div>
                     </div>
@@ -364,7 +364,7 @@ function Culture() {
                     <div className="row">
                         {culture_data.map((e, i) =>
                             <div className="col-lg-4 col-md-6 col-sm-6 text-center" key={i}>
-                                <img loading="lazy" src={require(`./assets/${e.imgUrl}`)} className="img-fluid" alt={e.title} />
+                                <img loading="lazy" src={require(`../../images/${e.imgUrl}`)} className="img-fluid" alt={e.title} />
                                 <h3>{e.title}</h3>
                                 <p className="txt-3">{e.text}</p>
                             </div>
@@ -384,21 +384,21 @@ function Testimonials() {
             userName: 'Mr. Hari Boolchandani',
             position: 'Co-Founder and President at GHC',
             youtube: 'https://youtu.be/YjXBjttxiNc',
-            userImgUrl: 'assets/hari.jpg'
+            userImgUrl: 'hari.jpg'
         },
         {
             text: 'Branding Pioneers takes lots of pain and put up questions, they take lots of pains in recording our videos and posting them timely on the social media, and this has created a lot of difference in our social media presence.',
             userName: 'Dr. Manish Kulshrestha',
             position: 'Additional Director - Laparoscopic and Robotic Surgery at Fortis Healthcare',
             youtube: 'https://youtu.be/gPyG-eYRVaM',
-            userImgUrl: 'assets/manish.jpg'
+            userImgUrl: 'manish.jpg'
         },
         {
             text: 'I have seen a realistic amount of growth on our social media platforms. Very enthusiastic team, they are doing a splendid job. Keep up the good work!',
             userName: 'Jasleen Kaur',
             position: 'Marketing Head at Rosewalk and Rainbow Hospital.',
             youtube: 'https://youtu.be/N2zfXA3CJMA',
-            userImgUrl: 'assets/jasleenkaur.jpg'
+            userImgUrl: 'jasleenkaur.jpg'
         }
     ]
 
@@ -419,7 +419,7 @@ function Testimonials() {
                         </div>
                     </div>
                     <div className="row">
-                        <TestimonialCards data={testimonial_data} src="home" />
+                        <TestimonialCards data={testimonial_data} />
                     </div>
                 </div>
             </div>
@@ -432,17 +432,17 @@ function Stats() {
         {
             head: '4.5 Stars',
             text: 'Overall ratings',
-            icoUrl: 'assets/stats_icon1.svg'
+            icoUrl: 'stats_icon1.svg'
         },
         {
             head: '1.5k Ratings',
             text: 'On all the platforms',
-            icoUrl: 'assets/stats_icon2.svg'
+            icoUrl: 'stats_icon2.svg'
         },
         {
             head: '180+ Happy',
             text: 'Medical Clints',
-            icoUrl: 'assets/stats_icon3.svg'
+            icoUrl: 'stats_icon3.svg'
         }
     ]
 
@@ -456,7 +456,7 @@ function Stats() {
                         </div>
                         {stats_data.map((e, i) =>
                             <div className="col-lg-3 col-md-4 col-sm-6 text-center" key={i}>
-                                <img loading='lazy' src={require(`./${e.icoUrl}`)} className="mb-8" height="30" alt="stats" />
+                                <img loading='lazy' src={require(`../../images/${e.icoUrl}`)} className="mb-8" height="30" alt="stats" />
                                 <h4 className='mb-0'>{e.head}</h4>
                                 <div className="txt-4">{e.text}</div>
                             </div>

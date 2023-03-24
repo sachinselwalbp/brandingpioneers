@@ -1,6 +1,6 @@
 import { BsCheckCircleFill } from "react-icons/bs"
 
-export default function WhyChooseUsSection({ data, text, src, img, bggreen = false }) {
+export default function WhyChooseUsSection({ data, text, img, bggreen = false }) {
   return (
     <>
       <section className={`section-global ${bggreen ? "bg-shade-green" : ""}`}>
@@ -25,7 +25,7 @@ export default function WhyChooseUsSection({ data, text, src, img, bggreen = fal
               )}
             </div>
             <div className="col-lg-6 text-center align-self-start">
-              <img loading='lazy' src={require(`../pages/${src}/assets/${img}`)} className="img-fluid info-banner-image" alt="Why stact" />
+              <img loading='lazy' src={require(`../images/${img}`)} className="img-fluid info-banner-image" alt="Why stact" />
             </div>
           </div>
         </div>

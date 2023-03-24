@@ -72,23 +72,23 @@ const Hero = () => {
     const brands = [
         {
             name: "Apollo",
-            imgUrl: "assets/apollo.svg"
+            imgUrl: "apollo.svg"
         },
         {
             name: "asterclinic",
-            imgUrl: "assets/asterclinic.png"
+            imgUrl: "asterclinic.png"
         },
         {
             name: "HCAH",
-            imgUrl: "assets/hcah.png"
+            imgUrl: "hcah.png"
         },
         {
             name: "Medanta",
-            imgUrl: "assets/medanta.png"
+            imgUrl: "medanta.png"
         },
         {
             name: "Cloudnine",
-            imgUrl: "assets/cloudnine.svg"
+            imgUrl: "cloudnine.svg"
         }
     ]
     return (
@@ -111,7 +111,7 @@ const Hero = () => {
                         </div>
                         <div className="col-lg-6 align-self-center d-flex justify-content-center">
                             <div style={{ maxWidth: '500px' }}>
-                                <img src={require('./assets/hero_image.png')} className="img-fluid mt-5 mt-lg-0" alt='hero' />
+                                <img src={require('../../images/hero_image.png')} className="img-fluid mt-5 mt-lg-0" alt='hero' />
                             </div>
                         </div>
                     </div>
@@ -140,7 +140,7 @@ const About = () => {
                         <div className="col-lg-6 align-self-start d-flex justify-content-center">
                             <div className='video-thumb'>
                                 <a href='/'>
-                                    <img src={require('./assets/video_thumb.jpg')} className="img-fluid" alt="stact" />
+                                    <img src={require('../../images/video_thumb.jpg')} className="img-fluid" alt="stact" />
                                     <BsPlayCircleFill fill='white' fontSize={77} />
                                 </a>
                             </div>
@@ -169,42 +169,42 @@ const ServicesComp = () => {
         {
             name: 'Social Media Strategy Development',
             info: ["Our team will create a customized social media marketing strategy that aligns with your healthcare organization's objectives and goals. We'll identify the most relevant platforms, craft a content plan, and establish key performance indicators (KPIs) to track progress and measure success."],
-            icoUrl: 'assets/service_ico1.svg'
+            icoUrl: 'service_ico1.svg'
         },
         {
             name: 'Content Creation and Curation',
             info: ["We produce engaging, informative, and shareable content that resonates with your target audience. Our content includes articles, infographics, videos, and images that educate, inspire, and inform while highlighting your healthcare organization's unique offerings and expertise."],
-            icoUrl: 'assets/service_ico2.svg'
+            icoUrl: 'service_ico2.svg'
         },
         {
             name: 'Social Media Account Management',
             info: ["Our team will manage your healthcare organization's social media accounts, ensuring consistent branding, prompt responses to comments and messages, and proactive audience engagement. We'll also implement growth strategies to increase your follower base and reach."],
-            icoUrl: 'assets/service_ico3.svg'
+            icoUrl: 'service_ico3.svg'
         },
         {
             name: 'Social Media Advertising',
             info: ["We'll design and manage targeted social media advertising campaigns to boost visibility, drive website traffic, and generate leads. Our team will create compelling ad creatives, select appropriate targeting options, and optimize ad spending for maximum ROI."],
-            icoUrl: 'assets/service_ico4.svg'
+            icoUrl: 'service_ico4.svg'
         },
         {
             name: "Performance Analytics and Reporting",
             info: ["We'll provide comprehensive analytics and reports on your social media marketing performance, identifying trends, tracking KPIs, and measuring the effectiveness of our strategies. This data-driven approach allows us to refine our tactics and continuously optimize your social media presence."],
-            icoUrl: "assets/service_ico5.svg"
+            icoUrl: "service_ico5.svg"
         },
         {
             name: "Online Reputation Management",
             info: ["We'll help you monitor and manage your healthcare organization's online reputation, addressing negative reviews or comments and promoting positive feedback to showcase your commitment to patient satisfaction and quality care."],
-            icoUrl: "assets/service_ico6.svg"
+            icoUrl: "service_ico6.svg"
         },
         {
             name: "Influencer Marketing and Partnerships",
             info: ["Our team will identify, engage, and collaborate with relevant influencers and industry partners, leveraging their reach and credibility to amplify your healthcare organization's message and drive engagement with your target audience."],
-            icoUrl: "assets/service_ico7.svg"
+            icoUrl: "service_ico7.svg"
         },
         {
             name: "Social Media Training and Consulting",
             info: ["We offer social media training and consulting services to empower your healthcare organization's in-house team, providing them with the knowledge and tools necessary to manage and optimize your social media presence effectively."],
-            icoUrl: "assets/service_ico8.svg"
+            icoUrl: "service_ico8.svg"
         }
     ]
 
@@ -239,21 +239,21 @@ const Projects = () => {
         {
             category: 'Social Media',
             text: ' Social Media Marketing for Medanta Hospital',
-            imgUrl: 'assets/project1.png',
+            imgUrl: 'project1.png',
             color: "#F97316",
             link: '/case-studies'
         },
         {
             category: 'social media',
             text: 'Apollo Hospitals - Social Media Management',
-            imgUrl: 'assets/project1.png',
+            imgUrl: 'project1.png',
             color: '#2D7EF8',
             link: '/case-studies/apollo-hospitals'
         },
         {
             category: 'Marketing',
             text: "Social Media Marketing for Cloudnine Hospitals",
-            imgUrl: 'assets/project3.png',
+            imgUrl: 'project3.png',
             color: "#00AA45",
             link: '/case-studies'
         }
@@ -287,25 +287,25 @@ const Projects = () => {
 const Testimonials = () => {
     const testimonial_data = [
         {
-            brandImgUrl: 'assets/review_brand1.svg',
+            brandImgUrl: 'review_brand1.svg',
             text: 'I am thrilled with the results of the social media marketing services provided by Branding Pioneers. They increased my online presence and engagement with my target audience, significantly boosting my business revenue. Their team is professional, knowledgeable, and always responsive to my needs. I highly recommend their services to anyone looking to grow their brand on social media.',
             userName: 'Mehak',
             position: 'Product director',
-            userImgUrl: 'assets/review_user1.svg'
+            userImgUrl: 'review_user1.svg'
         },
         {
-            brandImgUrl: 'assets/review_brand2.svg',
+            brandImgUrl: 'review_brand2.svg',
             text: 'Working with Branding Pioneers has been a game-changer for my business. Their social media marketing services have helped me to reach a wider audience and increase my customer base. Their strategies are effective and customized to my specific business needs. Since working with them, I have seen a noticeable improvement in my social media engagement and overall online presence. I highly recommend their services to businesses looking to improve their social media presence.',
             userName: 'Vinesh',
             position: 'Head of Product',
-            userImgUrl: 'assets/review_user2.svg'
+            userImgUrl: 'review_user2.svg'
         },
         {
-            brandImgUrl: 'assets/review_brand3.svg',
+            brandImgUrl: 'review_brand3.svg',
             text: 'I cannot say enough good things about the social media marketing services provided by Branding Pioneers. Their team is highly skilled and knowledgeable in all aspects of social media marketing. They took the time to understand my business needs and created a customized strategy that helped me to achieve my social media goals. Since working with them, I have seen a significant increase in engagement and followers. I highly recommend their services to any business looking to improve its social media presence.',
             userName: 'Aashish',
             position: 'Product director',
-            userImgUrl: 'assets/review_user3.svg'
+            userImgUrl: 'review_user3.svg'
         }
     ]
 

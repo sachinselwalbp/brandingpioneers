@@ -1,13 +1,13 @@
 import Helmet from "react-helmet"
-import BGP1 from './assets/bg_1.svg'
-import BGP2 from './assets/bg_2.svg'
+import BGP1 from '../../images/bg_1.svg'
+import BGP2 from '../../images/bg_2.svg'
 import './style.scss'
 
 const NotFound = () => {
     return(
         <>
             <Helmet>
-                <title>Stact - Not Found</title>
+                <title>Page - Not Found</title>
             </Helmet>
             <section className="section-global bg-shade-1 hero nf-section">
                 <div className="container">

@@ -41,21 +41,21 @@ const Projects = () => {
     {
       category: 'social media',
       text: 'Apollo Hospitals - Social Media Management',
-      imgUrl: 'assets/project1.png',
+      imgUrl: 'project1.png',
       color: "#F97316",
       link: '/case-studies/apollo-hospitals'
     },
     {
       category: 'development',
       text: 'Max Hospitals - Website Design and Development',
-      imgUrl: 'assets/project2.png',
+      imgUrl: 'project2.png',
       color: "#2D7EF8",
       link: '/case-studies/max-hospital'
     },
     {
       category: 'SEO',
       text: 'Dr Anjali Sharma - Search Engine Optimization',
-      imgUrl: 'assets/project3.png',
+      imgUrl: 'project3.png',
       color: "#00AA45",
       link: '/case-studies/dr-anjali-sharma'
     }
@@ -78,7 +78,7 @@ const Projects = () => {
             </div>
           </div>
           <div className="row">
-            <ProjectCards data={projects_data} src="about" />
+            <ProjectCards data={projects_data} />
           </div>
         </div>
       </section>
@@ -93,7 +93,7 @@ const CaseStudy = () => {
         <div className="container container-2">
           <div className="row">
             <div className="col-12 text-center mb-20">
-              <img loading='lazy' src={require('./assets/video_thumb.jpg')} className="img-fluid" alt="Who We Are" />
+              <img loading='lazy' src={require('../../images/video_thumb.jpg')} className="img-fluid" alt="Who We Are" />
             </div>
             <div className="col-12">
               <div className="case-study-section">

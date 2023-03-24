@@ -1,6 +1,6 @@
 import './css/brandSection.scss'
 
-export default function BrandSection({ brands, src, light, bordered, bg, pt, customTitle }) {
+export default function BrandSection({ brands, light, bordered, bg, pt, customTitle }) {
     return (
         <section className={(light ? '' : 'dark') + (bg ? ` ${bg}` : '') + " brand-section-container"}>
             <div className="container">
@@ -12,7 +12,7 @@ export default function BrandSection({ brands, src, light, bordered, bg, pt, cus
                                 {
                                     brands.map((brand, index) =>
                                         <div className="brand" key={index}>
-                                            <img loading='lazy' src={require(`../pages/${src}/${brand.imgUrl}`)} alt={brand.name} className="img-fluid" />
+                                            <img loading='lazy' src={require(`../images/${brand.imgUrl}`)} alt={brand.name} className="img-fluid" />
                                         </div>
                                     )
                                 }

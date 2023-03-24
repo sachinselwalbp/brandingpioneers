@@ -5,7 +5,7 @@ export default function CaseStudyDetail({ data }) {
         <div className="container container-2">
           <div className="row">
             <div className="col-12 text-center mb-20">
-              <img loading='lazy' src={require(`../pages/caseStudiesDetails/assets/${data.img}`)} className="img-fluid mb-20" alt={data.title} />
+              <img loading='lazy' src={require(`../images/${data.img}`)} className="img-fluid mb-20" alt={data.title} />
             </div>
             <div className="col-12">
               <div className="case-study-section">

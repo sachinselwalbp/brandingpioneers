@@ -39,7 +39,7 @@ const ContactSection = () => {
                             </div>)}
                         </div>
                         <div className="col-lg-6">
-                            <form className="row g-3" action="https://app.headlessforms.cloud/api/v1/form-submission/VFEVuhdpaR" method="POST" enctype="multipart/form-data">
+                            <form className="row g-3" action="https://app.headlessforms.cloud/api/v1/form-submission/VFEVuhdpaR" method="POST" encType="multipart/form-data">
                                 <div className="col-md-12">
                                     <label className="form-label">Name*</label>
                                     <input type="text" name='name' className="form-control" placeholder="Jhon Doe" required />
@@ -73,19 +73,19 @@ const ContactLinks = () => {
         {
             title: "Email",
             text: "brandingpioneers@gmail.com",
-            icoUrl: "assets/contact_ico1.svg",
+            icoUrl: "contact_ico1.svg",
             link: "mailto:stact.team@email.com"
         },
         {
             title: "Phone",
             text: "+91 8377009395",
-            icoUrl: "assets/contact_ico2.svg",
+            icoUrl: "contact_ico2.svg",
             link: "tel:+911234567890"
         },
         {
             title: "Headquarters",
             text: "Branding Pioneers 836, 8th floor, B3 Tower, Spaze I-Tech Park, Sector 49 Gurugram",
-            icoUrl: "assets/contact_ico3.svg",
+            icoUrl: "contact_ico3.svg",
             link: "/"
         }
     ]
@@ -100,7 +100,7 @@ const ContactLinks = () => {
                                 <div className="col-lg-4 col-md-6" key={i}>
                                     <a href={e.link} className="contact-link">
                                         <div className="contact-link-container d-flex align-items-center">
-                                            <img loading='lazy' src={require(`./${e.icoUrl}`)} height="50" alt={e.title} />
+                                            <img loading='lazy' src={require(`../../images/${e.icoUrl}`)} height="50" alt={e.title} />
                                             <div className='ms-3'>
                                                 <div className="txt-2 fw-500 color-1">{e.title}</div>
                                                 <div className="txt-3">{e.text}</div>

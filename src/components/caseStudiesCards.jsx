@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import './css/caseStudiesCard.scss'
 
-export default function CaseStudiesCard({ data, src }) {
+export default function CaseStudiesCard({ data }) {
     return (
         <>
             {
@@ -12,7 +12,7 @@ export default function CaseStudiesCard({ data, src }) {
                                 <div className='tag fw-500' style={{ color: `${e.color}` }}>{e.category}</div>
                                 <div className='text txt-2 color-1 mb-16 fw-700'>{e.text}</div>
                                 <div className='project-thumb mt-auto'>
-                                    <img loading='lazy' src={require(`../pages/${src}/${e.imgUrl}`)} className="img-fluid" alt={e.category} />
+                                    <img loading='lazy' src={require(`../images/${e.imgUrl}`)} className="img-fluid" alt={e.category} />
                                     <div className="project-link-overlay">
                                         View case study
                                     </div>

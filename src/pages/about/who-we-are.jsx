@@ -18,8 +18,6 @@ export default function WhoWeAre() {
   )
 }
 
-
-
 const About = () => {
   const features_data = [
     "Seamless, comprehensive, and cost-effective",
@@ -35,7 +33,7 @@ const About = () => {
             <div className="col-lg-6 align-self-center d-flex justify-content-center">
               <div className='video-thumb'>
                 <a href='/'>
-                  <img src={require('./assets/video_thumb.jpg')} className="img-fluid" alt="stact" />
+                  <img src={require('../../images/video_thumb.jpg')} className="img-fluid" alt="stact" />
                   <BsPlayCircleFill fill="white" fontSize={77} />
                 </a>
               </div>
@@ -69,7 +67,7 @@ const CaseStudy = () => {
         <div className="container container-2">
           <div className="row">
             <div className="col-12 text-center mb-20">
-              <img loading='lazy' src={require('./assets/video_thumb.jpg')} className="img-fluid" alt="Who We Are" />
+              <img loading='lazy' src={require('../../images/video_thumb.jpg')} className="img-fluid" alt="Who We Are" />
             </div>
             <div className="col-12">
               <div className="case-study-section">

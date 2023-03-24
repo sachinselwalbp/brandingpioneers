@@ -29,23 +29,23 @@ const Hero = () => {
     const brands = [
         {
             name: "brand1",
-            imgUrl: "assets/brand1.svg"
+            imgUrl: "brand1.svg"
         },
         {
             name: "brand2",
-            imgUrl: "assets/brand2.svg"
+            imgUrl: "brand2.svg"
         },
         {
             name: "brand3",
-            imgUrl: "assets/brand3.svg"
+            imgUrl: "brand3.svg"
         },
         {
             name: "brand4",
-            imgUrl: "assets/brand4.svg"
+            imgUrl: "brand4.svg"
         },
         {
             name: "brand5",
-            imgUrl: "assets/brand5.svg"
+            imgUrl: "brand5.svg"
         }
     ]
     return (
@@ -65,7 +65,7 @@ const Hero = () => {
                     <div className="row">
                         <div className="col-12">
                             <div className="hero-image-container">
-                                <img src={require('./assets/hero_image.jpg')} className="img-fluid" alt="Stact" />
+                                <img src={require('../../images/hero_image.jpg')} className="img-fluid" alt="Stact" />
                             </div>
                         </div>
                     </div>
@@ -109,7 +109,7 @@ const About = () => {
                         <div className="col-lg-6 align-self-center d-flex justify-content-center">
                             <div className="about-img-container">
                                 <a href='/'>
-                                    <img src={require(`./assets/about.jpg`)} className="img-fluid" alt='about' />
+                                    <img src={require(`../../images/about.jpg`)} className="img-fluid" alt='about' />
                                     <BsPlayCircleFill fill='white' fontSize={77} />
                                 </a>
                                 <div className="counter-section d-flex justify-content-between bg-shade-blue">
@@ -151,31 +151,30 @@ const About = () => {
 }
 
 const Services = () => {
-
     const services = [
         {
             name: 'Applied AI',
             info: ['Search Engine Optimization', 'Performance Ads & Lead Generation', 'Local SEO'],
             link: '/services',
-            icoUrl: 'assets/service_ico1.svg'
+            icoUrl: 'service_ico1.svg'
         },
         {
             name: 'Cyber Security',
             info: ['Search Engine Optimization', 'Performance Ads & Lead Generation', 'Local SEO'],
             link: '/services',
-            icoUrl: 'assets/service_ico2.svg'
+            icoUrl: 'service_ico2.svg'
         },
         {
             name: 'Internet of Things',
             info: ['Search Engine Optimization', 'Performance Ads & Lead Generation', 'Local SEO'],
             link: '/services',
-            icoUrl: 'assets/service_ico3.svg'
+            icoUrl: 'service_ico3.svg'
         },
         {
             name: 'Digital Marketing',
             info: ['Search Engine Optimization', 'Performance Ads & Lead Generation', 'Local SEO'],
             link: '/services',
-            icoUrl: 'assets/service_ico4.svg'
+            icoUrl: 'service_ico4.svg'
         }
     ]
 
@@ -194,13 +193,11 @@ const Services = () => {
                         </div>
                         <div className="col-lg-8">
                             <div className="row gx-md-5 gy-5">
-                                {
-                                    services.map((service, i) =>
-                                        <div className="col-lg-6 col-xl-6 col-md-6 col-sm-6" key={i}>
-                                            <ServiceCards data={service} src="OurSpeciality" />
-                                        </div>
-                                    )
-                                }
+                                {services.map((service, i) =>
+                                    <div className="col-lg-6 col-xl-6 col-md-6 col-sm-6" key={i}>
+                                        <ServiceCards data={service} src="OurSpeciality" />
+                                    </div>
+                                )}
                             </div>
                         </div>
                     </div>
@@ -216,21 +213,21 @@ const Projects = () => {
         {
             category: 'development',
             text: 'LAPI - Single entry point API management',
-            imgUrl: 'assets/project1.png',
+            imgUrl: 'project1.png',
             color: "#F97316",
             link: '/project-detail'
         },
         {
             category: 'design',
             text: 'How Deko manages to scale using Stact',
-            imgUrl: 'assets/project2.png',
+            imgUrl: 'project2.png',
             color: "#2D7EF8",
             link: '/project-detail'
         },
         {
             category: 'branding',
             text: "Teno's journey from small to giant",
-            imgUrl: 'assets/project3.png',
+            imgUrl: 'project3.png',
             color: "#00AA45",
             link: '/project-detail'
         }
@@ -296,7 +293,7 @@ const InfoSection = () => {
                             )}
                         </div>
                         <div className="col-lg-6 text-center align-self-center">
-                            <img src={require('./assets/info.png')} className="img-fluid info-banner-image" alt="Why stact" />
+                            <img src={require('../../images/info.png')} className="img-fluid info-banner-image" alt="Why stact" />
                         </div>
                     </div>
                 </div>
@@ -311,21 +308,21 @@ const Blog = () => {
             category: 'leadership',
             title: 'How Stact helps you make values visible in your business.',
             date: '09 Sept, 2021',
-            imgUrl: 'assets/blog_thumb1.jpg',
+            imgUrl: 'blog_thumb1.jpg',
             link: '/blog-article'
         },
         {
             category: 'announcement',
             title: "Values (What They Are, Why They're Important)",
             date: '09 Sept, 2021',
-            imgUrl: 'assets/blog_thumb2.jpg',
+            imgUrl: 'blog_thumb2.jpg',
             link: '/blog-article'
         },
         {
             category: 'culture',
             title: 'How Our Tools Will Change The Way You Create Content',
             date: '09 Sept, 2021',
-            imgUrl: 'assets/blog_thumb3.jpg',
+            imgUrl: 'blog_thumb3.jpg',
             link: '/blog-article'
         }
     ]

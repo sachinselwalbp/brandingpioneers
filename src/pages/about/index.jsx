@@ -47,7 +47,7 @@ const Content = () => {
       <div className="container container-2">
         <div className="row">
           <div className="col-12 mb-20">
-            <img loading='lazy' className="img-fluid mb-20 mainPageArticleImage" src={require('./assets/video_thumb.jpg')} alt='About Us' />
+            <img loading='lazy' className="img-fluid mb-20 mainPageArticleImage" src={require('../../images/video_thumb.jpg')} alt='About Us' />
           </div>
           <div className="col-12 px-md-5 px-3">
             <div className="blog-article-section">
@@ -91,7 +91,7 @@ const AboutSection = () => {
           <div className="row gy-4">
             <div className="col-lg-6 align-self-center d-flex justify-content-center">
               <div>
-                <img loading='lazy' src={require('./assets/about.gif')} className="img-fluid" alt="About Us" />
+                <img loading='lazy' src={require('../../images/about.gif')} className="img-fluid" alt="About Us" />
               </div>
             </div>
             <div className="col-lg-6 align-self-center">
@@ -165,12 +165,12 @@ const Team = () => {
     {
       name: 'Arush Thapar',
       position: 'Managing Partner',
-      imgUrl: 'assets/team.jpg'
+      imgUrl: 'team.jpg'
     },
     {
       name: 'Nishu Sharma',
       position: 'Managing Partner',
-      imgUrl: 'assets/team.jpg'
+      imgUrl: 'team.jpg'
     },
   ]
   return (
@@ -187,7 +187,7 @@ const Team = () => {
             {team_data.map((e, i) =>
               <div className="col-lg-3 col-md-4 col-sm-6" key={i}>
                 <div className="team-member text-center">
-                  <img src={require(`./${e.imgUrl}`)} className="img-fluid mb-16" alt={e.name} />
+                  <img src={require(`../../images/${e.imgUrl}`)} className="img-fluid mb-16" alt={e.name} />
                   <div className="txt-2 color-1 fw-500">{e.name}</div>
                   <div className="txt-3">{e.position}</div>
                 </div>
@@ -206,13 +206,13 @@ const PortfolioFooter = () => {
     {
       title: "Email",
       text: "brandingpioneers@gmail.com",
-      icoUrl: "assets/contact_ico1.svg",
+      icoUrl: "contact_ico1.svg",
       link: "mailto:brandingpioneers@gmail.com"
     },
     {
       title: "Phone",
       text: "+91 8377009395",
-      icoUrl: "assets/contact_ico2.svg",
+      icoUrl: "contact_ico2.svg",
       link: "tel:+91 8377009395"
     }
   ]
@@ -232,7 +232,7 @@ const PortfolioFooter = () => {
                   contactLinkData.map((e, i) =>
                     <a href={e.link} className="contact-link text-decoration-none" key={i}>
                       <div className="contact-link-container mb-3 d-flex align-items-center">
-                        <img loading='lazy' src={require(`./${e.icoUrl}`)} height="50" alt={e.title} />
+                        <img loading='lazy' src={require(`../../images/${e.icoUrl}`)} height="50" alt={e.title} />
                         <div className='ms-3'>
                           <div className="txt-2 fw-500 color-1">{e.title}</div>
                           <div className="txt-3">{e.text}</div>

@@ -1,6 +1,6 @@
 import './css/testimonialCards.scss'
 
-export default function TestimonialCards({ data, src }) {
+export default function TestimonialCards({ data }) {
     return (
         <>
             {data.map((e, i) =>
@@ -11,9 +11,9 @@ export default function TestimonialCards({ data, src }) {
                                 <div className='txt-1 color-1 fw-700 mb-20'>“{e.text}”</div>
                                 <div className='testimonial-user d-flex align-items-center mt-auto'>
                                     {
-                                        src ?
+                                        e.userImgUrl ?
                                             <div>
-                                                <div className='img' style={{ background: `url(${require(`../pages/${src}/${e.userImgUrl}`)}) no-repeat center/cover` }}></div>
+                                                <div className='img' style={{ background: `url(${require(`../images/${e.userImgUrl}`)}) no-repeat center/cover` }}></div>
                                             </div>
                                             :
                                             <div></div>
@@ -29,9 +29,9 @@ export default function TestimonialCards({ data, src }) {
                                 <div className='txt-1 color-1 fw-700 mb-20'>“{e.text}”</div>
                                 <div className='testimonial-user d-flex align-items-center mt-auto'>
                                     {
-                                        src ?
+                                        e.userImgUrl ?
                                             <div>
-                                                <div className='img' style={{ background: `url(${require(`../pages/${src}/${e.userImgUrl}`)}) no-repeat center/cover` }}></div>
+                                                <div className='img' style={{ background: `url(${require(`../images/${e.userImgUrl}`)}) no-repeat center/cover` }}></div>
                                             </div>
                                             :
                                             <div></div>
