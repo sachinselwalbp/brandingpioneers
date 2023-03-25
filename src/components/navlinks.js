@@ -32,6 +32,20 @@ export const navlinks = [
     ]
   },
   {
+    title: "Services",
+    href: "/services",
+    sublink: [
+      {
+        title: "First Page",
+        href: "/page"
+      },
+      {
+        title: "Leads",
+        href: "/leads"
+      },
+    ]
+  },
+  {
     title: "Contact",
     href: "/contact"
   }

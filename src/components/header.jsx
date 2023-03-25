@@ -26,12 +26,12 @@ export default function Header() {
             <h6>{num.toLocaleString()}</h6>
           </div>
         </div>
-        <div className="call">
+        {/* <div className="call">
           <ImPhone className='callIcon' color="#0fa958" />
           <span className='tel'><a href={`tel:${tel}`}>{
             String(tel).slice(0, 3) + "-" + String(tel).slice(3, 6) + "-" + String(tel).slice(6)
           }</a></span>
-        </div>
+        </div> */}
         <motion.div
           animate={isOpen ? "open" : "closed"}
           className='ds_menu'>

@@ -2,6 +2,7 @@ $header_height: 80px;
 
 .top_header {
   height: $header_height;
+  padding: 0 10px;
   display: flex;
   align-items: center;
   justify-content: space-between;

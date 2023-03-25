@@ -1,10 +1,10 @@
-import * as React from "react"
 import { useRef, useEffect, useContext } from "react";
 import { motion } from "framer-motion";
 import { navlinks } from "./navlinks";
 import { Link } from "react-router-dom";
 import { Context } from "../Context";
 import "./css/navmenu.scss"
+import { BsArrowRight } from "react-icons/bs"
 
 const sidebar = {
   open: (height = 1000) => ({
@@ -59,6 +59,7 @@ const variants = {
   open: {
     y: 0,
     opacity: 1,
+    visibility: "visible",
     transition: {
       y: { stiffness: 1000, velocity: -100 }
     }
@@ -66,6 +67,7 @@ const variants = {
   closed: {
     y: 50,
     opacity: 0,
+    visibility: "hidden",
     transition: {
       y: { stiffness: 1000 }
     }
@@ -84,60 +86,66 @@ const variantsNav = {
 function Navigation() {
   const { toggleOpen } = useContext(Context)
 
+  function toggleSubmenu() {
+    alert()
+  }
+
   return (
-    <motion.ul variants={variantsNav} className="main_ul">
-      {
-        navlinks.map((e, i) => {
-          return (
-            <>
-              <motion.li
-                key={i}
-                onClick={() => toggleOpen()}
-                variants={variants}>
-                <Link to={e.href}>{e.title}</Link>
-                {
-                  !e.sublink ? <span></span> :
-                    <motion.ul variants={variantsNav} className="sub_ul">
-                      {
-                        e.sublink.map((e, i) => {
-                          return (
-                            <>
-                              < motion.li
-                                key={i}
-                                onClick={() => toggleOpen()}
-                                variants={variants}>
-                                <Link to={e.href}>{e.title}</Link>
-                                {
-                                  !e.sublink ? <span></span> :
-                                    <motion.ul variants={variantsNav} className="sub_sub_ul">
-                                      {
-                                        e.sublink.map((e, i) => {
-                                          return (
-                                            <>
-                                              < motion.li
-                                                key={i}
-                                                onClick={() => toggleOpen()}
-                                                variants={variants}>
-                                                <Link to={e.href}>{e.title}</Link>
-                                              </motion.li>
-                                            </>
-                                          )
-                                        })
-                                      }
-                                    </motion.ul>
-                                }
-                              </motion.li>
-                            </>
-                          )
-                        })
-                      }
-                    </motion.ul>
-                }
-              </motion.li>
-            </>
-          )
-        })
-      }
-    </motion.ul >
+    <div>
+      <motion.ul variants={variantsNav} className="main_ul">
+        {
+          navlinks.map((e, i) => {
+            return (
+              <>
+                <motion.li
+                  key={i}
+                  onClick={() => toggleOpen()}
+                  variants={variants}>
+                  <Link onMouseOver={toggleSubmenu} to={e.href}>{e.title} {!e.sublink ? "" : <BsArrowRight />}</Link>
+                  {
+                    !e.sublink ? <span></span> :
+                      <motion.ul variants={variantsNav} className="sub_ul">
+                        {
+                          e.sublink.map((e, i) => {
+                            return (
+                              <>
+                                < motion.li
+                                  key={i}
+                                  onClick={() => toggleOpen()}
+                                  variants={variants}>
+                                  <Link to={e.href}>{e.title} {!e.sublink ? "" : <BsArrowRight />}</Link>
+                                  {
+                                    !e.sublink ? <span></span> :
+                                      <motion.ul variants={variantsNav} className="sub_sub_ul">
+                                        {
+                                          e.sublink.map((e, i) => {
+                                            return (
+                                              <>
+                                                < motion.li
+                                                  key={i}
+                                                  onClick={() => toggleOpen()}
+                                                  variants={variants}>
+                                                  <Link to={e.href}>{e.title}</Link>
+                                                </motion.li>
+                                              </>
+                                            )
+                                          })
+                                        }
+                                      </motion.ul>
+                                  }
+                                </motion.li>
+                              </>
+                            )
+                          })
+                        }
+                      </motion.ul>
+                  }
+                </motion.li>
+              </>
+            )
+          })
+        }
+      </motion.ul >
+    </div>
   )
 }

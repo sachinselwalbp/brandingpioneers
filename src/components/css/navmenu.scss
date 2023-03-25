@@ -1,7 +1,7 @@
 .framer_menu {
   overflow: hidden;
   z-index: 9999;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   bottom: 0;
@@ -41,11 +41,13 @@
     .sub_ul {
       top: 0;
       height: 100%;
-      left: 400px;
+      left: 33.3333%;
+      background: var(--color-red);
       .sub_sub_ul {
         top: 0;
         height: 100%;
-        left: 400px;
+        left: 33.3333%;
+        background: var(--color-blue);
       }
     }
   }
