@@ -86,64 +86,60 @@ const variantsNav = {
 function Navigation() {
   const { toggleOpen } = useContext(Context)
 
-  function toggleSubmenu() {
-    alert()
-  }
-
   return (
     <div>
       <motion.ul variants={variantsNav} className="main_ul">
         {
-          navlinks.map((e, i) => {
-            return (
-              <>
-                <motion.li
-                  key={i}
-                  onClick={() => toggleOpen()}
-                  variants={variants}>
-                  <Link onMouseOver={toggleSubmenu} to={e.href}>{e.title} {!e.sublink ? "" : <BsArrowRight />}</Link>
-                  {
-                    !e.sublink ? <span></span> :
-                      <motion.ul variants={variantsNav} className="sub_ul">
-                        {
-                          e.sublink.map((e, i) => {
-                            return (
-                              <>
-                                < motion.li
-                                  key={i}
-                                  onClick={() => toggleOpen()}
-                                  variants={variants}>
-                                  <Link to={e.href}>{e.title} {!e.sublink ? "" : <BsArrowRight />}</Link>
+          navlinks.map((e, i) => (
+            e.sublink ?
+              <motion.li
+                key={i}
+                onClick={() => toggleOpen()}
+                variants={variants}>
+                <Link to={e.href}>{e.title} {!e.sublink ? "" : <BsArrowRight />}</Link>
+                {
+                  e.sublink ?
+                    <motion.ul variants={variantsNav} className="sub_ul">
+                      {
+                        e.sublink.map((e, i) => (
+                          <motion.li
+                            key={i}
+                            onClick={() => toggleOpen()}
+                            variants={variants}>
+                            <Link to={e.href}>{e.title} {!e.sublink ? "" : <BsArrowRight />}</Link>
+                            {
+                              e.sublink ?
+                                <motion.ul variants={variantsNav} className="sub_ul">
                                   {
-                                    !e.sublink ? <span></span> :
-                                      <motion.ul variants={variantsNav} className="sub_sub_ul">
-                                        {
-                                          e.sublink.map((e, i) => {
-                                            return (
-                                              <>
-                                                < motion.li
-                                                  key={i}
-                                                  onClick={() => toggleOpen()}
-                                                  variants={variants}>
-                                                  <Link to={e.href}>{e.title}</Link>
-                                                </motion.li>
-                                              </>
-                                            )
-                                          })
-                                        }
-                                      </motion.ul>
+                                    e.sublink.map((e, i) => (
+                                      <motion.li
+                                        key={i}
+                                        onClick={() => toggleOpen()}
+                                        variants={variants}>
+                                        <Link to={e.href}>{e.title}</Link>
+                                      </motion.li>
+                                    ))
                                   }
-                                </motion.li>
-                              </>
-                            )
-                          })
-                        }
-                      </motion.ul>
-                  }
-                </motion.li>
-              </>
-            )
-          })
+                                </motion.ul>
+                                :
+                                <span></span>
+                            }
+                          </motion.li>
+                        ))
+                      }
+                    </motion.ul>
+                    :
+                    <span></span>
+                }
+              </motion.li>
+              :
+              <motion.li
+                key={i}
+                onClick={() => toggleOpen()}
+                variants={variants}>
+                <Link to={e.href}>{e.title}</Link>
+              </motion.li>
+          ))
         }
       </motion.ul >
     </div>
