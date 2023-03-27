@@ -5,15 +5,11 @@
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
   padding: 0;
-  border-bottom: 1px solid var(--border-brutal);
-  // &.scroll{
-  // }
   .container-fluid {
     padding: 0;
   }
   .navbar-brand {
     padding: 0 16px;
-    border-right: 1px solid var(--border-brutal);
     align-self: stretch;
     display: flex;
     align-items: center;
@@ -46,19 +42,17 @@
         visibility: hidden;
         transition: 0.3s;
         opacity: 0;
-        padding: 6px;
+        padding: 8px;
         border: 0;
         border-radius: 8px;
-        box-shadow: 0 0 0 1px var(--border-brutal),
-          4px 4px 0 var(--border-brutal);
-
+        box-shadow: 3px 3px 5px var(--border);
         .dropdown-item {
           padding: 4px 8px;
           border-radius: 4px;
           font-weight: 500;
           font-size: 14px;
           &:hover {
-            // background: rgba(0, 0, 0, 0.07);
+            background: rgba(0, 0, 0, 0.07);
           }
           &:focus {
             color: #000;
@@ -103,18 +97,15 @@
     }
   }
   .navbar-cta {
-    background: rgba(15, 169, 88, 0.8);
-    backdrop-filter: blur(4px);
-    -webkit-backdrop-filter: blur(4px);
-    color: #000000;
+    color: #fff;
     text-decoration: none;
     font-weight: 500;
-    align-self: stretch;
-    padding: 0 16px;
+    padding: 10px 16px;
     display: flex;
     align-items: center;
-    border-left: 1px solid var(--border-brutal);
     transition: 0.3s;
+    border-radius: 99px;
+    background: var(--color-primary);
     &:hover {
       filter: brightness(0.85);
     }
@@ -126,7 +117,7 @@
     .navbar-cta {
       margin-left: auto;
       margin-right: 16px;
-      padding: 16px;
+      padding: 6px 10px;
       margin-right: 0;
     }
   }
