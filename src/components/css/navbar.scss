@@ -2,7 +2,10 @@
   transition: 0.3s;
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
-  padding: 0;  
+  padding: 0;
+  @media (max-width: 991.98px) {
+    background: rgba(255, 255, 255, 0.8) !important;
+  }
   .container-fluid {
     padding: 0;
   }
@@ -34,6 +37,20 @@
       }
     }
 
+    .megamenu .dropdown-menu {
+      width: 100%;
+      border: none;
+      padding: 6px;
+      transition: 0.3s;
+      background: none;
+      transform: scaleX(0.95);
+      .mega-shadow {
+        border-radius: 8px;
+        --bs-gutter-x: 0;
+        box-shadow: 0 0 0 1px var(--border-brutal), 4px 4px 0 var(--border-brutal);
+      }
+    }
+
     .dropdown {
       .dropdown-menu {
         display: block;
@@ -45,7 +62,7 @@
         border-radius: 8px;
         box-shadow: 3px 3px 5px var(--border);
         .dropdown-item {
-          padding: 4px 8px;
+          padding: 7px 20px;
           border-radius: 4px;
           font-weight: 500;
           font-size: 14px;

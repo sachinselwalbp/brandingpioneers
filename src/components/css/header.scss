@@ -1,59 +1,16 @@
 .top_header {
-  padding: 0 10px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  border-bottom: 1px solid hsl(0, 0, 90%);
-  .stats {
-    gap: 10px;
-    display: flex;
-    align-items: center;
-    .graphIcon {
-      font-size: 28px;
-      @media (max-width: 991.98px) {
-        font-size: 16px;
-        display: none;
-      }
-    }
-    h6 {
-      font-size: 24px;
-      font-weight: 700;
+  background: #0fa958;
+  @media (min-width: 991.98px) {
+    display: none !important;
+  }
+  .callDiv {
+    .phone {
+      font-weight: 800;
     }
   }
-  .call {
-    gap: 3px;
-    display: flex;
-    align-items: center;
-    .callIcon {
-      font-size: 24px;
-      @media (max-width: 991.98px) {
-        font-size: 16px;
-      }
-    }
-    .tel {
-      font-size: 18px;
-      font-weight: 500;
-      @media (max-width: 991.98px) {
-        font-size: 13px;
-      }
-      a {
-        color: inherit;
-        text-decoration: none;
-      }
-    }
-  }
-  .ds_menu {
-    z-index: 9999;
-    button {
-      padding: 0;
-      outline: none;
-      border: none;
-      user-select: none;
-      -webkit-user-select: none;
-      -moz-user-select: none;
-      -ms-user-select: none;
-      cursor: pointer;
-      background: transparent;
+  .statDiv {
+    .stat {
+      font-weight: 600;
     }
   }
 }

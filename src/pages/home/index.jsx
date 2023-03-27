@@ -441,7 +441,7 @@ function Stats() {
         },
         {
             head: '180+ Happy',
-            text: 'Medical Clints',
+            text: 'Medical Client',
             icoUrl: 'stats_icon3.svg'
         }
     ]

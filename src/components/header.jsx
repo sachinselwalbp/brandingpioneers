@@ -1,7 +1,7 @@
 import { IoIosRocket } from 'react-icons/io'
+import { ImPhone } from "react-icons/im"
 import { useEffect, useState } from 'react'
 import "./css/header.scss"
-import { ImPhone } from "react-icons/im"
 
 export default function Header() {
   const [num, setNum] = useState(0)
@@ -14,18 +14,24 @@ export default function Header() {
 
   return (
     <>
-      <div className="top_header container">
-        <div className="d-flex align-items-center">
-          <IoIosRocket className='graphIcon' fontSize={24} color='#0FA958' />
-          <h6 >{num.toLocaleString()}</h6>
+      <div className="top_header">
+        <div className='container py-2 d-flex justify-content-between align-items-center'>
+          <div>
+            <a href={`tel:${tel}`} className='text-decoration-none phone text-white d-flex gap-2 justify-content-center align-items-center callDev'>
+              <ImPhone />
+              <span>
+                {
+                  String(tel).slice(0, 3) + "-" + String(tel).slice(3, 6) + "-" + String(tel).slice(6)
+                }
+              </span>
+            </a>
+          </div>
+          <div className='d-flex text-white statDiv gap-2 justify-content-center align-items-center'>
+            <IoIosRocket />
+            <span className='stat'>{num.toLocaleString()}</span>
+          </div>
         </div>
-        <div className="call">
-          <ImPhone className='callIcon' color="#0fa958" />
-          <span className='tel'><a href={`tel:${tel}`}>{
-            String(tel).slice(0, 3) + "-" + String(tel).slice(3, 6) + "-" + String(tel).slice(6)
-          }</a></span>
-        </div>
-      </div >
+      </div>
     </>
   )
 }
