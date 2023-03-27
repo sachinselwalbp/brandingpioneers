@@ -1,15 +1,22 @@
 .top_header {
   background: #0fa958;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.14);
   @media (min-width: 991.98px) {
-    display: none !important;
+    background: white;
   }
-  .callDiv {
-    .phone {
-      font-weight: 800;
+  .text-white {
+    @media (min-width: 991.98px) {
+      color: #000 !important;
     }
   }
-  .statDiv {
-    .stat {
+  div .top-div {
+    cursor: pointer;
+    svg {
+      @media (min-width: 991.98px) {
+        fill: #0fa958;
+      }
+    }
+    span {
       font-weight: 600;
     }
   }

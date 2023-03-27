@@ -16,20 +16,18 @@ export default function Header() {
     <>
       <div className="top_header">
         <div className='container py-2 d-flex justify-content-between align-items-center'>
-          <div>
-            <a href={`tel:${tel}`} className='text-decoration-none phone text-white d-flex gap-2 justify-content-center align-items-center callDev'>
-              <ImPhone />
-              <span>
-                {
-                  String(tel).slice(0, 3) + "-" + String(tel).slice(3, 6) + "-" + String(tel).slice(6)
-                }
-              </span>
-            </a>
-          </div>
-          <div className='d-flex text-white statDiv gap-2 justify-content-center align-items-center'>
+          <div className='d-flex gap-2 text-white justify-content-center align-items-center top-div' title='Total Leads Generated'>
             <IoIosRocket />
-            <span className='stat'>{num.toLocaleString()}</span>
+            <span>{num.toLocaleString()}</span>
           </div>
+          <a href={`tel:${tel}`} className='text-decoration-none text-white d-flex gap-2 justify-content-center align-items-center top-div'>
+            <ImPhone />
+            <span>
+              {
+                String(tel).slice(0, 3) + "-" + String(tel).slice(3, 6) + "-" + String(tel).slice(6)
+              }
+            </span>
+          </a>
         </div>
       </div>
     </>
