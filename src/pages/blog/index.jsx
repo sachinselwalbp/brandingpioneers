@@ -1,6 +1,7 @@
 import Helmet from 'react-helmet'
 import BlogCards from '../../components/blogCards'
-import Hero from '../../components/hero'
+// import Hero from '../../components/hero'
+import OldNavBar from '../../oldnavbar'
 
 export default function Blog() {
   return (
@@ -8,8 +9,9 @@ export default function Blog() {
       <Helmet>
         <title>Blog</title>
       </Helmet>
+      <OldNavBar/>
       <div className="blog-container">
-        <Hero title="Get updated with our internal affairs" />
+        {/* <Hero title="Get updated with our internal affairs" /> */}
         <BlogSection />
       </div>
     </>

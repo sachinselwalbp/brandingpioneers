@@ -14,13 +14,10 @@ export default function Header() {
 
   return (
     <>
-      <div className="top_header">
-        <div className="stats">
-          <IoIosRocket className='graphIcon' color='#0FA958' />
-          <div className='text'>
-            <span>Patient Lead generated Till now</span>
-            <h6>{num.toLocaleString()}</h6>
-          </div>
+      <div className="top_header container">
+        <div className="d-flex align-items-center">
+          <IoIosRocket className='graphIcon' fontSize={24} color='#0FA958' />
+          <h6 >{num.toLocaleString()}</h6>
         </div>
         <div className="call">
           <ImPhone className='callIcon' color="#0fa958" />
