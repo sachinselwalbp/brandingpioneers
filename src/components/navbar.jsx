@@ -9,7 +9,7 @@ import { BsChatSquareQuoteFill, BsQuestionDiamondFill } from "react-icons/bs"
 import { BiStats } from "react-icons/bi"
 import { MdPermContactCalendar } from "react-icons/md"
 import { CgProfile } from "react-icons/cg"
-import { IoIosRocket } from 'react-icons/io'
+// import { IoIosRocket } from 'react-icons/io'
 import { TbReportAnalytics } from "react-icons/tb"
 import { RiChatHeartFill } from "react-icons/ri"
 
