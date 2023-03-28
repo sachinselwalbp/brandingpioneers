@@ -65,7 +65,7 @@ const Hero = () => {
                     <div className="row">
                         <div className="col-12">
                             <div className="hero-image-container">
-                                <img src={require('../../images/hero_image.jpg')} className="img-fluid" alt="Stact" />
+                                <img loading='lazy' src={require('../../images/hero_image.jpg')} className="img-fluid" alt="Stact" />
                             </div>
                         </div>
                     </div>
@@ -109,7 +109,7 @@ const About = () => {
                         <div className="col-lg-6 align-self-center d-flex justify-content-center">
                             <div className="about-img-container">
                                 <a href='/'>
-                                    <img src={require(`../../images/about.jpg`)} className="img-fluid" alt='about' />
+                                    <img loading='lazy' src={require(`../../images/about.jpg`)} className="img-fluid" alt='about' />
                                     <BsPlayCircleFill fill='white' fontSize={77} />
                                 </a>
                                 <div className="counter-section d-flex justify-content-between bg-shade-blue">
@@ -293,7 +293,7 @@ const InfoSection = () => {
                             )}
                         </div>
                         <div className="col-lg-6 text-center align-self-center">
-                            <img src={require('../../images/info.png')} className="img-fluid info-banner-image" alt="Why stact" />
+                            <img loading='lazy' src={require('../../images/info.png')} className="img-fluid info-banner-image" alt="Why stact" />
                         </div>
                     </div>
                 </div>

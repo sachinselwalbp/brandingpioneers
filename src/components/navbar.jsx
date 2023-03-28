@@ -12,7 +12,7 @@ export default function NavBar() {
         <Container className="py-2 py-md-0">
           <Navbar.Brand>
             <NavLink to="/">
-              <img loading="lazy" src={Logo} className="" height="32" alt="Branding Pioneers" />
+              <img loading='lazy' src={Logo} className="" height="32" alt="Branding Pioneers" />
             </NavLink>
           </Navbar.Brand>
           <Navbar.Toggle/>

@@ -5,7 +5,7 @@ export default function CaseStudy({ data }) {
                 <div className="container container-2">
                     <div className="row">
                         <div className="col-12 text-center mb-20">
-                            <img loading="lazy" src={data.img} alt={data.alt} />
+                            <img loading='lazy' src={data.img} alt={data.alt} />
                         </div>
                         <div className="col-12">
                             <div className="case-study-section">

@@ -33,7 +33,7 @@ const About = () => {
             <div className="col-lg-6 align-self-center d-flex justify-content-center">
               <div className='video-thumb'>
                 <a href='/'>
-                  <img src={require('../../images/video_thumb.jpg')} className="img-fluid" alt="stact" />
+                  <img loading='lazy' src={require('../../images/video_thumb.jpg')} className="img-fluid" alt="stact" />
                   <BsPlayCircleFill fill="white" fontSize={77} />
                 </a>
               </div>

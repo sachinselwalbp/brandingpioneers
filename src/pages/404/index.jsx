@@ -19,8 +19,8 @@ const NotFound = () => {
                         </div>
                     </div>
                 </div>
-                <img loading="lazy" src={BGP1} alt="bg_1" className='bg_1' />
-                <img loading="lazy" src={BGP2} alt="bg_2" className='bg_2' />
+                <img loading='lazy' src={BGP1} alt="bg_1" className='bg_1' />
+                <img loading='lazy' src={BGP2} alt="bg_2" className='bg_2' />
             </section>
         </>
     )

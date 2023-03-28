@@ -281,7 +281,7 @@ function About() {
                     <div className="row mb-40 gy-4">
                         <div className="col-lg-6 align-self-center d-flex justify-content-center align-items-center">
                             <div>
-                                <img loading="lazy" src={require('../../images/about1.png')} className="img-fluid" alt="About" />
+                                <img loading='lazy' src={require('../../images/about1.png')} className="img-fluid" alt="About" />
                             </div>
                         </div>
                         <div className="col-lg-6 align-self-center">
@@ -307,7 +307,7 @@ function About() {
                         </div>
                         <div className="col-lg-6 align-self-center d-flex justify-content-center align-items-center">
                             <div>
-                                <img loading="lazy" src={require('../../images/about2.png')} className="img-fluid" alt="About" />
+                                <img loading='lazy' src={require('../../images/about2.png')} className="img-fluid" alt="About" />
                             </div>
                         </div>
                     </div>
@@ -320,32 +320,32 @@ function About() {
 function Culture() {
     const culture_data = [
         {
-            imgUrl: 'aspiration.gif',
+            imgUrl: 'culture_1.png',
             title: 'Aspiration',
             text: 'We aspire to be one of the most loved healthcare marketing agencies in the world, and we work tirelessly to achieve this goal by delivering outstanding results for our clients.'
         },
         {
-            imgUrl: 'industry-experts.gif',
+            imgUrl: 'culture_2.png',
             title: 'Industry Experts',
             text: 'Our team of healthcare marketing experts are highly skilled and knowledgeable in the latest trends and technologies in the industry. We stay on top of the latest developments to ensure that we deliver cutting-edge solutions to our clients.'
         },
         {
-            imgUrl: 'growth-oriented.gif',
+            imgUrl: 'culture_3.png',
             title: 'Growth Oriented',
             text: 'We are committed to helping our clients grow their healthcare businesses by providing a range of growth marketing and operations services that enable them to reach more patients and achieve their business goals.'
         },
         {
-            imgUrl: 'team-spirit.gif',
+            imgUrl: 'culture_1.png',
             title: 'Team spirit',
             text: 'Our team works together to cut through the clutter and uncover new opportunities for our clients. We prioritize customer satisfaction and work to build long-lasting relationships with our clients based on trust, transparency, and results.'
         },
         {
-            imgUrl: 'innovation.gif',
+            imgUrl: 'culture_2.png',
             title: 'Innovation',
             text: 'We approach healthcare marketing with a spirit of innovation, constantly exploring new ideas and techniques to help our clients stand out in a competitive industry. We encourage creativity and experimentation, always striving to find new and better ways to help our clients succeed.'
         },
         {
-            imgUrl: 'collaboration.gif',
+            imgUrl: 'culture_3.png',
             title: 'Collaboration',
             text: 'We believe in the power of collaboration, both within our team and with our clients. We work closely with our clients to understand their unique needs and develop tailored solutions that address their specific challenges.'
         }
@@ -364,7 +364,7 @@ function Culture() {
                     <div className="row">
                         {culture_data.map((e, i) =>
                             <div className="col-lg-4 col-md-6 col-sm-6 text-center" key={i}>
-                                <img loading="lazy" src={require(`../../images/${e.imgUrl}`)} className="img-fluid" alt={e.title} />
+                                <img loading='lazy' src={require(`../../images/${e.imgUrl}`)} className="img-fluid" alt={e.title} />
                                 <h3>{e.title}</h3>
                                 <p className="txt-3">{e.text}</p>
                             </div>

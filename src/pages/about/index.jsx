@@ -89,9 +89,9 @@ const AboutSection = () => {
       <section className='section-global'>
         <div className="container">
           <div className="row gy-4">
-            <div className="col-lg-6 align-self-center d-flex justify-content-center">
+            <div className="col-lg-6 align-self-start d-flex justify-content-center">
               <div>
-                <img loading='lazy' src={require('../../images/about.gif')} className="img-fluid" alt="About Us" />
+                <img loading='lazy' src={require('../../images/about.jpg')} className="img-fluid rounded-3" alt="About Us" />
               </div>
             </div>
             <div className="col-lg-6 align-self-center">
@@ -187,7 +187,7 @@ const Team = () => {
             {team_data.map((e, i) =>
               <div className="col-lg-3 col-md-4 col-sm-6" key={i}>
                 <div className="team-member text-center">
-                  <img src={require(`../../images/${e.imgUrl}`)} className="img-fluid mb-16" alt={e.name} />
+                  <img loading='lazy' src={require(`../../images/${e.imgUrl}`)} className="img-fluid mb-16" alt={e.name} />
                   <div className="txt-2 color-1 fw-500">{e.name}</div>
                   <div className="txt-3">{e.position}</div>
                 </div>

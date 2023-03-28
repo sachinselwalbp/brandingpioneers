@@ -1,38 +1,22 @@
 export const about = [
   {
-    title: "Home",
-    href: "/"
-  },
-  {
     title: "About",
-    href: "/about",
-    sublink: [
-      {
-        title: "Why Choose Us",
-        href: "/why-choose-us"
-      },
-      {
-        title: "Who We Are",
-        href: "/who-we-are"
-      },
-      {
-        title: "Tesimonials",
-        href: "/testimonials"
-      },
-      {
-        title: "Case Studies",
-        href: "/case-studies",
-        sublink: [
-          {
-            title: "Not Completed Yet!",
-            href: "/"
-          }
-        ]
-      }
-    ]
+    href: "/about"
   },
   {
-    title: "Contact",
-    href: "/contact"
+    title: "Why Choose Us",
+    href: "/why-choose-us"
+  },
+  {
+    title: "Who We Are",
+    href: "/who-we-are"
+  },
+  {
+    title: "Tesimonials",
+    href: "/testimonials"
+  },
+  {
+    title: "Case Studies",
+    href: "/case-studies",
   }
 ]
