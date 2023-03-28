@@ -9,7 +9,7 @@ export default function TestimonialCards({ data }) {
                         e.youtube ?
                             <a href={e.youtube} className="testimonial-card youtube d-flex flex-column">
                                 <div className='txt-1 color-1 fw-700 mb-20'>“{e.text}”</div>
-                                <div className='testimonial-user d-flex align-items-center mt-auto'>
+                                <div className='testimonial-user d-flex gap-3 align-items-center mt-auto'>
                                     {
                                         e.userImgUrl ?
                                             <div>
@@ -27,7 +27,7 @@ export default function TestimonialCards({ data }) {
                             :
                             <div className="testimonial-card d-flex flex-column">
                                 <div className='txt-1 color-1 fw-700 mb-20'>“{e.text}”</div>
-                                <div className='testimonial-user d-flex align-items-center mt-auto'>
+                                <div className='testimonial-user d-flex gap-3 align-items-center mt-auto'>
                                     {
                                         e.userImgUrl ?
                                             <div>

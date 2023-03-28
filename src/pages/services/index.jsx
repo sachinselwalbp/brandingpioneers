@@ -54,7 +54,7 @@ const whyChooseUsSectionData = [
     }
 ]
 
-const Hero = () => {
+function Hero() {
     const counters = [
         {
             count: '50K+',
@@ -100,9 +100,9 @@ const Hero = () => {
                             <h1 className='mb-16'>Solutions ready for the future.</h1>
                             <p className='txt-1 mb-16'>Empowering Healthcare through Innovative Social Media Marketing - Connect, Engage, and Thrive with Branding Pioneers</p>
                             {/* <Link to='/' className='btn btn-primary btn-lg'>Learn More</Link>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; */}
-                            <div className="counter mt-20 d-flex flex-wrap">
+                            <div className="counter mt-20 row text-center">
                                 {counters.map((e, i) =>
-                                    <div className="count txt-center" key={i}>
+                                    <div className="count col-4" key={i}>
                                         <h2 className='mb-0'>{e.count}</h2>
                                         <div className='txt-2'>{e.text}</div>
                                     </div>
@@ -122,8 +122,7 @@ const Hero = () => {
     )
 }
 
-const About = () => {
-
+function About() {
     const features_data = [
         "Healthcare Marketing Specialists: Our team has extensive experience and a deep understanding of the unique challenges and opportunities within the healthcare industry, allowing us to tailor our services to your specific needs and goals.",
         "Comprehensive Services: We offer a wide range of services, including strategy development, content creation, account management, advertising campaigns, and analytics reporting, ensuring a holistic approach to your healthcare organization's social media marketing efforts.",
@@ -149,6 +148,8 @@ const About = () => {
                             <div className="section-tag mb-8">Who we are</div>
                             <h2 className='mb-16'>We provide digital solutions for your business</h2>
                             <p className='txt-1'>Branding Pioneers is a dedicated team of marketing professionals specializing in Social Media Marketing (SMM) and Social Media Optimization (SMO) services for the healthcare industry. With our expertise, passion, and commitment to excellence, we help healthcare organizations establish a strong online presence, engage with their target audience, and drive growth.</p>
+                        </div>
+                        <div className='col-lg-12'>
                             {features_data.map((e, i) => <div key={i} className="txt-2 color-1 fw-500 mb-8 gap-2 d-flex align-items-start">
                                 <div>
                                     <BsCheckCircleFill fill='#0FA958' fontSize={24} />
@@ -164,7 +165,7 @@ const About = () => {
     )
 }
 
-const ServicesComp = () => {
+function ServicesComp() {
     const services = [
         {
             name: 'Social Media Strategy Development',
@@ -233,8 +234,7 @@ const ServicesComp = () => {
     )
 }
 
-const Projects = () => {
-
+function Projects() {
     const projects_data = [
         {
             category: 'Social Media',
@@ -284,28 +284,28 @@ const Projects = () => {
     )
 }
 
-const Testimonials = () => {
+function Testimonials() {
     const testimonial_data = [
         {
             brandImgUrl: 'review_brand1.svg',
             text: 'I am thrilled with the results of the social media marketing services provided by Branding Pioneers. They increased my online presence and engagement with my target audience, significantly boosting my business revenue. Their team is professional, knowledgeable, and always responsive to my needs. I highly recommend their services to anyone looking to grow their brand on social media.',
             userName: 'Mehak',
             position: 'Product director',
-            userImgUrl: 'review_user1.svg'
+            userImgUrl: 'review1.jfif'
         },
         {
             brandImgUrl: 'review_brand2.svg',
             text: 'Working with Branding Pioneers has been a game-changer for my business. Their social media marketing services have helped me to reach a wider audience and increase my customer base. Their strategies are effective and customized to my specific business needs. Since working with them, I have seen a noticeable improvement in my social media engagement and overall online presence. I highly recommend their services to businesses looking to improve their social media presence.',
             userName: 'Vinesh',
             position: 'Head of Product',
-            userImgUrl: 'review_user2.svg'
+            userImgUrl: 'review2.jfif'
         },
         {
             brandImgUrl: 'review_brand3.svg',
             text: 'I cannot say enough good things about the social media marketing services provided by Branding Pioneers. Their team is highly skilled and knowledgeable in all aspects of social media marketing. They took the time to understand my business needs and created a customized strategy that helped me to achieve my social media goals. Since working with them, I have seen a significant increase in engagement and followers. I highly recommend their services to any business looking to improve its social media presence.',
             userName: 'Aashish',
             position: 'Product director',
-            userImgUrl: 'review_user3.svg'
+            userImgUrl: 'review3.jfif'
         }
     ]
 
@@ -320,7 +320,7 @@ const Testimonials = () => {
                         </div>
                         <div className="col d-flex align-self-center">
                             <Link to='/about/testimonials' className='btn btn-outline btn-arrow ms-lg-auto'>
-                                See all reviews
+                                <span>See all reviews</span>
                                 <TbArrowNarrowRight fontSize={20} />
                             </Link>
                         </div>

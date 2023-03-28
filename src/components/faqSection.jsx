@@ -4,7 +4,7 @@ import "./css/faq.scss"
 export default function FAQSection({ data }) {
   return (
     <>
-      <section className='faqs-container'>
+      <section className='faqs-container section-global'>
         <div className="container container-2">
           <div className="row">
             <div className="col-12">

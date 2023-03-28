@@ -122,6 +122,14 @@
       order: 3;
     }
   }
+  .nav-heading {
+    gap: 6px;
+    display: flex;
+    align-items: center;
+    font: 600 1rem system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
+  }
 }
 .dropdown-menu[data-bs-popper] {
   top: 87% !important;
@@ -133,28 +141,29 @@
 .col_bg5 {
   padding: 10px;
   border-radius: 10px;
+  background: no-repeat center/cover;
 }
 .col_bg1 {
-  background: url(../../images/bg1.png) no-repeat center/cover;
+  background-color: hsl(58, 100%, 99%);
+  background-image: url(../../images/bg1.png);
 }
 .col_bg2 {
-  background: url(../../images/bg2.png) no-repeat center/cover;
+  background-color: hsl(252, 100%, 99%);
+  background-image: url(../../images/bg2.png);
 }
 .col_bg3 {
-  background: url(../../images/bg3.png) no-repeat center/cover;
+  background-color: hsl(21, 78%, 99%);
+  background-image: url(../../images/bg3.png);
 }
 .col_bg4 {
-  background: url(../../images/bg4.png) no-repeat center/cover;
+  background-color: hsl(118, 100%, 99%);
+  background-image: url(../../images/bg4.png);
 }
 .col_bg5 {
-  background: url(../../images/bgdescription.png) no-repeat center/cover;
+  // background-color: ;
+  background-image: url(../../images/bgdescription.png);
 }
 .nav_career_bg {
-  background: url(../../images/bgcareers.svg) no-repeat bottom/cover;
   font-size: 1.2rem;
-}
-.nav-heading {
-  // font-family: var(--heading-font);
-  font: 600 1rem system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background: url(../../images/bgcareers.svg) no-repeat center/cover;
 }

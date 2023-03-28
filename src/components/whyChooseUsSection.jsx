@@ -9,9 +9,7 @@ export default function WhyChooseUsSection({ data, text, img, bggreen = false })
             <div className="col-lg-6 align-self-start">
               <div className="section-tag mb-8 color-red">Why choose Us?</div>
               <h2 className='mb-16'>We provide solutions that make our clients' lives simpler</h2>
-              {
-                text ? <p className="txt-1">{text}</p> : <span></span>
-              }
+              {text ? <p className="txt-1">{text}</p> : <span></span>}
               {data.map((e, i) =>
                 <div className='d-flex gap-2 mb-16' key={i}>
                   <div>

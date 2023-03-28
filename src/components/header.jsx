@@ -10,7 +10,7 @@ export default function Header() {
     setNum(date + 50000)
   }, [num])
 
-  const tel = 9876543210
+  const tel = ["+919876543210", "72526225678"]
 
   return (
     <>
@@ -20,16 +20,26 @@ export default function Header() {
             <IoIosRocket />
             <span>{num.toLocaleString()}</span>
           </div>
-          <a href={`tel:${tel}`} className='text-decoration-none text-white d-flex gap-2 justify-content-center align-items-center top-div'>
-            <ImPhone />
-            <span>
-              {
-                String(tel).slice(0, 3) + "-" + String(tel).slice(3, 6) + "-" + String(tel).slice(6)
-              }
-            </span>
-          </a>
+          <div className='d-flex align-items-center gap-4'>
+            {tel.map((e, i) => <PhoneNum key={i} tel={e} />)}
+          </div>
         </div>
       </div>
+    </>
+  )
+}
+
+function PhoneNum({ tel }) {
+  return (
+    <>
+      <a href={`tel:${tel}`} className='text-decoration-none text-white d-flex gap-2 justify-content-center align-items-center top-div phonenumber'>
+        <ImPhone />
+        <span>
+          {
+            String(tel).slice(0, 3) + "-" + String(tel).slice(3, 6) + "-" + String(tel).slice(6, 9) + "-" + String(tel).slice(9)
+          }
+        </span>
+      </a>
     </>
   )
 }
