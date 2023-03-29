@@ -1,4 +1,4 @@
-import { Navbar, Container, Row, Col, NavDropdown, Nav } from "react-bootstrap"
+import { Navbar, Container, NavDropdown, Nav } from "react-bootstrap"
 import { NavLink } from "react-router-dom"
 import Logo from '../images/logo.svg'
 import './css/navbar.scss'
@@ -31,9 +31,9 @@ export default function NavBar() {
             <Nav className="mx-auto py-1 my-3 me-auto">
               <Nav.Link as={Link} to="/">Home</Nav.Link>
               <NavDropdown className="megamenu" title="About">
-                <Container className="mega-shadow">
-                  <Row className="bg-white rounded-3 m-0">
-                    <Col lg={4} className="py-4 col_bg1">
+                <Container fluid className="mega-shadow">
+                  <div className="megamenu-box">
+                    <div className="py-4 col_bg1">
                       <h6>
                         <NavDropdown.Item as={Link} to="/about" className="nav-link text-uppercase text-small pb-0 font-weight-bold nav-heading">
                           <BsChatRightQuote />
@@ -43,28 +43,28 @@ export default function NavBar() {
                       <NavDropdown.Item as={Link} to="/about/why-choose-us" className="nav-link text-small pb-0">Why Choose Us</NavDropdown.Item>
                       <NavDropdown.Item as={Link} to="about/who-we-are" className="nav-link text-small pb-0">Who We Are</NavDropdown.Item>
                       <NavDropdown.Item as={Link} to="about/testimonials" className="nav-link text-small pb-0">Tesimonials</NavDropdown.Item>
-                      <NavDropdown.Item as={Link} to="about/case-studies" className="nav-link text-small pb-0">Case Studies</NavDropdown.Item>
-                    </Col>
-                    <Col lg={4} className="py-4 col_bg5">
+                      <NavDropdown.Item as={Link} to="case-studies" className="nav-link text-small pb-0">Case Studies</NavDropdown.Item>
+                    </div>
+                    <div className="py-4 col_bg5">
                       <h6 className="font-weight-bold nav-heading text-uppercase nav-heading">
                         <GrInfo />
                         <span>Description</span>
                       </h6>
                       <p>Revolutionizing healthcare marketing through cutting-edge technology and expertise" - that's our motto at Branding Pioneers, where we help healthcare businesses reach their fullest potential with our unique approach to marketing.</p>
-                    </Col>
-                    <Col lg={4} className="justify-content-center align-items-center nav_career_bg">
+                    </div>
+                    <div className="justify-content-center align-items-center nav_career_bg">
                       <Link className="text-uppercase py-5 h-100 w-100 d-flex justify-content-center align-items-center text-decoration-none text-black nav-heading" to="/career">
                         <FaTelegramPlane />
                         Career
                       </Link>
-                    </Col>
-                  </Row>
+                    </div>
+                  </div>
                 </Container>
               </NavDropdown>
               <NavDropdown className="megamenu" title="Our Speciality">
-                <Container className="mega-shadow">
-                  <Row className="bg-white rounded-3 m-0 p-lg-2">
-                    <Col lg={3} className="col_bg1">
+                <Container fluid className="mega-shadow">
+                  <div className="megamenu-box">
+                    <div className="col_bg1">
                       <h6>
                         <NavDropdown.Item as={Link} to="/our-speciality" className="nav-link text-small pb-0 text-uppercase font-weight-bold nav-heading nav-heading">
                           <HiStar />
@@ -89,8 +89,8 @@ export default function NavBar() {
                         </NavDropdown.Item>
                       </h6>
                       <NavDropdown.Item as={Link} to="/our-speciality/startups/diagnostic-centres" className="nav-link text-small pb-0">Diagnostic Centres</NavDropdown.Item>
-                    </Col>
-                    <Col lg={3} className="col_bg2">
+                    </div>
+                    <div className="col_bg2">
                       <h6>
                         <NavDropdown.Item as={Link} to="/our-speciality/surgeons" className="nav-link text-small pb-0 text-uppercase font-weight-bold nav-heading">
                           <RiSurgicalMaskLine />
@@ -103,8 +103,8 @@ export default function NavBar() {
                       <NavDropdown.Item as={Link} to="/our-speciality/surgeons/cardiac-surgeons" className="nav-link text-small pb-0">Cardiac Surgeons</NavDropdown.Item>
                       <NavDropdown.Item as={Link} to="/our-speciality/surgeons/orthopedician" className="nav-link text-small pb-0">Orthopedician</NavDropdown.Item>
                       <NavDropdown.Item as={Link} to="/our-speciality/surgeons/plastic-surgeons" className="nav-link text-small pb-0">Plastic Surgeons</NavDropdown.Item>
-                    </Col>
-                    <Col lg={3} className="col_bg3">
+                    </div>
+                    <div className="col_bg3">
                       <h6>
                         <NavDropdown.Item as={Link} to="/our-speciality/clinic" className="nav-link text-small pb-0 text-uppercase font-weight-bold nav-heading nav-heading">
                           <FaHandHoldingMedical />
@@ -115,29 +115,28 @@ export default function NavBar() {
                       <NavDropdown.Item as={Link} to="/our-speciality/clinic/aesthetic-clinics" className="nav-link text-small pb-0">Aesthetic Clinics</NavDropdown.Item>
                       <NavDropdown.Item as={Link} to="/our-speciality/clinic/poly-clinics" className="nav-link text-small pb-0">Poly Clinics</NavDropdown.Item>
                       <NavDropdown.Item as={Link} to="/our-speciality/clinic/ivf-clinics" className="nav-link text-small pb-0">IVF Clinics</NavDropdown.Item>
-                    </Col>
-                    <Col lg={3} className="col_bg4">
+                    </div>
+                    <div className="col_bg4">
                       <h6>
                         <span className="nav-link text-small pb-0 text-uppercase font-weight-bold nav-heading">
                           <RiHeartPulseFill />
                           Healthcare Specialties</span>
                       </h6>
                       <NavDropdown.Item as={Link} to="/our-speciality/healthcare/dentists" className="nav-link text-small pb-0">Dentists</NavDropdown.Item>
-                      <NavDropdown.Item as={Link} to="/our-speciality/healthcare/plastic-surgeons" className="nav-link text-small pb-0">Plastic Surgeons</NavDropdown.Item>
                       <NavDropdown.Item as={Link} to="/our-speciality/healthcare/orthopedics" className="nav-link text-small pb-0">Orthopedics</NavDropdown.Item>
                       <NavDropdown.Item as={Link} to="/our-speciality/healthcare/chiropractors" className="nav-link text-small pb-0">Chiropractors</NavDropdown.Item>
                       <NavDropdown.Item as={Link} to="/our-speciality/healthcare/infertility-and-ivf" className="nav-link text-small pb-0">Infertility and IVF</NavDropdown.Item>
                       <NavDropdown.Item as={Link} to="/our-speciality/healthcare/aesthetic-dermatologist" className="nav-link text-small pb-0">Aesthetic/Dermatologist</NavDropdown.Item>
                       <NavDropdown.Item as={Link} to="/our-speciality/healthcare/surgeons" className="nav-link text-small pb-0">Surgeons</NavDropdown.Item>
                       <NavDropdown.Item as={Link} to="/our-speciality/healthcare/medical-tourism" className="nav-link text-small pb-0">Medical Tourism</NavDropdown.Item>
-                    </Col>
-                  </Row>
+                    </div>
+                  </div>
                 </Container>
               </NavDropdown>
               <NavDropdown className="megamenu" title="Services">
-                <Container className="mega-shadow">
-                  <Row className="bg-white rounded-3 m-0 p-lg-2">
-                    <Col lg={4} className="col_bg1">
+                <Container fluid className="mega-shadow">
+                  <div className="megamenu-box">
+                    <div className="col_bg1">
                       <h6>
                         <NavDropdown.Item as={Link} to="/services" className="nav-link text-small pb-0 font-weight-bold nav-heading text-uppercase">
                           <MdOutlineMedicalServices />
@@ -151,8 +150,21 @@ export default function NavBar() {
                       <NavDropdown.Item as={Link} className="nav-link text-small pb-0" to="/services/digital-patient-acquistion/seo">Search Engine Optimization</NavDropdown.Item>
                       <NavDropdown.Item as={Link} to="/services/digital-patient-acquistion/ads-and-lead-generation" className="nav-link text-small pb-0">Performance Ads & Lead Generation</NavDropdown.Item>
                       <NavDropdown.Item as={Link} to="/services/digital-patient-acquistion/local-seo" className="nav-link text-small pb-0">Local SEO</NavDropdown.Item>
-                    </Col>
-                    <Col lg={4} className="col_bg2">
+                      <br />
+                      <br />
+                      <h6>
+                        <NavDropdown.Item as={Link} to="/web-services" className="nav-link text-small pb-0 text-uppercase font-weight-bold nav-heading nav-heading">
+                          <CgWebsite />
+                          <span>Website Services</span>
+                        </NavDropdown.Item>
+                      </h6>
+                      <NavDropdown.Item as={Link} to="/web-services/medical-web-designing" className="nav-link text-small pb-0">Medical Web Designing</NavDropdown.Item>
+                      <NavDropdown.Item as={Link} to="/web-services/medical-web-development" className="nav-link text-small pb-0">Medical Web Development</NavDropdown.Item>
+                      <NavDropdown.Item as={Link} to="/web-services/e-commerce-development-for-healthcare" className="nav-link text-small pb-0">E-Commerce Development for Healthcare</NavDropdown.Item>
+                      <NavDropdown.Item as={Link} to="/web-services/mediacl-website-revamps" className="nav-link text-small pb-0">Medical Website Revamps</NavDropdown.Item>
+                      <NavDropdown.Item as={Link} to="/web-services/medical-website-maintenance" className="nav-link text-small pb-0">Medical Website Maintenance</NavDropdown.Item>
+                    </div>
+                    <div className="col_bg2">
                       <h6>
                         <NavDropdown.Item as={Link} to="/services/orm" className="nav-link text-small pb-0 text-uppercase font-weight-bold nav-heading">
                           <GiPolarStar />
@@ -171,8 +183,8 @@ export default function NavBar() {
                       <NavDropdown.Item as={Link} className="nav-link text-small pb-0" to="/services/patient-engagement/marketing">Whatsapp/Email/SMS Marketing</NavDropdown.Item>
                       <NavDropdown.Item as={Link} to="/services/patient-engagement/newsletter-designing-and-printing" className="nav-link text-small pb-0">Newsletter Designing/Printing</NavDropdown.Item>
                       <NavDropdown.Item as={Link} to="/services/patient-engagement/digital-signage-solution" className="nav-link text-small pb-0">Digital Signage Solution</NavDropdown.Item>
-                    </Col>
-                    <Col lg={4} className="col_bg3">
+                    </div>
+                    <div className="col_bg3">
                       <h6>
                         <NavDropdown.Item as={Link} to="/services/brand-building" className="nav-link text-small pb-0 text-uppercase font-weight-bold nav-heading">
                           <FaStore />
@@ -192,14 +204,14 @@ export default function NavBar() {
                       <NavDropdown.Item as={Link} className="nav-link text-small pb-0" to="/services/sales-automation/crm">CRM</NavDropdown.Item>
                       <NavDropdown.Item as={Link} to="/services/sales-automation/leadmate" className="nav-link text-small pb-0">Leadmate</NavDropdown.Item>
                       <NavDropdown.Item as={Link} to="/services/sales-automation/ivr-and-call-tracking" className="nav-link text-small pb-0">IVR & Call Tracking</NavDropdown.Item>
-                    </Col>
-                  </Row>
+                    </div>
+                  </div>
                 </Container>
               </NavDropdown>
               <NavDropdown className="megamenu" title="Our Work">
-                <Container className="mega-shadow">
-                  <Row className="bg-white rounded-3 m-0 p-lg-2">
-                    <Col lg={4} className="col_bg1">
+                <Container fluid className="mega-shadow">
+                  <div className="megamenu-box">
+                    <div className="col_bg1">
                       <h6>
                         <NavDropdown.Item as={Link} to="/marketing-services" className="nav-link text-small pb-0 font-weight-bold nav-heading text-uppercase">
                           <FaBriefcaseMedical />
@@ -217,8 +229,8 @@ export default function NavBar() {
                       <NavDropdown.Item as={Link} to="/marketing-services/email-marketing-for-healthcare" className="nav-link text-small pb-0">Email Marketing for Healthcare</NavDropdown.Item>
                       <NavDropdown.Item as={Link} to="/marketing-services/guest-posting-services-for-healthcare" className="nav-link text-small pb-0">Guest Posting Services for Healthcare</NavDropdown.Item>
                       <NavDropdown.Item as={Link} to="/marketing-services/page-load-speed-optimiation" className="nav-link text-small pb-0">Page Load Speed Optimiation</NavDropdown.Item>
-                    </Col>
-                    <Col lg={4} className="col_bg2">
+                    </div>
+                    <div className="col_bg2">
                       <h6>
                         <NavDropdown.Item as={Link} to="/marketing-strategies" className="nav-link text-small pb-0 font-weight-bold nav-heading text-uppercase">
                           <MdMarkEmailRead />
@@ -232,21 +244,8 @@ export default function NavBar() {
                       <NavDropdown.Item as={Link} to="/marketing-strategies/analytics-and-reporting" className="nav-link text-small pb-0">Analytics and Reporting</NavDropdown.Item>
                       <NavDropdown.Item as={Link} to="/marketing-strategies/marketing-strategies-for-doctors" className="nav-link text-small pb-0">Marketing Strategies for Doctors</NavDropdown.Item>
                       <NavDropdown.Item as={Link} to="/marketing-strategies/lead-generation-for-doctors" className="nav-link text-small pb-0">Lead Generations for Doctors</NavDropdown.Item>
-                    </Col>
-                    <Col lg={4} className="col_bg3">
-                      <h6>
-                        <NavDropdown.Item as={Link} to="/web-services" className="nav-link text-small pb-0 text-uppercase font-weight-bold nav-heading nav-heading">
-                          <CgWebsite />
-                          <span>Website Services</span>
-                        </NavDropdown.Item>
-                      </h6>
-                      <NavDropdown.Item as={Link} to="/web-services/medical-web-designing" className="nav-link text-small pb-0">Medical Web Designing</NavDropdown.Item>
-                      <NavDropdown.Item as={Link} to="/web-services/medical-web-development" className="nav-link text-small pb-0">Medical Web Development</NavDropdown.Item>
-                      <NavDropdown.Item as={Link} to="/web-services/e-commerce-development-for-healthcare" className="nav-link text-small pb-0">E-Commerce Development for Healthcare</NavDropdown.Item>
-                      <NavDropdown.Item as={Link} to="/web-services/mediacl-website-revamps" className="nav-link text-small pb-0">Medical Website Revamps</NavDropdown.Item>
-                      <NavDropdown.Item as={Link} to="/web-services/medical-website-maintenance" className="nav-link text-small pb-0">Medical Website Maintenance</NavDropdown.Item>
-                      <br />
-                      <br />
+                    </div>
+                    <div className="col_bg3">
                       <h6>
                         <NavDropdown.Item as={Link} to="/content" className="nav-link text-small pb-0 font-weight-bold nav-heading text-uppercase">
                           <BiBookContent />
@@ -255,8 +254,8 @@ export default function NavBar() {
                       </h6>
                       <NavDropdown.Item as={Link} to="/content/healthcare-content-creation" className="nav-link text-small pb-0">Healthcare Content Creation</NavDropdown.Item>
                       <NavDropdown.Item as={Link} to="/content/medical-graphics-design" className="nav-link text-small pb-0">Medical Graphics Design</NavDropdown.Item>
-                    </Col>
-                  </Row>
+                    </div>
+                  </div>
                 </Container>
               </NavDropdown>
               <Nav.Link as={Link} to="/blog">Blog</Nav.Link>

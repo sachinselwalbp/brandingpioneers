@@ -2,7 +2,7 @@ import { Helmet } from "react-helmet"
 import Hero from "../../components/hero"
 import { Link } from "react-router-dom"
 import { TbArrowNarrowRight } from "react-icons/tb"
-import ProjectCards from "../../components/projectCards"
+import CaseStudiesCard from "../../components/caseStudiesCards"
 import WhyChooseUsSection from "../../components/whyChooseUsSection"
 
 const infoData = [
@@ -78,7 +78,7 @@ const Projects = () => {
             </div>
           </div>
           <div className="row">
-            <ProjectCards data={projects_data} />
+            <CaseStudiesCard data={projects_data} />
           </div>
         </div>
       </section>

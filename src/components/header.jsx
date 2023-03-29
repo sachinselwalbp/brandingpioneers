@@ -10,7 +10,7 @@ export default function Header() {
     setNum(date + 50000)
   }, [num])
 
-  const tel = ["+919876543210", "72526225678"]
+  const tel = [" +16198379090", "+447418608606"," +14383006695"," +19789565515"]
 
   return (
     <>

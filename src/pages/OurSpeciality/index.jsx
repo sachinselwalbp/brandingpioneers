@@ -1,11 +1,10 @@
 import Helmet from 'react-helmet'
 import { Link } from 'react-router-dom'
 import BrandSection from '../../components/brandSection'
-import BlogCards from '../../components/blogCards'
-import ServiceCards from '../../components/serviceCards'
-import CaseStudiesCard from '../../components/caseStudiesCards'
 import "./style.scss"
-import { BsPlayCircleFill, BsCheckCircleFill, BsArrowRight } from "react-icons/bs"
+import BlogCards from '../../components/blogCards'
+import { TbArrowNarrowRight } from "react-icons/tb"
+import TestimonialCards from '../../components/testimonialCards'
 
 export default function OurSpeciality() {
     return (
@@ -15,10 +14,9 @@ export default function OurSpeciality() {
             </Helmet>
             <div className='landing-3'>
                 <Hero />
-                <About />
-                <Services />
+                <OurSpecialies />
+                <Testimonials />
                 <Projects />
-                <InfoSection />
                 <Blog />
             </div>
         </>
@@ -28,24 +26,24 @@ export default function OurSpeciality() {
 const Hero = () => {
     const brands = [
         {
-            name: "brand1",
-            imgUrl: "brand1.svg"
+            name: "Apollo",
+            imgUrl: "apollo.svg"
         },
         {
-            name: "brand2",
-            imgUrl: "brand2.svg"
+            name: "asterclinic",
+            imgUrl: "asterclinic.png"
         },
         {
-            name: "brand3",
-            imgUrl: "brand3.svg"
+            name: "HCAH",
+            imgUrl: "hcah.png"
         },
         {
-            name: "brand4",
-            imgUrl: "brand4.svg"
+            name: "Medanta",
+            imgUrl: "medanta.png"
         },
         {
-            name: "brand5",
-            imgUrl: "brand5.svg"
+            name: "Cloudnine",
+            imgUrl: "cloudnine.svg"
         }
     ]
     return (
@@ -57,8 +55,7 @@ const Hero = () => {
                             <h1>Enterprise solutions for next future</h1>
                         </div>
                         <div className="col-lg-6">
-                            <p className='txt-1 mb-20'>We cut through the clutter to uncover new opportunities, and then develop and implement winning strategies using the latest technologies.</p>
-                            <Link to='/' className='btn btn-primary btn-lg'>Get in touch</Link>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <p className='txt-1 mb-20'>Branding Pioneers is a healthcare branding agency that provides branding and marketing services to healthcare organizations. We offer a wide range of specialty services to meet the unique needs of our clients.</p>
                             <Link to='/' className='btn btn-outline-primary btn-lg'>Learn more</Link>
                         </div>
                     </div>
@@ -76,160 +73,43 @@ const Hero = () => {
     )
 }
 
-const About = () => {
-    const capabilities = [
-        {
-            title: 'Enterprise solutions',
-            text: 'Top-notch solutions provider in the industry'
-        },
-        {
-            title: 'Technology services',
-            text: 'Top-notch solutions provider in the industry'
-        }
-    ]
-    const counter_data = [
-        {
-            count: '5K+',
-            text: 'Projects'
-        },
-        {
-            count: '75',
-            text: 'Awards'
-        },
-        {
-            count: '3m+',
-            text: 'Users'
-        }
-    ]
-    return (
-        <>
-            <section className='section-global'>
-                <div className="container">
-                    <div className="row gy-5">
-                        <div className="col-lg-6 align-self-center d-flex justify-content-center">
-                            <div className="about-img-container">
-                                <a href='/'>
-                                    <img loading='lazy' src={require(`../../images/about.jpg`)} className="img-fluid" alt='about' />
-                                    <BsPlayCircleFill fill='white' fontSize={77} />
-                                </a>
-                                <div className="counter-section d-flex justify-content-between bg-shade-blue">
-                                    {counter_data.map((e, i) =>
-                                        <div className="count text-center" key={i}>
-                                            <h2 className='mb-0'>{e.count}</h2>
-                                            <div className="txt-2">{e.text}</div>
-                                        </div>
-                                    )}
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-lg-6 align-self-center">
-                            <div className="section-tag mb-8">Who we are</div>
-                            <h2 className='mb-16'>Best in class innovative tech solutions</h2>
-                            <p className='txt-1 mb-20'>We craft digital experiences that resonate with your audience and grow your business. If you have a vision for the next big thing, we can help you make it happen. </p>
-                            <h3 className='mb-16'>Our core capabilities</h3>
-                            <div>
-                                <div className="row gy-4">
-                                    {capabilities.map((e, i) =>
-                                        <div className="col-xl-6 col-lg-12 col-md-6" key={i}>
-                                            <div className="d-flex capability-card" key={i}>
-                                                <div className="count">{i + 1}</div>
-                                                <div className="ms-2">
-                                                    <div className="txt-2 fw-700 color-1">{e.title}</div>
-                                                    <div className="txt-3">{e.text}</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    )}
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </>
-    )
-}
-
-const Services = () => {
-    const services = [
-        {
-            name: 'Applied AI',
-            info: ['Search Engine Optimization', 'Performance Ads & Lead Generation', 'Local SEO'],
-            link: '/services',
-            icoUrl: 'service_ico1.svg'
-        },
-        {
-            name: 'Cyber Security',
-            info: ['Search Engine Optimization', 'Performance Ads & Lead Generation', 'Local SEO'],
-            link: '/services',
-            icoUrl: 'service_ico2.svg'
-        },
-        {
-            name: 'Internet of Things',
-            info: ['Search Engine Optimization', 'Performance Ads & Lead Generation', 'Local SEO'],
-            link: '/services',
-            icoUrl: 'service_ico3.svg'
-        },
-        {
-            name: 'Digital Marketing',
-            info: ['Search Engine Optimization', 'Performance Ads & Lead Generation', 'Local SEO'],
-            link: '/services',
-            icoUrl: 'service_ico4.svg'
-        }
-    ]
-
-    return (
-        <>
-            <section className='section-global bg-shade-1'>
-                <div className="container">
-                    <div className="row gy-5">
-                        <div className="col-lg-4">
-                            <div className="section-tag mb-8">Solutions</div>
-                            <h2 className='mb-16'>Best services to deliver digital outcomes</h2>
-                            <Link to='/services' className='btn btn-outline btn-arrow'>
-                                See all services
-                                <BsArrowRight />
-                            </Link>
-                        </div>
-                        <div className="col-lg-8">
-                            <div className="row gx-md-5 gy-5">
-                                {services.map((service, i) =>
-                                    <div className="col-lg-6 col-xl-6 col-md-6 col-sm-6" key={i}>
-                                        <ServiceCards data={service} src="OurSpeciality" />
-                                    </div>
-                                )}
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </>
-    )
-}
-
-const Projects = () => {
-
+function Projects() {
     const projects_data = [
         {
-            category: 'development',
-            text: 'LAPI - Single entry point API management',
+            category: 'Social Media',
+            text: ' Social Media Marketing for Medanta Hospital',
             imgUrl: 'project1.png',
             color: "#F97316",
-            link: '/project-detail'
+            link: '/case-studies'
         },
         {
-            category: 'design',
-            text: 'How Deko manages to scale using Stact',
-            imgUrl: 'project2.png',
-            color: "#2D7EF8",
-            link: '/project-detail'
+            category: 'social media',
+            text: 'Apollo Hospitals - Social Media Management',
+            imgUrl: 'project1.png',
+            color: '#2D7EF8',
+            link: '/case-studies/apollo-hospitals'
         },
         {
-            category: 'branding',
-            text: "Teno's journey from small to giant",
+            category: 'Marketing',
+            text: "Social Media Marketing for Cloudnine Hospitals",
             imgUrl: 'project3.png',
             color: "#00AA45",
-            link: '/project-detail'
+            link: '/case-studies'
+        }
+        ,
+        {
+            category: 'social media',
+            text: 'Apollo Hospitals - Social Media Management',
+            imgUrl: 'project1.png',
+            color: '#2D7EF8',
+            link: '/case-studies/apollo-hospitals'
+        },
+        {
+            category: 'Marketing',
+            text: "Social Media Marketing for Cloudnine Hospitals",
+            imgUrl: 'project3.png',
+            color: "#00AA45",
+            link: '/case-studies'
         }
     ]
 
@@ -243,58 +123,29 @@ const Projects = () => {
                             <h2>Our recently compeleted projects</h2>
                         </div>
                         <div className="col d-flex align-self-center">
-                            <Link to='/projects' className='btn btn-outline btn-arrow ms-lg-auto'>
+                            <Link to='/case-studies' className='btn btn-outline btn-arrow ms-lg-auto'>
                                 See all case studies
-                                <BsArrowRight />
+                                <TbArrowNarrowRight fontSize={20} />
                             </Link>
                         </div>
                     </div>
-                    <div className="row">
-                        <CaseStudiesCard data={projects_data} src="OurSpeciality" />
-                    </div>
-                </div>
-            </section>
-        </>
-    )
-}
-
-const InfoSection = () => {
-    const infoData = [
-        {
-            title: 'Customer Research',
-            text: 'We mine data, uncover insights and identify opportunities'
-        },
-        {
-            title: 'User friendly Build',
-            text: 'We architect websites and apps to solve user problems'
-        },
-        {
-            title: 'Scalable models',
-            text: 'Continuous Delivery pipelines to ensure fast iteration'
-        }
-    ]
-
-    return (
-        <>
-            <section className="section-global bg-shade-green">
-                <div className="container">
-                    <div className="row gy-5">
-                        <div className="col-lg-6 align-self-center">
-                            <div className="section-tag mb-8">Why choose Stact?</div>
-                            <h2 className='mb-16'>We provide solutions that make our clients' lives simpler</h2>
-                            {infoData.map((e, i) =>
-                                <div className='d-flex mb-16 gap-2' key={i}>
-                                    <BsCheckCircleFill fontSize={24} />
-                                    <div>
-                                        <h4 className='mb-0'>{e.title}</h4>
-                                        <div className="txt-2">{e.text}</div>
+                    <div className="d-lg-flex d-grid gap-3 justify-content-between">
+                        {projects_data.map((e, i) =>
+                            <div key={i}>
+                                <Link to={e.link} className="project-link">
+                                    <div className='project-card d-flex flex-column' style={{ background: `${e.color}1a` }}>
+                                        <div className='text-capitalize fw-500 h4' style={{ color: `${e.color}` }}>{e.category}</div>
+                                        <div className='color-1 mb-3'>{e.text}</div>
+                                        <div className='project-thumb mt-auto'>
+                                            <img loading='lazy' src={require(`../../images/${e.imgUrl}`)} className="img-fluid image-fix-height" alt={e.category} />
+                                            <div className="project-link-overlay project-link-overlay-small">
+                                                View case study
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                            )}
-                        </div>
-                        <div className="col-lg-6 text-center align-self-center">
-                            <img loading='lazy' src={require('../../images/info.png')} className="img-fluid info-banner-image" alt="Why stact" />
-                        </div>
+                                </Link>
+                            </div>
+                        )}
                     </div>
                 </div>
             </section>
@@ -308,21 +159,21 @@ const Blog = () => {
             category: 'leadership',
             title: 'How Stact helps you make values visible in your business.',
             date: '09 Sept, 2021',
-            imgUrl: 'blog_thumb1.jpg',
+            imgUrl: 'assets/blog_thumb1.jpg',
             link: '/blog-article'
         },
         {
             category: 'announcement',
             title: "Values (What They Are, Why They're Important)",
             date: '09 Sept, 2021',
-            imgUrl: 'blog_thumb2.jpg',
+            imgUrl: 'assets/blog_thumb2.jpg',
             link: '/blog-article'
         },
         {
             category: 'culture',
             title: 'How Our Tools Will Change The Way You Create Content',
             date: '09 Sept, 2021',
-            imgUrl: 'blog_thumb3.jpg',
+            imgUrl: 'assets/blog_thumb3.jpg',
             link: '/blog-article'
         }
     ]
@@ -338,15 +189,298 @@ const Blog = () => {
                         <div className="col d-flex align-self-center">
                             <Link to='/blog' className='btn btn-outline btn-arrow ms-lg-auto'>
                                 Go to blog
-                                <BsArrowRight />
+                                <svg width="20" height="20" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fillRule="evenodd" clipRule="evenodd" d="M3 7.5C3 7.32953 3.06584 7.16605 3.18304 7.04551C3.30024 6.92498 3.45919 6.85726 3.62493 6.85726H10.8654L8.18192 4.09861C8.06458 3.97792 7.99865 3.81423 7.99865 3.64355C7.99865 3.47287 8.06458 3.30918 8.18192 3.18849C8.29927 3.0678 8.45842 3 8.62437 3C8.79032 3 8.94948 3.0678 9.06682 3.18849L12.8164 7.04494C12.8746 7.10464 12.9208 7.17557 12.9523 7.25366C12.9838 7.33175 13 7.41546 13 7.5C13 7.58454 12.9838 7.66825 12.9523 7.74634C12.9208 7.82443 12.8746 7.89536 12.8164 7.95506L9.06682 11.8115C8.94948 11.9322 8.79032 12 8.62437 12C8.45842 12 8.29927 11.9322 8.18192 11.8115C8.06458 11.6908 7.99865 11.5271 7.99865 11.3564C7.99865 11.1858 8.06458 11.0221 8.18192 10.9014L10.8654 8.14274H3.62493C3.45919 8.14274 3.30024 8.07502 3.18304 7.95449C3.06584 7.83395 3 7.67047 3 7.5Z" fill="black" />
+                                </svg>
+
                             </Link>
                         </div>
                     </div>
                     <div className="row">
-                        <BlogCards data={blog_data} src='OurSpeciality' />
+                        <BlogCards data={blog_data} src='landing3' />
                     </div>
                 </div>
             </section>
+        </>
+    )
+}
+
+function OurSpecialies() {
+    const hospitals = [
+        {
+            imgUrl: 'culture_1.png',
+            link: 'hospitals/corporate-hospitals',
+            title: 'Corporate Hospitals',
+            text: 'Trust our experienced healthcare branding experts to create a strong brand identity for your corporate hospital.'
+        },
+        {
+            imgUrl: 'culture_2.png',
+            link: 'hospitals/100plus-bed-hospital',
+            title: '100+ Bed Hospitals',
+            text: 'Our specialised branding and marketing services can help 100+ bed hospitals establish a strong brand identity and attract new patients.'
+        },
+        {
+            imgUrl: 'culture_3.png',
+            link: 'hospitals/nursing-homes',
+            title: 'Nursing Homes',
+            text: 'We offer branding and marketing services that help nursing homes establish a strong brand identity and attract new residents.'
+        },
+    ]
+
+    const startups = [
+        {
+            imgUrl: 'culture_3.png',
+            link: 'startups/diagnostic-centres',
+            title: 'Diagnostic Centres',
+            text: 'Our branding and marketing services help diagnostic centers establish a strong online presence and attract new patients.'
+        }
+    ]
+
+    const surgeons = [
+        {
+            imgUrl: 'culture_3.png',
+            link: 'surgeons/neuro-surgeons',
+            title: 'Neuro Surgeons',
+            text: 'Our branding and marketing services help neurosurgeons establish a strong online presence and attract new patients.'
+        },
+        {
+            imgUrl: 'culture_3.png',
+            link: 'surgeons/gynae-surgeons',
+            title: 'Gynae surgeons',
+            text: 'We offer branding and marketing services that help gynae surgeons establish a strong brand identity and attract new patients.'
+        },
+        {
+            imgUrl: 'culture_3.png',
+            link: 'surgeons/general-surgeons',
+            title: 'General Surgeons',
+            text: 'Trust our experienced healthcare branding experts to create a strong brand identity for your general surgery practice.'
+        },
+        {
+            imgUrl: 'culture_3.png',
+            link: 'surgeons/cardiac-surgeons',
+            title: 'Cardiac Surgeons',
+            text: 'Our specialized branding and marketing services can help cardiac surgeons establish a strong brand identity and attract new patients.'
+        },
+        {
+            imgUrl: 'culture_3.png',
+            link: 'surgeons/orthopedician',
+            title: 'Orthopedicians',
+            text: 'We offer branding and marketing services that help orthopedicians establish a strong brand identity and attract new patients.'
+        },
+        {
+            imgUrl: 'culture_3.png',
+            link: 'surgeons/plastic-surgeons',
+            title: 'Plastic Surgeons:',
+            text: 'Our branding and marketing services help plastic surgeons establish a strong online presence and attract new patients.'
+        }
+    ]
+
+    const clinic = [
+        {
+            imgUrl: 'culture_1.png',
+            link: 'clinic/dental-clinic',
+            title: 'Dental Clinic',
+            text: 'Trust our experienced healthcare branding experts to create a strong brand identity for your dental clinic.'
+        },
+        {
+            imgUrl: 'culture_1.png',
+            link: 'clinic/aesthetic-clinics',
+            title: 'Aesthetic Clinics',
+            text: 'We offer branding and marketing services that help aesthetic clinics establish a strong brand identity and attract new patients.'
+        },
+        {
+            imgUrl: 'culture_1.png',
+            link: 'clinic/poly-clinics',
+            title: 'Poly Clinics',
+            text: 'Our specialized branding and marketing services can help poly clinics establish a strong brand identity and attract new patients.'
+        },
+        {
+            imgUrl: 'culture_1.png',
+            link: 'clinic/ivf-clinics',
+            title: 'IVF Clinics',
+            text: 'We offer branding and marketing services that help IVF clinics establish a strong online presence and attract new patients.'
+        }
+    ]
+
+    const healthcareSpecailities = [
+        {
+            imgUrl: 'culture_2.png',
+            link: 'healthcare/dentists',
+            title: 'Dentists',
+            text: 'Our branding and marketing services help dentists establish a strong online presence and attract new patients.'
+        },
+        {
+            imgUrl: 'culture_2.png',
+            link: 'healthcare/orthopedics',
+            title: 'Orthopedicians',
+            text: 'We offer branding and marketing services that help orthopedicians establish a strong brand identity and attract new patients.'
+        },
+        {
+            imgUrl: 'culture_2.png',
+            link: 'healthcare/chiropractors',
+            title: 'Chiropractors',
+            text: 'We work closely with chiropractors to develop personalised marketing solutions that accurately represent their values and services.'
+        },
+        {
+            imgUrl: 'culture_2.png',
+            link: 'healthcare/infertility-and-ivf',
+            title: 'Infertility and IVF',
+            text: 'Trust our experienced healthcare branding experts to create a strong brand identity for your infertility and IVF clinic.'
+        },
+        {
+            imgUrl: 'culture_2.png',
+            link: 'healthcare/aesthetic-dermatologist',
+            title: 'Aesthetic/Dermatologist',
+            text: 'Our branding and marketing services help aesthetic clinics and dermatologists establish a strong online presence and attract new patients.'
+        },
+        {
+            imgUrl: 'culture_2.png',
+            link: 'healthcare/surgeons',
+            title: 'Surgeons',
+            text: 'We offer specialised branding and marketing services to help surgeons establish a strong brand identity and attract new patients.'
+        },
+        {
+            imgUrl: 'culture_2.png',
+            link: '/healthcare/medical-tourism',
+            title: 'Medical Tourism',
+            text: 'Trust our experienced healthcare branding experts to create a strong brand identity for your medical tourism business.'
+        }
+    ]
+
+    return (
+        <>
+            <section className="section-global">
+                <div className="container container-2">
+                    <div className="row mb-40">
+                        <div className="col-xl-8 col-lg-8 offset-xl-2 offset-lg-2 text-center">
+                            <div className="section-tag mb-8">Our Specailities</div>
+                            <h2>We aspire to be one of the most loved companies in the world</h2>
+                        </div>
+                    </div>
+                    <div className='mt-5'>
+                        <div>
+                            <h2 className='text-center section-tag mb-8'>Hospitals</h2>
+                            <hr />
+                        </div>
+                        <div className="row">
+                            {hospitals.map((e, i) =>
+                                <div className="col-lg-4 col-md-6 col-sm-6 text-center" key={i}>
+                                    <img loading='lazy' src={require(`../../images/${e.imgUrl}`)} className="img-fluid" alt={e.title} />
+                                    <Link className='text-decoration-none text-black' to={e.link}><h3>{e.title}</h3></Link>
+                                    <p className="txt-3">{e.text}</p>
+                                </div>
+                            )}
+                        </div>
+                    </div>
+                    <div className='mt-5'>
+                        <div>
+                            <h2 className='text-center section-tag my-8'>Startups</h2>
+                            <hr />
+                        </div>
+                        <div className="row">
+                            {startups.map((e, i) =>
+                                <div className="col-lg-4 col-md-6 col-sm-6 text-center" key={i}>
+                                    <img loading='lazy' src={require(`../../images/${e.imgUrl}`)} className="img-fluid" alt={e.title} />
+                                    <Link className='text-decoration-none text-black' to={e.link}><h3>{e.title}</h3></Link>
+                                    <p className="txt-3">{e.text}</p>
+                                </div>
+                            )}
+                        </div>
+                    </div>
+                    <div className='mt-5'>
+                        <div>
+                            <h2 className='text-center section-tag my-8'>Surgeons</h2>
+                            <hr />
+                        </div>
+                        <div className="row">
+                            {surgeons.map((e, i) =>
+                                <div className="col-lg-4 col-md-6 col-sm-6 text-center" key={i}>
+                                    <img loading='lazy' src={require(`../../images/${e.imgUrl}`)} className="img-fluid" alt={e.title} />
+                                    <Link className='text-decoration-none text-black' to={e.link}><h3>{e.title}</h3></Link>
+                                    <p className="txt-3">{e.text}</p>
+                                </div>
+                            )}
+                        </div>
+                    </div>
+                    <div className='mt-5'>
+                        <div>
+                            <h2 className='text-center section-tag my-8'>Clinic</h2>
+                            <hr />
+                        </div>
+                        <div className="row">
+                            {clinic.map((e, i) =>
+                                <div className="col-lg-4 col-md-6 col-sm-6 text-center" key={i}>
+                                    <img loading='lazy' src={require(`../../images/${e.imgUrl}`)} className="img-fluid" alt={e.title} />
+                                    <Link className='text-decoration-none text-black' to={e.link}><h3>{e.title}</h3></Link>
+                                    <p className="txt-3">{e.text}</p>
+                                </div>
+                            )}
+                        </div>
+                    </div>
+                    <div className='mt-5'>
+                        <div>
+                            <h2 className='text-center section-tag my-8'>Healthcare Specialities</h2>
+                            <hr />
+                        </div>
+                        <div className="row">
+                            {healthcareSpecailities.map((e, i) =>
+                                <div className="col-lg-4 col-md-6 col-sm-6 text-center" key={i}>
+                                    <img loading='lazy' src={require(`../../images/${e.imgUrl}`)} className="img-fluid" alt={e.title} />
+                                    <Link className='text-decoration-none text-black' to={e.link}><h3>{e.title}</h3></Link>
+                                    <p className="txt-3">{e.text}</p>
+                                </div>
+                            )}
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </>
+    )
+}
+
+function Testimonials() {
+    const testimonial_data = [
+        {
+            text: 'I was struggling to attract new patients to my dental clinic until I hired Branding Pioneers. Their team of experts helped me establish a strong online presence and increase my visibility in the community. Thanks to their personalized marketing solutions, my clinic has seen a significant increase in new patient inquiries and appointments',
+            userName: 'Dr. John Smith',
+            position: 'Dentist',
+            userImgUrl: 'hari.jpg'
+        },
+        {
+            text: 'We were impressed by Branding Pioneers comprehensive approach to healthcare branding and marketing. Their team took the time to understand our unique values and services and developed a brand strategy and marketing plan that accurately reflected our organization. Thanks to their services, our hospital has seen a significant increase in online traffic and patient inquiries.',
+            userName: 'Sarah Jones',
+            position: 'Marketing Director at ABC Hospital',
+            userImgUrl: 'manish.jpg'
+        },
+        {
+            text: 'I highly recommend Branding Pioneers to any healthcare organization looking to increase their visibility and attract new patients. Their team of healthcare branding experts provided us with personalized marketing solutions that accurately represented our values and services. Thanks to their services, our nursing home has seen a significant increase in new resident inquiries and admissions',
+            userName: 'Jane Doe',
+            position: 'Administrator at RT Nursing Home',
+            userImgUrl: 'jasleenkaur.jpg'
+        }
+    ]
+
+    return (
+        <>
+            <div className="section-global bg-shade-blue">
+                <div className="container">
+                    <div className="row mb-40 justify-content-between gy-4">
+                        <div className="col-xl-5 col-lg-5">
+                            <div className="section-tag mb-8 ">Customer reviews</div>
+                            <h2>Adopted by the most creative individuals</h2>
+                        </div>
+                        <div className="col d-flex align-self-center">
+                            <Link to='about/testimonials' className='btn btn-outline btn-arrow ms-lg-auto'>
+                                See all reviews
+                                <TbArrowNarrowRight fontSize={24} />
+                            </Link>
+                        </div>
+                    </div>
+                    <div className="row">
+                        <TestimonialCards data={testimonial_data} />
+                    </div>
+                </div>
+            </div>
         </>
     )
 }
