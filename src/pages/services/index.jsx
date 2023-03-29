@@ -423,7 +423,7 @@ function OurServices() {
                 <div className="container">
                     <div className="row mb-40">
                         <div className="col-xl-8 col-lg-8 offset-xl-2 offset-lg-2 text-center">
-                            <div className="section-tag mb-8">Our Specailities</div>
+                            <div className="section-tag mb-8">Services</div>
                             <h2>We aspire to be one of the most loved companies in the world</h2>
                         </div>
                     </div>
