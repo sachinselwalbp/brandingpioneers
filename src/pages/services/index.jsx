@@ -1,7 +1,6 @@
 import Helmet from 'react-helmet'
 import { Link } from 'react-router-dom'
 import BrandSection from '../../components/brandSection'
-import ServiceCards from '../../components/serviceCards'
 import TestimonialCards from '../../components/testimonialCards'
 import { TbArrowNarrowRight } from "react-icons/tb"
 import { BsPlayCircleFill, BsCheckCircleFill } from "react-icons/bs"
