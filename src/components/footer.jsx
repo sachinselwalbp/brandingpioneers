@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import Logo from '../images/logo_dark.svg'
+import Logo from '../images/logo.png'
 import './css/footer.scss'
 import { FaInstagram, FaFacebook, FaTwitter, FaYoutube, FaLinkedin } from "react-icons/fa"
 
@@ -38,7 +38,7 @@ const Footer = () => {
                 <div className="container">
                     <div className="row gy-4 footer-section">
                         <div className="col-lg-3">
-                            <img loading='lazy' src={Logo} alt="Branding Pioneers" height="32" />
+                            <img loading='lazy' src={Logo} alt="Branding Pioneers" height="48" />
                         </div>
                         <div className="col-lg-5">
                             <div className="link-section">

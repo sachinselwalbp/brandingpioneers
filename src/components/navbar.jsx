@@ -1,6 +1,6 @@
 import { Navbar, Container, NavDropdown, Nav } from "react-bootstrap"
 import { NavLink } from "react-router-dom"
-import Logo from '../images/logo.svg'
+import Logo from '../images/logo.png'
 import './css/navbar.scss'
 import { Link } from "react-router-dom"
 import { BsChatRightQuote } from "react-icons/bs"
@@ -23,7 +23,7 @@ export default function NavBar() {
         <Container className="py-2 py-md-0">
           <Navbar.Brand>
             <NavLink to="/">
-              <img loading='lazy' src={Logo} height="32" alt="Branding Pioneers" />
+              <img loading='lazy' src={Logo} height="42" alt="Branding Pioneers" />
             </NavLink>
           </Navbar.Brand>
           <Navbar.Toggle />

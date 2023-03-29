@@ -1,7 +1,10 @@
 import { IoIosRocket } from 'react-icons/io'
-import { ImPhone } from "react-icons/im"
 import { useEffect, useState } from 'react'
 import "./css/header.scss"
+import In from "../images/india.svg"
+import Us from "../images/usa.svg"
+import Uk from "../images/uk.svg"
+import Cn from "../images/canada.svg"
 
 export default function Header() {
   const [num, setNum] = useState(0)
@@ -10,7 +13,24 @@ export default function Header() {
     setNum(date + 50000)
   }, [num])
 
-  const tel = [" +16198379090", "+447418608606"," +14383006695"," +19789565515"]
+  const tel = [
+    {
+      num: "+919789565515",
+      flag: In
+    },
+    {
+      num: " +16198379090",
+      flag: Us
+    },
+    {
+      num: "+447418608606",
+      flag: Uk
+    },
+    {
+      num: " +14383006695",
+      flag: Cn
+    },
+  ]
 
   return (
     <>
@@ -32,11 +52,11 @@ export default function Header() {
 function PhoneNum({ tel }) {
   return (
     <>
-      <a href={`tel:${tel}`} className='text-decoration-none text-white d-flex gap-2 justify-content-center align-items-center top-div phonenumber'>
-        <ImPhone />
+      <a href={`tel:${tel.num}`} className='text-decoration-none text-white d-flex gap-2 justify-content-center align-items-center top-div phonenumber'>
+        <img width={20} height={20} src={tel.flag} alt={tel.src}/>
         <span>
           {
-            String(tel).slice(0, 3) + "-" + String(tel).slice(3, 6) + "-" + String(tel).slice(6, 9) + "-" + String(tel).slice(9)
+            String(tel.num).slice(0, 3) + "-" + String(tel.num).slice(3, 6) + "-" + String(tel.num).slice(6, 9) + "-" + String(tel.num).slice(9)
           }
         </span>
       </a>
