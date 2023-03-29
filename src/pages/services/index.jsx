@@ -5,6 +5,7 @@ import TestimonialCards from '../../components/testimonialCards'
 import { TbArrowNarrowRight } from "react-icons/tb"
 import { BsPlayCircleFill, BsCheckCircleFill } from "react-icons/bs"
 import './style.scss'
+import { SmallCards } from '../OurSpeciality'
 
 export default function Services() {
     return (
@@ -159,21 +160,6 @@ function Projects() {
             color: "#00AA45",
             link: '/case-studies'
         }
-        ,
-        {
-            category: 'social media',
-            text: 'Apollo Hospitals - Social Media Management',
-            imgUrl: 'project1.png',
-            color: '#2D7EF8',
-            link: '/case-studies/apollo-hospitals'
-        },
-        {
-            category: 'Marketing',
-            text: "Social Media Marketing for Cloudnine Hospitals",
-            imgUrl: 'project3.png',
-            color: "#00AA45",
-            link: '/case-studies'
-        }
     ]
 
     return (
@@ -192,17 +178,17 @@ function Projects() {
                             </Link>
                         </div>
                     </div>
-                    <div className="d-lg-flex d-grid gap-3 justify-content-between">
+                    <div className="row">
                         {
                             projects_data.map((e, i) =>
-                                <div key={i}>
+                                <div className='col-xl-4 col-lg-6 col-md-6 gy-4' key={i}>
                                     <Link to={e.link} className="project-link">
                                         <div className='project-card d-flex flex-column' style={{ background: `${e.color}1a` }}>
                                             <div className='text-capitalize fw-500 h4' style={{ color: `${e.color}` }}>{e.category}</div>
                                             <div className='color-1 mb-3'>{e.text}</div>
                                             <div className='project-thumb mt-auto'>
                                                 <img loading='lazy' src={require(`../../images/${e.imgUrl}`)} className="img-fluid image-fix-height" alt={e.category} />
-                                                <div className="project-link-overlay project-link-overlay-small">
+                                                <div className="project-link-overlay">
                                                     View case study
                                                 </div>
                                             </div>
@@ -434,22 +420,14 @@ function OurServices() {
     return (
         <>
             <section className="section-global">
-                <div className="container container-2">
+                <div className="container">
                     <div className="row mb-40">
                         <div className="col-xl-8 col-lg-8 offset-xl-2 offset-lg-2 text-center">
                             <div className="section-tag mb-8">Our Specailities</div>
                             <h2>We aspire to be one of the most loved companies in the world</h2>
                         </div>
                     </div>
-                    <div className="row">
-                        {services.map((e, i) =>
-                            <div className="col-lg-4 col-md-6 col-sm-6 text-center" key={i}>
-                                <img loading='lazy' src={require(`../../images/${e.imgUrl}`)} className="img-fluid" alt={e.title} />
-                                <Link className='text-decoration-none text-black' to={e.link}><h3>{e.title}</h3></Link>
-                                <p className="txt-3">{e.text}</p>
-                            </div>
-                        )}
-                    </div>
+                    <SmallCards data={services} />
                 </div>
             </section>
         </>
