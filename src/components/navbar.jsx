@@ -28,7 +28,7 @@ export default function NavBar() {
           </Navbar.Brand>
           <Navbar.Toggle />
           <Navbar.Collapse id="responsive-navbar-nav">
-            <Nav className="mx-auto py-1 my-3 me-auto">
+            <Nav className="mx-auto py-1 my-3 me-auto w-100 justify-content-evenly">
               <Nav.Link as={Link} to="/">Home</Nav.Link>
               <NavDropdown className="megamenu" title="About">
                 <Container fluid className="mega-shadow">
