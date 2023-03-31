@@ -104,6 +104,7 @@ import SarveshHospitalCaseStudy from './pages/caseStudiesDetails/sarvesh';
 import SSKidneyCaseStudy from './pages/caseStudiesDetails/SSKidney';
 import CDASHospitalCaseStudy from './pages/caseStudiesDetails/CDAS';
 import Career from './pages/career';
+import ThankYouPage from './pages/thankyou';
 
 export default function BrandingPioneers() {
   return (
@@ -263,6 +264,7 @@ export default function BrandingPioneers() {
               <Route path='/blog' element={<Blog />} />
               <Route path='/contact' element={<Contact />} />
               <Route path='/career' element={<Career />} />
+              <Route path='/thank-you' element={<ThankYouPage />} />
               <Route path='*' element={<NotFound />} />
             </Route>
           </Routes>
