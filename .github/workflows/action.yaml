@@ -34,5 +34,5 @@ jobs:
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           dangerous-clean-slate: true
-          server-dir: public_html/brandingpioneers.com/
+          server-dir: brandingpioneers.com/
           local-dir: ./build/
