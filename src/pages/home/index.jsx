@@ -54,6 +54,14 @@ const brands = [
     {
         name: "Cloudnine",
         imgUrl: "cloudnine.svg"
+    },
+    {
+        name: "Cloudnine",
+        imgUrl: "aiimsd.png"
+    },
+    {
+        name: "Fortis",
+        imgUrl: "fortis.png"
     }
 ]
 
@@ -276,7 +284,7 @@ function OurPartners() {
 function About() {
     return (
         <>
-            <section className="section-global bg-shade-1">
+            <section className="section-global bg-shade-blue">
                 <div className="container">
                     <div className="row mb-40 gy-4">
                         <div className="col-lg-6 align-self-center d-flex justify-content-center align-items-center">
@@ -404,7 +412,7 @@ function Testimonials() {
 
     return (
         <>
-            <div className="section-global bg-shade-blue">
+            <div className="section-global bg-shade-skin">
                 <div className="container">
                     <div className="row mb-40 justify-content-between gy-4">
                         <div className="col-xl-5 col-lg-5">

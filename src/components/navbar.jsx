@@ -3,18 +3,6 @@ import { NavLink } from "react-router-dom"
 import Logo from '../images/logo.png'
 import './css/navbar.scss'
 import { Link } from "react-router-dom"
-import { BsChatRightQuote } from "react-icons/bs"
-import { MdMarkEmailRead, MdOutlineMedicalServices } from "react-icons/md"
-import { HiStar } from "react-icons/hi"
-import { BiBookContent } from "react-icons/bi"
-import { FaHandHoldingMedical, FaLaptopMedical, FaTelegramPlane } from "react-icons/fa"
-import { CgWebsite } from "react-icons/cg"
-import { RiSurgicalMaskLine, RiHeartPulseFill, RiHospitalFill } from "react-icons/ri"
-import { FaBriefcaseMedical, FaHandHoldingHeart, FaStore } from "react-icons/fa"
-import { IoMdMedical } from "react-icons/io"
-import { GiPolarStar } from "react-icons/gi"
-import { GrInfo } from "react-icons/gr"
-import { TbSettingsAutomation } from "react-icons/tb"
 
 export default function NavBar() {
   return (
@@ -23,7 +11,7 @@ export default function NavBar() {
         <Container className="py-2 py-md-0">
           <Navbar.Brand>
             <NavLink to="/">
-              <img loading='lazy' src={Logo} height="38" alt="Branding Pioneers" />
+              <img loading='lazy' src={Logo} height="48" alt="Branding Pioneers" />
             </NavLink>
           </Navbar.Brand>
           <Navbar.Toggle />
@@ -36,7 +24,7 @@ export default function NavBar() {
                     <div className="py-4 col_bg1">
                       <h6>
                         <NavDropdown.Item as={Link} to="/about" className="nav-link text-uppercase text-small pb-0 font-weight-bold nav-heading">
-                          <BsChatRightQuote />
+                          <img loading="lazy" className="navbarImg" alt="About" src={require('../images/about.png')} />
                           <span>About</span>
                         </NavDropdown.Item>
                       </h6>
@@ -47,14 +35,14 @@ export default function NavBar() {
                     </div>
                     <div className="py-4 col_bg5">
                       <h6 className="font-weight-bold nav-heading text-uppercase nav-heading">
-                        <GrInfo />
+                        <img loading="lazy" className="navbarImg" alt="About" src={require('../images/Description.png')} />
                         <span>Description</span>
                       </h6>
                       <p>Revolutionizing healthcare marketing through cutting-edge technology and expertise" - that's our motto at Branding Pioneers, where we help healthcare businesses reach their fullest potential with our unique approach to marketing.</p>
                     </div>
                     <div className="justify-content-center align-items-center nav_career_bg">
                       <Link className="text-uppercase py-5 h-100 w-100 d-flex justify-content-center align-items-center text-decoration-none text-black nav-heading" to="/career">
-                        <FaTelegramPlane />
+                        <img loading="lazy" className="navbarImg" alt="About" src={require('../images/Career.png')} />
                         Career
                       </Link>
                     </div>
@@ -67,13 +55,13 @@ export default function NavBar() {
                     <div className="col_bg1">
                       <h6>
                         <NavDropdown.Item as={Link} to="/our-speciality" className="nav-link text-small pb-0 text-uppercase font-weight-bold nav-heading nav-heading">
-                          <HiStar />
+                          <img loading="lazy" className="navbarImg" alt="About" src={require('../images/Our Specilitiy.png')} />
                           <span>Our Speciality</span>
                         </NavDropdown.Item>
                       </h6>
                       <h6>
                         <NavDropdown.Item as={Link} to="/our-speciality/hospitals" className="nav-link text-uppercase text-small pb-0 font-weight-bold nav-heading">
-                          <RiHospitalFill />
+                          <img loading="lazy" className="navbarImg" alt="About" src={require('../images/Hospitals.png')} />
                           Hospitals
                         </NavDropdown.Item>
                       </h6>
@@ -84,7 +72,7 @@ export default function NavBar() {
                       <br />
                       <h6>
                         <NavDropdown.Item as={Link} to="/our-speciality/startups" className="nav-link text-small pb-0 text-uppercase font-weight-bold nav-heading">
-                          <IoMdMedical />
+                          <img loading="lazy" className="navbarImg" alt="About" src={require('../images/Startups.png')} />
                           Startups
                         </NavDropdown.Item>
                       </h6>
@@ -93,7 +81,7 @@ export default function NavBar() {
                     <div className="col_bg2">
                       <h6>
                         <NavDropdown.Item as={Link} to="/our-speciality/surgeons" className="nav-link text-small pb-0 text-uppercase font-weight-bold nav-heading">
-                          <RiSurgicalMaskLine />
+                          <img loading="lazy" className="navbarImg" alt="About" src={require('../images/Surgeons.png')} />
                           Surgeons
                         </NavDropdown.Item>
                       </h6>
@@ -107,7 +95,7 @@ export default function NavBar() {
                     <div className="col_bg3">
                       <h6>
                         <NavDropdown.Item as={Link} to="/our-speciality/clinic" className="nav-link text-small pb-0 text-uppercase font-weight-bold nav-heading nav-heading">
-                          <FaHandHoldingMedical />
+                          <img loading="lazy" className="navbarImg" alt="About" src={require('../images/Clinic.png')} />
                           <span>Clinic</span>
                         </NavDropdown.Item>
                       </h6>
@@ -119,7 +107,7 @@ export default function NavBar() {
                     <div className="col_bg4">
                       <h6>
                         <span className="nav-link text-small pb-0 text-uppercase font-weight-bold nav-heading">
-                          <RiHeartPulseFill />
+                          <img loading="lazy" className="navbarImg" alt="About" src={require('../images/Healthcare Specialities.png')} />
                           Healthcare Specialties</span>
                       </h6>
                       <NavDropdown.Item as={Link} to="/our-speciality/healthcare/dentists" className="nav-link text-small pb-0">Dentists</NavDropdown.Item>
@@ -139,12 +127,12 @@ export default function NavBar() {
                     <div className="col_bg1">
                       <h6>
                         <NavDropdown.Item as={Link} to="/services" className="nav-link text-small pb-0 font-weight-bold nav-heading text-uppercase">
-                          <MdOutlineMedicalServices />
+                          <img loading="lazy" className="navbarImg" alt="About" src={require('../images/Services.png')} />
                           Services</NavDropdown.Item>
                       </h6>
                       <h6>
                         <NavDropdown.Item as={Link} to="/services/digital-patient-acquistion" className="nav-link text-small pb-0 text-uppercase font-weight-bold nav-heading">
-                          <FaLaptopMedical />
+                          <img loading="lazy" className="navbarImg" alt="About" src={require('../images/digital-patient-acquistion.png')} />
                           Digital Patient Acquistion</NavDropdown.Item>
                       </h6>
                       <NavDropdown.Item as={Link} className="nav-link text-small pb-0" to="/services/digital-patient-acquistion/seo">Search Engine Optimization</NavDropdown.Item>
@@ -154,7 +142,7 @@ export default function NavBar() {
                       <br />
                       <h6>
                         <NavDropdown.Item as={Link} to="/web-services" className="nav-link text-small pb-0 text-uppercase font-weight-bold nav-heading nav-heading">
-                          <CgWebsite />
+                          <img loading="lazy" className="navbarImg" alt="About" src={require('../images/Web Services.png')} />
                           <span>Website Services</span>
                         </NavDropdown.Item>
                       </h6>
@@ -167,7 +155,7 @@ export default function NavBar() {
                     <div className="col_bg2">
                       <h6>
                         <NavDropdown.Item as={Link} to="/services/orm" className="nav-link text-small pb-0 text-uppercase font-weight-bold nav-heading">
-                          <GiPolarStar />
+                          <img loading="lazy" className="navbarImg" alt="About" src={require('../images/reputation-management.png')} />
                           Online Reputation Management</NavDropdown.Item>
                       </h6>
                       <NavDropdown.Item as={Link} to="/services/orm/google-review-management" className="nav-link text-small pb-0">Google Review Management</NavDropdown.Item>
@@ -177,7 +165,7 @@ export default function NavBar() {
                       <br />
                       <h6>
                         <NavDropdown.Item as={Link} to="/services/patient-engagement" className="nav-link text-small pb-0 text-uppercase font-weight-bold nav-heading">
-                          <FaHandHoldingHeart />
+                          <img loading="lazy" className="navbarImg" alt="About" src={require('../images/Patient Engagement.png')} />
                           Patient Engagement</NavDropdown.Item>
                       </h6>
                       <NavDropdown.Item as={Link} className="nav-link text-small pb-0" to="/services/patient-engagement/marketing">Whatsapp/Email/SMS Marketing</NavDropdown.Item>
@@ -187,7 +175,7 @@ export default function NavBar() {
                     <div className="col_bg3">
                       <h6>
                         <NavDropdown.Item as={Link} to="/services/brand-building" className="nav-link text-small pb-0 text-uppercase font-weight-bold nav-heading">
-                          <FaStore />
+                          <img loading="lazy" className="navbarImg" alt="About" src={require('../images/brand-building.png')} />
                           Brand Building</NavDropdown.Item>
                       </h6>
                       <NavDropdown.Item as={Link} to="/services/brand-building/social-media-marketing" className="nav-link text-small pb-0">Social Media Marketing</NavDropdown.Item>
@@ -197,7 +185,7 @@ export default function NavBar() {
                       <br />
                       <h6>
                         <NavDropdown.Item as={Link} to="/services/sales-automation" className="nav-link text-small pb-0 text-uppercase font-weight-bold nav-heading">
-                          <TbSettingsAutomation />
+                          <img loading="lazy" className="navbarImg" alt="About" src={require('../images/sales-automation.png')} />
                           Sales Automation
                         </NavDropdown.Item>
                       </h6>
@@ -214,7 +202,7 @@ export default function NavBar() {
                     <div className="col_bg1">
                       <h6>
                         <NavDropdown.Item as={Link} to="/marketing-services" className="nav-link text-small pb-0 font-weight-bold nav-heading text-uppercase">
-                          <FaBriefcaseMedical />
+                          <img loading="lazy" className="navbarImg" alt="About" src={require('../images/medical-digital-marketing.png')} />
                           Medical Digital Marketing
                         </NavDropdown.Item>
                       </h6>
@@ -233,7 +221,7 @@ export default function NavBar() {
                     <div className="col_bg2">
                       <h6>
                         <NavDropdown.Item as={Link} to="/marketing-strategies" className="nav-link text-small pb-0 font-weight-bold nav-heading text-uppercase">
-                          <MdMarkEmailRead />
+                          <img loading="lazy" className="navbarImg" alt="About" src={require('../images/marketing-strategies.png')} />
                           Marketing Strategies
                         </NavDropdown.Item>
                       </h6>
@@ -248,7 +236,7 @@ export default function NavBar() {
                     <div className="col_bg3">
                       <h6>
                         <NavDropdown.Item as={Link} to="/content" className="nav-link text-small pb-0 font-weight-bold nav-heading text-uppercase">
-                          <BiBookContent />
+                          <img loading="lazy" className="navbarImg" alt="About" src={require('../images/Content.png')} />
                           Content
                         </NavDropdown.Item>
                       </h6>

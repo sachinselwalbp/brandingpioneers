@@ -93,46 +93,25 @@
         margin-top: 10px;
       }
       .google {
-        fill: #585858;
-        &:hover {
-          fill: #4285f4;
-        }
+        fill: #4285f4;
       }
       .meta {
-        color: #585858;
-        &:hover {
-          color: #0467df;
-        }
+        color: #0467df;
       }
       .instagram {
-        fill: #585858;
-        &:hover {
-          fill: #e4405f;
-        }
+        fill: #e4405f;
       }
       .bing {
-        fill: #585858;
-        &:hover {
-          fill: #258ffa;
-        }
+        fill: #258ffa;
       }
       .youtube {
-        fill: #585858;
-        &:hover {
-          fill: #f00;
-        }
+        fill: #f00;
       }
       .facebook {
-        fill: #585858;
-        &:hover {
-          fill: #0467df;
-        }
+        fill: #0467df;
       }
       .twitter {
-        fill: #585858;
-        &:hover {
-          fill: #1da1f2;
-        }
+        fill: #1da1f2;
       }
     }
   }
@@ -148,4 +127,9 @@
   border-radius: 15px;
   border: 1px solid;
   // box-shadow: 0 0 0 1px var(--border-brutal), 4px 4px 0 var(--border-brutal);
+}
+.homeIcon {
+  border: 2px solid;
+  border-radius: 15px;
+  box-shadow: 3px 3px black;
 }

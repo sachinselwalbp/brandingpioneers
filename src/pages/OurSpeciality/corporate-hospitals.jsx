@@ -46,6 +46,14 @@ const Hero = () => {
         {
             name: "brand5",
             imgUrl: "brand5.svg"
+        },
+        {
+            name: "Cloudnine",
+            imgUrl: "aiimsd.png"
+        },
+        {
+            name: "Fortis",
+            imgUrl: "fortis.png"
         }
     ]
     return (

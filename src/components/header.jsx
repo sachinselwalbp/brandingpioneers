@@ -39,6 +39,7 @@ export default function Header() {
           <div className='d-flex gap-2 text-white justify-content-center align-items-center top-div' title='Total Leads Generated'>
             <IoIosRocket />
             <span>{num.toLocaleString()}</span>
+            <span style={{ fontWeight: 300, fontSize: 14 }}>Leads <span style={{ fontWeight: 300, fontSize: 14 }} className='d-none d-lg-inline'>Generated</span></span>
           </div>
           <div className='d-flex align-items-center gap-4'>
             {tel.map((e, i) => <PhoneNum key={i} tel={e} />)}
@@ -53,7 +54,7 @@ function PhoneNum({ tel }) {
   return (
     <>
       <a href={`tel:${tel.num}`} className='text-decoration-none text-white d-flex gap-2 justify-content-center align-items-center top-div phonenumber'>
-        <img width={20} height={20} src={tel.flag} alt={tel.src}/>
+        <img width={20} height={20} src={tel.flag} alt={tel.src} />
         <span>
           {
             String(tel.num).slice(0, 3) + "-" + String(tel.num).slice(3, 6) + "-" + String(tel.num).slice(6, 9) + "-" + String(tel.num).slice(9)

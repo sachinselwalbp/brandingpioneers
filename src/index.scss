@@ -12,6 +12,7 @@
   --bg-shade-1: #fbe8de;
   --bg-shade-blue: #d7cdff;
   --bg-shade-green: #dcffdb;
+  --bg-shade-skin: #feeae0;
   --bg-shade-yellow: #fffb9e;
   --bg-shade-pink: #fde4ff;
   --color-red: #e94057;
@@ -35,6 +36,9 @@
 .bg-shade-blue {
   background: var(--bg-shade-blue);
 }
+.bg-shade-skin {
+  background: var(--bg-shade-skin);
+}
 .bg-shade-green {
   background: var(--bg-shade-green);
 }
@@ -52,6 +56,18 @@
 }
 .color-primary {
   color: var(--color-primary) !important;
+}
+.fw-100 {
+  font-weight: 100;
+}
+.fw-200 {
+  font-weight: 200;
+}
+.fw-300 {
+  font-weight: 300;
+}
+.fw-400 {
+  font-weight: 400;
 }
 .fw-500 {
   font-weight: 500;

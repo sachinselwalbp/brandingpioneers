@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import Logo from '../images/logo.png'
+import Logo from '../images/footer-logo.png'
 import './css/footer.scss'
 import { FaInstagram, FaFacebook, FaTwitter, FaYoutube, FaLinkedin } from "react-icons/fa"
 
