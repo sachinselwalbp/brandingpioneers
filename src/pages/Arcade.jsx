@@ -6,7 +6,7 @@ export default function Arcade() {
    <Helmet>
     <title>Arcade</title>
     </Helmet>
-    <iframe className="airtable-embed" src="https://airtable.com/embed/shrBzcnsHAqgNqpgR?backgroundColor=yellow&viewControls=on" Frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>
+    <iframe className="airtable-embed" src="https://airtable.com/embed/shrBzcnsHAqgNqpgR?backgroundColor=yellow&viewControls=on" frameBorder="0" onmousewheel="" width="100%" height="533" style={{background: "transparent", border: "1px solid #ccc"}}></iframe>
     <>
   )
 }
