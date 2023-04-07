@@ -104,11 +104,11 @@ function Hero() {
 
 function About() {
     const features_data = [
-        "Healthcare Marketing Specialists: Our team has extensive experience and a deep understanding of the unique challenges and opportunities within the healthcare industry, allowing us to tailor our services to your specific needs and goals.",
+        "Healthcare Marketing Specialists: Branding Pioneers team has extensive experience and a deep understanding of the unique challenges and opportunities within the healthcare industry, allowing us to tailor our services to your specific needs and goals.",
         "Comprehensive Services: We offer a wide range of services, including strategy development, content creation, account management, advertising campaigns, and analytics reporting, ensuring a holistic approach to your healthcare organization's social media marketing efforts.",
         "Data-Driven Approach: We rely on data and analytics to track performance, measure success, and optimize our strategies, ensuring continuous improvement and maximum return on investment for your healthcare organization.",
         "Client-Centric Focus: We prioritize your healthcare organization's goals and objectives, working closely with you to develop and implement personalized social media marketing strategies that deliver measurable results.",
-        "Ongoing Support and Partnership: Our team is committed to your success, offering continuous support and guidance throughout our partnership. We're always available to answer questions, address concerns, and adjust your social media marketing strategy."
+        "Ongoing Support and Partnership: Branding Pioneers team is committed to your success, offering continuous support and guidance throughout our partnership. We're always available to answer questions, address concerns, and adjust your social media marketing strategy."
     ]
 
     return (
