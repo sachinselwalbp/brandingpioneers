@@ -230,7 +230,7 @@ function Testimonials() {
         },
         {
             brandImgUrl: 'review_brand3.svg',
-            text: 'We were skeptical about outsourcing our healthcare digital marketing needs, but working with Branding Pioneers has been one of our best decisions. Their team is creative, data-driven, and always on top of the latest digital marketing trends. They have helped us increase our online visibility and attract new patients. We highly recommend their services to anyone looking to improve their healthcare digital marketing strategy.',
+            text: 'We are skeptical about outsourcing our healthcare digital marketing needs, but working with Branding Pioneers has been one of our best decisions. Their team is creative, data-driven, and always on top of the latest digital marketing trends. They have helped us increase our online visibility and attract new patients. We highly recommend their services to anyone looking to improve their healthcare digital marketing strategy.',
             userName: 'Aashish',
             position: 'Product director',
             userImgUrl: 'review3.jfif'
