@@ -186,3 +186,15 @@
   height: 32px;
   border-radius: 4px;
 }
+.navbarLogo {
+  height: 32px;
+  @media (min-width: 640px) {
+    height: 40px;
+  }
+  @media (min-width: 768px) {
+    height: 44px;
+  }
+  @media (min-width: 1024px) {
+    height: 48px;
+  }
+}
