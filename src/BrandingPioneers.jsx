@@ -105,7 +105,7 @@ import SSKidneyCaseStudy from './pages/caseStudiesDetails/SSKidney';
 import CDASHospitalCaseStudy from './pages/caseStudiesDetails/CDAS';
 import Career from './pages/career';
 import ThankYouPage from './pages/thankyou';
-import Arcade from './pages/Arcade'
+import Arcade from './pages/arcade'
 
 export default function BrandingPioneers() {
   return (
@@ -266,7 +266,7 @@ export default function BrandingPioneers() {
               <Route path='/contact' element={<Contact />} />
               <Route path='/career' element={<Career />} />
               <Route path='/thank-you' element={<ThankYouPage />} />
-                <Route path='/arcade' element={<Arcade />} />
+              <Route path='/arcade' element={<Arcade />} />
               <Route path='*' element={<NotFound />} />
             </Route>
           </Routes>
