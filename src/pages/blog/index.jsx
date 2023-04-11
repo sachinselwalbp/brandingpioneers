@@ -6,7 +6,7 @@ export default function Blog() {
   return (
     <>
       <Helmet>
-        <title>Blog</title>
+        <title>Blog- Healthcare Digital Marketing Agency</title>
         {/* <link rel="stylesheet" href="https://cdn.bloghunch.com/assets/embed/app.css" /> */}
         <script>
           var bh_limit = 3;
